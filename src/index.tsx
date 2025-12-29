@@ -50,26 +50,26 @@ app.get('/', (c) => {
 </head>
 <body class="font-sans antialiased bg-antares-dark text-white overflow-x-hidden">
 
-    <!-- Navigation -->
+    <!-- Navigation - Super Responsive -->
     <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
-        <div class="max-w-7xl mx-auto px-6 py-5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-5">
             <div class="flex items-center justify-between">
-                <div class="text-2xl font-display font-bold tracking-tight">
+                <div class="text-xl sm:text-2xl font-display font-bold tracking-tight">
                     ANTARES<span class="text-antares-blue">.</span>
                 </div>
                 
-                <div class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                <div class="hidden lg:flex items-center space-x-6 xl:space-x-8 text-sm font-medium">
                     <a href="#services" class="nav-link hover:text-antares-blue transition-colors">Services</a>
                     <a href="#portfolio" class="nav-link hover:text-antares-blue transition-colors">Projects</a>
                     <a href="#compliance" class="nav-link hover:text-antares-blue transition-colors">Compliance</a>
                     <a href="#approach" class="nav-link hover:text-antares-blue transition-colors">Approach</a>
                     <a href="#why-us" class="nav-link hover:text-antares-blue transition-colors">Why Us</a>
-                    <a href="#contact" class="btn-primary px-6 py-2.5 rounded-full bg-antares-blue hover:bg-blue-600 transition-all duration-300">
+                    <a href="#contact" class="btn-primary px-5 xl:px-6 py-2 xl:py-2.5 rounded-full bg-antares-blue hover:bg-blue-600 transition-all duration-300 whitespace-nowrap">
                         Request Consultation
                     </a>
                 </div>
                 
-                <button id="mobile-menu-btn" class="md:hidden text-white focus:outline-none">
+                <button id="mobile-menu-btn" class="lg:hidden text-white focus:outline-none p-2">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                     </svg>
@@ -90,8 +90,8 @@ app.get('/', (c) => {
         </div>
     </div>
 
-    <!-- Hero Section -->
-    <section id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <!-- Hero Section - Super Responsive -->
+    <section id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 sm:pt-0">
         <div class="absolute inset-0 bg-gradient-to-br from-antares-dark via-antares-gray to-antares-dark"></div>
         
         <!-- Animated Background Grid -->
@@ -99,32 +99,32 @@ app.get('/', (c) => {
             <div class="grid-pattern"></div>
         </div>
         
-        <div class="relative z-10 max-w-6xl mx-auto px-6 text-center">
+        <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <div class="fade-in-up">
-                <h1 class="text-5xl md:text-7xl lg:text-8xl font-display font-bold mb-6 leading-tight">
+                <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-display font-bold mb-4 sm:mb-6 leading-tight px-2">
                     Engineering Excellence<br/>
                     <span class="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400">
                         Industrial Precision
                     </span>
                 </h1>
                 
-                <p class="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto font-light leading-relaxed">
+                <p class="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-300 mb-6 sm:mb-8 max-w-3xl mx-auto font-light leading-relaxed px-4">
                     Global leader in commercial signage installation, LED retrofit solutions, and technical compliance.
                     Where regulatory expertise meets operational excellence.
                 </p>
                 
-                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mt-12">
-                    <a href="#services" class="btn-primary px-8 py-4 rounded-full bg-antares-blue hover:bg-blue-600 transition-all duration-300 text-lg font-medium">
+                <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center mt-8 sm:mt-12 px-4">
+                    <a href="#services" class="w-full sm:w-auto btn-primary px-6 sm:px-8 py-3 sm:py-4 rounded-full bg-antares-blue hover:bg-blue-600 transition-all duration-300 text-base sm:text-lg font-medium">
                         Explore Our Services
                     </a>
-                    <a href="#approach" class="btn-secondary px-8 py-4 rounded-full border-2 border-white hover:bg-white hover:text-antares-dark transition-all duration-300 text-lg font-medium">
+                    <a href="#approach" class="w-full sm:w-auto btn-secondary px-6 sm:px-8 py-3 sm:py-4 rounded-full border-2 border-white hover:bg-white hover:text-antares-dark transition-all duration-300 text-base sm:text-lg font-medium">
                         Our Approach
                     </a>
                 </div>
             </div>
             
             <!-- Scroll Indicator -->
-            <div class="absolute bottom-12 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <div class="hidden sm:block absolute bottom-12 left-1/2 transform -translate-x-1/2 animate-bounce">
                 <svg class="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
                 </svg>
@@ -132,44 +132,55 @@ app.get('/', (c) => {
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="py-32 bg-antares-gray relative overflow-hidden">
-        <div class="max-w-6xl mx-auto px-6">
-            <div class="grid md:grid-cols-2 gap-16 items-center">
-                <div class="fade-in-left">
-                    <div class="text-sm font-semibold text-antares-blue mb-4 tracking-wider uppercase">About Antares Innovate</div>
-                    <h2 class="text-4xl md:text-5xl font-display font-bold mb-6 leading-tight">
+    <!-- About Section - Super Responsive -->
+    <section id="about" class="py-16 sm:py-20 md:py-24 lg:py-32 bg-antares-gray relative overflow-hidden">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 lg:gap-16 items-center">
+                <!-- Content Column -->
+                <div class="fade-in-left order-2 lg:order-1">
+                    <div class="text-xs sm:text-sm font-semibold text-antares-blue mb-3 sm:mb-4 tracking-wider uppercase">About Antares Innovate</div>
+                    <h2 class="text-3xl sm:text-4xl md:text-5xl font-display font-bold mb-4 sm:mb-5 md:mb-6 leading-tight">
                         Strategic Vision.<br/>
                         Technical Authority.
                     </h2>
-                    <p class="text-lg text-gray-300 mb-6 leading-relaxed">
-                        Antares Innovate is not just another signage contractor. We are a technology-driven industrial partner specialized in complex commercial installations, LED optimization, and regulatory compliance frameworks.
-                    </p>
-                    <p class="text-lg text-gray-300 mb-6 leading-relaxed">
-                        Operating under strict California Title 24 and electrical code requirements, we deliver engineered solutions that balance performance, efficiency, and legal certainty.
-                    </p>
-                    <p class="text-lg text-gray-300 leading-relaxed">
-                        Our approach is built on precision, accountability, and long-term strategic thinking—designed for corporate clients, franchises, and large-scale projects that demand excellence.
-                    </p>
+                    <div class="space-y-4 sm:space-y-5 md:space-y-6">
+                        <p class="text-base sm:text-lg text-gray-300 leading-relaxed">
+                            Antares Innovate is not just another signage contractor. We are a technology-driven industrial partner specialized in complex commercial installations, LED optimization, and regulatory compliance frameworks.
+                        </p>
+                        <p class="text-base sm:text-lg text-gray-300 leading-relaxed">
+                            Operating under strict California Title 24 and electrical code requirements, we deliver engineered solutions that balance performance, efficiency, and legal certainty.
+                        </p>
+                        <p class="text-base sm:text-lg text-gray-300 leading-relaxed">
+                            Our approach is built on precision, accountability, and long-term strategic thinking—designed for corporate clients, franchises, and large-scale projects that demand excellence.
+                        </p>
+                    </div>
                 </div>
                 
-                <div class="fade-in-right">
-                    <div class="grid grid-cols-2 gap-6">
-                        <div class="stat-card bg-white/5 backdrop-blur-sm p-8 rounded-2xl border border-white/10 hover:border-antares-blue transition-all duration-300">
-                            <div class="text-5xl font-display font-bold text-antares-blue mb-2">24/7</div>
-                            <div class="text-sm text-gray-400 uppercase tracking-wide">Technical Support</div>
+                <!-- Stats Column -->
+                <div class="fade-in-right order-1 lg:order-2">
+                    <div class="grid grid-cols-2 gap-3 sm:gap-4 md:gap-5 lg:gap-6">
+                        <!-- Stat Card 1 -->
+                        <div class="stat-card bg-white/5 backdrop-blur-sm p-4 sm:p-6 md:p-7 lg:p-8 rounded-xl sm:rounded-2xl border border-white/10 hover:border-antares-blue transition-all duration-300">
+                            <div class="text-3xl sm:text-4xl md:text-5xl font-display font-bold text-antares-blue mb-1 sm:mb-2">24/7</div>
+                            <div class="text-xs sm:text-sm text-gray-400 uppercase tracking-wide leading-tight">Technical Support</div>
                         </div>
-                        <div class="stat-card bg-white/5 backdrop-blur-sm p-8 rounded-2xl border border-white/10 hover:border-antares-blue transition-all duration-300">
-                            <div class="text-5xl font-display font-bold text-antares-blue mb-2">100%</div>
-                            <div class="text-sm text-gray-400 uppercase tracking-wide">Compliance Focus</div>
+                        
+                        <!-- Stat Card 2 -->
+                        <div class="stat-card bg-white/5 backdrop-blur-sm p-4 sm:p-6 md:p-7 lg:p-8 rounded-xl sm:rounded-2xl border border-white/10 hover:border-antares-blue transition-all duration-300">
+                            <div class="text-3xl sm:text-4xl md:text-5xl font-display font-bold text-antares-blue mb-1 sm:mb-2">100%</div>
+                            <div class="text-xs sm:text-sm text-gray-400 uppercase tracking-wide leading-tight">Compliance Focus</div>
                         </div>
-                        <div class="stat-card bg-white/5 backdrop-blur-sm p-8 rounded-2xl border border-white/10 hover:border-antares-blue transition-all duration-300">
-                            <div class="text-5xl font-display font-bold text-antares-blue mb-2">Global</div>
-                            <div class="text-sm text-gray-400 uppercase tracking-wide">Reach</div>
+                        
+                        <!-- Stat Card 3 -->
+                        <div class="stat-card bg-white/5 backdrop-blur-sm p-4 sm:p-6 md:p-7 lg:p-8 rounded-xl sm:rounded-2xl border border-white/10 hover:border-antares-blue transition-all duration-300">
+                            <div class="text-3xl sm:text-4xl md:text-5xl font-display font-bold text-antares-blue mb-1 sm:mb-2">Global</div>
+                            <div class="text-xs sm:text-sm text-gray-400 uppercase tracking-wide leading-tight">Reach</div>
                         </div>
-                        <div class="stat-card bg-white/5 backdrop-blur-sm p-8 rounded-2xl border border-white/10 hover:border-antares-blue transition-all duration-300">
-                            <div class="text-5xl font-display font-bold text-antares-blue mb-2">Proven</div>
-                            <div class="text-sm text-gray-400 uppercase tracking-wide">Track Record</div>
+                        
+                        <!-- Stat Card 4 -->
+                        <div class="stat-card bg-white/5 backdrop-blur-sm p-4 sm:p-6 md:p-7 lg:p-8 rounded-xl sm:rounded-2xl border border-white/10 hover:border-antares-blue transition-all duration-300">
+                            <div class="text-3xl sm:text-4xl md:text-5xl font-display font-bold text-antares-blue mb-1 sm:mb-2">Proven</div>
+                            <div class="text-xs sm:text-sm text-gray-400 uppercase tracking-wide leading-tight">Track Record</div>
                         </div>
                     </div>
                 </div>

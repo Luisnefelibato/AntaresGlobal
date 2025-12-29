@@ -275,6 +275,140 @@ select:focus {
 /* Responsive Typography */
 @media (max-width: 768px) {
   h1 {
+    font-size: 2rem !important;
+    line-height: 1.2 !important;
+  }
+  
+  h2 {
+    font-size: 1.75rem !important;
+    line-height: 1.3 !important;
+  }
+  
+  h3 {
+    font-size: 1.25rem !important;
+  }
+  
+  .service-card,
+  .compliance-card,
+  .approach-phase {
+    padding: 1.25rem !important;
+  }
+  
+  /* Stat cards mobile optimization */
+  .stat-card {
+    padding: 1rem !important;
+  }
+  
+  .stat-card .text-5xl,
+  .stat-card .text-4xl,
+  .stat-card .text-3xl {
+    font-size: 2rem !important;
+  }
+}
+
+@media (max-width: 640px) {
+  h1 {
+    font-size: 1.75rem !important;
+  }
+  
+  h2 {
+    font-size: 1.5rem !important;
+  }
+  
+  /* Even smaller stat cards for tiny screens */
+  .stat-card {
+    padding: 0.75rem !important;
+  }
+  
+  .stat-card .text-5xl,
+  .stat-card .text-4xl,
+  .stat-card .text-3xl {
+    font-size: 1.5rem !important;
+    margin-bottom: 0.25rem !important;
+  }
+  
+  .stat-card .text-sm,
+  .stat-card .text-xs {
+    font-size: 0.65rem !important;
+    line-height: 1.2 !important;
+  }
+}
+
+/* Mobile menu improvements */
+@media (max-width: 1024px) {
+  #mobile-menu {
+    padding: 1rem;
+  }
+  
+  .mobile-nav-link {
+    font-size: 1.25rem;
+    padding: 0.75rem;
+  }
+}
+
+/* Ensure buttons don't overflow on small screens */
+@media (max-width: 640px) {
+  .btn-primary,
+  .btn-secondary {
+    font-size: 0.875rem !important;
+    padding: 0.75rem 1.5rem !important;
+  }
+}
+
+/* Portfolio cards mobile optimization */
+@media (max-width: 768px) {
+  .project-card img {
+    height: 16rem !important;
+  }
+  
+  .portfolio-filter-btn {
+    font-size: 0.875rem;
+    padding: 0.5rem 1rem !important;
+  }
+}
+
+/* Improve touch targets for mobile */
+@media (hover: none) and (pointer: coarse) {
+  a, button {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  .nav-link {
+    padding: 0.5rem 0.75rem;
+  }
+}
+
+/* Responsive spacing utilities */
+.section-spacing {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+@media (min-width: 640px) {
+  .section-spacing {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .section-spacing {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-spacing {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+}
+
+/* Responsive Typography */
+@media (max-width: 768px) {
+  h1 {
     font-size: 2.5rem !important;
   }
   
