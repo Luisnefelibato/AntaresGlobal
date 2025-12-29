@@ -35,6 +35,14 @@ A modern, high-performance corporate website built with Hono framework and Cloud
   - Compliance & Permits Awareness
   - Custom Industrial Solutions
   - Multi-Location Program Management
+- [x] **Featured Projects Portfolio** - 13 real client projects with filtering
+  - **Automotive**: Tesla, Volvo, Ford, Honda pylon and facade installations
+  - **Retail**: Five Below, Crate&Barrel professional signage
+  - **Corporate**: APM Terminals, Regus global brand programs
+  - **Interior**: Sports venue LED, TikTok neon, Alteri Wealth
+  - Interactive filtering by category (All/Automotive/Retail/Corporate/Interior)
+  - Hover effects with project details and tags
+  - Professional photography showcasing technical expertise
 - [x] **Compliance Section** - Regulatory excellence (Title 24, Electrical Codes, Safety, Municipal Ordinances)
 - [x] **Approach Section** - 5-phase structured execution process
 - [x] **Why Us Section** - 8 competitive differentiators
@@ -93,6 +101,7 @@ A modern, high-performance corporate website built with Hono framework and Cloud
   - `#hero` - Hero section
   - `#about` - About Antares Innovate
   - `#services` - Services overview
+  - `#portfolio` - Featured projects with filtering
   - `#compliance` - Compliance & regulations
   - `#approach` - Project approach
   - `#why-us` - Why choose Antares
@@ -113,6 +122,7 @@ A modern, high-performance corporate website built with Hono framework and Cloud
 ### Static Assets
 - `/static/styles.css` - Custom CSS with animations
 - `/static/app.js` - Interactive JavaScript behaviors
+- `/static/images/projects/` - 13 professional project photos (1.2MB total)
 
 ---
 
