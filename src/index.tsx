@@ -60,6 +60,7 @@ app.get('/', (c) => {
                 
                 <div class="hidden md:flex items-center space-x-8 text-sm font-medium">
                     <a href="#services" class="nav-link hover:text-antares-blue transition-colors">Services</a>
+                    <a href="#portfolio" class="nav-link hover:text-antares-blue transition-colors">Projects</a>
                     <a href="#compliance" class="nav-link hover:text-antares-blue transition-colors">Compliance</a>
                     <a href="#approach" class="nav-link hover:text-antares-blue transition-colors">Approach</a>
                     <a href="#why-us" class="nav-link hover:text-antares-blue transition-colors">Why Us</a>
@@ -81,6 +82,7 @@ app.get('/', (c) => {
     <div id="mobile-menu" class="fixed inset-0 bg-antares-dark z-40 hidden">
         <div class="flex flex-col items-center justify-center h-full space-y-8 text-xl font-medium">
             <a href="#services" class="mobile-nav-link">Services</a>
+            <a href="#portfolio" class="mobile-nav-link">Projects</a>
             <a href="#compliance" class="mobile-nav-link">Compliance</a>
             <a href="#approach" class="mobile-nav-link">Approach</a>
             <a href="#why-us" class="mobile-nav-link">Why Us</a>
@@ -301,6 +303,276 @@ app.get('/', (c) => {
                         <li>→ Regional logistics coordination</li>
                     </ul>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects Portfolio Section -->
+    <section id="portfolio" class="py-32 bg-antares-gray relative overflow-hidden">
+        <div class="absolute inset-0 opacity-5">
+            <div class="grid-pattern"></div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="text-center mb-16 fade-in-up">
+                <div class="text-sm font-semibold text-antares-blue mb-4 tracking-wider uppercase">Proven Excellence</div>
+                <h2 class="text-4xl md:text-5xl font-display font-bold mb-6">Featured Projects</h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    Corporate partnerships with leading global brands across automotive, retail, corporate, and industrial sectors
+                </p>
+            </div>
+            
+            <!-- Filter Tabs -->
+            <div class="flex flex-wrap justify-center gap-4 mb-12 fade-in-up">
+                <button class="portfolio-filter-btn active px-6 py-2.5 rounded-full bg-antares-blue text-white font-medium transition-all duration-300" data-filter="all">
+                    All Projects
+                </button>
+                <button class="portfolio-filter-btn px-6 py-2.5 rounded-full bg-white/10 hover:bg-white/20 text-white font-medium transition-all duration-300" data-filter="automotive">
+                    Automotive
+                </button>
+                <button class="portfolio-filter-btn px-6 py-2.5 rounded-full bg-white/10 hover:bg-white/20 text-white font-medium transition-all duration-300" data-filter="retail">
+                    Retail
+                </button>
+                <button class="portfolio-filter-btn px-6 py-2.5 rounded-full bg-white/10 hover:bg-white/20 text-white font-medium transition-all duration-300" data-filter="corporate">
+                    Corporate
+                </button>
+                <button class="portfolio-filter-btn px-6 py-2.5 rounded-full bg-white/10 hover:bg-white/20 text-white font-medium transition-all duration-300" data-filter="interior">
+                    Interior Signage
+                </button>
+            </div>
+            
+            <!-- Projects Grid -->
+            <div id="projects-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- Project 1: Volvo/Mack Sunset -->
+                <div class="project-card" data-category="automotive">
+                    <div class="group relative overflow-hidden rounded-2xl cursor-pointer">
+                        <img src="/static/images/projects/volvo-mack-sunset.jpg" alt="Volvo Trucks LED Pylon Sign at Sunset" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div class="absolute bottom-0 left-0 right-0 p-6 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                <h3 class="text-xl font-display font-bold mb-2">Volvo Trucks</h3>
+                                <p class="text-sm text-gray-300 mb-3">High-visibility LED pylon signage for premier automotive dealership</p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-3 py-1 bg-antares-blue/30 rounded-full text-xs">LED Illumination</span>
+                                    <span class="px-3 py-1 bg-antares-blue/30 rounded-full text-xs">Pylon Sign</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2: LA Mall Installation -->
+                <div class="project-card" data-category="retail">
+                    <div class="group relative overflow-hidden rounded-2xl cursor-pointer">
+                        <img src="/static/images/projects/la-mall-installation.jpg" alt="Los Angeles Mall Commercial Signage Installation" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div class="absolute bottom-0 left-0 right-0 p-6 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                <h3 class="text-xl font-display font-bold mb-2">LA Shopping Center</h3>
+                                <p class="text-sm text-gray-300 mb-3">Complex urban installation with crane and bucket truck coordination</p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-3 py-1 bg-antares-blue/30 rounded-full text-xs">High-Rise</span>
+                                    <span class="px-3 py-1 bg-antares-blue/30 rounded-full text-xs">Channel Letters</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3: Five Below Retail -->
+                <div class="project-card" data-category="retail">
+                    <div class="group relative overflow-hidden rounded-2xl cursor-pointer">
+                        <img src="/static/images/projects/five-below-retail.jpg" alt="Five Below Retail Store Sign Installation" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div class="absolute bottom-0 left-0 right-0 p-6 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                <h3 class="text-xl font-display font-bold mb-2">Five Below</h3>
+                                <p class="text-sm text-gray-300 mb-3">Retail chain facade signage with professional safety protocols</p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-3 py-1 bg-antares-blue/30 rounded-full text-xs">Facade Install</span>
+                                    <span class="px-3 py-1 bg-antares-blue/30 rounded-full text-xs">Multi-Location</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 4: Corporate Highrise -->
+                <div class="project-card" data-category="corporate">
+                    <div class="group relative overflow-hidden rounded-2xl cursor-pointer">
+                        <img src="/static/images/projects/corporate-highrise.jpg" alt="Corporate High-Rise Building Signage Installation" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div class="absolute bottom-0 left-0 right-0 p-6 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                <h3 class="text-xl font-display font-bold mb-2">Corporate Campus</h3>
+                                <p class="text-sm text-gray-300 mb-3">Large-scale crane operations for high-rise building signage</p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-3 py-1 bg-antares-blue/30 rounded-full text-xs">High-Rise</span>
+                                    <span class="px-3 py-1 bg-antares-blue/30 rounded-full text-xs">Technical Complexity</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 5: Tesla Red Facade -->
+                <div class="project-card" data-category="automotive">
+                    <div class="group relative overflow-hidden rounded-2xl cursor-pointer">
+                        <img src="/static/images/projects/tesla-red-facade.jpg" alt="Tesla Automotive Dealership Red Facade Sign" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div class="absolute bottom-0 left-0 right-0 p-6 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                <h3 class="text-xl font-display font-bold mb-2">Tesla</h3>
+                                <p class="text-sm text-gray-300 mb-3">Premium automotive branding with precision installation standards</p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-3 py-1 bg-antares-blue/30 rounded-full text-xs">Premium Branding</span>
+                                    <span class="px-3 py-1 bg-antares-blue/30 rounded-full text-xs">Facade</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 6: Sports Venue LED -->
+                <div class="project-card" data-category="interior">
+                    <div class="group relative overflow-hidden rounded-2xl cursor-pointer">
+                        <img src="/static/images/projects/sports-venue-led.jpg" alt="Sports Venue LED Ceiling Installation Stanley Cup" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div class="absolute bottom-0 left-0 right-0 p-6 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                <h3 class="text-xl font-display font-bold mb-2">Professional Sports Arena</h3>
+                                <p class="text-sm text-gray-300 mb-3">Custom LED ceiling installation for championship venue</p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-3 py-1 bg-antares-blue/30 rounded-full text-xs">LED Interior</span>
+                                    <span class="px-3 py-1 bg-antares-blue/30 rounded-full text-xs">Sports Venue</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 7: Honda Pylon -->
+                <div class="project-card" data-category="automotive">
+                    <div class="group relative overflow-hidden rounded-2xl cursor-pointer">
+                        <img src="/static/images/projects/honda-pylon-blue.jpg" alt="Honda Automotive Dealership Pylon Sign" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div class="absolute bottom-0 left-0 right-0 p-6 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                <h3 class="text-xl font-display font-bold mb-2">Honda Dealership</h3>
+                                <p class="text-sm text-gray-300 mb-3">Towering pylon sign with optimal visibility and brand presence</p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-3 py-1 bg-antares-blue/30 rounded-full text-xs">Monument Sign</span>
+                                    <span class="px-3 py-1 bg-antares-blue/30 rounded-full text-xs">Franchise</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 8: APM Terminals -->
+                <div class="project-card" data-category="corporate">
+                    <div class="group relative overflow-hidden rounded-2xl cursor-pointer">
+                        <img src="/static/images/projects/apm-terminals-corporate.jpg" alt="APM Terminals Corporate Building Signage" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div class="absolute bottom-0 left-0 right-0 p-6 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                <h3 class="text-xl font-display font-bold mb-2">APM Terminals</h3>
+                                <p class="text-sm text-gray-300 mb-3">Global trade leader corporate identity signage</p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-3 py-1 bg-antares-blue/30 rounded-full text-xs">Corporate</span>
+                                    <span class="px-3 py-1 bg-antares-blue/30 rounded-full text-xs">Channel Letters</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 9: Crate & Barrel Night -->
+                <div class="project-card" data-category="retail">
+                    <div class="group relative overflow-hidden rounded-2xl cursor-pointer">
+                        <img src="/static/images/projects/crate-barrel-night.jpg" alt="Crate&Barrel Retail Store LED Sign Installation at Night" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div class="absolute bottom-0 left-0 right-0 p-6 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                <h3 class="text-xl font-display font-bold mb-2">Crate&Barrel</h3>
+                                <p class="text-sm text-gray-300 mb-3">Premium retail brand LED installation with night visibility</p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-3 py-1 bg-antares-blue/30 rounded-full text-xs">LED Retrofit</span>
+                                    <span class="px-3 py-1 bg-antares-blue/30 rounded-full text-xs">Premium Retail</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 10: Alteri Wealth Interior -->
+                <div class="project-card" data-category="interior">
+                    <div class="group relative overflow-hidden rounded-2xl cursor-pointer">
+                        <img src="/static/images/projects/alteri-wealth-interior.jpg" alt="Alteri Wealth Corporate Office Interior LED Wall Sign" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div class="absolute bottom-0 left-0 right-0 p-6 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                <h3 class="text-xl font-display font-bold mb-2">Alteri Wealth</h3>
+                                <p class="text-sm text-gray-300 mb-3">Sophisticated interior LED wall branding for financial services</p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-3 py-1 bg-antares-blue/30 rounded-full text-xs">Interior LED</span>
+                                    <span class="px-3 py-1 bg-antares-blue/30 rounded-full text-xs">Corporate Office</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 11: TikTok Neon Interior -->
+                <div class="project-card" data-category="interior">
+                    <div class="group relative overflow-hidden rounded-2xl cursor-pointer">
+                        <img src="/static/images/projects/tiktok-neon-interior.jpg" alt="TikTok Office Interior Neon LED Logo Sign" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div class="absolute bottom-0 left-0 right-0 p-6 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                <h3 class="text-xl font-display font-bold mb-2">Tech Corporate Office</h3>
+                                <p class="text-sm text-gray-300 mb-3">Modern neon LED interior branding for leading tech company</p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-3 py-1 bg-antares-blue/30 rounded-full text-xs">Neon LED</span>
+                                    <span class="px-3 py-1 bg-antares-blue/30 rounded-full text-xs">Tech Brand</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 12: Regus Corporate -->
+                <div class="project-card" data-category="corporate">
+                    <div class="group relative overflow-hidden rounded-2xl cursor-pointer">
+                        <img src="/static/images/projects/regus-corporate-facade.jpg" alt="Regus Corporate Office Building Facade Signage" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div class="absolute bottom-0 left-0 right-0 p-6 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                <h3 class="text-xl font-display font-bold mb-2">Regus</h3>
+                                <p class="text-sm text-gray-300 mb-3">International workspace provider multi-location branding program</p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-3 py-1 bg-antares-blue/30 rounded-full text-xs">Global Brand</span>
+                                    <span class="px-3 py-1 bg-antares-blue/30 rounded-full text-xs">Channel Letters</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 13: Ford Dealership -->
+                <div class="project-card" data-category="automotive">
+                    <div class="group relative overflow-hidden rounded-2xl cursor-pointer">
+                        <img src="/static/images/projects/ford-dealership-pylon.jpg" alt="Ford Automotive Dealership Pylon Sign Installation" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div class="absolute bottom-0 left-0 right-0 p-6 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                <h3 class="text-xl font-display font-bold mb-2">Ford Dealership</h3>
+                                <p class="text-sm text-gray-300 mb-3">Iconic American brand pylon signage with highway visibility</p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-3 py-1 bg-antares-blue/30 rounded-full text-xs">Pylon Sign</span>
+                                    <span class="px-3 py-1 bg-antares-blue/30 rounded-full text-xs">Highway Visibility</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <!-- CTA -->
+            <div class="text-center mt-16 fade-in-up">
+                <p class="text-lg text-gray-300 mb-6">Ready to elevate your brand presence?</p>
+                <a href="#contact" class="inline-block px-8 py-4 bg-antares-blue hover:bg-blue-600 rounded-full font-bold text-lg transition-all duration-300">
+                    Start Your Project
+                </a>
             </div>
         </div>
     </section>

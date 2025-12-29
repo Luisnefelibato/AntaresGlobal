@@ -50,6 +50,54 @@ document.addEventListener('DOMContentLoaded', () => {
   
   
   // ==========================================
+  // PORTFOLIO FILTER FUNCTIONALITY
+  // ==========================================
+  const filterBtns = document.querySelectorAll('.portfolio-filter-btn');
+  const projectCards = document.querySelectorAll('.project-card');
+  
+  if (filterBtns.length > 0 && projectCards.length > 0) {
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Update active button
+        filterBtns.forEach(b => {
+          b.classList.remove('active', 'bg-antares-blue');
+          b.classList.add('bg-white/10');
+        });
+        btn.classList.add('active', 'bg-antares-blue');
+        btn.classList.remove('bg-white/10');
+        
+        const filter = btn.dataset.filter;
+        
+        // Filter projects with animation
+        projectCards.forEach((card, index) => {
+          const category = card.dataset.category;
+          
+          if (filter === 'all' || category === filter) {
+            // Show card with staggered animation
+            card.style.display = 'block';
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            
+            setTimeout(() => {
+              card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+              card.style.opacity = '1';
+              card.style.transform = 'translateY(0)';
+            }, index * 50);
+          } else {
+            // Hide card
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            setTimeout(() => {
+              card.style.display = 'none';
+            }, 300);
+          }
+        });
+      });
+    });
+  }
+  
+  
+  // ==========================================
   // SMOOTH SCROLL FOR ANCHOR LINKS
   // ==========================================
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
