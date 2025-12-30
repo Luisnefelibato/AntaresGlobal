@@ -509,3 +509,79 @@ function isInViewport(element) {
     rect.right <= (window.innerWidth || document.documentElement.clientWidth)
   );
 }
+
+// Projects Filter Function
+function filterProjects(category) {
+  const cards = document.querySelectorAll('.project-card');
+  const buttons = document.querySelectorAll('.portfolio-filter-btn');
+  
+  // Update button states
+  buttons.forEach(btn => {
+    if (btn.dataset.filter === category) {
+      btn.classList.add('active', 'bg-antares-blue');
+      btn.classList.remove('bg-white/5', 'text-white/80');
+      btn.classList.add('text-white');
+    } else {
+      btn.classList.remove('active', 'bg-antares-blue', 'text-white');
+      btn.classList.add('bg-white/5', 'text-white/80');
+    }
+  });
+  
+  // Filter projects with animation
+  cards.forEach((card, index) => {
+    if (category === 'all' || card.dataset.category === category) {
+      card.style.display = 'block';
+      setTimeout(() => {
+        card.style.opacity = '1';
+        card.style.transform = 'scale(1)';
+        card.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+      }, index * 50);
+    } else {
+      card.style.opacity = '0';
+      card.style.transform = 'scale(0.8)';
+      card.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+      setTimeout(() => {
+        card.style.display = 'none';
+      }, 300);
+    }
+  });
+}
+
+// Contact Form Handler
+function handleContactForm(event) {
+  event.preventDefault();
+  
+  const form = event.target;
+  const button = form.querySelector('button[type="submit"]');
+  const originalText = button.textContent;
+  
+  // Show loading state
+  button.disabled = true;
+  button.textContent = 'Sending...';
+  button.classList.add('opacity-75');
+  
+  // Simulate API call (replace with actual API endpoint)
+  setTimeout(() => {
+    // Success
+    button.textContent = '✓ Message Sent!';
+    button.classList.remove('opacity-75');
+    button.classList.add('bg-green-600');
+    
+    // Reset form
+    form.reset();
+    
+    // Reset button after 3 seconds
+    setTimeout(() => {
+      button.textContent = originalText;
+      button.disabled = false;
+      button.classList.remove('bg-green-600');
+    }, 3000);
+    
+    // Show success notification
+    alert('Thank you for your message! We will contact you within 24 hours.');
+  }, 1500);
+}
+
+// Make functions globally available
+window.filterProjects = filterProjects;
+window.handleContactForm = handleContactForm;

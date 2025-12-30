@@ -1455,6 +1455,427 @@ app.get('/services', (c) => {
   `)
 })
 
+// Projects Page
+app.get('/projects', (c) => {
+  const content = `
+<section class="py-24 lg:py-32">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <h1 class="text-4xl lg:text-6xl font-display font-bold mb-6">Featured Projects</h1>
+      <p class="text-xl text-white/60 max-w-3xl mx-auto">Explore our portfolio of high-profile installations across automotive, retail, corporate, and interior signage solutions</p>
+    </div>
+
+    <!-- Filter Buttons -->
+    <div class="flex flex-wrap justify-center gap-3 mb-12">
+      <button onclick="filterProjects('all')" class="portfolio-filter-btn active px-6 py-3 bg-antares-blue text-white rounded-lg font-medium transition-all hover:bg-blue-600" data-filter="all">All Projects</button>
+      <button onclick="filterProjects('automotive')" class="portfolio-filter-btn px-6 py-3 bg-white/5 text-white/80 rounded-lg font-medium transition-all hover:bg-white/10" data-filter="automotive">Automotive</button>
+      <button onclick="filterProjects('retail')" class="portfolio-filter-btn px-6 py-3 bg-white/5 text-white/80 rounded-lg font-medium transition-all hover:bg-white/10" data-filter="retail">Retail</button>
+      <button onclick="filterProjects('corporate')" class="portfolio-filter-btn px-6 py-3 bg-white/5 text-white/80 rounded-lg font-medium transition-all hover:bg-white/10" data-filter="corporate">Corporate</button>
+      <button onclick="filterProjects('interior')" class="portfolio-filter-btn px-6 py-3 bg-white/5 text-white/80 rounded-lg font-medium transition-all hover:bg-white/10" data-filter="interior">Interior</button>
+    </div>
+
+    <!-- Projects Grid -->
+    <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Tesla -->
+      <div class="project-card group relative h-96 rounded-2xl overflow-hidden" data-category="automotive">
+        <img src="/static/images/projects/tesla-red-facade.jpg" alt="Tesla" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
+        <div class="absolute inset-0 p-6 flex flex-col justify-end">
+          <h3 class="text-2xl font-bold mb-2">Tesla Dealership</h3>
+          <p class="text-white/80 mb-4">Bold red facade signage for premium automotive dealership. High-impact branding installation.</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-antares-blue/20 rounded-full text-xs">Automotive</span>
+            <span class="px-3 py-1 bg-antares-blue/20 rounded-full text-xs">Facade</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Volvo & Mack -->
+      <div class="project-card group relative h-96 rounded-2xl overflow-hidden" data-category="automotive">
+        <img src="/static/images/projects/volvo-mack-sunset.jpg" alt="Volvo Mack" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
+        <div class="absolute inset-0 p-6 flex flex-col justify-end">
+          <h3 class="text-2xl font-bold mb-2">Volvo & Mack Trucks</h3>
+          <p class="text-white/80 mb-4">Large-scale pylon signage for commercial truck dealership captured at golden hour.</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-antares-blue/20 rounded-full text-xs">Automotive</span>
+            <span class="px-3 py-1 bg-antares-blue/20 rounded-full text-xs">Pylon</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Five Below -->
+      <div class="project-card group relative h-96 rounded-2xl overflow-hidden" data-category="retail">
+        <img src="/static/images/projects/five-below-retail.jpg" alt="Five Below" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
+        <div class="absolute inset-0 p-6 flex flex-col justify-end">
+          <h3 class="text-2xl font-bold mb-2">Five Below</h3>
+          <p class="text-white/80 mb-4">Retail storefront signage installation for national chain expansion.</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-antares-blue/20 rounded-full text-xs">Retail</span>
+            <span class="px-3 py-1 bg-antares-blue/20 rounded-full text-xs">Storefront</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Crate & Barrel -->
+      <div class="project-card group relative h-96 rounded-2xl overflow-hidden" data-category="retail">
+        <img src="/static/images/projects/crate-barrel-night.jpg" alt="Crate Barrel" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
+        <div class="absolute inset-0 p-6 flex flex-col justify-end">
+          <h3 class="text-2xl font-bold mb-2">Crate & Barrel</h3>
+          <p class="text-white/80 mb-4">Illuminated retail signage with premium finish for upscale home goods brand.</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-antares-blue/20 rounded-full text-xs">Retail</span>
+            <span class="px-3 py-1 bg-antares-blue/20 rounded-full text-xs">LED</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- More projects... -->
+      <div class="project-card group relative h-96 rounded-2xl overflow-hidden" data-category="automotive">
+        <img src="/static/images/projects/ford-dealership-pylon.jpg" alt="Ford" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
+        <div class="absolute inset-0 p-6 flex flex-col justify-end">
+          <h3 class="text-2xl font-bold mb-2">Ford Dealership</h3>
+          <p class="text-white/80 mb-4">Automotive dealership pylon signage with LED illumination.</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-antares-blue/20 rounded-full text-xs">Automotive</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card group relative h-96 rounded-2xl overflow-hidden" data-category="automotive">
+        <img src="/static/images/projects/honda-pylon-blue.jpg" alt="Honda" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
+        <div class="absolute inset-0 p-6 flex flex-col justify-end">
+          <h3 class="text-2xl font-bold mb-2">Honda Dealership</h3>
+          <p class="text-white/80 mb-4">Premium pylon signage for Honda automotive brand.</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-antares-blue/20 rounded-full text-xs">Automotive</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card group relative h-96 rounded-2xl overflow-hidden" data-category="corporate">
+        <img src="/static/images/projects/regus-corporate-facade.jpg" alt="Regus" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
+        <div class="absolute inset-0 p-6 flex flex-col justify-end">
+          <h3 class="text-2xl font-bold mb-2">Regus Corporate</h3>
+          <p class="text-white/80 mb-4">Corporate office building facade signage for global workspace provider.</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-antares-blue/20 rounded-full text-xs">Corporate</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card group relative h-96 rounded-2xl overflow-hidden" data-category="corporate">
+        <img src="/static/images/projects/apm-terminals-corporate.jpg" alt="APM" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
+        <div class="absolute inset-0 p-6 flex flex-col justify-end">
+          <h3 class="text-2xl font-bold mb-2">APM Terminals</h3>
+          <p class="text-white/80 mb-4">Industrial-scale signage for global logistics corporation.</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-antares-blue/20 rounded-full text-xs">Corporate</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card group relative h-96 rounded-2xl overflow-hidden" data-category="interior">
+        <img src="/static/images/projects/tiktok-neon-interior.jpg" alt="TikTok" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
+        <div class="absolute inset-0 p-6 flex flex-col justify-end">
+          <h3 class="text-2xl font-bold mb-2">TikTok Office</h3>
+          <p class="text-white/80 mb-4">Modern neon interior branding for tech company headquarters.</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-antares-blue/20 rounded-full text-xs">Interior</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  `;
+  
+  return c.html(PageLayout('Projects', 'Explore our portfolio of professional signage installations', content));
+});
+
+// About Page
+app.get('/about', (c) => {
+  const content = `
+<section class="py-24 lg:py-32">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-4xl mx-auto">
+      <div class="text-center mb-16">
+        <h1 class="text-4xl lg:text-6xl font-display font-bold mb-6">About Antares Innovate</h1>
+        <p class="text-xl text-white/60">Strategic Vision. Technical Authority. Global Reach.</p>
+      </div>
+
+      <!-- Company Overview -->
+      <div class="bg-antares-gray border border-white/10 rounded-2xl p-8 lg:p-12 mb-12">
+        <h2 class="text-3xl font-display font-bold mb-6">Who We Are</h2>
+        <p class="text-lg text-white/70 leading-relaxed mb-6">
+          Antares Innovate is not just another signage contractor. We are a <strong class="text-white">technology-driven industrial partner</strong> specialized in complex commercial installations, LED optimization, and regulatory compliance frameworks.
+        </p>
+        <p class="text-lg text-white/70 leading-relaxed mb-6">
+          Operating under strict <strong class="text-antares-blue">California Title 24</strong> and electrical code requirements, we deliver engineered solutions that balance performance, efficiency, and legal certainty.
+        </p>
+        <p class="text-lg text-white/70 leading-relaxed">
+          Our approach is built on <strong class="text-white">precision, accountability, and long-term strategic thinking</strong>—designed for corporate clients, franchises, and large-scale projects that demand excellence.
+        </p>
+      </div>
+
+      <!-- Key Metrics -->
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+        <div class="bg-antares-dark border border-white/10 rounded-xl p-6 text-center">
+          <div class="text-4xl font-bold text-antares-blue mb-2">15+</div>
+          <div class="text-sm text-white/60">Years Experience</div>
+        </div>
+        <div class="bg-antares-dark border border-white/10 rounded-xl p-6 text-center">
+          <div class="text-4xl font-bold text-antares-blue mb-2">500+</div>
+          <div class="text-sm text-white/60">Projects Completed</div>
+        </div>
+        <div class="bg-antares-dark border border-white/10 rounded-xl p-6 text-center">
+          <div class="text-4xl font-bold text-antares-blue mb-2">24/7</div>
+          <div class="text-sm text-white/60">Technical Support</div>
+        </div>
+        <div class="bg-antares-dark border border-white/10 rounded-xl p-6 text-center">
+          <div class="text-4xl font-bold text-antares-blue mb-2">100%</div>
+          <div class="text-sm text-white/60">Compliance Focus</div>
+        </div>
+      </div>
+
+      <!-- Core Values -->
+      <div class="mb-16">
+        <h2 class="text-3xl font-display font-bold mb-8 text-center">Our Core Values</h2>
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="bg-antares-dark border border-white/10 rounded-xl p-6">
+            <h3 class="text-xl font-bold mb-3 flex items-center">
+              <span class="w-10 h-10 bg-antares-blue/10 rounded-lg flex items-center justify-center mr-3">
+                <svg class="w-5 h-5 text-antares-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+              </span>
+              Technical Excellence
+            </h3>
+            <p class="text-white/60">Engineering-driven approach with precision execution and quality standards</p>
+          </div>
+
+          <div class="bg-antares-dark border border-white/10 rounded-xl p-6">
+            <h3 class="text-xl font-bold mb-3 flex items-center">
+              <span class="w-10 h-10 bg-antares-blue/10 rounded-lg flex items-center justify-center mr-3">
+                <svg class="w-5 h-5 text-antares-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                </svg>
+              </span>
+              Compliance Focus
+            </h3>
+            <p class="text-white/60">Regulatory expertise turning compliance into competitive advantage</p>
+          </div>
+
+          <div class="bg-antares-dark border border-white/10 rounded-xl p-6">
+            <h3 class="text-xl font-bold mb-3 flex items-center">
+              <span class="w-10 h-10 bg-antares-blue/10 rounded-lg flex items-center justify-center mr-3">
+                <svg class="w-5 h-5 text-antares-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                </svg>
+              </span>
+              Innovation
+            </h3>
+            <p class="text-white/60">LED optimization and energy-efficient solutions for modern businesses</p>
+          </div>
+
+          <div class="bg-antares-dark border border-white/10 rounded-xl p-6">
+            <h3 class="text-xl font-bold mb-3 flex items-center">
+              <span class="w-10 h-10 bg-antares-blue/10 rounded-lg flex items-center justify-center mr-3">
+                <svg class="w-5 h-5 text-antares-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+              </span>
+              Global Reach
+            </h3>
+            <p class="text-white/60">Scalable solutions designed for multi-location and international projects</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="bg-gradient-to-br from-antares-blue to-blue-600 rounded-2xl p-12 text-center">
+        <h2 class="text-3xl font-display font-bold mb-4">Ready to Work Together?</h2>
+        <p class="text-xl text-white/90 mb-8">Let's discuss your next signage or LED project</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="tel:+13234445555" class="inline-flex items-center justify-center px-8 py-4 bg-white text-antares-blue hover:bg-gray-100 rounded-xl font-semibold transition-all hover:scale-105">
+            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+            </svg>
+            Call Now
+          </a>
+          <a href="/contact" class="inline-flex items-center justify-center px-8 py-4 bg-antares-dark hover:bg-black rounded-xl font-semibold transition-all hover:scale-105">
+            Contact Us
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  `;
+  
+  return c.html(PageLayout('About Us', 'Learn about Antares Innovate - technology-driven industrial signage partner', content));
+});
+
+// Contact Page
+app.get('/contact', (c) => {
+  const content = `
+<section class="py-24 lg:py-32">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center mb-16">
+        <h1 class="text-4xl lg:text-6xl font-display font-bold mb-6">Get In Touch</h1>
+        <p class="text-xl text-white/60">Ready to start your project? Contact our technical team for a consultation</p>
+      </div>
+
+      <div class="grid lg:grid-cols-2 gap-12">
+        <!-- Contact Form -->
+        <div class="bg-antares-gray border border-white/10 rounded-2xl p-8 lg:p-10">
+          <h2 class="text-2xl font-display font-bold mb-6">Send Us a Message</h2>
+          <form onsubmit="handleContactForm(event)" class="space-y-6">
+            <div class="grid sm:grid-cols-2 gap-6">
+              <div>
+                <label class="block text-sm font-medium text-white/80 mb-2">First Name *</label>
+                <input type="text" required class="w-full px-4 py-3 bg-antares-dark border border-white/10 rounded-lg text-white focus:border-antares-blue focus:ring-1 focus:ring-antares-blue outline-none transition-colors" placeholder="John">
+              </div>
+              <div>
+                <label class="block text-sm font-medium text-white/80 mb-2">Last Name *</label>
+                <input type="text" required class="w-full px-4 py-3 bg-antares-dark border border-white/10 rounded-lg text-white focus:border-antares-blue focus:ring-1 focus:ring-antares-blue outline-none transition-colors" placeholder="Doe">
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-sm font-medium text-white/80 mb-2">Email Address *</label>
+              <input type="email" required class="w-full px-4 py-3 bg-antares-dark border border-white/10 rounded-lg text-white focus:border-antares-blue focus:ring-1 focus:ring-antares-blue outline-none transition-colors" placeholder="john@company.com">
+            </div>
+
+            <div>
+              <label class="block text-sm font-medium text-white/80 mb-2">Phone Number</label>
+              <input type="tel" class="w-full px-4 py-3 bg-antares-dark border border-white/10 rounded-lg text-white focus:border-antares-blue focus:ring-1 focus:ring-antares-blue outline-none transition-colors" placeholder="+1 (555) 123-4567">
+            </div>
+
+            <div>
+              <label class="block text-sm font-medium text-white/80 mb-2">Company Name</label>
+              <input type="text" class="w-full px-4 py-3 bg-antares-dark border border-white/10 rounded-lg text-white focus:border-antares-blue focus:ring-1 focus:ring-antares-blue outline-none transition-colors" placeholder="Your Company Inc.">
+            </div>
+
+            <div>
+              <label class="block text-sm font-medium text-white/80 mb-2">Service Interest</label>
+              <select class="w-full px-4 py-3 bg-antares-dark border border-white/10 rounded-lg text-white focus:border-antares-blue focus:ring-1 focus:ring-antares-blue outline-none transition-colors">
+                <option>Select a service...</option>
+                <option>Signage Installation</option>
+                <option>LED Retrofit & Optimization</option>
+                <option>Technical Maintenance</option>
+                <option>Compliance Consultation</option>
+                <option>Custom Industrial Solutions</option>
+                <option>Multi-Location Program</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="block text-sm font-medium text-white/80 mb-2">Project Details *</label>
+              <textarea required rows="5" class="w-full px-4 py-3 bg-antares-dark border border-white/10 rounded-lg text-white focus:border-antares-blue focus:ring-1 focus:ring-antares-blue outline-none transition-colors resize-none" placeholder="Tell us about your project requirements..."></textarea>
+            </div>
+
+            <button type="submit" class="w-full py-4 bg-antares-blue hover:bg-blue-600 text-white font-semibold rounded-lg transition-all hover:scale-105">
+              Send Message
+            </button>
+          </form>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="space-y-8">
+          <!-- Direct Contact -->
+          <div class="bg-antares-gray border border-white/10 rounded-2xl p-8">
+            <h3 class="text-xl font-bold mb-6">Direct Contact</h3>
+            <div class="space-y-4">
+              <a href="tel:+13234445555" class="flex items-start p-4 bg-antares-dark hover:bg-antares-blue/10 rounded-lg transition-colors group">
+                <div class="w-12 h-12 bg-green-600/10 rounded-lg flex items-center justify-center mr-4 group-hover:bg-green-600/20 transition-colors">
+                  <svg class="w-6 h-6 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                  </svg>
+                </div>
+                <div>
+                  <div class="text-sm text-white/60 mb-1">Phone</div>
+                  <div class="font-semibold">+1 (323) 444-5555</div>
+                  <div class="text-sm text-white/60 mt-1">24/7 Technical Support</div>
+                </div>
+              </a>
+
+              <a href="mailto:info@antaresinnovate.com" class="flex items-start p-4 bg-antares-dark hover:bg-antares-blue/10 rounded-lg transition-colors group">
+                <div class="w-12 h-12 bg-antares-blue/10 rounded-lg flex items-center justify-center mr-4 group-hover:bg-antares-blue/20 transition-colors">
+                  <svg class="w-6 h-6 text-antares-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                  </svg>
+                </div>
+                <div>
+                  <div class="text-sm text-white/60 mb-1">Email</div>
+                  <div class="font-semibold">info@antaresinnovate.com</div>
+                  <div class="text-sm text-white/60 mt-1">Response within 24 hours</div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Business Hours -->
+          <div class="bg-antares-gray border border-white/10 rounded-2xl p-8">
+            <h3 class="text-xl font-bold mb-6">Business Hours</h3>
+            <div class="space-y-3 text-sm">
+              <div class="flex justify-between">
+                <span class="text-white/60">Monday - Friday</span>
+                <span class="font-medium">8:00 AM - 6:00 PM</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-white/60">Saturday</span>
+                <span class="font-medium">9:00 AM - 4:00 PM</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-white/60">Sunday</span>
+                <span class="font-medium">Closed</span>
+              </div>
+              <div class="flex justify-between pt-3 border-t border-white/10">
+                <span class="text-white/60">Emergency Support</span>
+                <span class="font-medium text-green-500">24/7 Available</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Location -->
+          <div class="bg-antares-gray border border-white/10 rounded-2xl p-8">
+            <h3 class="text-xl font-bold mb-6">Service Area</h3>
+            <div class="space-y-4">
+              <div class="flex items-start">
+                <svg class="w-6 h-6 text-antares-blue mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                </svg>
+                <div>
+                  <div class="font-medium mb-1">Primary Location</div>
+                  <div class="text-white/60 text-sm">Los Angeles, California</div>
+                  <div class="text-white/60 text-sm">Licensed & Insured</div>
+                </div>
+              </div>
+              <div class="pt-4 border-t border-white/10 text-sm text-white/60">
+                We serve California and beyond with scalable solutions for multi-location projects
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  `;
+  
+  return c.html(PageLayout('Contact Us', 'Get in touch with Antares Innovate for your signage project', content));
+});
+
 // API endpoint for contact form
 app.post('/api/contact', async (c) => {
   try {
