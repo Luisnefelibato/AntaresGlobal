@@ -1,6 +1,7 @@
 import { Hono } from 'hono'
 import { serveStatic } from 'hono/cloudflare-workers'
 import { cors } from 'hono/cors'
+import { PageLayout, Header, Footer, RequestCallModal, ChatbotWidget } from './components'
 
 const app = new Hono()
 
@@ -10,8 +11,214 @@ app.use('/api/*', cors())
 // Serve static files
 app.use('/static/*', serveStatic({ root: './public' }))
 
-// Main page
+// Homepage
 app.get('/', (c) => {
+  const content = `
+<!-- Hero Section with Animated Video -->
+<section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+  <!-- Animated Background -->
+  <div class="absolute inset-0 bg-gradient-to-b from-antares-dark via-antares-gray to-antares-dark">
+    <div class="zoom-out-animation absolute inset-0"></div>
+    <div class="absolute inset-0 bg-black/40"></div>
+  </div>
+
+  <!-- Hero Content -->
+  <div class="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <div class="max-w-5xl mx-auto space-y-6 lg:space-y-8 fade-in">
+      <!-- Badge -->
+      <div class="inline-flex items-center space-x-2 bg-antares-blue/10 border border-antares-blue/20 rounded-full px-4 py-2">
+        <span class="w-2 h-2 bg-antares-blue rounded-full animate-pulse"></span>
+        <span class="text-antares-blue text-sm font-medium">Engineering Excellence Since 2010</span>
+      </div>
+
+      <!-- Main Heading -->
+      <h1 class="font-display font-black text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl leading-tight">
+        <span class="block text-white">Industrial Signage</span>
+        <span class="block bg-gradient-to-r from-antares-blue via-blue-400 to-antares-blue bg-clip-text text-transparent animate-gradient">Meets Innovation</span>
+      </h1>
+
+      <!-- Subtitle -->
+      <p class="text-lg sm:text-xl lg:text-2xl text-white/70 max-w-3xl mx-auto font-light leading-relaxed">
+        Global leader in commercial signage installation, LED retrofit solutions, and technical compliance.
+        <span class="block mt-2 text-white/50">Where regulatory expertise meets operational excellence.</span>
+      </p>
+
+      <!-- CTA Buttons -->
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+        <a href="tel:+13234445555" class="group inline-flex items-center px-8 py-4 bg-green-600 hover:bg-green-700 rounded-xl font-semibold text-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-green-500/20">
+          <svg class="w-6 h-6 mr-3 group-hover:animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+          </svg>
+          Call Now: (323) 444-5555
+        </a>
+        <button onclick="openRequestCallModal()" class="group inline-flex items-center px-8 py-4 bg-antares-blue hover:bg-blue-600 rounded-xl font-semibold text-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/20">
+          <svg class="w-6 h-6 mr-3 group-hover:rotate-12 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+          </svg>
+          Request Consultation
+        </button>
+      </div>
+
+      <!-- Trust Indicators -->
+      <div class="pt-8 lg:pt-12 grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 max-w-4xl mx-auto">
+        <div class="text-center">
+          <div class="text-3xl lg:text-4xl font-bold text-white mb-1">15+</div>
+          <div class="text-sm text-white/60">Years Experience</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl lg:text-4xl font-bold text-white mb-1">500+</div>
+          <div class="text-sm text-white/60">Projects Completed</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl lg:text-4xl font-bold text-white mb-1">24/7</div>
+          <div class="text-sm text-white/60">Technical Support</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl lg:text-4xl font-bold text-white mb-1">100%</div>
+          <div class="text-sm text-white/60">Compliance</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+      <svg class="w-6 h-6 text-white/40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- Quick Services Preview -->
+<section class="py-16 lg:py-24 bg-antares-gray/50">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl lg:text-4xl font-display font-bold mb-4">Our Core Services</h2>
+      <p class="text-white/60 text-lg max-w-2xl mx-auto">Comprehensive signage and LED solutions for modern businesses</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+      <a href="/services#signage" class="group bg-antares-dark border border-white/5 hover:border-antares-blue/50 rounded-2xl p-8 transition-all duration-300 hover:transform hover:scale-105">
+        <div class="w-16 h-16 bg-antares-blue/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-antares-blue/20 transition-colors">
+          <svg class="w-8 h-8 text-antares-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+          </svg>
+        </div>
+        <h3 class="text-xl font-display font-bold mb-3">Signage Installation</h3>
+        <p class="text-white/60 mb-4">Professional commercial signage solutions</p>
+        <span class="text-antares-blue text-sm font-medium group-hover:underline">Learn More →</span>
+      </a>
+
+      <a href="/services#led" class="group bg-antares-dark border border-white/5 hover:border-antares-blue/50 rounded-2xl p-8 transition-all duration-300 hover:transform hover:scale-105">
+        <div class="w-16 h-16 bg-antares-blue/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-antares-blue/20 transition-colors">
+          <svg class="w-8 h-8 text-antares-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+          </svg>
+        </div>
+        <h3 class="text-xl font-display font-bold mb-3">LED Retrofit</h3>
+        <p class="text-white/60 mb-4">Energy-efficient lighting solutions</p>
+        <span class="text-antares-blue text-sm font-medium group-hover:underline">Learn More →</span>
+      </a>
+
+      <a href="/services#compliance" class="group bg-antares-dark border border-white/5 hover:border-antares-blue/50 rounded-2xl p-8 transition-all duration-300 hover:transform hover:scale-105">
+        <div class="w-16 h-16 bg-antares-blue/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-antares-blue/20 transition-colors">
+          <svg class="w-8 h-8 text-antares-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+          </svg>
+        </div>
+        <h3 class="text-xl font-display font-bold mb-3">Compliance</h3>
+        <p class="text-white/60 mb-4">Full regulatory & Title 24 expertise</p>
+        <span class="text-antares-blue text-sm font-medium group-hover:underline">Learn More →</span>
+      </a>
+    </div>
+
+    <div class="text-center mt-12">
+      <a href="/services" class="inline-flex items-center px-8 py-4 bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl font-medium transition-all duration-300 hover:scale-105">
+        View All Services
+        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Featured Projects -->
+<section class="py-16 lg:py-24">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl lg:text-4xl font-display font-bold mb-4">Featured Projects</h2>
+      <p class="text-white/60 text-lg max-w-2xl mx-auto">Explore our latest high-profile installations</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <a href="/projects" class="group relative h-80 rounded-2xl overflow-hidden">
+        <img src="/static/images/projects/tesla-red-facade.jpg" alt="Tesla Installation" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex items-end p-6">
+          <div>
+            <h3 class="text-xl font-bold mb-2">Tesla Dealership</h3>
+            <p class="text-white/80 text-sm">Corporate Facade Signage</p>
+          </div>
+        </div>
+      </a>
+
+      <a href="/projects" class="group relative h-80 rounded-2xl overflow-hidden">
+        <img src="/static/images/projects/volvo-mack-sunset.jpg" alt="Volvo Trucks" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex items-end p-6">
+          <div>
+            <h3 class="text-xl font-bold mb-2">Volvo & Mack Trucks</h3>
+            <p class="text-white/80 text-sm">Automotive Pylon Installation</p>
+          </div>
+        </div>
+      </a>
+
+      <a href="/projects" class="group relative h-80 rounded-2xl overflow-hidden">
+        <img src="/static/images/projects/crate-barrel-night.jpg" alt="Crate & Barrel" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex items-end p-6">
+          <div>
+            <h3 class="text-xl font-bold mb-2">Crate & Barrel</h3>
+            <p class="text-white/80 text-sm">Retail Illuminated Signage</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="text-center mt-12">
+      <a href="/projects" class="inline-flex items-center px-8 py-4 bg-antares-blue hover:bg-blue-600 rounded-xl font-medium transition-all duration-300 hover:scale-105">
+        View All Projects
+        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-16 lg:py-24 bg-gradient-to-br from-antares-blue to-blue-600">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h2 class="text-3xl lg:text-5xl font-display font-bold mb-6">Ready to Start Your Project?</h2>
+    <p class="text-xl text-white/90 mb-8 max-w-2xl mx-auto">Get a free consultation with our technical team</p>
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+      <a href="tel:+13234445555" class="inline-flex items-center px-8 py-4 bg-white text-antares-blue hover:bg-gray-100 rounded-xl font-semibold text-lg transition-all duration-300 hover:scale-105">
+        <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+        </svg>
+        Call (323) 444-5555
+      </a>
+      <button onclick="openRequestCallModal()" class="inline-flex items-center px-8 py-4 bg-antares-dark hover:bg-black rounded-xl font-semibold text-lg transition-all duration-300 hover:scale-105">
+        Request Free Quote
+      </button>
+    </div>
+  </div>
+</section>
+  `;
+  
+  return c.html(PageLayout('Home', 'Global leader in commercial signage installation, LED retrofit solutions, and technical compliance', content));
+});
+
+// Services Page
+app.get('/services', (c) => {
   return c.html(`
 <!DOCTYPE html>
 <html lang="en">
