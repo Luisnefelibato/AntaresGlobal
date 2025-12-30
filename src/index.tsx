@@ -47,8 +47,17 @@ app.get('/', (c) => {
     </script>
     
     <link rel="stylesheet" href="/static/styles.css">
+    
+    <!-- Phone Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body class="font-sans antialiased bg-antares-dark text-white overflow-x-hidden">
+
+    <!-- Fixed CTA Phone Button (Desktop) -->
+    <a href="tel:+18002682273" class="cta-phone-button hidden md:flex items-center gap-2 font-bold text-sm hover:scale-105">
+        <i class="fas fa-phone-alt"></i>
+        <span>CALL NOW</span>
+    </a>
 
     <!-- Navigation - Super Responsive -->
     <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
@@ -58,15 +67,19 @@ app.get('/', (c) => {
                     ANTARES<span class="text-antares-blue">.</span>
                 </div>
                 
-                <div class="hidden lg:flex items-center space-x-6 xl:space-x-8 text-sm font-medium">
+                <div class="hidden lg:flex items-center space-x-4 xl:space-x-6 text-sm font-medium">
                     <a href="#services" class="nav-link hover:text-antares-blue transition-colors">Services</a>
                     <a href="#portfolio" class="nav-link hover:text-antares-blue transition-colors">Projects</a>
                     <a href="#compliance" class="nav-link hover:text-antares-blue transition-colors">Compliance</a>
                     <a href="#approach" class="nav-link hover:text-antares-blue transition-colors">Approach</a>
-                    <a href="#why-us" class="nav-link hover:text-antares-blue transition-colors">Why Us</a>
-                    <a href="#contact" class="btn-primary px-5 xl:px-6 py-2 xl:py-2.5 rounded-full bg-antares-blue hover:bg-blue-600 transition-all duration-300 whitespace-nowrap">
-                        Request Consultation
+                    <a href="tel:+18002682273" class="flex items-center gap-2 px-4 py-2 rounded-full border-2 border-antares-blue hover:bg-antares-blue transition-all duration-300 whitespace-nowrap">
+                        <i class="fas fa-phone"></i>
+                        <span>1-800-ANTARES</span>
                     </a>
+                    <button id="request-call-btn" class="btn-primary px-5 xl:px-6 py-2 xl:py-2.5 rounded-full bg-antares-blue hover:bg-blue-600 transition-all duration-300 whitespace-nowrap">
+                        <i class="fas fa-headset mr-2"></i>
+                        Request Call
+                    </button>
                 </div>
                 
                 <button id="mobile-menu-btn" class="lg:hidden text-white focus:outline-none p-2">
@@ -90,14 +103,26 @@ app.get('/', (c) => {
         </div>
     </div>
 
-    <!-- Hero Section - Super Responsive -->
+    <!-- Hero Section - Super Responsive with Video Background -->
     <section id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 sm:pt-0">
-        <div class="absolute inset-0 bg-gradient-to-br from-antares-dark via-antares-gray to-antares-dark"></div>
-        
-        <!-- Animated Background Grid -->
-        <div class="absolute inset-0 opacity-10">
-            <div class="grid-pattern"></div>
+        <!-- Video Background Animation -->
+        <div class="hero-video-container">
+            <div class="hero-animated-bg"></div>
+            <div class="cosmic-particles">
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+            </div>
         </div>
+        
+        <div class="absolute inset-0 bg-gradient-to-br from-antares-dark/80 via-antares-gray/70 to-antares-dark/90"></div>
         
         <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <div class="fade-in-up">
@@ -115,11 +140,29 @@ app.get('/', (c) => {
                 
                 <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center mt-8 sm:mt-12 px-4">
                     <a href="#services" class="w-full sm:w-auto btn-primary px-6 sm:px-8 py-3 sm:py-4 rounded-full bg-antares-blue hover:bg-blue-600 transition-all duration-300 text-base sm:text-lg font-medium">
+                        <i class="fas fa-briefcase mr-2"></i>
                         Explore Our Services
                     </a>
-                    <a href="#approach" class="w-full sm:w-auto btn-secondary px-6 sm:px-8 py-3 sm:py-4 rounded-full border-2 border-white hover:bg-white hover:text-antares-dark transition-all duration-300 text-base sm:text-lg font-medium">
-                        Our Approach
+                    <a href="tel:+18002682273" class="w-full sm:w-auto btn-secondary px-6 sm:px-8 py-3 sm:py-4 rounded-full border-2 border-white hover:bg-white hover:text-antares-dark transition-all duration-300 text-base sm:text-lg font-medium">
+                        <i class="fas fa-phone mr-2"></i>
+                        1-800-ANTARES
                     </a>
+                </div>
+                
+                <!-- Trust Badges -->
+                <div class="mt-12 flex flex-wrap justify-center gap-6 text-sm text-gray-400">
+                    <div class="flex items-center gap-2">
+                        <i class="fas fa-check-circle text-antares-blue"></i>
+                        <span>Title 24 Compliant</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i class="fas fa-check-circle text-antares-blue"></i>
+                        <span>Licensed & Insured</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i class="fas fa-check-circle text-antares-blue"></i>
+                        <span>24/7 Support</span>
+                    </div>
                 </div>
             </div>
             
@@ -1161,6 +1204,45 @@ app.get('/', (c) => {
     </footer>
 
     <script src="/static/app.js"></script>
+    <script src="/static/chatbot.js"></script>
+    
+    <!-- Request Call Modal -->
+    <div id="request-call-modal" class="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-md w-full p-8 relative animate-fadeIn">
+            <button id="close-modal" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600">
+                <i class="fas fa-times text-xl"></i>
+            </button>
+            <div class="text-center mb-6">
+                <div class="w-16 h-16 bg-antares-blue/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-phone-alt text-antares-blue text-2xl"></i>
+                </div>
+                <h3 class="text-2xl font-display font-bold text-gray-800 mb-2">Request a Call Back</h3>
+                <p class="text-gray-600">We'll call you within 15 minutes during business hours</p>
+            </div>
+            <form id="call-request-form" class="space-y-4">
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Your Name *</label>
+                    <input type="text" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-antares-blue text-gray-800" placeholder="John Doe">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Phone Number *</label>
+                    <input type="tel" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-antares-blue text-gray-800" placeholder="(555) 123-4567">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Best Time to Call</label>
+                    <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-antares-blue text-gray-800">
+                        <option>Morning (8AM - 12PM)</option>
+                        <option>Afternoon (12PM - 5PM)</option>
+                        <option>Evening (5PM - 8PM)</option>
+                        <option>ASAP</option>
+                    </select>
+                </div>
+                <button type="submit" class="w-full bg-antares-blue hover:bg-blue-600 text-white font-bold py-3 rounded-lg transition-colors">
+                    Request Call Now
+                </button>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
   `)

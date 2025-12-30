@@ -96,6 +96,59 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
   
+  // ==========================================
+  // REQUEST CALL MODAL
+  // ==========================================
+  const requestCallBtn = document.getElementById('request-call-btn');
+  const requestCallModal = document.getElementById('request-call-modal');
+  const closeModalBtn = document.getElementById('close-modal');
+  const callRequestForm = document.getElementById('call-request-form');
+  
+  if (requestCallBtn && requestCallModal) {
+    requestCallBtn.addEventListener('click', () => {
+      requestCallModal.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    });
+    
+    closeModalBtn.addEventListener('click', () => {
+      requestCallModal.classList.add('hidden');
+      document.body.style.overflow = '';
+    });
+    
+    // Close on backdrop click
+    requestCallModal.addEventListener('click', (e) => {
+      if (e.target === requestCallModal) {
+        requestCallModal.classList.add('hidden');
+        document.body.style.overflow = '';
+      }
+    });
+    
+    // Handle form submission
+    callRequestForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      
+      const formData = new FormData(callRequestForm);
+      const data = Object.fromEntries(formData);
+      
+      // Show success message
+      callRequestForm.innerHTML = `
+        <div class="text-center py-8">
+          <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-check text-green-500 text-2xl"></i>
+          </div>
+          <h4 class="text-xl font-bold text-gray-800 mb-2">Request Received!</h4>
+          <p class="text-gray-600 mb-6">We'll call you back within 15 minutes during business hours (Mon-Fri, 8AM-6PM PT)</p>
+          <button onclick="document.getElementById('request-call-modal').classList.add('hidden'); document.body.style.overflow = '';" class="px-6 py-2 bg-antares-blue text-white rounded-lg hover:bg-blue-600 transition-colors">
+            Close
+          </button>
+        </div>
+      `;
+      
+      // In production, send to API
+      console.log('Call request:', data);
+    });
+  }
+  
   
   // ==========================================
   // SMOOTH SCROLL FOR ANCHOR LINKS
