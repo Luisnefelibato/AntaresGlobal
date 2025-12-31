@@ -183,8 +183,8 @@ class AntaresChatbot {
     
     const messageHTML = `
       <div class="flex ${isBot ? 'justify-start' : 'justify-end'}">
-        <div class="${isBot ? 'bg-white' : 'bg-antares-blue text-white'} rounded-2xl px-4 py-2 max-w-xs shadow">
-          <p class="text-sm">${text}</p>
+        <div class="${isBot ? 'bg-white' : 'bg-antares-blue'} rounded-2xl px-4 py-2 max-w-xs shadow">
+          <p class="text-sm text-gray-800">${text}</p>
         </div>
       </div>
     `;
