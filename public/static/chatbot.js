@@ -176,11 +176,11 @@ class AntaresChatbot {
   }
   
   addInitialMessage() {
-    this.addMessageWithTyping('bot', '👋 Hi there! I\'m with Antares Innovate - your complete signage partner from design to installation.');
+    this.addMessageWithTyping('bot', '👋 Hey! I\'m with Antares - we design, print, and install custom signage all in-house.');
     // Agregar segundo mensaje después de un delay
     setTimeout(() => {
-      this.addMessageWithTyping('bot', 'We design it, print it, and install it - all in-house! We\'ve helped major brands like Tesla, Volvo, and Ford with custom solutions that enhanced their visibility and cut energy costs by up to 60%.\n\nWhat type of business are you in? I\'d love to show you our complete design-to-installation process! 🎨🖨️🔧');
-    }, 3500);
+      this.addMessageWithTyping('bot', 'We\'ve helped Tesla, Volvo, and Ford cut energy costs by 60% with LED upgrades.\n\nWhat type of business are you in? 🎨');
+    }, 2500);
   }
   
   addMessage(sender, text) {
@@ -321,24 +321,24 @@ class AntaresChatbot {
         this.addTypingIndicator();
         setTimeout(() => {
           this.removeTypingIndicator();
-          this.addMessageWithTyping('bot', 'Fantastic! Here\'s what makes us different - we\'re a complete one-stop solution. Our in-house design team creates custom signage for your brand, we print and fabricate it in our facility with premium materials, and our certified technicians install it perfectly.\n\nNo coordinating multiple vendors, no quality issues, and our LED solutions typically pay for themselves within 18-24 months through energy savings. We recently designed, printed, and installed a complete signage package for a retail client - they saved $3,200 annually on energy costs alone!\n\nLet\'s create something amazing for your business:\n\n📞 Call me at (323) 444-5555 for an immediate consultation\n\n📝 Or share your number and I\'ll have our senior design consultant reach out in 30 minutes with custom concepts and a detailed proposal');
-        }, 1500);
+          this.addMessageWithTyping('bot', 'Perfect! We handle design, printing, and installation - all in-house. Our LED solutions pay for themselves in 18-24 months.\n\nA retail client we just finished saves $3,200/year on energy alone!\n\n📞 Call (323) 444-5555 now\n📝 Or drop your number - our design team will call in 30 min with a custom proposal');
+        }, 1200);
         break;
       case 'services':
         this.addMessage('user', 'Tell me about your services');
         this.addTypingIndicator();
         setTimeout(() => {
           this.removeTypingIndicator();
-          this.addMessageWithTyping('bot', 'Great! We\'re a complete Design → Print → Install partner. Here\'s our full-service approach:\n\n🎨 DESIGN: Custom signage design, 3D mockups, CAD drawings, brand consistency\n\n🖨️ PRINT & FABRICATION: Large format printing, vinyl graphics, channel letters, LED modules - all in our facility\n\n🔧 INSTALLATION: Certified technicians, high-rise capability, electrical integration\n\n⚡ PLUS: LED retrofits (60% energy savings), 24/7 maintenance, compliance & permits, multi-location programs\n\nOne company handles everything - from your initial design concept to the final installation. Like we did for Tesla!\n\nWhat type of business do you have? I can show you specific design examples and complete projects we\'ve done for businesses like yours!');
-        }, 1500);
+          this.addMessageWithTyping('bot', 'We\'re your complete partner:\n\n🎨 Custom Design & 3D Mockups\n🖨️ In-House Printing & Fabrication\n🔧 Professional Installation\n⚡ LED Upgrades (60% energy savings)\n\nOne company, zero headaches. Like we did for Tesla!\n\nWhat business are you in?');
+        }, 1200);
         break;
       case 'call':
         this.addMessage('user', 'I\'d like to request a call');
         this.addTypingIndicator();
         setTimeout(() => {
           this.removeTypingIndicator();
-          this.addMessageWithTyping('bot', 'Perfect timing! This month we\'re offering a complete complimentary package: custom design mockup + site analysis + ROI projection - all at no cost.\n\nOur design and installation team has transformed businesses like yours. One retail client saw a 40% increase in foot traffic after we designed, printed, and installed their new signage package!\n\nHere\'s how we can connect:\n\n📞 Call now at (323) 444-5555 - We\'re available 24/7!\n\n📝 Or drop your number here and I\'ll have our senior design consultant call you within 30 minutes with exciting concepts for your business');
-        }, 1500);
+          this.addMessageWithTyping('bot', 'Great! This month we\'re doing FREE design mockups + site analysis. One retail client saw 40% more foot traffic after we upgraded their signage.\n\n📞 Call (323) 444-5555 (24/7)\n📝 Or share your number - our design team calls back in 30 min with concepts!');
+        }, 1200);
         break;
     }
   }
