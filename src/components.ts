@@ -315,7 +315,7 @@ export const PageLayout = (title: string, description: string, content: string) 
       }
     </script>
     
-    <link rel="stylesheet" href="/static/styles.css?v=4">
+    <link rel="stylesheet" href="/static/styles.css?v=5">
 </head>
 <body class="bg-antares-dark text-white antialiased">
     ${Header()}
@@ -328,8 +328,8 @@ export const PageLayout = (title: string, description: string, content: string) 
     ${RequestCallModal()}
     ${ChatbotWidget()}
     
-    <script src="/static/app.js?v=4"></script>
-    <script src="/static/chatbot.js?v=4"></script>
+    <script src="/static/app.js?v=5"></script>
+    <script src="/static/chatbot.js?v=5"></script>
 </body>
 </html>
 `;

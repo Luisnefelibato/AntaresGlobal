@@ -176,21 +176,24 @@ class AntaresChatbot {
   }
   
   addInitialMessage() {
-    this.addMessage('bot', 'Hello! 👋 I\'m your Antares Innovate assistant.');
+    this.addMessageWithTyping('bot', 'Hello! 👋 I\'m your Antares Innovate assistant.');
     // Agregar segundo mensaje después de un delay
     setTimeout(() => {
-      this.addMessage('bot', 'We specialize in commercial signage, LED retrofit solutions, and compliance services for major brands. How can I help you today?');
-    }, 1500);
+      this.addMessageWithTyping('bot', 'We specialize in commercial signage, LED retrofit solutions, and compliance services for major brands.\n\nHow can I help you today?');
+    }, 2000);
   }
   
   addMessage(sender, text) {
     const messagesContainer = document.getElementById('chat-messages');
     const isBot = sender === 'bot';
     
+    // Replace \n\n with <br><br> for line breaks
+    const formattedText = text.replace(/\n\n/g, '<br><br>').replace(/\n/g, '<br>');
+    
     const messageHTML = `
       <div class="flex ${isBot ? 'justify-start' : 'justify-end'} animate-fadeIn">
         <div class="${isBot ? 'bg-antares-dark border border-antares-blue/30' : 'bg-gradient-to-r from-antares-blue to-blue-600'} rounded-2xl px-4 py-3 max-w-[85%] md:max-w-xs shadow-lg">
-          <p class="text-sm text-white leading-relaxed">${text}</p>
+          <p class="text-sm text-white leading-relaxed">${formattedText}</p>
           ${isBot ? '<div class="flex items-center space-x-1 mt-2"><span class="w-1 h-1 bg-antares-blue rounded-full"></span><span class="text-xs text-gray-400">Antares AI</span></div>' : ''}
         </div>
       </div>
@@ -198,6 +201,53 @@ class AntaresChatbot {
     
     messagesContainer.insertAdjacentHTML('beforeend', messageHTML);
     messagesContainer.scrollTop = messagesContainer.scrollHeight;
+    this.messages.push({ sender, text });
+  }
+  
+  addMessageWithTyping(sender, text) {
+    const messagesContainer = document.getElementById('chat-messages');
+    const isBot = sender === 'bot';
+    
+    // Create message container with empty text
+    const messageId = `msg-${Date.now()}`;
+    const messageHTML = `
+      <div class="flex ${isBot ? 'justify-start' : 'justify-end'} animate-fadeIn">
+        <div class="${isBot ? 'bg-antares-dark border border-antares-blue/30' : 'bg-gradient-to-r from-antares-blue to-blue-600'} rounded-2xl px-4 py-3 max-w-[85%] md:max-w-xs shadow-lg">
+          <p id="${messageId}" class="text-sm text-white leading-relaxed"></p>
+          ${isBot ? '<div class="flex items-center space-x-1 mt-2"><span class="w-1 h-1 bg-antares-blue rounded-full"></span><span class="text-xs text-gray-400">Antares AI</span></div>' : ''}
+        </div>
+      </div>
+    `;
+    
+    messagesContainer.insertAdjacentHTML('beforeend', messageHTML);
+    
+    // Typing animation
+    const messageElement = document.getElementById(messageId);
+    let currentIndex = 0;
+    const typingSpeed = 30; // milliseconds per character
+    
+    const typeNextCharacter = () => {
+      if (currentIndex < text.length) {
+        const char = text[currentIndex];
+        
+        // Handle line breaks
+        if (text.substring(currentIndex, currentIndex + 2) === '\n\n') {
+          messageElement.innerHTML += '<br><br>';
+          currentIndex += 2;
+        } else if (char === '\n') {
+          messageElement.innerHTML += '<br>';
+          currentIndex++;
+        } else {
+          messageElement.textContent += char;
+          currentIndex++;
+        }
+        
+        messagesContainer.scrollTop = messagesContainer.scrollHeight;
+        setTimeout(typeNextCharacter, typingSpeed);
+      }
+    };
+    
+    typeNextCharacter();
     this.messages.push({ sender, text });
   }
   
@@ -229,14 +279,14 @@ class AntaresChatbot {
       this.removeTypingIndicator();
       
       if (data.success && data.reply) {
-        this.addMessage('bot', data.reply);
+        this.addMessageWithTyping('bot', data.reply);
       } else {
-        this.addMessage('bot', 'I apologize, but I\'m having trouble right now. Please call us at (323) 444-5555 for immediate assistance.');
+        this.addMessageWithTyping('bot', 'I apologize, but I\'m having trouble right now.\n\nPlease call us at (323) 444-5555 for immediate assistance.');
       }
     } catch (error) {
       console.error('Chat error:', error);
       this.removeTypingIndicator();
-      this.addMessage('bot', 'I apologize for the inconvenience. Please call us at (323) 444-5555 or try again in a moment.');
+      this.addMessageWithTyping('bot', 'I apologize for the inconvenience.\n\nPlease call us at (323) 444-5555 or try again in a moment.');
     }
   }
   
@@ -268,21 +318,27 @@ class AntaresChatbot {
     switch(action) {
       case 'quote':
         this.addMessage('user', 'I\'d like to get a quote');
+        this.addTypingIndicator();
         setTimeout(() => {
-          this.addMessage('bot', 'Perfect! To provide an accurate quote, I\'ll need some details. Please fill out our <a href="#contact" class="text-antares-blue font-bold">contact form</a> or call us at <strong>1-800-ANTARES</strong>.');
-        }, 1000);
+          this.removeTypingIndicator();
+          this.addMessageWithTyping('bot', 'Perfect! I\'d be happy to help you get a quote.\n\nTo provide you with an accurate estimate, could you tell me more about your project? Are you looking for new signage installation, LED upgrades, or something else?');
+        }, 1500);
         break;
       case 'services':
         this.addMessage('user', 'Tell me about your services');
+        this.addTypingIndicator();
         setTimeout(() => {
-          this.addMessage('bot', 'We offer: 1) Commercial Signage Installation 2) LED Retrofit & Energy Optimization 3) Technical Maintenance 4) Compliance & Permits 5) Custom Solutions. Which would you like to know more about?');
-        }, 1000);
+          this.removeTypingIndicator();
+          this.addMessageWithTyping('bot', 'We specialize in:\n\n1️⃣ Commercial Signage Installation\n2️⃣ LED Retrofit & Energy Optimization\n3️⃣ Technical Maintenance & Repair (24/7)\n4️⃣ Compliance & Permits\n5️⃣ Custom Industrial Solutions\n6️⃣ Multi-Location Program Management\n\nWhich service interests you most?');
+        }, 1500);
         break;
       case 'call':
         this.addMessage('user', 'I\'d like to request a call');
+        this.addTypingIndicator();
         setTimeout(() => {
-          this.addMessage('bot', 'Great! Click the "Request Call" button in the top navigation and we\'ll call you back within 15 minutes during business hours (Mon-Fri, 8AM-6PM PT).');
-        }, 1000);
+          this.removeTypingIndicator();
+          this.addMessageWithTyping('bot', 'Great! We\'d love to discuss your project.\n\nYou have two options:\n\n📞 Call us now at (323) 444-5555 (24/7 available)\n\n📝 Or click "Request Call" in the top navigation and share your number - we\'ll reach out within the hour!');
+        }, 1500);
         break;
     }
   }
