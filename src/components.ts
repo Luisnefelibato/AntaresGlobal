@@ -5,12 +5,12 @@ export const Header = () => `
   <div class="container mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex justify-between items-center h-16 lg:h-20">
       <!-- Logo -->
-      <a href="/" class="flex items-center space-x-2 group">
-        <div class="w-8 h-8 lg:w-10 lg:h-10 rounded-lg bg-gradient-to-br from-antares-blue to-blue-600 flex items-center justify-center transform group-hover:scale-110 transition-transform">
+      <a href="/" class="flex items-center space-x-2 group cursor-pointer" title="Go to Home">
+        <div class="w-8 h-8 lg:w-10 lg:h-10 rounded-lg bg-gradient-to-br from-antares-blue to-blue-600 flex items-center justify-center transform group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
           <span class="text-white font-bold text-sm lg:text-lg">A</span>
         </div>
         <div>
-          <span class="font-display font-bold text-base lg:text-xl tracking-tight">ANTARES<span class="text-antares-blue">.</span></span>
+          <span class="font-display font-bold text-base lg:text-xl tracking-tight group-hover:text-antares-blue transition-colors">ANTARES<span class="text-antares-blue">.</span></span>
         </div>
       </a>
 
@@ -72,12 +72,12 @@ export const Footer = () => `
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
       <!-- Company Info -->
       <div class="col-span-1 md:col-span-2 lg:col-span-1">
-        <div class="flex items-center space-x-2 mb-4">
-          <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-antares-blue to-blue-600 flex items-center justify-center">
+        <a href="/" class="flex items-center space-x-2 mb-4 group cursor-pointer" title="Go to Home">
+          <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-antares-blue to-blue-600 flex items-center justify-center group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
             <span class="text-white font-bold text-lg">A</span>
           </div>
-          <span class="font-display font-bold text-xl tracking-tight">ANTARES<span class="text-antares-blue">.</span></span>
-        </div>
+          <span class="font-display font-bold text-xl tracking-tight group-hover:text-antares-blue transition-colors">ANTARES<span class="text-antares-blue">.</span></span>
+        </a>
         <p class="text-white/60 text-sm leading-relaxed mb-4">
           Global leader in industrial signage, LED engineering, and technical compliance solutions.
         </p>
