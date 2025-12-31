@@ -33,8 +33,8 @@ app.get('/', (c) => {
 
       <!-- Main Heading -->
       <h1 class="font-display font-black text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl leading-tight">
-        <span class="block text-white">Industrial Signage</span>
-        <span class="block bg-gradient-to-r from-antares-blue via-blue-400 to-antares-blue bg-clip-text text-transparent animate-gradient">Meets Innovation</span>
+        <span class="block text-white">Engineering Excellence</span>
+        <span class="block text-antares-blue">Industrial Precision</span>
       </h1>
 
       <!-- Subtitle -->
@@ -270,9 +270,9 @@ app.get('/services', (c) => {
     <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-5">
             <div class="flex items-center justify-between">
-                <div class="text-xl sm:text-2xl font-display font-bold tracking-tight">
+                <a href="/" class="text-xl sm:text-2xl font-display font-bold tracking-tight cursor-pointer hover:text-antares-blue transition-colors" title="Go to Home">
                     ANTARES<span class="text-antares-blue">.</span>
-                </div>
+                </a>
                 
                 <div class="hidden lg:flex items-center space-x-4 xl:space-x-6 text-sm font-medium">
                     <a href="#services" class="nav-link hover:text-antares-blue transition-colors">Services</a>
@@ -334,9 +334,9 @@ app.get('/services', (c) => {
         <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <div class="fade-in-up">
                 <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-display font-bold mb-4 sm:mb-6 leading-tight px-2">
-                    Engineering Excellence<br/>
-                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400">
-                        Industrial Precision
+                    <span class="text-white">Professional Signage &</span><br/>
+                    <span class="text-antares-blue">
+                        LED Solutions
                     </span>
                 </h1>
                 
