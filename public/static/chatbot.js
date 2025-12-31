@@ -176,11 +176,11 @@ class AntaresChatbot {
   }
   
   addInitialMessage() {
-    this.addMessageWithTyping('bot', '👋 Hi there! I\'m with Antares Innovate - we specialize in premium signage and LED solutions for businesses like yours.');
+    this.addMessageWithTyping('bot', '👋 Hi there! I\'m with Antares Innovate - your complete signage partner from design to installation.');
     // Agregar segundo mensaje después de un delay
     setTimeout(() => {
-      this.addMessageWithTyping('bot', 'We\'ve helped major brands like Tesla, Volvo, and Ford enhance their visibility and cut energy costs by up to 60%.\n\nWhat type of business are you in? I\'d love to show you what we can do for you! 🚀');
-    }, 3000);
+      this.addMessageWithTyping('bot', 'We design it, print it, and install it - all in-house! We\'ve helped major brands like Tesla, Volvo, and Ford with custom solutions that enhanced their visibility and cut energy costs by up to 60%.\n\nWhat type of business are you in? I\'d love to show you our complete design-to-installation process! 🎨🖨️🔧');
+    }, 3500);
   }
   
   addMessage(sender, text) {
@@ -321,7 +321,7 @@ class AntaresChatbot {
         this.addTypingIndicator();
         setTimeout(() => {
           this.removeTypingIndicator();
-          this.addMessageWithTyping('bot', 'Fantastic! Let me tell you what makes our pricing so competitive - we handle everything from permits to installation, and our LED solutions typically pay for themselves within 18-24 months through energy savings.\n\nMost of our clients are surprised by how affordable professional signage can be. We recently helped a retail client save $3,200 annually on energy costs alone!\n\nLet\'s discuss your specific needs:\n\n📞 Call me at (323) 444-5555 for an immediate quote\n\n📝 Or share your number and I\'ll have our senior consultant reach out in 30 minutes with a custom proposal tailored to your business');
+          this.addMessageWithTyping('bot', 'Fantastic! Here\'s what makes us different - we\'re a complete one-stop solution. Our in-house design team creates custom signage for your brand, we print and fabricate it in our facility with premium materials, and our certified technicians install it perfectly.\n\nNo coordinating multiple vendors, no quality issues, and our LED solutions typically pay for themselves within 18-24 months through energy savings. We recently designed, printed, and installed a complete signage package for a retail client - they saved $3,200 annually on energy costs alone!\n\nLet\'s create something amazing for your business:\n\n📞 Call me at (323) 444-5555 for an immediate consultation\n\n📝 Or share your number and I\'ll have our senior design consultant reach out in 30 minutes with custom concepts and a detailed proposal');
         }, 1500);
         break;
       case 'services':
@@ -329,7 +329,7 @@ class AntaresChatbot {
         this.addTypingIndicator();
         setTimeout(() => {
           this.removeTypingIndicator();
-          this.addMessageWithTyping('bot', 'Great! Here\'s what sets us apart - we\'re not just installers, we\'re your complete signage partner:\n\n💡 Commercial Signage - Make your business impossible to miss (like we did for Tesla)\n⚡ LED Retrofits - Cut energy costs by 60% while improving visibility\n🔧 24/7 Maintenance - We keep your signs running perfectly, always\n📋 Compliance & Permits - We handle all the paperwork hassle\n🏢 Multi-Location Programs - Perfect if you\'re expanding\n\nWhat type of business do you have? I can show you specific examples of how we\'ve helped businesses like yours thrive!');
+          this.addMessageWithTyping('bot', 'Great! We\'re a complete Design → Print → Install partner. Here\'s our full-service approach:\n\n🎨 DESIGN: Custom signage design, 3D mockups, CAD drawings, brand consistency\n\n🖨️ PRINT & FABRICATION: Large format printing, vinyl graphics, channel letters, LED modules - all in our facility\n\n🔧 INSTALLATION: Certified technicians, high-rise capability, electrical integration\n\n⚡ PLUS: LED retrofits (60% energy savings), 24/7 maintenance, compliance & permits, multi-location programs\n\nOne company handles everything - from your initial design concept to the final installation. Like we did for Tesla!\n\nWhat type of business do you have? I can show you specific design examples and complete projects we\'ve done for businesses like yours!');
         }, 1500);
         break;
       case 'call':
@@ -337,7 +337,7 @@ class AntaresChatbot {
         this.addTypingIndicator();
         setTimeout(() => {
           this.removeTypingIndicator();
-          this.addMessageWithTyping('bot', 'Perfect timing! We\'re running a special consultation this month where we provide a complete site analysis and ROI projection at no cost.\n\nOur senior consultants have transformed businesses like yours - one of our retail clients saw a 40% increase in foot traffic after their signage upgrade!\n\nHere\'s how we can connect:\n\n📞 Call now at (323) 444-5555 - We\'re available 24/7, seriously!\n\n📝 Or drop your number here and I\'ll have our team call you within 30 minutes with some exciting ideas for your business');
+          this.addMessageWithTyping('bot', 'Perfect timing! This month we\'re offering a complete complimentary package: custom design mockup + site analysis + ROI projection - all at no cost.\n\nOur design and installation team has transformed businesses like yours. One retail client saw a 40% increase in foot traffic after we designed, printed, and installed their new signage package!\n\nHere\'s how we can connect:\n\n📞 Call now at (323) 444-5555 - We\'re available 24/7!\n\n📝 Or drop your number here and I\'ll have our senior design consultant call you within 30 minutes with exciting concepts for your business');
         }, 1500);
         break;
     }
