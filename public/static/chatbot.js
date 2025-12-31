@@ -176,11 +176,11 @@ class AntaresChatbot {
   }
   
   addInitialMessage() {
-    this.addMessageWithTyping('bot', '👋 Hey! I\'m with Antares - we design, print, and install custom signage all in-house.');
+    this.addMessageWithTyping('bot', '👋 Hey! I\'m with Antares. We do custom signage - design, print, install.');
     // Agregar segundo mensaje después de un delay
     setTimeout(() => {
-      this.addMessageWithTyping('bot', 'We\'ve helped Tesla, Volvo, and Ford cut energy costs by 60% with LED upgrades.\n\nWhat type of business are you in? 🎨');
-    }, 2500);
+      this.addMessageWithTyping('bot', 'What kind of business do you have?');
+    }, 2000);
   }
   
   addMessage(sender, text) {
@@ -321,24 +321,24 @@ class AntaresChatbot {
         this.addTypingIndicator();
         setTimeout(() => {
           this.removeTypingIndicator();
-          this.addMessageWithTyping('bot', 'Perfect! We handle design, printing, and installation - all in-house. Our LED solutions pay for themselves in 18-24 months.\n\nA retail client we just finished saves $3,200/year on energy alone!\n\n📞 Call (323) 444-5555 now\n📝 Or drop your number - our design team will call in 30 min with a custom proposal');
-        }, 1200);
+          this.addMessageWithTyping('bot', 'Cool! We design, print, and install everything in-house. Makes it way easier.\n\nWhat kind of signage are you thinking?');
+        }, 1000);
         break;
       case 'services':
         this.addMessage('user', 'Tell me about your services');
         this.addTypingIndicator();
         setTimeout(() => {
           this.removeTypingIndicator();
-          this.addMessageWithTyping('bot', 'We\'re your complete partner:\n\n🎨 Custom Design & 3D Mockups\n🖨️ In-House Printing & Fabrication\n🔧 Professional Installation\n⚡ LED Upgrades (60% energy savings)\n\nOne company, zero headaches. Like we did for Tesla!\n\nWhat business are you in?');
-        }, 1200);
+          this.addMessageWithTyping('bot', 'We do it all - custom design, printing, and installation. Plus LED upgrades that save a ton on energy.\n\nWhat do you need help with?');
+        }, 1000);
         break;
       case 'call':
         this.addMessage('user', 'I\'d like to request a call');
         this.addTypingIndicator();
         setTimeout(() => {
           this.removeTypingIndicator();
-          this.addMessageWithTyping('bot', 'Great! This month we\'re doing FREE design mockups + site analysis. One retail client saw 40% more foot traffic after we upgraded their signage.\n\n📞 Call (323) 444-5555 (24/7)\n📝 Or share your number - our design team calls back in 30 min with concepts!');
-        }, 1200);
+          this.addMessageWithTyping('bot', 'Perfect! Want to chat now? Call (323) 444-5555\n\nOr drop your number and I\'ll have someone call you in like 30 min.');
+        }, 1000);
         break;
     }
   }
