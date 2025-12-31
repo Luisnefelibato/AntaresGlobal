@@ -58,15 +58,15 @@ class AntaresChatbot {
           
           <!-- Quick Actions -->
           <div id="quick-actions" class="p-3 bg-white border-t border-gray-200">
-            <p class="text-xs text-gray-500 mb-2">Quick Actions:</p>
+            <p class="text-xs mb-2" style="color: #6b7280 !important;">Quick Actions:</p>
             <div class="flex flex-wrap gap-2">
-              <button class="quick-action-btn text-xs px-3 py-2 bg-gray-100 hover:bg-antares-blue hover:text-white rounded-full transition-colors" data-action="quote">
+              <button class="quick-action-btn text-xs px-3 py-2 bg-gray-100 rounded-full transition-colors" data-action="quote" style="color: #1f2937 !important;">
                 Get Quote
               </button>
-              <button class="quick-action-btn text-xs px-3 py-2 bg-gray-100 hover:bg-antares-blue hover:text-white rounded-full transition-colors" data-action="services">
+              <button class="quick-action-btn text-xs px-3 py-2 bg-gray-100 rounded-full transition-colors" data-action="services" style="color: #1f2937 !important;">
                 Our Services
               </button>
-              <button class="quick-action-btn text-xs px-3 py-2 bg-gray-100 hover:bg-antares-blue hover:text-white rounded-full transition-colors" data-action="call">
+              <button class="quick-action-btn text-xs px-3 py-2 bg-gray-100 rounded-full transition-colors" data-action="call" style="color: #1f2937 !important;">
                 Request Call
               </button>
             </div>

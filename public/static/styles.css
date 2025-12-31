@@ -158,6 +158,16 @@
   }
 }
 
+/* Quick Action Buttons */
+.quick-action-btn {
+  color: #1f2937 !important;
+}
+
+.quick-action-btn:hover {
+  background-color: #1a73e8 !important;
+  color: white !important;
+}
+
 @keyframes slideUp {
   from {
     opacity: 0;
