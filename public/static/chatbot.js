@@ -21,67 +21,73 @@ class AntaresChatbot {
   
   createChatWidget() {
     const chatHTML = `
-      <!-- Chatbot Widget -->
-      <div id="chatbot-widget" class="fixed bottom-6 right-6 z-50">
+      <!-- Chatbot Widget - Responsive & Antares Theme -->
+      <div id="chatbot-widget" class="fixed bottom-4 right-4 md:bottom-6 md:right-6 z-50">
         <!-- Chat Button -->
-        <button id="chat-toggle" class="chat-button bg-antares-blue hover:bg-blue-600 text-white rounded-full p-4 shadow-2xl transition-all duration-300 flex items-center justify-center">
+        <button id="chat-toggle" class="chat-button bg-gradient-to-r from-antares-blue to-blue-600 hover:from-blue-600 hover:to-antares-blue text-white rounded-full p-4 shadow-2xl transition-all duration-300 flex items-center justify-center hover:scale-110">
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path>
           </svg>
-          <span class="chat-notification absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">1</span>
+          <span class="chat-notification absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center font-bold shadow-lg">1</span>
         </button>
         
-        <!-- Chat Window -->
-        <div id="chat-window" class="chat-window hidden absolute bottom-20 right-0 w-96 bg-white rounded-2xl shadow-2xl overflow-hidden flex flex-col">
-          <!-- Header -->
-          <div class="bg-gradient-to-r from-antares-blue to-blue-600 p-4 flex items-center justify-between">
-            <div class="flex items-center space-x-3">
-              <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center">
-                <span class="text-antares-blue font-bold text-lg">A</span>
+        <!-- Chat Window - Fully Responsive -->
+        <div id="chat-window" class="chat-window hidden absolute bottom-20 right-0 bg-antares-dark rounded-2xl shadow-2xl overflow-hidden flex flex-col border border-antares-blue/20">
+          <!-- Header with Antares Gradient -->
+          <div class="bg-gradient-to-r from-antares-dark via-antares-blue to-antares-dark p-4 flex items-center justify-between relative overflow-hidden">
+            <!-- Animated Background Effect -->
+            <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent animate-shimmer"></div>
+            
+            <div class="flex items-center space-x-3 relative z-10">
+              <div class="w-10 h-10 bg-gradient-to-br from-antares-blue to-blue-600 rounded-full flex items-center justify-center shadow-lg border-2 border-white/20">
+                <span class="text-white font-bold text-lg">A</span>
               </div>
               <div>
-                <h3 class="text-white font-bold">Antares Assistant</h3>
-                <p class="text-blue-100 text-xs">Online now</p>
+                <h3 class="text-white font-bold text-sm md:text-base">Antares Assistant</h3>
+                <div class="flex items-center space-x-1">
+                  <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
+                  <p class="text-blue-100 text-xs">Online now</p>
+                </div>
               </div>
             </div>
-            <button id="chat-close" class="text-white hover:text-gray-200 transition-colors">
+            <button id="chat-close" class="text-white/80 hover:text-white transition-colors relative z-10">
               <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
               </svg>
             </button>
           </div>
           
-          <!-- Messages -->
-          <div id="chat-messages" class="flex-1 p-4 overflow-y-auto bg-gray-50 space-y-3" style="height: 400px; max-height: 400px;">
+          <!-- Messages Area with Dark Theme -->
+          <div id="chat-messages" class="flex-1 p-3 md:p-4 overflow-y-auto bg-antares-gray space-y-3" style="height: 350px; max-height: 50vh;">
             <!-- Messages will be inserted here -->
           </div>
           
-          <!-- Quick Actions -->
-          <div id="quick-actions" class="p-3 bg-white border-t border-gray-200">
-            <p class="text-xs mb-2" style="color: #6b7280 !important;">Quick Actions:</p>
+          <!-- Quick Actions with Antares Theme -->
+          <div id="quick-actions" class="p-3 bg-antares-dark border-t border-antares-blue/20">
+            <p class="text-xs mb-2 text-gray-400 font-medium">Quick Actions:</p>
             <div class="flex flex-wrap gap-2">
-              <button class="quick-action-btn text-xs px-3 py-2 bg-gray-100 rounded-full transition-colors" data-action="quote" style="color: #1f2937 !important;">
-                Get Quote
+              <button class="quick-action-btn text-xs px-3 py-2 bg-antares-gray hover:bg-antares-blue text-white rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-antares-blue/20 border border-antares-blue/30" data-action="quote">
+                💬 Get Quote
               </button>
-              <button class="quick-action-btn text-xs px-3 py-2 bg-gray-100 rounded-full transition-colors" data-action="services" style="color: #1f2937 !important;">
-                Our Services
+              <button class="quick-action-btn text-xs px-3 py-2 bg-antares-gray hover:bg-antares-blue text-white rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-antares-blue/20 border border-antares-blue/30" data-action="services">
+                ⚡ Our Services
               </button>
-              <button class="quick-action-btn text-xs px-3 py-2 bg-gray-100 rounded-full transition-colors" data-action="call" style="color: #1f2937 !important;">
-                Request Call
+              <button class="quick-action-btn text-xs px-3 py-2 bg-antares-gray hover:bg-antares-blue text-white rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-antares-blue/20 border border-antares-blue/30" data-action="call">
+                📞 Request Call
               </button>
             </div>
           </div>
           
-          <!-- Input -->
-          <div class="p-4 bg-white border-t border-gray-200">
+          <!-- Input Area with Dark Theme -->
+          <div class="p-3 md:p-4 bg-antares-dark border-t border-antares-blue/20">
             <div class="flex items-center space-x-2">
               <input 
                 type="text" 
                 id="chat-input" 
                 placeholder="Type your message..."
-                class="flex-1 px-4 py-2 border border-gray-300 rounded-full focus:outline-none focus:border-antares-blue text-gray-800"
+                class="flex-1 px-4 py-2 md:py-3 bg-antares-gray text-white placeholder-gray-500 border border-antares-blue/30 rounded-xl focus:outline-none focus:border-antares-blue focus:ring-2 focus:ring-antares-blue/50 transition-all text-sm"
               />
-              <button id="chat-send" class="bg-antares-blue hover:bg-blue-600 text-white rounded-full p-2 transition-colors">
+              <button id="chat-send" class="bg-gradient-to-r from-antares-blue to-blue-600 hover:from-blue-600 hover:to-antares-blue text-white rounded-xl p-2 md:p-3 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-antares-blue/50">
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
                 </svg>
@@ -182,9 +188,10 @@ class AntaresChatbot {
     const isBot = sender === 'bot';
     
     const messageHTML = `
-      <div class="flex ${isBot ? 'justify-start' : 'justify-end'}">
-        <div class="${isBot ? 'bg-white' : 'bg-antares-blue'} rounded-2xl px-4 py-2 max-w-xs shadow">
-          <p class="text-sm" style="color: #1f2937 !important;">${text}</p>
+      <div class="flex ${isBot ? 'justify-start' : 'justify-end'} animate-fadeIn">
+        <div class="${isBot ? 'bg-antares-dark border border-antares-blue/30' : 'bg-gradient-to-r from-antares-blue to-blue-600'} rounded-2xl px-4 py-3 max-w-[85%] md:max-w-xs shadow-lg">
+          <p class="text-sm text-white leading-relaxed">${text}</p>
+          ${isBot ? '<div class="flex items-center space-x-1 mt-2"><span class="w-1 h-1 bg-antares-blue rounded-full"></span><span class="text-xs text-gray-400">Antares AI</span></div>' : ''}
         </div>
       </div>
     `;
@@ -236,12 +243,12 @@ class AntaresChatbot {
   addTypingIndicator() {
     const messagesContainer = document.getElementById('chat-messages');
     const typingHTML = `
-      <div class="flex justify-start" id="typing-indicator">
-        <div class="bg-white rounded-2xl px-4 py-3 shadow">
+      <div class="flex justify-start animate-fadeIn" id="typing-indicator">
+        <div class="bg-antares-dark border border-antares-blue/30 rounded-2xl px-4 py-3 shadow-lg">
           <div class="flex space-x-2">
-            <div class="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style="animation-delay: 0ms"></div>
-            <div class="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style="animation-delay: 150ms"></div>
-            <div class="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style="animation-delay: 300ms"></div>
+            <div class="w-2 h-2 bg-antares-blue rounded-full animate-bounce" style="animation-delay: 0ms"></div>
+            <div class="w-2 h-2 bg-antares-blue rounded-full animate-bounce" style="animation-delay: 150ms"></div>
+            <div class="w-2 h-2 bg-antares-blue rounded-full animate-bounce" style="animation-delay: 300ms"></div>
           </div>
         </div>
       </div>
