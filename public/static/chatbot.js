@@ -176,11 +176,11 @@ class AntaresChatbot {
   }
   
   addInitialMessage() {
-    this.addMessageWithTyping('bot', 'Hello! 👋 I\'m your Antares Innovate assistant.');
+    this.addMessageWithTyping('bot', '👋 Hi there! I\'m with Antares Innovate - we specialize in premium signage and LED solutions for businesses like yours.');
     // Agregar segundo mensaje después de un delay
     setTimeout(() => {
-      this.addMessageWithTyping('bot', 'We specialize in commercial signage, LED retrofit solutions, and compliance services for major brands.\n\nHow can I help you today?');
-    }, 2000);
+      this.addMessageWithTyping('bot', 'We\'ve helped major brands like Tesla, Volvo, and Ford enhance their visibility and cut energy costs by up to 60%.\n\nWhat type of business are you in? I\'d love to show you what we can do for you! 🚀');
+    }, 3000);
   }
   
   addMessage(sender, text) {
@@ -321,7 +321,7 @@ class AntaresChatbot {
         this.addTypingIndicator();
         setTimeout(() => {
           this.removeTypingIndicator();
-          this.addMessageWithTyping('bot', 'Perfect! I\'d be happy to help you get a quote.\n\nTo provide you with an accurate estimate, could you tell me more about your project? Are you looking for new signage installation, LED upgrades, or something else?');
+          this.addMessageWithTyping('bot', 'Fantastic! Let me tell you what makes our pricing so competitive - we handle everything from permits to installation, and our LED solutions typically pay for themselves within 18-24 months through energy savings.\n\nMost of our clients are surprised by how affordable professional signage can be. We recently helped a retail client save $3,200 annually on energy costs alone!\n\nLet\'s discuss your specific needs:\n\n📞 Call me at (323) 444-5555 for an immediate quote\n\n📝 Or share your number and I\'ll have our senior consultant reach out in 30 minutes with a custom proposal tailored to your business');
         }, 1500);
         break;
       case 'services':
@@ -329,7 +329,7 @@ class AntaresChatbot {
         this.addTypingIndicator();
         setTimeout(() => {
           this.removeTypingIndicator();
-          this.addMessageWithTyping('bot', 'We specialize in:\n\n1️⃣ Commercial Signage Installation\n2️⃣ LED Retrofit & Energy Optimization\n3️⃣ Technical Maintenance & Repair (24/7)\n4️⃣ Compliance & Permits\n5️⃣ Custom Industrial Solutions\n6️⃣ Multi-Location Program Management\n\nWhich service interests you most?');
+          this.addMessageWithTyping('bot', 'Great! Here\'s what sets us apart - we\'re not just installers, we\'re your complete signage partner:\n\n💡 Commercial Signage - Make your business impossible to miss (like we did for Tesla)\n⚡ LED Retrofits - Cut energy costs by 60% while improving visibility\n🔧 24/7 Maintenance - We keep your signs running perfectly, always\n📋 Compliance & Permits - We handle all the paperwork hassle\n🏢 Multi-Location Programs - Perfect if you\'re expanding\n\nWhat type of business do you have? I can show you specific examples of how we\'ve helped businesses like yours thrive!');
         }, 1500);
         break;
       case 'call':
@@ -337,7 +337,7 @@ class AntaresChatbot {
         this.addTypingIndicator();
         setTimeout(() => {
           this.removeTypingIndicator();
-          this.addMessageWithTyping('bot', 'Great! We\'d love to discuss your project.\n\nYou have two options:\n\n📞 Call us now at (323) 444-5555 (24/7 available)\n\n📝 Or click "Request Call" in the top navigation and share your number - we\'ll reach out within the hour!');
+          this.addMessageWithTyping('bot', 'Perfect timing! We\'re running a special consultation this month where we provide a complete site analysis and ROI projection at no cost.\n\nOur senior consultants have transformed businesses like yours - one of our retail clients saw a 40% increase in foot traffic after their signage upgrade!\n\nHere\'s how we can connect:\n\n📞 Call now at (323) 444-5555 - We\'re available 24/7, seriously!\n\n📝 Or drop your number here and I\'ll have our team call you within 30 minutes with some exciting ideas for your business');
         }, 1500);
         break;
     }
