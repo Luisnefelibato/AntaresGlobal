@@ -1,8 +1,10 @@
-# 🎥 Prompt para Video Animado - Zoom Out (Instalación → Universo)
+# 🎥 Prompt para Video Animado - Zoom Out (Cartel Tesla → Universo)
 
 ## 📋 Información del Video Solicitado
 
-**Duración**: 15-20 segundos  
+**Concepto**: Desde un punto específico (cartel iluminado de Tesla) haciendo zoom out continuo hacia arriba revelando: edificio → ciudad → país → planeta Tierra → Sistema Solar → Universo
+
+**Duración**: 20-30 segundos  
 **Aspecto**: 16:9 (horizontal, para hero section)  
 **Calidad**: 1080p o superior  
 **Formato**: MP4 (H.264) + WebM (para web)  
@@ -10,33 +12,153 @@
 
 ---
 
-## 🎬 PROMPT PRINCIPAL PARA IA (Runway, Pika, Kling, etc.)
+## 🎬 PROMPT PRINCIPAL ACTUALIZADO - ZOOM OUT VERTICAL
 
-### Versión en Inglés (Recomendada para IA)
+### ⭐ PROMPT DEFINITIVO (Versión en Inglés - RECOMENDADO)
 
 ```
-Create a cinematic zoom-out sequence starting from an extreme close-up of a commercial LED signage installation on a building facade at sunset, gradually zooming out through six distinct stages:
+Cinematic vertical zoom out camera movement starting from a single illuminated red TESLA sign on a building facade, continuously pulling back and rising upward through cosmic scales:
 
-STAGE 1 (0-3s): Extreme close-up of illuminated LED sign letters on building exterior, warm sunset lighting, detailed metal and glass texture, bokeh effect
+START POINT (0-3s):
+- Close-up: Red illuminated TESLA letters on building exterior at dusk
+- Warm LED glow, modern architectural facade
+- Sharp focus on the glowing red logo
+- Urban commercial setting, professional installation
 
-STAGE 2 (3-6s): Zoom out to reveal full building facade with complete signage installation, cherry picker trucks visible, golden hour lighting, urban commercial district
+STAGE 1 - Building (3-6s):
+- Camera pulls back and rises vertically
+- Reveal entire Tesla dealership building
+- Modern glass and steel architecture
+- Parking lot with cars visible below
+- Urban Los Angeles setting, golden hour lighting
 
-STAGE 3 (6-9s): Continue zoom out to city block level, multiple buildings visible, traffic on streets, rooftop details, aerial perspective begins
+STAGE 2 - City Block (6-9s):
+- Continue rising vertically, zooming out
+- Reveal city block with multiple buildings
+- Streets with traffic and city lights turning on
+- Bird's eye view expanding
+- Dusk transitioning to night
 
-STAGE 4 (9-12s): Zoom out to city skyline view, downtown skyscrapers, Los Angeles urban landscape, dusk lighting transitioning to night
+STAGE 3 - City Skyline (9-12s):
+- Rise higher, zoom out further
+- Full Los Angeles cityscape visible
+- Downtown skyscrapers, urban grid pattern
+- City lights glowing in the evening
+- Ocean visible in distance
 
-STAGE 5 (12-15s): Zoom out to aerial view showing Earth's curvature, city lights from space, atmospheric glow, stars beginning to appear
+STAGE 4 - Regional View (12-15s):
+- Continue ascending into atmosphere
+- California coastline becomes visible
+- Mountain ranges, urban sprawl
+- Earth's curvature beginning to show
+- Atmosphere glow, transition to space
 
-STAGE 6 (15-20s): Final zoom out to galaxy/universe view, spiral galaxy formation, deep space, cosmic scale, nebulae and stars
+STAGE 5 - Earth from Space (15-20s):
+- Pull back into space
+- Full Earth sphere visible with continents
+- Blue atmosphere glow around planet
+- Stars beginning to appear in background
+- Realistic space view, NASA-style
 
-Visual style: Cinematic, professional, smooth camera movement, realistic lighting transitions, high production value, seamless zoom effect inspired by "Powers of Ten" documentary
+STAGE 6 - Solar System (20-25s):
+- Continue zooming out
+- Earth becomes smaller point of light
+- Other planets barely visible
+- Sun as bright star
+- Deep space darkness with stars
 
-Technical: 16:9 aspect ratio, 1080p minimum, smooth 60fps, loop-ready (end frame should blend with start frame)
+STAGE 7 - Universe (25-30s):
+- Final zoom out to cosmic scale
+- Spiral galaxy (Milky Way) visible
+- Solar system now invisible
+- Nebulae, star clusters, cosmic dust
+- Deep space, billions of stars
+- Loop-ready ending frame
+
+Camera Motion: Smooth continuous vertical ascent + zoom out, no cuts, exponential scale change, Powers of Ten inspired, steady upward trajectory from fixed starting point (Tesla sign)
+
+Visual Style: Photorealistic, cinematic, documentary quality, realistic lighting transitions (dusk → night → space), high detail at all scales, professional space cinematography
+
+Technical Requirements: 16:9 aspect ratio, 1920x1080 minimum, 30-60fps, seamless loop capability, H.264 codec, optimized for web playback
 ```
 
 ---
 
-### Versión en Español
+### 🎯 VERSIÓN CORTA (Para IA con límite de texto)
+
+```
+Start: Close-up of red illuminated TESLA sign on building facade at dusk. Camera rises vertically and zooms out continuously revealing: Tesla dealership building → Los Angeles city block → full LA cityscape → California coastline → Earth from space → Solar System → Milky Way galaxy. Smooth vertical ascent, exponential zoom out, cinematic, photorealistic, Powers of Ten documentary style, seamless continuous motion, 16:9, 25-30 seconds.
+```
+
+---
+
+### 🇪🇸 VERSIÓN EN ESPAÑOL (Detallada)
+
+```
+Movimiento de cámara cinematográfico con zoom out vertical comenzando desde un letrero iluminado de TESLA en rojo sobre la fachada de un edificio, ascendiendo continuamente y alejándose a través de escalas cósmicas:
+
+PUNTO DE INICIO (0-3s):
+- Primer plano: Letras rojas iluminadas "TESLA" en exterior de edificio al anochecer
+- Resplandor LED cálido, fachada arquitectónica moderna
+- Enfoque nítido en el logo rojo brillante
+- Entorno comercial urbano, instalación profesional
+
+ETAPA 1 - Edificio (3-6s):
+- La cámara se aleja y sube verticalmente
+- Revelar edificio completo del concesionario Tesla
+- Arquitectura moderna de vidrio y acero
+- Estacionamiento con autos visibles abajo
+- Entorno de Los Ángeles, iluminación de hora dorada
+
+ETAPA 2 - Manzana de Ciudad (6-9s):
+- Continuar ascendiendo verticalmente, alejándose
+- Revelar manzana de ciudad con múltiples edificios
+- Calles con tráfico y luces de ciudad encendiéndose
+- Vista de pájaro expandiéndose
+- Atardecer transicionando a noche
+
+ETAPA 3 - Horizonte de Ciudad (9-12s):
+- Subir más alto, alejar más
+- Paisaje urbano completo de Los Ángeles visible
+- Rascacielos del centro, patrón de cuadrícula urbana
+- Luces de ciudad brillando en la tarde
+- Océano visible en la distancia
+
+ETAPA 4 - Vista Regional (12-15s):
+- Continuar ascendiendo a la atmósfera
+- Costa de California se hace visible
+- Cadenas montañosas, expansión urbana
+- Curvatura de la Tierra comenzando a mostrarse
+- Resplandor atmosférico, transición al espacio
+
+ETAPA 5 - Tierra desde el Espacio (15-20s):
+- Retroceder al espacio
+- Esfera completa de la Tierra visible con continentes
+- Resplandor azul de atmósfera alrededor del planeta
+- Estrellas comenzando a aparecer en el fondo
+- Vista espacial realista, estilo NASA
+
+ETAPA 6 - Sistema Solar (20-25s):
+- Continuar alejándose
+- La Tierra se convierte en un punto pequeño de luz
+- Otros planetas apenas visibles
+- Sol como estrella brillante
+- Oscuridad del espacio profundo con estrellas
+
+ETAPA 7 - Universo (25-30s):
+- Zoom out final a escala cósmica
+- Galaxia espiral (Vía Láctea) visible
+- Sistema solar ahora invisible
+- Nebulosas, cúmulos estelares, polvo cósmico
+- Espacio profundo, miles de millones de estrellas
+- Fotograma final listo para loop
+
+Movimiento de Cámara: Ascenso vertical continuo suave + zoom out, sin cortes, cambio de escala exponencial, inspirado en Powers of Ten, trayectoria vertical constante desde punto de inicio fijo (letrero Tesla)
+
+Estilo Visual: Fotorrealista, cinematográfico, calidad documental, transiciones de iluminación realistas (atardecer → noche → espacio), alto detalle en todas las escalas, cinematografía espacial profesional
+
+Requisitos Técnicos: Aspecto 16:9, mínimo 1920x1080, 30-60fps, capacidad de loop sin costuras, códec H.264, optimizado para reproducción web
+```
 
 ```
 Crea una secuencia cinematográfica de zoom-out que comienza desde un primer plano extremo de una instalación de señalización LED comercial en la fachada de un edificio al atardecer, alejándose gradualmente a través de seis etapas distintas:
@@ -118,66 +240,137 @@ Quality: Cinematic, loop-seamless
 
 ---
 
-## 🎯 PROMPTS POR PLATAFORMA DE IA
+## 🎯 PROMPTS ESPECÍFICOS POR PLATAFORMA DE IA
 
-### 1. **Runway ML** (Gen-3 Turbo o Gen-4)
-**Recomendado para**: Alta calidad cinematográfica
+### 1. **Runway ML** (Gen-3 Alpha o Gen-4) ⭐ RECOMENDADO
 
+**Prompt Optimizado:**
 ```
-Prompt: "Cinematic zoom out sequence from LED building signage to galaxy. Start: extreme close-up of illuminated commercial LED sign on building facade at golden hour. Zoom out continuously through: building exterior → city block → LA skyline → Earth from space → spiral galaxy. Smooth camera dolly out, realistic lighting transitions, Powers of Ten inspired, 16:9, professional cinematography."
+Cinematic vertical zoom out from illuminated red TESLA sign on building to universe. Start: close-up of glowing TESLA letters on modern dealership facade at dusk. Camera rises vertically, continuously pulling back revealing: complete Tesla building → Los Angeles city block → LA skyline → California coast → Earth from space → Solar System → Milky Way galaxy. Smooth exponential vertical ascent, photorealistic, seamless continuous motion, Powers of Ten inspired, documentary cinematography, 16:9, 30 seconds.
+```
 
-Settings:
-- Duration: 20 seconds
-- Camera Motion: Smooth zoom out
+**Settings:**
+- Duration: 10 seconds (Gen 3) o combinar múltiples clips
+- Camera Motion: Vertical dolly out + zoom
+- Motion Amount: 8-10 (máximo)
 - Style: Cinematic documentary
-- Seed: (experiment for best result)
+- Seed: Prueba 3-5 diferentes
+
+**Tip**: Genera en 3 segmentos de 10s cada uno y úelos:
+1. Tesla sign → City skyline (0-10s)
+2. City → Earth from space (10-20s)  
+3. Earth → Galaxy (20-30s)
+
+---
+
+### 2. **Pika Labs** 🎬
+
+**Prompt Format:**
+```
+[Camera: Smooth vertical zoom out, continuous ascent]
+[Starting frame: Red illuminated TESLA sign on building facade, close-up, dusk lighting]
+[Ending frame: Milky Way spiral galaxy in deep space, cosmic scale]
+[Motion: Vertical rise + exponential zoom out, no cuts]
+[Journey: Tesla sign → building → city → earth → space → galaxy]
+[Style: Cinematic documentary, Powers of Ten inspired, photorealistic]
+[Duration: 30 seconds]
+[Format: 16:9 landscape]
 ```
 
-### 2. **Pika Labs**
-**Recomendado para**: Control de movimiento
-
+**Commands:**
 ```
-Prompt: "Smooth zoom out from LED sign close-up to cosmic scale"
-
-/create 
-Camera: macro to cosmic zoom out
-Scene: LED signage installation → building → city → earth → galaxy
-Time: sunset to space
-Style: cinematic, professional
-Motion: continuous exponential zoom
-Ratio: 16:9
-FPS: 60
+/create vertical zoom out from Tesla sign to galaxy
+ratio:16:9
+motion:10
+camera:rise and pull back
+style:cinematic documentary
 ```
 
-### 3. **Kling AI (Kuaishou)**
-**Recomendado para**: Duración larga y calidad
+---
 
+### 3. **Kling AI** (Kuaishou) 💎 EXCELENTE CALIDAD
+
+**Prompt (English - Recommended):**
 ```
-Prompt (English): "Powers of Ten style zoom out: LED commercial signage macro detail → Los Angeles cityscape → Earth → spiral galaxy, cinematic, smooth camera movement, realistic lighting, 16:9, 20 seconds"
-
-Duration: High-quality mode (5-10s segments)
-Note: May need to generate in 2-3 segments and stitch
-```
-
-### 4. **HeyGen / D-ID** (No recomendado para este tipo)
-*Mejor para talking heads, no para zoom cósmico*
-
-### 5. **Luma Dream Machine**
-```
-Prompt: "Cinematic documentary zoom out sequence: starting from extreme closeup of LED building signage at sunset, smoothly zooming out revealing city, earth, and ending at galaxy view. Continuous motion, realistic lighting transitions, professional cinematography, 16:9 format."
-
-Motion strength: High
-Camera: Zoom out (orbital)
-Duration: Max available
+Photorealistic vertical camera ascent with zoom out: Start extreme close-up of red illuminated TESLA signage on modern building facade at golden hour. Camera smoothly rises vertically while zooming out exponentially, revealing 7 scale transitions: Tesla dealership building → Los Angeles city block → LA cityscape → California region → Earth from space → Solar System → Milky Way galaxy. Continuous smooth motion, realistic lighting transitions from sunset to deep space, Powers of Ten documentary style, cinematic quality, 16:9 format, seamless loop-ready.
 ```
 
-### 6. **Stable Video Diffusion**
-```
-Prompt: "Smooth exponential zoom out from building LED signage close-up to spiral galaxy cosmic view, cinematic lighting, professional camera work, documentary style"
+**Modo Profesional Settings:**
+- Duration: 10s (Kling 1.5) - Genera 3 clips y únelos
+- Mode: Professional
+- Camera: Custom (vertical zoom out)
+- Negative Prompt: "cuts, jumps, static, handheld shake, blur"
 
-Frames: 120+ (for 20s at 6fps)
-Motion bucket: High
-Conditioning: Strong camera motion
+**Prompt en Chino (opcional, mejor rendimiento):**
+```
+真实感垂直镜头上升与缩小：从现代建筑外墙上红色照明的特斯拉标志特写开始。镜头平滑垂直上升，同时指数级缩小，展示7个尺度转换：特斯拉经销商大楼→洛杉矶城市街区→洛杉矶天际线→加州地区→太空中的地球→太阳系→银河系。连续平滑运动，从日落到深空的真实光照转换，《十的次方》纪录片风格，电影质量，16:9格式，无缝循环。
+```
+
+---
+
+### 4. **Luma Dream Machine** 🌟
+
+**Prompt:**
+```
+Cinematic Powers of Ten zoom out: Red TESLA sign on building facade (extreme closeup, glowing LEDs, dusk) → vertical camera ascent revealing Tesla dealership → Los Angeles cityscape → Earth from space → spiral galaxy. Continuous smooth vertical rise with exponential zoom, photorealistic lighting transitions, documentary quality, 30 second journey from single point to cosmic scale, 16:9.
+```
+
+**Settings:**
+- Extend Video: Yes (para duración larga)
+- Camera Control: Zoom Out (Strong)
+- Motion: High
+- Style: Photorealistic
+
+---
+
+### 5. **Leonardo AI / Phoenix** 🎨
+
+**Prompt:**
+```
+Type: Vertical zoom out sequence
+Start: Red illuminated TESLA letters on building, close-up, dusk
+End: Milky Way galaxy spiral, deep space, cosmic view  
+Scale Journey: Building → City → Earth → Galaxy
+Camera: Smooth vertical dolly out + zoom
+Motion: Continuous exponential pullback
+Lighting: Realistic sunset to space transition
+Style: Documentary cinematography, Powers of Ten
+Format: 16:9 landscape
+Duration: 25-30 seconds
+Quality: Cinematic 4K
+```
+
+---
+
+### 6. **Stable Video Diffusion** 💻
+
+**Prompt:**
+```
+Smooth exponential vertical zoom out and camera rise from Tesla dealership red illuminated sign close-up to Milky Way galaxy cosmic view, passing through city, earth, and space scales. Continuous vertical ascent motion, photorealistic lighting transitions, cinematic documentary style, Powers of Ten inspired.
+```
+
+**Technical Settings:**
+```python
+frames = 180  # Para 30s @ 6fps
+motion_bucket_id = 255  # Máximo movimiento
+cond_aug = 0.02  # Baja variación
+fps = 6
+```
+
+---
+
+### 7. **Genmo / Mochi-1** 🆕
+
+**Prompt:**
+```
+Camera instruction: Vertical zoom out from point
+Starting scene: Illuminated red TESLA sign on building exterior, close-up view, warm LED glow, modern architecture, dusk lighting
+Camera motion: Rise vertically while zooming out exponentially  
+Journey: Building → City block → Skyline → Earth → Space → Galaxy
+Scales: 7 progressive zoom levels from 1 meter to light years
+Style: Cinematic documentary, photorealistic, smooth continuous motion
+Duration: 30 seconds
+Output: 16:9, high quality, loop-ready
 ```
 
 ---

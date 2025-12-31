@@ -13,6 +13,10 @@ class AntaresChatbot {
     this.createChatWidget();
     this.attachEventListeners();
     this.addInitialMessage();
+    // Auto-abrir el chat después de 1 segundo
+    setTimeout(() => {
+      this.openChat();
+    }, 1000);
   }
   
   createChatWidget() {
@@ -132,7 +136,7 @@ class AntaresChatbot {
     if (this.isOpen) {
       chatWindow.classList.remove('hidden');
       chatWindow.style.animation = 'slideUp 0.3s ease';
-      notification.style.display = 'none';
+      if (notification) notification.style.display = 'none';
     } else {
       chatWindow.style.animation = 'slideDown 0.3s ease';
       setTimeout(() => {
@@ -141,8 +145,36 @@ class AntaresChatbot {
     }
   }
   
+  openChat() {
+    if (!this.isOpen) {
+      this.isOpen = true;
+      const chatWindow = document.getElementById('chat-window');
+      const notification = document.querySelector('.chat-notification');
+      
+      chatWindow.classList.remove('hidden');
+      chatWindow.style.animation = 'slideUp 0.3s ease';
+      if (notification) notification.style.display = 'none';
+    }
+  }
+  
+  closeChat() {
+    if (this.isOpen) {
+      this.isOpen = false;
+      const chatWindow = document.getElementById('chat-window');
+      
+      chatWindow.style.animation = 'slideDown 0.3s ease';
+      setTimeout(() => {
+        chatWindow.classList.add('hidden');
+      }, 300);
+    }
+  }
+  
   addInitialMessage() {
-    this.addMessage('bot', 'Hello! 👋 Welcome to Antares Innovate. How can I assist you with your signage and LED needs today?');
+    this.addMessage('bot', 'Hello! 👋 Welcome to Antares Innovate.');
+    // Agregar segundo mensaje después de un delay
+    setTimeout(() => {
+      this.addMessage('bot', 'We specialize in commercial signage, LED solutions, and compliance services. How can I help you today?');
+    }, 1500);
   }
   
   addMessage(sender, text) {
