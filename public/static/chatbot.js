@@ -170,10 +170,10 @@ class AntaresChatbot {
   }
   
   addInitialMessage() {
-    this.addMessage('bot', 'Hello! 👋 Welcome to Antares Innovate.');
+    this.addMessage('bot', 'Hello! 👋 I\'m your Antares Innovate assistant.');
     // Agregar segundo mensaje después de un delay
     setTimeout(() => {
-      this.addMessage('bot', 'We specialize in commercial signage, LED solutions, and compliance services. How can I help you today?');
+      this.addMessage('bot', 'We specialize in commercial signage, LED retrofit solutions, and compliance services for major brands. How can I help you today?');
     }, 1500);
   }
   
@@ -194,7 +194,7 @@ class AntaresChatbot {
     this.messages.push({ sender, text });
   }
   
-  sendMessage() {
+  async sendMessage() {
     const input = document.getElementById('chat-input');
     const message = input.value.trim();
     
@@ -203,29 +203,58 @@ class AntaresChatbot {
     this.addMessage('user', message);
     input.value = '';
     
-    // Simulate bot response
-    setTimeout(() => {
-      this.respondToMessage(message);
-    }, 1000);
+    // Show typing indicator
+    this.addTypingIndicator();
+    
+    try {
+      // Call API endpoint
+      const response = await fetch('/api/chat', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ message })
+      });
+      
+      const data = await response.json();
+      
+      // Remove typing indicator
+      this.removeTypingIndicator();
+      
+      if (data.success && data.reply) {
+        this.addMessage('bot', data.reply);
+      } else {
+        this.addMessage('bot', 'I apologize, but I\'m having trouble right now. Please call us at (323) 444-5555 for immediate assistance.');
+      }
+    } catch (error) {
+      console.error('Chat error:', error);
+      this.removeTypingIndicator();
+      this.addMessage('bot', 'I apologize for the inconvenience. Please call us at (323) 444-5555 or try again in a moment.');
+    }
   }
   
-  respondToMessage(message) {
-    const lowerMessage = message.toLowerCase();
-    let response = '';
-    
-    if (lowerMessage.includes('price') || lowerMessage.includes('cost') || lowerMessage.includes('quote')) {
-      response = 'I\'d be happy to help you get a quote! Our pricing depends on project scope and requirements. Would you like me to connect you with our team for a detailed quote?';
-    } else if (lowerMessage.includes('service') || lowerMessage.includes('what do you')) {
-      response = 'We specialize in: Commercial Signage Installation, LED Retrofit & Energy Optimization, Technical Maintenance, Compliance & Permits, and Custom Industrial Solutions. Which interests you?';
-    } else if (lowerMessage.includes('call') || lowerMessage.includes('phone') || lowerMessage.includes('contact')) {
-      response = 'You can reach us at <strong>1-800-ANTARES</strong> or click the "Request Call" button below and we\'ll call you back within 15 minutes!';
-    } else if (lowerMessage.includes('hello') || lowerMessage.includes('hi')) {
-      response = 'Hello! How can I help you today with your signage project?';
-    } else {
-      response = 'Thanks for your message! Our team specializes in commercial signage and LED solutions. Would you like to schedule a consultation or learn more about our services?';
+  addTypingIndicator() {
+    const messagesContainer = document.getElementById('chat-messages');
+    const typingHTML = `
+      <div class="flex justify-start" id="typing-indicator">
+        <div class="bg-white rounded-2xl px-4 py-3 shadow">
+          <div class="flex space-x-2">
+            <div class="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style="animation-delay: 0ms"></div>
+            <div class="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style="animation-delay: 150ms"></div>
+            <div class="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style="animation-delay: 300ms"></div>
+          </div>
+        </div>
+      </div>
+    `;
+    messagesContainer.insertAdjacentHTML('beforeend', typingHTML);
+    messagesContainer.scrollTop = messagesContainer.scrollHeight;
+  }
+  
+  removeTypingIndicator() {
+    const indicator = document.getElementById('typing-indicator');
+    if (indicator) {
+      indicator.remove();
     }
-    
-    this.addMessage('bot', response);
   }
   
   handleQuickAction(action) {

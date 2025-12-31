@@ -34,7 +34,7 @@ app.get('/', (c) => {
       <!-- Main Heading -->
       <h1 class="font-display font-black text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl leading-tight">
         <span class="block text-white">Engineering Excellence</span>
-        <span class="block text-antares-blue">Industrial Precision</span>
+        <span class="block text-white">Industrial <span class="text-antares-blue">Precision</span></span>
       </h1>
 
       <!-- Subtitle -->
@@ -1893,6 +1893,101 @@ app.post('/api/contact', async (c) => {
     return c.json({ 
       success: false, 
       message: 'An error occurred. Please try again.' 
+    }, 500)
+  }
+})
+
+// Chatbot API endpoint with OpenAI
+app.post('/api/chat', async (c) => {
+  try {
+    const { message } = await c.req.json()
+    
+    // Get OpenAI API key from environment
+    const env = c.env as { OPENAI_API_KEY?: string }
+    const apiKey = env.OPENAI_API_KEY
+    
+    if (!apiKey) {
+      return c.json({ 
+        success: false,
+        reply: 'I apologize, but I\'m currently unable to process requests. Please call us at (323) 444-5555 for immediate assistance.'
+      })
+    }
+
+    // Company context for the AI
+    const systemPrompt = `You are a helpful customer service representative for Antares Innovate, a premium industrial signage and LED solutions company based in Los Angeles, California.
+
+COMPANY OVERVIEW:
+- Founded in 2010 (15+ years of excellence)
+- Global leader in commercial signage installation, LED retrofit solutions, and technical compliance
+- Serving California and beyond with licensed & insured services
+- 500+ projects completed for major brands like Tesla, Volvo, Ford, Honda, Five Below, Crate & Barrel, Regus, APM Terminals, and TikTok
+- 24/7 technical support available
+- 100% compliance with Title 24, electrical codes, safety standards, and municipal ordinances
+
+OUR SERVICES:
+1. Commercial Signage Installation - Retail, automotive, corporate, and industrial signage
+2. LED Retrofit & Energy Optimization - High-efficiency LED conversions with energy savings
+3. Technical Maintenance & Repair - 24/7 emergency response and preventive maintenance
+4. Compliance & Permits - Full regulatory compliance and permit management
+5. Custom Industrial Solutions - Tailored solutions for complex projects
+6. Multi-Location Program Management - Coordinated rollouts across multiple sites
+
+CONTACT INFORMATION:
+- Phone: (323) 444-5555 (24/7 available)
+- Email: info@antaresinnovate.com
+- Location: Los Angeles, California
+- Service Area: California & Beyond
+
+YOUR ROLE:
+- Be friendly, professional, and concise
+- Answer questions about our services, projects, and capabilities
+- Help users understand our expertise and value proposition
+- Guide them toward requesting a consultation or calling us
+- Keep responses short (2-3 sentences max) but informative
+- Use a professional yet approachable tone
+- If asked about pricing, explain that we provide custom quotes based on project needs and encourage them to request a consultation
+
+RESPONSE STYLE:
+- Short and precise (2-3 sentences)
+- Friendly and professional
+- Action-oriented (guide toward next steps)
+- Highlight our expertise and reliability`
+
+    // Call OpenAI API
+    const response = await fetch('https://api.openai.com/v1/chat/completions', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${apiKey}`
+      },
+      body: JSON.stringify({
+        model: 'gpt-4o-mini', // Fast, cost-effective, great for customer service
+        messages: [
+          { role: 'system', content: systemPrompt },
+          { role: 'user', content: message }
+        ],
+        max_tokens: 150, // Keep responses concise
+        temperature: 0.7, // Balanced creativity and consistency
+      })
+    })
+
+    if (!response.ok) {
+      throw new Error('OpenAI API error')
+    }
+
+    const data = await response.json()
+    const reply = data.choices[0]?.message?.content || 'I apologize, but I couldn\'t process that. Please call us at (323) 444-5555.'
+
+    return c.json({ 
+      success: true,
+      reply: reply.trim()
+    })
+    
+  } catch (error) {
+    console.error('Chat API error:', error)
+    return c.json({ 
+      success: false,
+      reply: 'I apologize for the inconvenience. Please call us at (323) 444-5555 for immediate assistance, or try again in a moment.'
     }, 500)
   }
 })
