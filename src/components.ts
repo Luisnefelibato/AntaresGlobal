@@ -328,8 +328,8 @@ export const PageLayout = (title: string, description: string, content: string) 
     ${RequestCallModal()}
     ${ChatbotWidget()}
     
-    <script src="/static/app.js"></script>
-    <script src="/static/chatbot.js"></script>
+    <script src="/static/app.js?v=2"></script>
+    <script src="/static/chatbot.js?v=2"></script>
 </body>
 </html>
 `;
