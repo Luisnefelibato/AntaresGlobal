@@ -281,12 +281,12 @@ class AntaresChatbot {
       if (data.success && data.reply) {
         this.addMessageWithTyping('bot', data.reply);
       } else {
-        this.addMessageWithTyping('bot', 'I apologize, but I\'m having trouble right now.\n\nPlease call us at (323) 444-5555 for immediate assistance.');
+        this.addMessageWithTyping('bot', 'I apologize, but I\'m having trouble right now.\n\nPlease message us on WhatsApp: +1 (689) 331-2690');
       }
     } catch (error) {
       console.error('Chat error:', error);
       this.removeTypingIndicator();
-      this.addMessageWithTyping('bot', 'I apologize for the inconvenience.\n\nPlease call us at (323) 444-5555 or try again in a moment.');
+      this.addMessageWithTyping('bot', 'I apologize for the inconvenience.\n\nPlease message us on WhatsApp: +1 (689) 331-2690 or try again in a moment.');
     }
   }
   
@@ -337,7 +337,7 @@ class AntaresChatbot {
         this.addTypingIndicator();
         setTimeout(() => {
           this.removeTypingIndicator();
-          this.addMessageWithTyping('bot', 'Perfect! Want to chat now? Call (323) 444-5555\n\nOr drop your number and I\'ll have someone call you in like 30 min.');
+          this.addMessageWithTyping('bot', 'Perfect! Want to chat now? Message us on WhatsApp: https://wa.me/16893312690\n\nOr drop your number and I\'ll have someone call you in like 30 min.');
         }, 1000);
         break;
     }
