@@ -242,36 +242,20 @@ app.get('/', (c) => {
       <p class="text-white/60 text-lg max-w-2xl mx-auto">Explore our latest high-profile installations</p>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      <a href="/projects" class="group relative h-80 rounded-2xl overflow-hidden">
-        <img src="/static/images/projects/tesla-red-facade.jpg" alt="Tesla Installation" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
-        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex items-end p-6">
-          <div>
-            <h3 class="text-xl font-bold mb-2">Tesla Dealership</h3>
-            <p class="text-white/80 text-sm">Corporate Facade Signage</p>
+    <!-- Video Placeholder - Video will be added here -->
+    <div class="max-w-5xl mx-auto mb-12">
+      <div class="relative rounded-2xl overflow-hidden bg-antares-gray border border-white/10" style="aspect-ratio: 16/9;">
+        <div class="absolute inset-0 flex items-center justify-center">
+          <div class="text-center">
+            <svg class="w-20 h-20 mx-auto mb-4 text-antares-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+            <p class="text-xl text-white/60">Project Showcase Video</p>
+            <p class="text-sm text-white/40 mt-2">Coming Soon</p>
           </div>
         </div>
-      </a>
-
-      <a href="/projects" class="group relative h-80 rounded-2xl overflow-hidden">
-        <img src="/static/images/projects/volvo-mack-sunset.jpg" alt="Volvo Trucks" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
-        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex items-end p-6">
-          <div>
-            <h3 class="text-xl font-bold mb-2">Volvo & Mack Trucks</h3>
-            <p class="text-white/80 text-sm">Automotive Pylon Installation</p>
-          </div>
-        </div>
-      </a>
-
-      <a href="/projects" class="group relative h-80 rounded-2xl overflow-hidden">
-        <img src="/static/images/projects/crate-barrel-night.jpg" alt="Crate & Barrel" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
-        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex items-end p-6">
-          <div>
-            <h3 class="text-xl font-bold mb-2">Crate & Barrel</h3>
-            <p class="text-white/80 text-sm">Retail Illuminated Signage</p>
-          </div>
-        </div>
-      </a>
+      </div>
     </div>
 
     <div class="text-center mt-12">
@@ -1549,18 +1533,409 @@ app.get('/services', (c) => {
 
 
 app.get('/services/design', (c) => {
-  const content = `<section class="py-24 bg-antares-dark"><div class="container mx-auto px-4"><div class="max-w-4xl mx-auto text-center mb-16"><h1 class="text-5xl font-bold mb-6">Custom Sign Design <span class="text-antares-blue">California</span></h1><p class="text-xl text-white/70 mb-8">Professional design services for your business signage.</p><a href="https://wa.me/16893312690" class="inline-flex items-center px-8 py-4 bg-green-600 hover:bg-green-700 rounded-xl font-semibold">Get Free Quote</a></div><div class="max-w-5xl mx-auto mb-12"><img src="/static/images/services/design-service.jpg" alt="Sign Design" class="w-full rounded-2xl"/></div><div class="grid md:grid-cols-3 gap-6"><div class="bg-antares-gray p-6 rounded-xl"><h3 class="font-bold mb-2">Channel Letters</h3><p class="text-white/70">3D illuminated signage</p></div><div class="bg-antares-gray p-6 rounded-xl"><h3 class="font-bold mb-2">Storefront Signs</h3><p class="text-white/70">Attract more customers</p></div><div class="bg-antares-gray p-6 rounded-xl"><h3 class="font-bold mb-2">LED Signs</h3><p class="text-white/70">Energy efficient signage</p></div></div></div></section>`
+  const content = `
+<section class="py-24 lg:py-32 bg-antares-dark">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-6xl mx-auto">
+      <!-- Hero -->
+      <div class="text-center mb-12">
+        <h1 class="text-4xl lg:text-6xl font-display font-bold mb-6">
+          Custom Sign Design <span class="text-antares-blue">California</span>
+        </h1>
+        <p class="text-xl text-white/70 leading-relaxed mb-8 max-w-3xl mx-auto">
+          Whether you're starting from scratch or your brand needs evolution, we specialize in visual solutions that communicate your values instantly. Our design team creates signage that makes your business stand out.
+        </p>
+        <a href="https://wa.me/16893312690" target="_blank" class="inline-flex items-center px-8 py-4 bg-green-600 hover:bg-green-700 rounded-xl font-semibold text-lg transition-all duration-300 hover:scale-105">
+          <svg class="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          Get Free Quote
+        </a>
+      </div>
+
+      <!-- Image - Smaller -->
+      <div class="max-w-3xl mx-auto mb-16">
+        <img src="/static/images/services/design-service.jpg" alt="Custom Sign Design Studio" class="w-full rounded-2xl shadow-2xl"/>
+      </div>
+
+      <!-- What We Offer -->
+      <div class="mb-16">
+        <h2 class="text-3xl lg:text-4xl font-display font-bold text-center mb-4">What We Do for Your Business</h2>
+        <p class="text-lg text-white/60 text-center mb-12 max-w-3xl mx-auto">From concept to creation, we design signage that attracts customers and boosts your brand visibility</p>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="bg-antares-gray p-6 rounded-xl border border-white/10 hover:border-antares-blue transition-all">
+            <div class="text-3xl mb-4">💡</div>
+            <h3 class="text-xl font-bold mb-3">Channel Letters</h3>
+            <p class="text-white/70 mb-3">3D illuminated signage that makes your brand stand out day and night. Perfect for storefronts and building facades.</p>
+            <ul class="text-sm text-white/60 space-y-1">
+              <li>• LED or Neon illumination</li>
+              <li>• Weather-resistant materials</li>
+              <li>• Custom fonts and colors</li>
+            </ul>
+          </div>
+
+          <div class="bg-antares-gray p-6 rounded-xl border border-white/10 hover:border-antares-blue transition-all">
+            <div class="text-3xl mb-4">🏪</div>
+            <h3 class="text-xl font-bold mb-3">Storefront Signs</h3>
+            <p class="text-white/70 mb-3">Eye-catching storefront signage designed to attract more customers and increase foot traffic.</p>
+            <ul class="text-sm text-white/60 space-y-1">
+              <li>• Illuminated and non-illuminated</li>
+              <li>• Vinyl graphics and decals</li>
+              <li>• Dimensional lettering</li>
+            </ul>
+          </div>
+
+          <div class="bg-antares-gray p-6 rounded-xl border border-white/10 hover:border-antares-blue transition-all">
+            <div class="text-3xl mb-4">✏️</div>
+            <h3 class="text-xl font-bold mb-3">Custom Business Signs</h3>
+            <p class="text-white/70 mb-3">Tailored signage solutions that reflect your unique brand identity and business values.</p>
+            <ul class="text-sm text-white/60 space-y-1">
+              <li>• Logo design and branding</li>
+              <li>• Material selection guidance</li>
+              <li>• Compliance consulting</li>
+            </ul>
+          </div>
+
+          <div class="bg-antares-gray p-6 rounded-xl border border-white/10 hover:border-antares-blue transition-all">
+            <div class="text-3xl mb-4">⚡</div>
+            <h3 class="text-xl font-bold mb-3">LED Signs</h3>
+            <p class="text-white/70 mb-3">Energy-efficient LED signage with vibrant colors and low maintenance costs.</p>
+            <ul class="text-sm text-white/60 space-y-1">
+              <li>• Energy savings up to 60%</li>
+              <li>• Long-lasting (50,000+ hours)</li>
+              <li>• Bright and visible 24/7</li>
+            </ul>
+          </div>
+
+          <div class="bg-antares-gray p-6 rounded-xl border border-white/10 hover:border-antares-blue transition-all">
+            <div class="text-3xl mb-4">🪟</div>
+            <h3 class="text-xl font-bold mb-3">Window Graphics</h3>
+            <p class="text-white/70 mb-3">Transform your windows into powerful marketing tools with custom vinyl graphics.</p>
+            <ul class="text-sm text-white/60 space-y-1">
+              <li>• Full or partial coverage</li>
+              <li>• Perforated window film</li>
+              <li>• Easy to update seasonally</li>
+            </ul>
+          </div>
+
+          <div class="bg-antares-gray p-6 rounded-xl border border-white/10 hover:border-antares-blue transition-all">
+            <div class="text-3xl mb-4">🏛️</div>
+            <h3 class="text-xl font-bold mb-3">Monument Signs</h3>
+            <p class="text-white/70 mb-3">Permanent ground signage for lasting brand presence at your location.</p>
+            <ul class="text-sm text-white/60 space-y-1">
+              <li>• Stone, concrete, or metal</li>
+              <li>• Illuminated options available</li>
+              <li>• Landscape integration</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process -->
+      <div class="bg-antares-gray/50 rounded-2xl p-8 lg:p-12">
+        <h2 class="text-3xl font-display font-bold text-center mb-8">Our Design Process</h2>
+        <div class="grid md:grid-cols-4 gap-6">
+          <div class="text-center">
+            <div class="w-16 h-16 bg-antares-blue rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">1</div>
+            <h3 class="font-bold mb-2">Consultation</h3>
+            <p class="text-sm text-white/60">We listen to your vision and business goals</p>
+          </div>
+          <div class="text-center">
+            <div class="w-16 h-16 bg-antares-blue rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">2</div>
+            <h3 class="font-bold mb-2">Design Concepts</h3>
+            <p class="text-sm text-white/60">Multiple design options for your review</p>
+          </div>
+          <div class="text-center">
+            <div class="w-16 h-16 bg-antares-blue rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">3</div>
+            <h3 class="font-bold mb-2">Refinement</h3>
+            <p class="text-sm text-white/60">Perfect every detail with your feedback</p>
+          </div>
+          <div class="text-center">
+            <div class="w-16 h-16 bg-antares-blue rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">4</div>
+            <h3 class="font-bold mb-2">Production Ready</h3>
+            <p class="text-sm text-white/60">Deliver files ready for fabrication</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>`
   return c.html(PageLayout('Custom Sign Design California | Antares Innovate', 'Professional sign design services in California', content))
 })
 
 app.get('/services/print', (c) => {
-  const content = `<section class="py-24 bg-antares-dark"><div class="container mx-auto px-4"><div class="max-w-4xl mx-auto text-center mb-16"><h1 class="text-5xl font-bold mb-6">Professional Sign <span class="text-antares-blue">Printing</span></h1><p class="text-xl text-white/70 mb-8">High-quality sign printing and fabrication services.</p><a href="https://wa.me/16893312690" class="inline-flex items-center px-8 py-4 bg-green-600 hover:bg-green-700 rounded-xl font-semibold">Get Free Quote</a></div><div class="max-w-5xl mx-auto mb-12"><img src="/static/images/services/print-service.jpg" alt="Sign Printing" class="w-full rounded-2xl"/></div><div class="grid md:grid-cols-3 gap-6"><div class="bg-antares-gray p-6 rounded-xl"><h3 class="font-bold mb-2">Vinyl Signs</h3><p class="text-white/70">Weather-resistant printing</p></div><div class="bg-antares-gray p-6 rounded-xl"><h3 class="font-bold mb-2">Outdoor Signs</h3><p class="text-white/70">UV-resistant prints</p></div><div class="bg-antares-gray p-6 rounded-xl"><h3 class="font-bold mb-2">Window Graphics</h3><p class="text-white/70">Vibrant displays</p></div></div></div></section>`
-  return c.html(PageLayout('Professional Sign Printing California | Antares Innovate', 'High-quality sign printing services in California', content))
+  const content = `
+<section class="py-24 lg:py-32 bg-antares-dark">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-6xl mx-auto">
+      <!-- Hero -->
+      <div class="text-center mb-12">
+        <h1 class="text-4xl lg:text-6xl font-display font-bold mb-6">
+          Professional Sign <span class="text-antares-blue">Printing</span> California
+        </h1>
+        <p class="text-xl text-white/70 leading-relaxed mb-8 max-w-3xl mx-auto">
+          In a digital world, physical has special weight. Texture, color precision, and finish quality say more about you than a thousand emails. We don't just print; we ensure the first impression is flawless.
+        </p>
+        <a href="https://wa.me/16893312690" target="_blank" class="inline-flex items-center px-8 py-4 bg-green-600 hover:bg-green-700 rounded-xl font-semibold text-lg transition-all duration-300 hover:scale-105">
+          <svg class="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          Get Free Quote
+        </a>
+      </div>
+
+      <!-- Image - Smaller -->
+      <div class="max-w-3xl mx-auto mb-16">
+        <img src="/static/images/services/print-service.jpg" alt="Professional Sign Printing Large Format" class="w-full rounded-2xl shadow-2xl"/>
+      </div>
+
+      <!-- Printing Services -->
+      <div class="mb-16">
+        <h2 class="text-3xl lg:text-4xl font-display font-bold text-center mb-4">High-Impact Printing Solutions</h2>
+        <p class="text-lg text-white/60 text-center mb-12 max-w-3xl mx-auto">State-of-the-art large format printing for vibrant, durable signage that lasts</p>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="bg-antares-gray p-6 rounded-xl border border-white/10 hover:border-antares-blue transition-all">
+            <div class="text-3xl mb-4">📄</div>
+            <h3 class="text-xl font-bold mb-3">Vinyl Signs</h3>
+            <p class="text-white/70 mb-3">Durable, weather-resistant vinyl printing for indoor and outdoor use.</p>
+            <ul class="text-sm text-white/60 space-y-1">
+              <li>• Premium cast vinyl</li>
+              <li>• UV-resistant inks</li>
+              <li>• 5-7 year outdoor durability</li>
+              <li>• Matte or gloss finish</li>
+            </ul>
+          </div>
+
+          <div class="bg-antares-gray p-6 rounded-xl border border-white/10 hover:border-antares-blue transition-all">
+            <div class="text-3xl mb-4">☀️</div>
+            <h3 class="text-xl font-bold mb-3">Outdoor Signs</h3>
+            <p class="text-white/70 mb-3">UV-resistant prints designed to withstand California weather conditions.</p>
+            <ul class="text-sm text-white/60 space-y-1">
+              <li>• Aluminum composite panels</li>
+              <li>• Coroplast/corrugated plastic</li>
+              <li>• PVC foam board</li>
+              <li>• Weatherproof laminates</li>
+            </ul>
+          </div>
+
+          <div class="bg-antares-gray p-6 rounded-xl border border-white/10 hover:border-antares-blue transition-all">
+            <div class="text-3xl mb-4">🏢</div>
+            <h3 class="text-xl font-bold mb-3">Indoor Signage</h3>
+            <p class="text-white/70 mb-3">Premium interior printing for lobbies, offices, and retail spaces.</p>
+            <ul class="text-sm text-white/60 space-y-1">
+              <li>• Foam core mounting</li>
+              <li>• Canvas and fabric prints</li>
+              <li>• Acrylic face mounting</li>
+              <li>• Gator board displays</li>
+            </ul>
+          </div>
+
+          <div class="bg-antares-gray p-6 rounded-xl border border-white/10 hover:border-antares-blue transition-all">
+            <div class="text-3xl mb-4">🪟</div>
+            <h3 class="text-xl font-bold mb-3">Window Graphics</h3>
+            <p class="text-white/70 mb-3">Vibrant window displays that turn traffic into sales.</p>
+            <ul class="text-sm text-white/60 space-y-1">
+              <li>• One-way vision film</li>
+              <li>• Perforated vinyl</li>
+              <li>• Static cling graphics</li>
+              <li>• Frosted window film</li>
+            </ul>
+          </div>
+
+          <div class="bg-antares-gray p-6 rounded-xl border border-white/10 hover:border-antares-blue transition-all">
+            <div class="text-3xl mb-4">🏪</div>
+            <h3 class="text-xl font-bold mb-3">Store Signs</h3>
+            <p class="text-white/70 mb-3">Professional storefront printing that attracts customers.</p>
+            <ul class="text-sm text-white/60 space-y-1">
+              <li>• Hanging banners</li>
+              <li>• A-frame sidewalk signs</li>
+              <li>• Retractable banner stands</li>
+              <li>• Point-of-sale displays</li>
+            </ul>
+          </div>
+
+          <div class="bg-antares-gray p-6 rounded-xl border border-white/10 hover:border-antares-blue transition-all">
+            <div class="text-3xl mb-4">💡</div>
+            <h3 class="text-xl font-bold mb-3">Illuminated Signs</h3>
+            <p class="text-white/70 mb-3">Backlit and LED-integrated printed signage for 24/7 visibility.</p>
+            <ul class="text-sm text-white/60 space-y-1">
+              <li>• Light box graphics</li>
+              <li>• Backlit flex face</li>
+              <li>• LED edge-lit panels</li>
+              <li>• Channel letter faces</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quality Promise -->
+      <div class="bg-gradient-to-br from-antares-blue/20 to-blue-600/20 rounded-2xl p-8 lg:p-12 border border-antares-blue/30">
+        <h2 class="text-3xl font-display font-bold text-center mb-8">Our Quality Promise</h2>
+        <div class="grid md:grid-cols-3 gap-8 text-center">
+          <div>
+            <div class="text-5xl text-antares-blue font-bold mb-2">100%</div>
+            <h3 class="font-bold mb-2">Color Accuracy</h3>
+            <p class="text-sm text-white/70">Precise color matching every time with professional calibration</p>
+          </div>
+          <div>
+            <div class="text-5xl text-antares-blue font-bold mb-2">Premium</div>
+            <h3 class="font-bold mb-2">Materials</h3>
+            <p class="text-sm text-white/70">Only the highest quality substrates and inks</p>
+          </div>
+          <div>
+            <div class="text-5xl text-antares-blue font-bold mb-2">Fast</div>
+            <h3 class="font-bold mb-2">Turnaround</h3>
+            <p class="text-sm text-white/70">Quick production without compromising quality</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>`
+  return c.html(PageLayout('Professional Sign Printing California | Large Format Printing | Antares Innovate', 'High-quality sign printing services in California', content))
 })
 
 app.get('/services/installation', (c) => {
-  const content = `<section class="py-24 bg-antares-dark"><div class="container mx-auto px-4"><div class="max-w-4xl mx-auto text-center mb-16"><h1 class="text-5xl font-bold mb-6">Professional Sign <span class="text-antares-blue">Installation</span></h1><p class="text-xl text-white/70 mb-8">Expert sign installation throughout California.</p><a href="https://wa.me/16893312690" class="inline-flex items-center px-8 py-4 bg-green-600 hover:bg-green-700 rounded-xl font-semibold">Get Free Quote</a></div><div class="max-w-5xl mx-auto mb-12"><img src="/static/images/services/installation-service.jpg" alt="Sign Installation" class="w-full rounded-2xl"/></div><div class="grid md:grid-cols-3 gap-6"><div class="bg-antares-gray p-6 rounded-xl"><h3 class="font-bold mb-2">Commercial Signage</h3><p class="text-white/70">Storefront installation</p></div><div class="bg-antares-gray p-6 rounded-xl"><h3 class="font-bold mb-2">LED Installation</h3><p class="text-white/70">Electrical integration</p></div><div class="bg-antares-gray p-6 rounded-xl"><h3 class="font-bold mb-2">High-Rise Work</h3><p class="text-white/70">Any height installation</p></div></div></div></section>`
-  return c.html(PageLayout('Professional Sign Installation California | Antares Innovate', 'Expert sign installation services in California', content))
+  const content = `
+<section class="py-24 lg:py-32 bg-antares-dark">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-6xl mx-auto">
+      <!-- Hero -->
+      <div class="text-center mb-12">
+        <h1 class="text-4xl lg:text-6xl font-display font-bold mb-6">
+          Professional Sign <span class="text-antares-blue">Installation</span> California
+        </h1>
+        <p class="text-xl text-white/70 leading-relaxed mb-8 max-w-3xl mx-auto">
+          No matter the height, surface, or complexity. We have the equipment and experience to install your visual communication in any environment. Licensed, insured, and Title 24 compliant.
+        </p>
+        <a href="https://wa.me/16893312690" target="_blank" class="inline-flex items-center px-8 py-4 bg-green-600 hover:bg-green-700 rounded-xl font-semibold text-lg transition-all duration-300 hover:scale-105">
+          <svg class="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          Get Free Quote
+        </a>
+      </div>
+
+      <!-- Image - Smaller -->
+      <div class="max-w-3xl mx-auto mb-16">
+        <img src="/static/images/services/installation-service.jpg" alt="Professional Sign Installation" class="w-full rounded-2xl shadow-2xl"/>
+      </div>
+
+      <!-- Installation Services -->
+      <div class="mb-16">
+        <h2 class="text-3xl lg:text-4xl font-display font-bold text-center mb-4">High-Impact Installation Specialists</h2>
+        <p class="text-lg text-white/60 text-center mb-12 max-w-3xl mx-auto">Expert installation services with professional equipment and certified technicians</p>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="bg-antares-gray p-6 rounded-xl border border-white/10 hover:border-antares-blue transition-all">
+            <div class="text-3xl mb-4">🏢</div>
+            <h3 class="text-xl font-bold mb-3">Commercial Signage</h3>
+            <p class="text-white/70 mb-3">Professional storefront and business sign installation services.</p>
+            <ul class="text-sm text-white/60 space-y-1">
+              <li>• Building facade mounting</li>
+              <li>• Storefront installation</li>
+              <li>• Wall-mounted signage</li>
+              <li>• Post and pole signs</li>
+            </ul>
+          </div>
+
+          <div class="bg-antares-gray p-6 rounded-xl border border-white/10 hover:border-antares-blue transition-all">
+            <div class="text-3xl mb-4">⚡</div>
+            <h3 class="text-xl font-bold mb-3">LED Installation</h3>
+            <p class="text-white/70 mb-3">Expert electrical work and LED system integration.</p>
+            <ul class="text-sm text-white/60 space-y-1">
+              <li>• Licensed electricians</li>
+              <li>• LED retrofit services</li>
+              <li>• Power supply installation</li>
+              <li>• Dimming and controls</li>
+            </ul>
+          </div>
+
+          <div class="bg-antares-gray p-6 rounded-xl border border-white/10 hover:border-antares-blue transition-all">
+            <div class="text-3xl mb-4">🏗️</div>
+            <h3 class="text-xl font-bold mb-3">High-Rise Work</h3>
+            <p class="text-white/70 mb-3">Certified for installations at any height with specialized equipment.</p>
+            <ul class="text-sm text-white/60 space-y-1">
+              <li>• Crane and lift services</li>
+              <li>• Rope access certified</li>
+              <li>• Safety harness systems</li>
+              <li>• OSHA compliant crews</li>
+            </ul>
+          </div>
+
+          <div class="bg-antares-gray p-6 rounded-xl border border-white/10 hover:border-antares-blue transition-all">
+            <div class="text-3xl mb-4">📋</div>
+            <h3 class="text-xl font-bold mb-3">Permits & Compliance</h3>
+            <p class="text-white/70 mb-3">Handle all permits and ensure Title 24 compliance.</p>
+            <ul class="text-sm text-white/60 space-y-1">
+              <li>• Permit application filing</li>
+              <li>• Building code compliance</li>
+              <li>• Title 24 expertise</li>
+              <li>• Inspection coordination</li>
+            </ul>
+          </div>
+
+          <div class="bg-antares-gray p-6 rounded-xl border border-white/10 hover:border-antares-blue transition-all">
+            <div class="text-3xl mb-4">🌙</div>
+            <h3 class="text-xl font-bold mb-3">After-Hours Installation</h3>
+            <p class="text-white/70 mb-3">Flexible scheduling including nights and weekends.</p>
+            <ul class="text-sm text-white/60 space-y-1">
+              <li>• Minimal business disruption</li>
+              <li>• Weekend availability</li>
+              <li>• Night shift crews</li>
+              <li>• Emergency installations</li>
+            </ul>
+          </div>
+
+          <div class="bg-antares-gray p-6 rounded-xl border border-white/10 hover:border-antares-blue transition-all">
+            <div class="text-3xl mb-4">🔧</div>
+            <h3 class="text-xl font-bold mb-3">Maintenance & Support</h3>
+            <p class="text-white/70 mb-3">Ongoing maintenance and 24/7 emergency support.</p>
+            <ul class="text-sm text-white/60 space-y-1">
+              <li>• Preventive maintenance</li>
+              <li>• Bulb/LED replacement</li>
+              <li>• Emergency repairs</li>
+              <li>• Service contracts available</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Safety & Compliance -->
+      <div class="grid md:grid-cols-2 gap-6 mb-16">
+        <div class="bg-antares-gray/50 rounded-2xl p-8 border border-white/10">
+          <h2 class="text-2xl font-display font-bold mb-6">Safety & Compliance</h2>
+          <div class="space-y-4">
+            <div class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-antares-blue flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <div><h3 class="font-bold mb-1">Licensed & Insured</h3><p class="text-sm text-white/70">Fully licensed contractors with comprehensive insurance coverage</p></div>
+            </div>
+            <div class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-antares-blue flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <div><h3 class="font-bold mb-1">OSHA Certified</h3><p class="text-sm text-white/70">All technicians are OSHA safety trained and certified</p></div>
+            </div>
+            <div class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-antares-blue flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <div><h3 class="font-bold mb-1">Title 24 Compliant</h3><p class="text-sm text-white/70">Experts in California building code compliance</p></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-br from-antares-blue/20 to-blue-600/20 rounded-2xl p-8 border border-antares-blue/30">
+          <h2 class="text-2xl font-display font-bold mb-6">Service Areas</h2>
+          <p class="text-white/70 mb-4">We serve all of California including:</p>
+          <div class="grid grid-cols-2 gap-3">
+            <div class="text-sm">• Los Angeles</div>
+            <div class="text-sm">• San Diego</div>
+            <div class="text-sm">• Bay Area</div>
+            <div class="text-sm">• Orange County</div>
+            <div class="text-sm">• Sacramento</div>
+            <div class="text-sm">• Riverside</div>
+            <div class="text-sm">• San Jose</div>
+            <div class="text-sm">• Fresno</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>`
+  return c.html(PageLayout('Professional Sign Installation California | Commercial Signage Installation', 'Expert sign installation services throughout California', content))
 })
 
 app.get('/projects', (c) => {
