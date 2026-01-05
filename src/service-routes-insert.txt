@@ -1,0 +1,31 @@
+
+// Design Service Detail Page
+app.get('/services/design', (c) => {
+  const content = DesignServicePage()
+  return c.html(PageLayout({
+    title: 'Custom Sign Design California | Professional Business Signs | Antares Innovate',
+    description: 'Expert custom sign design services in California. Channel letters, storefront signs, LED signs. Boost your business visibility with professional signage solutions.',
+    content
+  }))
+})
+
+// Print Service Detail Page
+app.get('/services/print', (c) => {
+  const content = PrintServicePage()
+  return c.html(PageLayout({
+    title: 'Professional Sign Printing California | Large Format Printing | Antares Innovate',
+    description: 'High-quality sign printing and fabrication in California. Vinyl signs, outdoor signs, window graphics. Professional printing that brings your projects to life.',
+    content
+  }))
+})
+
+// Installation Service Detail Page
+app.get('/services/installation', (c) => {
+  const content = InstallationServicePage()
+  return c.html(PageLayout({
+    title: 'Professional Sign Installation California | Commercial Signage Installation',
+    description: 'Expert sign installation services throughout California. Licensed, insured, Title 24 compliant. High-impact installation specialists for any height or complexity.',
+    content
+  }))
+})
+

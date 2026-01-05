@@ -2,6 +2,7 @@ import { Hono } from 'hono'
 import { serveStatic } from 'hono/cloudflare-workers'
 import { cors } from 'hono/cors'
 import { PageLayout, Header, Footer, RequestCallModal, ChatbotWidget } from './components'
+import { DesignServicePage, PrintServicePage, InstallationServicePage } from './service-pages'
 
 const app = new Hono()
 
@@ -132,7 +133,7 @@ app.get('/', (c) => {
             Whether you're starting from scratch or your brand needs evolution, we specialize in visual solutions that communicate your values instantly.
           </p>
           
-          <a href="/services#design" class="inline-flex items-center text-antares-blue font-medium group-hover:underline">
+          <a href="/services/design" class="inline-flex items-center text-antares-blue font-medium group-hover:underline">
             Explore Design Services
             <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
@@ -168,7 +169,7 @@ app.get('/', (c) => {
             In a digital world, physical has special weight. Texture, color precision, and finish quality say more about you than a thousand emails. We don't just print; we ensure the first impression is flawless.
           </p>
           
-          <a href="/services#print" class="inline-flex items-center text-antares-blue font-medium group-hover:underline">
+          <a href="/services/print" class="inline-flex items-center text-antares-blue font-medium group-hover:underline">
             Explore Print Services
             <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
@@ -204,7 +205,7 @@ app.get('/', (c) => {
             No matter the height, surface, or complexity. We have the equipment and experience to install your visual communication in any environment.
           </p>
           
-          <a href="/services#installation" class="inline-flex items-center text-antares-blue font-medium group-hover:underline">
+          <a href="/services/installation" class="inline-flex items-center text-antares-blue font-medium group-hover:underline">
             Explore Installation Services
             <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
@@ -1544,6 +1545,37 @@ app.get('/services', (c) => {
 </body>
 </html>
   `)
+})
+
+
+// Design Service Detail Page
+app.get('/services/design', (c) => {
+  const content = DesignServicePage()
+  return c.html(PageLayout({
+    title: 'Custom Sign Design California | Professional Business Signs | Antares Innovate',
+    description: 'Expert custom sign design services in California. Channel letters, storefront signs, LED signs. Boost your business visibility with professional signage solutions.',
+    content
+  }))
+})
+
+// Print Service Detail Page
+app.get('/services/print', (c) => {
+  const content = PrintServicePage()
+  return c.html(PageLayout({
+    title: 'Professional Sign Printing California | Large Format Printing | Antares Innovate',
+    description: 'High-quality sign printing and fabrication in California. Vinyl signs, outdoor signs, window graphics. Professional printing that brings your projects to life.',
+    content
+  }))
+})
+
+// Installation Service Detail Page
+app.get('/services/installation', (c) => {
+  const content = InstallationServicePage()
+  return c.html(PageLayout({
+    title: 'Professional Sign Installation California | Commercial Signage Installation',
+    description: 'Expert sign installation services throughout California. Licensed, insured, Title 24 compliant. High-impact installation specialists for any height or complexity.',
+    content
+  }))
 })
 
 // Projects Page
