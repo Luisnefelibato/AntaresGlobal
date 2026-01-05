@@ -1547,20 +1547,91 @@ app.get('/services', (c) => {
 })
 
 
+// Design Service Detail Page
+// Projects Page
 
+// Design Service Detail Page
 app.get('/services/design', (c) => {
-  const content = `<section class="py-24 bg-antares-dark"><div class="container mx-auto px-4"><div class="max-w-4xl mx-auto text-center mb-16"><h1 class="text-5xl font-bold mb-6">Custom Sign Design <span class="text-antares-blue">California</span></h1><p class="text-xl text-white/70 mb-8">Professional design services for your business signage.</p><a href="https://wa.me/16893312690" class="inline-flex items-center px-8 py-4 bg-green-600 hover:bg-green-700 rounded-xl font-semibold">Get Free Quote</a></div><div class="max-w-5xl mx-auto mb-12"><img src="/static/images/services/design-service.jpg" alt="Sign Design" class="w-full rounded-2xl"/></div><div class="grid md:grid-cols-3 gap-6"><div class="bg-antares-gray p-6 rounded-xl"><h3 class="font-bold mb-2">Channel Letters</h3><p class="text-white/70">3D illuminated signage</p></div><div class="bg-antares-gray p-6 rounded-xl"><h3 class="font-bold mb-2">Storefront Signs</h3><p class="text-white/70">Attract more customers</p></div><div class="bg-antares-gray p-6 rounded-xl"><h3 class="font-bold mb-2">LED Signs</h3><p class="text-white/70">Energy efficient signage</p></div></div></div></section>`
-  return c.html(PageLayout('Custom Sign Design California | Antares Innovate', 'Professional sign design services in California', content))
-})
+  const content = `
+<section class="py-24 lg:py-32 bg-antares-dark">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Hero Section -->
+    <div class="max-w-4xl mx-auto text-center mb-16">
+      <div class="inline-flex items-center space-x-2 bg-antares-blue/10 border border-antares-blue/20 rounded-full px-4 py-2 mb-6">
+        <svg class="w-5 h-5 text-antares-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"/>
+        </svg>
+        <span class="text-antares-blue text-sm font-medium">Design Services</span>
+      </div>
+      
+      <h1 class="text-4xl lg:text-6xl font-display font-bold mb-6">
+        Custom Sign Design <span class="text-antares-blue">California</span>
+      </h1>
+      
+      <p class="text-xl text-white/70 leading-relaxed mb-8">
+        Whether you're starting from scratch or your brand needs evolution, we specialize in visual solutions that communicate your values instantly.
+      </p>
+      
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="https://wa.me/16893312690" target="_blank" class="inline-flex items-center px-8 py-4 bg-green-600 hover:bg-green-700 rounded-xl font-semibold text-lg transition-all duration-300 hover:scale-105">
+          <svg class="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+          </svg>
+          Get Free Quote
+        </a>
+        <button onclick="openRequestCallModal()" class="inline-flex items-center px-8 py-4 bg-antares-blue hover:bg-blue-600 rounded-xl font-semibold text-lg transition-all duration-300 hover:scale-105">
+          Request Consultation
+        </button>
+      </div>
+    </div>
 
-app.get('/services/print', (c) => {
-  const content = `<section class="py-24 bg-antares-dark"><div class="container mx-auto px-4"><div class="max-w-4xl mx-auto text-center mb-16"><h1 class="text-5xl font-bold mb-6">Professional Sign <span class="text-antares-blue">Printing</span></h1><p class="text-xl text-white/70 mb-8">High-quality sign printing and fabrication services.</p><a href="https://wa.me/16893312690" class="inline-flex items-center px-8 py-4 bg-green-600 hover:bg-green-700 rounded-xl font-semibold">Get Free Quote</a></div><div class="max-w-5xl mx-auto mb-12"><img src="/static/images/services/print-service.jpg" alt="Sign Printing" class="w-full rounded-2xl"/></div><div class="grid md:grid-cols-3 gap-6"><div class="bg-antares-gray p-6 rounded-xl"><h3 class="font-bold mb-2">Vinyl Signs</h3><p class="text-white/70">Weather-resistant printing</p></div><div class="bg-antares-gray p-6 rounded-xl"><h3 class="font-bold mb-2">Outdoor Signs</h3><p class="text-white/70">UV-resistant prints</p></div><div class="bg-antares-gray p-6 rounded-xl"><h3 class="font-bold mb-2">Window Graphics</h3><p class="text-white/70">Vibrant displays</p></div></div></div></section>`
-  return c.html(PageLayout('Professional Sign Printing California | Antares Innovate', 'High-quality sign printing services in California', content))
-})
+    <div class="max-w-5xl mx-auto mb-20">
+      <div class="relative rounded-2xl overflow-hidden shadow-2xl">
+        <img src="/static/images/services/design-service.jpg" alt="Custom Sign Design Studio California" class="w-full h-auto" />
+      </div>
+    </div>
 
-app.get('/services/installation', (c) => {
-  const content = `<section class="py-24 bg-antares-dark"><div class="container mx-auto px-4"><div class="max-w-4xl mx-auto text-center mb-16"><h1 class="text-5xl font-bold mb-6">Professional Sign <span class="text-antares-blue">Installation</span></h1><p class="text-xl text-white/70 mb-8">Expert sign installation throughout California.</p><a href="https://wa.me/16893312690" class="inline-flex items-center px-8 py-4 bg-green-600 hover:bg-green-700 rounded-xl font-semibold">Get Free Quote</a></div><div class="max-w-5xl mx-auto mb-12"><img src="/static/images/services/installation-service.jpg" alt="Sign Installation" class="w-full rounded-2xl"/></div><div class="grid md:grid-cols-3 gap-6"><div class="bg-antares-gray p-6 rounded-xl"><h3 class="font-bold mb-2">Commercial Signage</h3><p class="text-white/70">Storefront installation</p></div><div class="bg-antares-gray p-6 rounded-xl"><h3 class="font-bold mb-2">LED Installation</h3><p class="text-white/70">Electrical integration</p></div><div class="bg-antares-gray p-6 rounded-xl"><h3 class="font-bold mb-2">High-Rise Work</h3><p class="text-white/70">Any height installation</p></div></div></div></section>`
-  return c.html(PageLayout('Professional Sign Installation California | Antares Innovate', 'Expert sign installation services in California', content))
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl lg:text-5xl font-display font-bold text-center mb-12">
+        Professional <span class="text-antares-blue">Design Services</span>
+      </h2>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-antares-gray p-8 rounded-xl border border-white/10 hover:border-antares-blue transition-all">
+          <h3 class="text-xl font-bold mb-3">Channel Letters</h3>
+          <p class="text-white/70">3D illuminated signage that makes your brand stand out</p>
+        </div>
+        <div class="bg-antares-gray p-8 rounded-xl border border-white/10 hover:border-antares-blue transition-all">
+          <h3 class="text-xl font-bold mb-3">Storefront Signs</h3>
+          <p class="text-white/70">Eye-catching storefront signage to attract customers</p>
+        </div>
+        <div class="bg-antares-gray p-8 rounded-xl border border-white/10 hover:border-antares-blue transition-all">
+          <h3 class="text-xl font-bold mb-3">Custom Business Signs</h3>
+          <p class="text-white/70">Tailored signage solutions for your unique brand</p>
+        </div>
+        <div class="bg-antares-gray p-8 rounded-xl border border-white/10 hover:border-antares-blue transition-all">
+          <h3 class="text-xl font-bold mb-3">LED Signs</h3>
+          <p class="text-white/70">Energy-efficient LED signage with vibrant colors</p>
+        </div>
+        <div class="bg-antares-gray p-8 rounded-xl border border-white/10 hover:border-antares-blue transition-all">
+          <h3 class="text-xl font-bold mb-3">Window Graphics</h3>
+          <p class="text-white/70">Transform windows into powerful marketing tools</p>
+        </div>
+        <div class="bg-antares-gray p-8 rounded-xl border border-white/10 hover:border-antares-blue transition-all">
+          <h3 class="text-xl font-bold mb-3">Monument Signs</h3>
+          <p class="text-white/70">Permanent ground signage for lasting brand presence</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  `
+  
+  return c.html(PageLayout(
+    'Custom Sign Design California | Professional Business Signs | Antares Innovate',
+    'Expert custom sign design services in California. Channel letters, storefront signs, LED signs. Boost your business visibility.',
+    content
+  ))
 })
 
 app.get('/projects', (c) => {
