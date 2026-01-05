@@ -1600,6 +1600,74 @@ app.get('/services/design', (c) => {
         </div>
       </div>
 
+      <!-- Compliance & Regulations -->
+      <div class="bg-gradient-to-br from-antares-blue/10 to-blue-600/10 rounded-2xl p-8 lg:p-12 mb-16 border border-antares-blue/20">
+        <h2 class="text-3xl font-display font-bold text-center mb-8">Compliance & Regulations</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+          <div>
+            <h3 class="text-xl font-bold mb-4 text-antares-blue">Los Angeles Sign Code Compliance</h3>
+            <ul class="space-y-3 text-white/70">
+              <li class="flex items-start gap-3">
+                <span class="text-antares-blue text-lg">•</span>
+                <div>
+                  <strong>Permitted Signs:</strong> Channel letters, cabinet signs, wall signs, blade signs, window graphics, monument signs, and A-frames (depending on zoning)
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-antares-blue text-lg">•</span>
+                <div>
+                  <strong>Materials & Fabrication:</strong> Aluminum, galvanized steel, acrylic, polycarbonate with UL-listed components
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-antares-blue text-lg">•</span>
+                <div>
+                  <strong>Size Restrictions:</strong> Varies by zone - typically 10-20% of facade area for commercial zones
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold mb-4 text-antares-blue">Digital LED Restrictions</h3>
+            <ul class="space-y-3 text-white/70">
+              <li class="flex items-start gap-3">
+                <span class="text-red-500 text-lg">⚠</span>
+                <div>
+                  <strong>Prohibited:</strong> Digital LED displays with video, animations, scrolling text, or changing messages are <strong>severely restricted or banned</strong> in most LA commercial zones
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-antares-blue text-lg">•</span>
+                <div>
+                  <strong>Safety Concerns:</strong> Dynamic displays cause driver distraction and visual pollution
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-antares-blue text-lg">•</span>
+                <div>
+                  <strong>Allowed:</strong> Static LED illuminated signs (channel letters, cabinet signs) are permitted with proper permits
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="mt-8 p-6 bg-antares-dark/50 rounded-xl border border-white/10">
+          <h4 class="font-bold mb-3 text-antares-blue">Title 24 & Energy Code</h4>
+          <div class="grid md:grid-cols-3 gap-4 text-sm text-white/70">
+            <div>
+              <strong>LED Efficiency:</strong> Minimum 50 lumens/watt required for all LED signs
+            </div>
+            <div>
+              <strong>Automatic Controls:</strong> Timers or photo sensors required to turn off signs after business hours
+            </div>
+            <div>
+              <strong>Electrical Code:</strong> All installations must comply with California Electrical Code (CEC) - licensed C-10 electrician required
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- Process -->
       <div class="bg-antares-gray/50 rounded-2xl p-8 lg:p-12">
         <h2 class="text-3xl font-display font-bold text-center mb-8">Our Design Process</h2>
@@ -1744,6 +1812,74 @@ app.get('/services/print', (c) => {
         </div>
       </div>
 
+      <!-- Compliance & Regulations -->
+      <div class="bg-gradient-to-br from-antares-blue/10 to-blue-600/10 rounded-2xl p-8 lg:p-12 mb-16 border border-antares-blue/20">
+        <h2 class="text-3xl font-display font-bold text-center mb-8">Compliance & Regulations</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+          <div>
+            <h3 class="text-xl font-bold mb-4 text-antares-blue">Material & Safety Standards</h3>
+            <ul class="space-y-3 text-white/70">
+              <li class="flex items-start gap-3">
+                <span class="text-antares-blue text-lg">•</span>
+                <div>
+                  <strong>Fire Safety:</strong> All printed materials must use fire-rated substrates for indoor applications. Class A or B fire rating required for commercial spaces
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-antares-blue text-lg">•</span>
+                <div>
+                  <strong>Outdoor Durability:</strong> UV-resistant inks and weatherproof materials required for exterior signage. Minimum 5-year warranty on outdoor prints
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-antares-blue text-lg">•</span>
+                <div>
+                  <strong>Environmental:</strong> Eco-solvent and latex inks comply with California VOC emission standards
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold mb-4 text-antares-blue">Signage Permit Requirements</h3>
+            <ul class="space-y-3 text-white/70">
+              <li class="flex items-start gap-3">
+                <span class="text-antares-blue text-lg">•</span>
+                <div>
+                  <strong>Building Wraps:</strong> Require permit from LA Department of Building and Safety. Structural engineering approval needed for large installations
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-antares-blue text-lg">•</span>
+                <div>
+                  <strong>Window Graphics:</strong> Must not exceed 33% window coverage per LA Fire Code for emergency egress visibility
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-antares-blue text-lg">•</span>
+                <div>
+                  <strong>Temporary Banners:</strong> Limited to 30-60 days display. Require temporary sign permit in most zones
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="mt-8 p-6 bg-antares-dark/50 rounded-xl border border-white/10">
+          <h4 class="font-bold mb-3 text-antares-blue">Quality & Manufacturing Standards</h4>
+          <div class="grid md:grid-cols-3 gap-4 text-sm text-white/70">
+            <div>
+              <strong>Color Accuracy:</strong> Pantone PMS matching with color calibration certification
+            </div>
+            <div>
+              <strong>Resolution:</strong> Minimum 720 DPI for indoor graphics, 360 DPI for outdoor large format
+            </div>
+            <div>
+              <strong>Inspection:</strong> Every print inspected for defects before delivery. 100% quality guarantee
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- Process -->
       <div class="bg-antares-gray/50 rounded-2xl p-8 lg:p-12">
         <h2 class="text-3xl font-display font-bold text-center mb-8">Our Printing Process</h2>
@@ -1840,6 +1976,89 @@ app.get('/services/installation', (c) => {
               <li>• <strong>Safety Systems:</strong> Fall protection and harness systems</li>
               <li>• <strong>OSHA Certified:</strong> 30-hour safety training for all crews</li>
             </ul>
+          </div>
+        </div>
+
+        <!-- Compliance & Regulations -->
+        <div class="bg-gradient-to-br from-antares-blue/10 to-blue-600/10 rounded-2xl p-8 lg:p-12 mb-12 border border-antares-blue/20">
+          <h3 class="text-2xl lg:text-3xl font-display font-bold mb-6 text-center">Installation Permits & Compliance</h3>
+          <div class="grid md:grid-cols-2 gap-8">
+            <div>
+              <h4 class="text-xl font-bold mb-4 text-antares-blue">Los Angeles Permit Requirements</h4>
+              <ul class="space-y-3 text-white/70 text-sm">
+                <li class="flex items-start gap-3">
+                  <span class="text-antares-blue text-lg">•</span>
+                  <div>
+                    <strong>Building Permits:</strong> Required for all permanent sign installations. LA Department of Building and Safety approval needed before installation
+                  </div>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-antares-blue text-lg">•</span>
+                  <div>
+                    <strong>Electrical Permits:</strong> C-10 licensed electrician required for all LED and illuminated sign installations. Electrical permit mandatory
+                  </div>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-antares-blue text-lg">•</span>
+                  <div>
+                    <strong>Structural Engineering:</strong> PE-stamped drawings required for high-rise installations, rooftop signs, and monument signs exceeding certain heights
+                  </div>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-antares-blue text-lg">•</span>
+                  <div>
+                    <strong>Fire Department Approval:</strong> Required for signs near exits, fire lanes, or exceeding certain sizes
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="text-xl font-bold mb-4 text-antares-blue">Safety & Code Compliance</h4>
+              <ul class="space-y-3 text-white/70 text-sm">
+                <li class="flex items-start gap-3">
+                  <span class="text-antares-blue text-lg">•</span>
+                  <div>
+                    <strong>OSHA Standards:</strong> All installations comply with OSHA 1926 (Construction) and 1910 (General Industry) safety regulations
+                  </div>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-antares-blue text-lg">•</span>
+                  <div>
+                    <strong>Fall Protection:</strong> Full-body harness, guardrails, and safety nets required for work above 6 feet
+                  </div>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-antares-blue text-lg">•</span>
+                  <div>
+                    <strong>Title 24 Compliance:</strong> All LED installations must meet California Energy Code requirements for efficiency and controls
+                  </div>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-antares-blue text-lg">•</span>
+                  <div>
+                    <strong>Insurance Requirements:</strong> $2M general liability, workers' compensation, and vehicle insurance on all projects
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="mt-8 p-6 bg-antares-dark/50 rounded-xl border border-white/10">
+            <h4 class="font-bold mb-3 text-antares-blue">Our Licensing & Certifications</h4>
+            <div class="grid md:grid-cols-4 gap-4 text-sm text-white/70">
+              <div>
+                <strong>C-10 Electrical:</strong> Licensed electrical contractor for all LED and illuminated signs
+              </div>
+              <div>
+                <strong>C-45 Sign Contractor:</strong> California state sign contractor license
+              </div>
+              <div>
+                <strong>SPRAT Certified:</strong> Rope access technicians for high-rise work
+              </div>
+              <div>
+                <strong>OSHA 30-Hour:</strong> All crew members certified in construction safety
+              </div>
+            </div>
           </div>
         </div>
 
