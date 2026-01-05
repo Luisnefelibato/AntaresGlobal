@@ -1540,7 +1540,7 @@ app.get('/services/design', (c) => {
       <!-- Hero -->
       <div class="text-center mb-12">
         <h1 class="text-4xl lg:text-6xl font-display font-bold mb-6">
-          Custom Sign Design <span class="text-antares-blue">California</span>
+          Design That <span class="text-antares-blue">Creates Impact</span>
         </h1>
         <p class="text-xl text-white/70 leading-relaxed mb-8 max-w-3xl mx-auto">
           Whether you're starting from scratch or your brand needs evolution, we specialize in visual solutions that communicate your values instantly. Our design team creates signage that makes your business stand out.
@@ -1629,7 +1629,7 @@ app.get('/services/design', (c) => {
     </div>
   </div>
 </section>`
-  return c.html(PageLayout('Custom Sign Design California | Antares Innovate', 'Professional sign design services in California', content))
+  return c.html(PageLayout('Design That Creates Impact | Professional Sign Design | Antares Innovate', 'Expert custom sign design services. Branding, graphic design, and digital design solutions that attract customers and boost visibility', content))
 })
 
 app.get('/services/print', (c) => {
@@ -1640,7 +1640,7 @@ app.get('/services/print', (c) => {
       <!-- Hero -->
       <div class="text-center mb-12">
         <h1 class="text-4xl lg:text-6xl font-display font-bold mb-6">
-          Professional Sign <span class="text-antares-blue">Printing</span> California
+          Prints That <span class="text-antares-blue">Leave a Mark</span>
         </h1>
         <p class="text-xl text-white/70 leading-relaxed mb-8 max-w-3xl mx-auto">
           In a digital world, physical has special weight. Texture, color precision, and finish quality say more about you than a thousand emails. We don't just print; we ensure the first impression is flawless.
@@ -1773,7 +1773,7 @@ app.get('/services/print', (c) => {
     </div>
   </div>
 </section>`
-  return c.html(PageLayout('Professional Sign Printing California | Large Format Printing | Antares Innovate', 'High-quality sign printing services in California', content))
+  return c.html(PageLayout('Prints That Leave a Mark | Large Format Printing | Antares Innovate', 'Professional large format printing, POP materials, and brochures. High-quality prints that bring your projects to life', content))
 })
 
 app.get('/services/installation', (c) => {
@@ -1784,7 +1784,7 @@ app.get('/services/installation', (c) => {
       <!-- Hero -->
       <div class="text-center mb-12">
         <h1 class="text-4xl lg:text-6xl font-display font-bold mb-6">
-          Professional Sign <span class="text-antares-blue">Installation</span> California
+          Installation With <span class="text-antares-blue">Precision</span>
         </h1>
         <p class="text-xl text-white/70 leading-relaxed mb-8 max-w-3xl mx-auto">
           No matter the height, surface, or complexity. We have the equipment and experience to install your visual communication in any environment. Licensed, insured, and Title 24 compliant.
@@ -1931,7 +1931,7 @@ app.get('/services/installation', (c) => {
     </div>
   </div>
 </section>`
-  return c.html(PageLayout('Professional Sign Installation California | Commercial Signage Installation', 'Expert sign installation services throughout California', content))
+  return c.html(PageLayout('Installation With Precision | Professional Sign Installation | Antares Innovate', 'Expert sign installation services. Commercial signage, LED installation, and high-rise mounting with certified crews', content))
 })
 
 app.get('/projects', (c) => {
