@@ -1552,8 +1552,8 @@ app.get('/services/design', (c) => {
       </div>
 
       <!-- Image - Smaller -->
-      <div class="max-w-3xl mx-auto mb-16">
-        <img src="/static/images/services/design-service.jpg" alt="Custom Sign Design Studio" class="w-full rounded-2xl shadow-2xl"/>
+      <div class="max-w-2xl mx-auto mb-16">
+        <img src="/static/images/services/design-service.jpg" alt="Custom Sign Design Studio" class="w-full rounded-2xl shadow-2xl opacity-90"/>
       </div>
 
       <!-- What We Offer -->
@@ -1682,108 +1682,157 @@ app.get('/services/print', (c) => {
       </div>
 
       <!-- Image - Smaller -->
-      <div class="max-w-3xl mx-auto mb-16">
-        <img src="/static/images/services/print-service.jpg" alt="Professional Sign Printing Large Format" class="w-full rounded-2xl shadow-2xl"/>
+      <div class="max-w-2xl mx-auto mb-16">
+        <img src="/static/images/services/print-service.jpg" alt="Professional Sign Printing Large Format" class="w-full rounded-2xl shadow-2xl opacity-90"/>
       </div>
 
-      <!-- Printing Services -->
+      <!-- Printing Services Detailed -->
       <div class="mb-16">
-        <h2 class="text-3xl lg:text-4xl font-display font-bold text-center mb-4">High-Impact Printing Solutions</h2>
-        <p class="text-lg text-white/60 text-center mb-12 max-w-3xl mx-auto">State-of-the-art large format printing for vibrant, durable signage that lasts</p>
+        <h2 class="text-3xl lg:text-4xl font-display font-bold text-center mb-4">Prints That Bring Your Projects to Life</h2>
+        <p class="text-lg text-white/60 text-center mb-12 max-w-3xl mx-auto">Professional large format printing with precision color matching and premium materials. Every print is inspected for quality before delivery.</p>
         
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div class="bg-antares-gray p-6 rounded-xl border border-white/10 hover:border-antares-blue transition-all">
-            <div class="text-3xl mb-4">📄</div>
-            <h3 class="text-xl font-bold mb-3">Vinyl Signs</h3>
-            <p class="text-white/70 mb-3">Durable, weather-resistant vinyl printing for indoor and outdoor use.</p>
-            <ul class="text-sm text-white/60 space-y-1">
-              <li>• Premium cast vinyl</li>
-              <li>• UV-resistant inks</li>
-              <li>• 5-7 year outdoor durability</li>
-              <li>• Matte or gloss finish</li>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+          <div class="bg-antares-gray p-8 rounded-xl border border-white/10 hover:border-antares-blue transition-all">
+            <div class="text-4xl mb-4">🖨️</div>
+            <h3 class="text-xl font-bold mb-3">Vinyl Signs & Graphics</h3>
+            <p class="text-white/70 mb-4">High-performance vinyl printing for indoor and outdoor applications. Weather-resistant and UV protected for long-lasting color.</p>
+            <ul class="text-sm text-white/60 space-y-2">
+              <li>• <strong>Materials:</strong> Cast and calendered vinyl</li>
+              <li>• <strong>Durability:</strong> 5-10 years outdoor lifespan</li>
+              <li>• <strong>Applications:</strong> Vehicle wraps, wall graphics, window decals</li>
+              <li>• <strong>Finishes:</strong> Gloss, matte, metallic, textured</li>
             </ul>
           </div>
 
-          <div class="bg-antares-gray p-6 rounded-xl border border-white/10 hover:border-antares-blue transition-all">
-            <div class="text-3xl mb-4">☀️</div>
-            <h3 class="text-xl font-bold mb-3">Outdoor Signs</h3>
-            <p class="text-white/70 mb-3">UV-resistant prints designed to withstand California weather conditions.</p>
-            <ul class="text-sm text-white/60 space-y-1">
-              <li>• Aluminum composite panels</li>
-              <li>• Coroplast/corrugated plastic</li>
-              <li>• PVC foam board</li>
-              <li>• Weatherproof laminates</li>
+          <div class="bg-antares-gray p-8 rounded-xl border border-white/10 hover:border-antares-blue transition-all">
+            <div class="text-4xl mb-4">🏢</div>
+            <h3 class="text-xl font-bold mb-3">Outdoor Signs & Banners</h3>
+            <p class="text-white/70 mb-4">Heavy-duty outdoor signage engineered to withstand California's intense sun and varied weather conditions.</p>
+            <ul class="text-sm text-white/60 space-y-2">
+              <li>• <strong>Materials:</strong> Aluminum, ACM, PVC, corrugated plastic</li>
+              <li>• <strong>Sizes:</strong> From 12"x18" to 20'x50'+ custom</li>
+              <li>• <strong>UV Protection:</strong> Fade-resistant inks</li>
+              <li>• <strong>Installation:</strong> Mounting hardware included</li>
             </ul>
           </div>
 
-          <div class="bg-antares-gray p-6 rounded-xl border border-white/10 hover:border-antares-blue transition-all">
-            <div class="text-3xl mb-4">🏢</div>
-            <h3 class="text-xl font-bold mb-3">Indoor Signage</h3>
-            <p class="text-white/70 mb-3">Premium interior printing for lobbies, offices, and retail spaces.</p>
-            <ul class="text-sm text-white/60 space-y-1">
-              <li>• Foam core mounting</li>
-              <li>• Canvas and fabric prints</li>
-              <li>• Acrylic face mounting</li>
-              <li>• Gator board displays</li>
+          <div class="bg-antares-gray p-8 rounded-xl border border-white/10 hover:border-antares-blue transition-all">
+            <div class="text-4xl mb-4">🪟</div>
+            <h3 class="text-xl font-bold mb-3">Window Graphics & Perforated Film</h3>
+            <p class="text-white/70 mb-4">Transform windows into advertising space while maintaining interior visibility with one-way vision film.</p>
+            <ul class="text-sm text-white/60 space-y-2">
+              <li>• <strong>Visibility:</strong> 50/50 or 60/40 perforation ratio</li>
+              <li>• <strong>Application:</strong> Retail storefronts, office buildings</li>
+              <li>• <strong>Removal:</strong> Clean removal without residue</li>
+              <li>• <strong>Privacy:</strong> One-way vision technology</li>
             </ul>
           </div>
 
-          <div class="bg-antares-gray p-6 rounded-xl border border-white/10 hover:border-antares-blue transition-all">
-            <div class="text-3xl mb-4">🪟</div>
-            <h3 class="text-xl font-bold mb-3">Window Graphics</h3>
-            <p class="text-white/70 mb-3">Vibrant window displays that turn traffic into sales.</p>
-            <ul class="text-sm text-white/60 space-y-1">
-              <li>• One-way vision film</li>
-              <li>• Perforated vinyl</li>
-              <li>• Static cling graphics</li>
-              <li>• Frosted window film</li>
+          <div class="bg-antares-gray p-8 rounded-xl border border-white/10 hover:border-antares-blue transition-all">
+            <div class="text-4xl mb-4">🏪</div>
+            <h3 class="text-xl font-bold mb-3">Retail & Store Signs</h3>
+            <p class="text-white/70 mb-4">Point-of-sale displays, promotional signage, and retail graphics that drive customer engagement and sales.</p>
+            <ul class="text-sm text-white/60 space-y-2">
+              <li>• <strong>Types:</strong> Posters, standees, shelf talkers, floor graphics</li>
+              <li>• <strong>Turnaround:</strong> Rush orders available (24-48 hours)</li>
+              <li>• <strong>Quantity:</strong> Single prints to large runs</li>
+              <li>• <strong>Finishing:</strong> Lamination, mounting, grommet options</li>
             </ul>
           </div>
 
-          <div class="bg-antares-gray p-6 rounded-xl border border-white/10 hover:border-antares-blue transition-all">
-            <div class="text-3xl mb-4">🏪</div>
-            <h3 class="text-xl font-bold mb-3">Store Signs</h3>
-            <p class="text-white/70 mb-3">Professional storefront printing that attracts customers.</p>
-            <ul class="text-sm text-white/60 space-y-1">
-              <li>• Hanging banners</li>
-              <li>• A-frame sidewalk signs</li>
-              <li>• Retractable banner stands</li>
-              <li>• Point-of-sale displays</li>
+          <div class="bg-antares-gray p-8 rounded-xl border border-white/10 hover:border-antares-blue transition-all">
+            <div class="text-4xl mb-4">🎨</div>
+            <h3 class="text-xl font-bold mb-3">Large Format Canvas & Fine Art</h3>
+            <p class="text-white/70 mb-4">Museum-quality canvas and fine art printing for interior décor and brand storytelling.</p>
+            <ul class="text-sm text-white/60 space-y-2">
+              <li>• <strong>Materials:</strong> Premium canvas, photo paper, fine art paper</li>
+              <li>• <strong>Resolution:</strong> Up to 2400 DPI</li>
+              <li>• <strong>Color:</strong> 12-color gamut for vibrant prints</li>
+              <li>• <strong>Framing:</strong> Gallery wrap or traditional frame options</li>
             </ul>
           </div>
 
-          <div class="bg-antares-gray p-6 rounded-xl border border-white/10 hover:border-antares-blue transition-all">
-            <div class="text-3xl mb-4">💡</div>
-            <h3 class="text-xl font-bold mb-3">Illuminated Signs</h3>
-            <p class="text-white/70 mb-3">Backlit and LED-integrated printed signage for 24/7 visibility.</p>
-            <ul class="text-sm text-white/60 space-y-1">
-              <li>• Light box graphics</li>
-              <li>• Backlit flex face</li>
-              <li>• LED edge-lit panels</li>
-              <li>• Channel letter faces</li>
+          <div class="bg-antares-gray p-8 rounded-xl border border-white/10 hover:border-antares-blue transition-all">
+            <div class="text-4xl mb-4">📋</div>
+            <h3 class="text-xl font-bold mb-3">Rigid Boards & Dimensional Signs</h3>
+            <p class="text-white/70 mb-4">Durable substrate printing for permanent signage, trade show displays, and architectural applications.</p>
+            <ul class="text-sm text-white/60 space-y-2">
+              <li>• <strong>Materials:</strong> Foam board, Sintra, Dibond, acrylic</li>
+              <li>• <strong>Thickness:</strong> 1/8" to 1" options</li>
+              <li>• <strong>Mounting:</strong> Standoffs, French cleats, adhesive</li>
+              <li>• <strong>Uses:</strong> Lobby signs, directional, trade shows</li>
             </ul>
+          </div>
+        </div>
+
+        <!-- Our Printing Technology -->
+        <div class="bg-gradient-to-r from-antares-blue/10 to-blue-600/10 rounded-2xl p-8 lg:p-12 mb-12 border border-antares-blue/20">
+          <h3 class="text-2xl lg:text-3xl font-display font-bold mb-6 text-center">Why Our Prints Stand Out</h3>
+          <div class="grid md:grid-cols-2 gap-8">
+            <div>
+              <h4 class="text-xl font-bold mb-3 text-antares-blue">Advanced Equipment</h4>
+              <ul class="space-y-2 text-white/70">
+                <li>✓ <strong>HP Latex</strong> wide-format printers for eco-friendly, odorless prints</li>
+                <li>✓ <strong>UV Flatbed</strong> printers for rigid substrates up to 2" thick</li>
+                <li>✓ <strong>Eco-Solvent</strong> printers for outdoor durability</li>
+                <li>✓ <strong>Dye-Sublimation</strong> for fabric and textile applications</li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="text-xl font-bold mb-3 text-antares-blue">Quality Assurance</h4>
+              <ul class="space-y-2 text-white/70">
+                <li>✓ <strong>Color Calibration:</strong> Daily profiling for consistent color</li>
+                <li>✓ <strong>Pantone Matching:</strong> Accurate brand color reproduction</li>
+                <li>✓ <strong>Pre-Press Proofs:</strong> Digital proofs before production</li>
+                <li>✓ <strong>Inspection:</strong> Every print checked before shipping</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pricing & Turnaround -->
+        <div class="grid md:grid-cols-3 gap-6 mb-12">
+          <div class="bg-antares-gray p-6 rounded-xl border border-white/10 text-center">
+            <div class="text-3xl mb-3">⚡</div>
+            <h4 class="font-bold mb-2">Fast Turnaround</h4>
+            <p class="text-white/60 text-sm">Standard: 3-5 business days<br/>Rush: 24-48 hours available</p>
+          </div>
+          <div class="bg-antares-gray p-6 rounded-xl border border-white/10 text-center">
+            <div class="text-3xl mb-3">💰</div>
+            <h4 class="font-bold mb-2">Competitive Pricing</h4>
+            <p class="text-white/60 text-sm">Volume discounts available<br/>Price match guarantee</p>
+          </div>
+          <div class="bg-antares-gray p-6 rounded-xl border border-white/10 text-center">
+            <div class="text-3xl mb-3">🚚</div>
+            <h4 class="font-bold mb-2">Delivery Options</h4>
+            <p class="text-white/60 text-sm">Local pickup or shipping<br/>Installation services available</p>
           </div>
         </div>
       </div>
 
-      <!-- Quality Promise -->
-      <div class="bg-gradient-to-br from-antares-blue/20 to-blue-600/20 rounded-2xl p-8 lg:p-12 border border-antares-blue/30">
-        <h2 class="text-3xl font-display font-bold text-center mb-8">Our Quality Promise</h2>
-        <div class="grid md:grid-cols-3 gap-8 text-center">
-          <div>
-            <div class="text-5xl text-antares-blue font-bold mb-2">100%</div>
-            <h3 class="font-bold mb-2">Color Accuracy</h3>
-            <p class="text-sm text-white/70">Precise color matching every time with professional calibration</p>
+      <!-- Process -->
+      <div class="bg-antares-gray/50 rounded-2xl p-8 lg:p-12">
+        <h2 class="text-3xl font-display font-bold text-center mb-8">Our Printing Process</h2>
+        <div class="grid md:grid-cols-4 gap-6">
+          <div class="text-center">
+            <div class="w-16 h-16 bg-antares-blue rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">1</div>
+            <h3 class="font-bold mb-2">File Review</h3>
+            <p class="text-sm text-white/60">We check your artwork for print readiness</p>
           </div>
-          <div>
-            <div class="text-5xl text-antares-blue font-bold mb-2">Premium</div>
-            <h3 class="font-bold mb-2">Materials</h3>
-            <p class="text-sm text-white/70">Only the highest quality substrates and inks</p>
+          <div class="text-center">
+            <div class="w-16 h-16 bg-antares-blue rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">2</div>
+            <h3 class="font-bold mb-2">Material Selection</h3>
+            <p class="text-sm text-white/60">Choose the perfect substrate for your needs</p>
           </div>
-          <div>
-            <div class="text-5xl text-antares-blue font-bold mb-2">Fast</div>
-            <h3 class="font-bold mb-2">Turnaround</h3>
-            <p class="text-sm text-white/70">Quick production without compromising quality</p>
+          <div class="text-center">
+            <div class="w-16 h-16 bg-antares-blue rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">3</div>
+            <h3 class="font-bold mb-2">Production</h3>
+            <p class="text-sm text-white/60">Print, laminate, and finish with precision</p>
+          </div>
+          <div class="text-center">
+            <div class="w-16 h-16 bg-antares-blue rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">4</div>
+            <h3 class="font-bold mb-2">Quality Check</h3>
+            <p class="text-sm text-white/60">Inspect and package for safe delivery</p>
           </div>
         </div>
       </div>
@@ -1813,86 +1862,135 @@ app.get('/services/installation', (c) => {
       </div>
 
       <!-- Image - Smaller -->
-      <div class="max-w-3xl mx-auto mb-16">
-        <img src="/static/images/services/installation-service.jpg" alt="Professional Sign Installation" class="w-full rounded-2xl shadow-2xl"/>
+      <div class="max-w-2xl mx-auto mb-16">
+        <img src="/static/images/services/installation-service.jpg" alt="Professional Sign Installation" class="w-full rounded-2xl shadow-2xl opacity-90"/>
       </div>
 
-      <!-- Installation Services -->
+      <!-- Installation Services Detailed -->
       <div class="mb-16">
         <h2 class="text-3xl lg:text-4xl font-display font-bold text-center mb-4">High-Impact Installation Specialists</h2>
-        <p class="text-lg text-white/60 text-center mb-12 max-w-3xl mx-auto">Expert installation services with professional equipment and certified technicians</p>
+        <p class="text-lg text-white/60 text-center mb-12 max-w-3xl mx-auto">Professional signage installation with certified crews, advanced equipment, and comprehensive safety protocols. Licensed, insured, and Title 24 compliant.</p>
         
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div class="bg-antares-gray p-6 rounded-xl border border-white/10 hover:border-antares-blue transition-all">
-            <div class="text-3xl mb-4">🏢</div>
-            <h3 class="text-xl font-bold mb-3">Commercial Signage</h3>
-            <p class="text-white/70 mb-3">Professional storefront and business sign installation services.</p>
-            <ul class="text-sm text-white/60 space-y-1">
-              <li>• Building facade mounting</li>
-              <li>• Storefront installation</li>
-              <li>• Wall-mounted signage</li>
-              <li>• Post and pole signs</li>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+          <div class="bg-antares-gray p-8 rounded-xl border border-white/10 hover:border-antares-blue transition-all">
+            <div class="text-4xl mb-4">🏢</div>
+            <h3 class="text-xl font-bold mb-3">Commercial Signage Installation</h3>
+            <p class="text-white/70 mb-4">Professional storefront and business sign installation for retail, restaurants, and corporate locations.</p>
+            <ul class="text-sm text-white/60 space-y-2">
+              <li>• <strong>Facade Mounting:</strong> Building-mounted channel letters</li>
+              <li>• <strong>Storefront Signs:</strong> Window-mounted and awning signs</li>
+              <li>• <strong>Wall Graphics:</strong> Interior and exterior vinyl graphics</li>
+              <li>• <strong>Monument Signs:</strong> Ground-level permanent signage</li>
             </ul>
           </div>
 
-          <div class="bg-antares-gray p-6 rounded-xl border border-white/10 hover:border-antares-blue transition-all">
-            <div class="text-3xl mb-4">⚡</div>
-            <h3 class="text-xl font-bold mb-3">LED Installation</h3>
-            <p class="text-white/70 mb-3">Expert electrical work and LED system integration.</p>
-            <ul class="text-sm text-white/60 space-y-1">
-              <li>• Licensed electricians</li>
-              <li>• LED retrofit services</li>
-              <li>• Power supply installation</li>
-              <li>• Dimming and controls</li>
+          <div class="bg-antares-gray p-8 rounded-xl border border-white/10 hover:border-antares-blue transition-all">
+            <div class="text-4xl mb-4">⚡</div>
+            <h3 class="text-xl font-bold mb-3">LED & Electrical Installation</h3>
+            <p class="text-white/70 mb-4">Licensed electricians for LED sign installation, retrofits, and electrical work. All work meets Title 24 standards.</p>
+            <ul class="text-sm text-white/60 space-y-2">
+              <li>• <strong>Licensed Electricians:</strong> C-10 electrical contractor license</li>
+              <li>• <strong>LED Retrofit:</strong> Upgrade existing signs to energy-efficient LED</li>
+              <li>• <strong>Power Supply:</strong> Transformer and power supply installation</li>
+              <li>• <strong>Dimming Controls:</strong> Timer and dimming system integration</li>
             </ul>
           </div>
 
-          <div class="bg-antares-gray p-6 rounded-xl border border-white/10 hover:border-antares-blue transition-all">
-            <div class="text-3xl mb-4">🏗️</div>
-            <h3 class="text-xl font-bold mb-3">High-Rise Work</h3>
-            <p class="text-white/70 mb-3">Certified for installations at any height with specialized equipment.</p>
-            <ul class="text-sm text-white/60 space-y-1">
-              <li>• Crane and lift services</li>
-              <li>• Rope access certified</li>
-              <li>• Safety harness systems</li>
-              <li>• OSHA compliant crews</li>
+          <div class="bg-antares-gray p-8 rounded-xl border border-white/10 hover:border-antares-blue transition-all">
+            <div class="text-4xl mb-4">🏗️</div>
+            <h3 class="text-xl font-bold mb-3">High-Rise & Rooftop Installation</h3>
+            <p class="text-white/70 mb-4">Specialized equipment and rope access certification for installations at any height. OSHA compliant safety protocols.</p>
+            <ul class="text-sm text-white/60 space-y-2">
+              <li>• <strong>Crane Service:</strong> Mobile crane and boom lift rentals</li>
+              <li>• <strong>Rope Access:</strong> SPRAT-certified technicians</li>
+              <li>• <strong>Safety Systems:</strong> Full-body harness and fall protection</li>
+              <li>• <strong>OSHA Certified:</strong> 30-hour OSHA safety training</li>
             </ul>
           </div>
 
-          <div class="bg-antares-gray p-6 rounded-xl border border-white/10 hover:border-antares-blue transition-all">
-            <div class="text-3xl mb-4">📋</div>
-            <h3 class="text-xl font-bold mb-3">Permits & Compliance</h3>
-            <p class="text-white/70 mb-3">Handle all permits and ensure Title 24 compliance.</p>
-            <ul class="text-sm text-white/60 space-y-1">
-              <li>• Permit application filing</li>
-              <li>• Building code compliance</li>
-              <li>• Title 24 expertise</li>
-              <li>• Inspection coordination</li>
+          <div class="bg-antares-gray p-8 rounded-xl border border-white/10 hover:border-antares-blue transition-all">
+            <div class="text-4xl mb-4">📋</div>
+            <h3 class="text-xl font-bold mb-3">Permits & Code Compliance</h3>
+            <p class="text-white/70 mb-4">Complete permit handling and compliance consultation. We ensure your signage meets all local building codes.</p>
+            <ul class="text-sm text-white/60 space-y-2">
+              <li>• <strong>Permit Application:</strong> File all necessary permits with city</li>
+              <li>• <strong>Building Codes:</strong> California Building Code expertise</li>
+              <li>• <strong>Title 24:</strong> Energy efficiency compliance</li>
+              <li>• <strong>Inspection Coordination:</strong> Schedule and attend inspections</li>
             </ul>
           </div>
 
-          <div class="bg-antares-gray p-6 rounded-xl border border-white/10 hover:border-antares-blue transition-all">
-            <div class="text-3xl mb-4">🌙</div>
-            <h3 class="text-xl font-bold mb-3">After-Hours Installation</h3>
-            <p class="text-white/70 mb-3">Flexible scheduling including nights and weekends.</p>
-            <ul class="text-sm text-white/60 space-y-1">
-              <li>• Minimal business disruption</li>
-              <li>• Weekend availability</li>
-              <li>• Night shift crews</li>
-              <li>• Emergency installations</li>
+          <div class="bg-antares-gray p-8 rounded-xl border border-white/10 hover:border-antares-blue transition-all">
+            <div class="text-4xl mb-4">🌙</div>
+            <h3 class="text-xl font-bold mb-3">After-Hours & Emergency Installation</h3>
+            <p class="text-white/70 mb-4">Flexible scheduling including nights, weekends, and holidays to minimize business disruption.</p>
+            <ul class="text-sm text-white/60 space-y-2">
+              <li>• <strong>Night Shifts:</strong> Install during off-hours (10 PM - 6 AM)</li>
+              <li>• <strong>Weekend Service:</strong> Saturday and Sunday availability</li>
+              <li>• <strong>Emergency Repairs:</strong> 24/7 emergency call-out service</li>
+              <li>• <strong>Minimal Disruption:</strong> Work around your business hours</li>
             </ul>
           </div>
 
-          <div class="bg-antares-gray p-6 rounded-xl border border-white/10 hover:border-antares-blue transition-all">
-            <div class="text-3xl mb-4">🔧</div>
-            <h3 class="text-xl font-bold mb-3">Maintenance & Support</h3>
-            <p class="text-white/70 mb-3">Ongoing maintenance and 24/7 emergency support.</p>
-            <ul class="text-sm text-white/60 space-y-1">
-              <li>• Preventive maintenance</li>
-              <li>• Bulb/LED replacement</li>
-              <li>• Emergency repairs</li>
-              <li>• Service contracts available</li>
+          <div class="bg-antares-gray p-8 rounded-xl border border-white/10 hover:border-antares-blue transition-all">
+            <div class="text-4xl mb-4">🔧</div>
+            <h3 class="text-xl font-bold mb-3">Maintenance & Repair Services</h3>
+            <p class="text-white/70 mb-4">Ongoing preventive maintenance and repair services to keep your signage looking great and functioning properly.</p>
+            <ul class="text-sm text-white/60 space-y-2">
+              <li>• <strong>Preventive Maintenance:</strong> Regular inspection and cleaning</li>
+              <li>• <strong>LED/Bulb Replacement:</strong> Replace burned-out lights quickly</li>
+              <li>• <strong>Emergency Repairs:</strong> 24/7 emergency response</li>
+              <li>• <strong>Service Contracts:</strong> Annual maintenance agreements available</li>
             </ul>
+          </div>
+        </div>
+
+        <!-- Our Installation Process -->
+        <div class="bg-gradient-to-r from-antares-blue/10 to-blue-600/10 rounded-2xl p-8 lg:p-12 mb-12 border border-antares-blue/20">
+          <h3 class="text-2xl lg:text-3xl font-display font-bold mb-6 text-center">Our Installation Process</h3>
+          <div class="grid md:grid-cols-2 gap-8">
+            <div>
+              <h4 class="text-xl font-bold mb-3 text-antares-blue">Pre-Installation</h4>
+              <ul class="space-y-2 text-white/70">
+                <li>✓ <strong>Site Survey:</strong> Assess installation location and requirements</li>
+                <li>✓ <strong>Permit Filing:</strong> Submit all necessary permits and documentation</li>
+                <li>✓ <strong>Material Delivery:</strong> Coordinate delivery of signs and equipment</li>
+                <li>✓ <strong>Crew Scheduling:</strong> Assign certified technicians and equipment</li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="text-xl font-bold mb-3 text-antares-blue">During Installation</h4>
+              <ul class="space-y-2 text-white/70">
+                <li>✓ <strong>Safety Setup:</strong> Establish safety perimeter and equipment</li>
+                <li>✓ <strong>Professional Installation:</strong> Mount and wire signage per specifications</li>
+                <li>✓ <strong>Quality Check:</strong> Test all lights, connections, and alignment</li>
+                <li>✓ <strong>Site Cleanup:</strong> Remove all debris and leave site pristine</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Why Choose Us -->
+        <div class="grid md:grid-cols-4 gap-6">
+          <div class="bg-antares-gray p-6 rounded-xl border border-white/10 text-center">
+            <div class="text-3xl mb-3">🛡️</div>
+            <h4 class="font-bold mb-2">Fully Insured</h4>
+            <p class="text-white/60 text-sm">$2M general liability<br/>Workers' comp coverage</p>
+          </div>
+          <div class="bg-antares-gray p-6 rounded-xl border border-white/10 text-center">
+            <div class="text-3xl mb-3">⚖️</div>
+            <h4 class="font-bold mb-2">Licensed Contractors</h4>
+            <p class="text-white/60 text-sm">C-10 Electrical<br/>C-45 Sign Contractor</p>
+          </div>
+          <div class="bg-antares-gray p-6 rounded-xl border border-white/10 text-center">
+            <div class="text-3xl mb-3">✅</div>
+            <h4 class="font-bold mb-2">Title 24 Experts</h4>
+            <p class="text-white/60 text-sm">Energy code compliance<br/>Permit specialists</p>
+          </div>
+          <div class="bg-antares-gray p-6 rounded-xl border border-white/10 text-center">
+            <div class="text-3xl mb-3">⏰</div>
+            <h4 class="font-bold mb-2">24/7 Support</h4>
+            <p class="text-white/60 text-sm">Emergency service<br/>Flexible scheduling</p>
           </div>
         </div>
       </div>

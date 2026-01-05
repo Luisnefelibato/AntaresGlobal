@@ -329,7 +329,7 @@ export const PageLayout = (title: string, description: string, content: string) 
     ${ChatbotWidget()}
     
     <script src="/static/app.js?v=9"></script>
-    <script src="/static/chatbot.js?v=12"></script>
+    <script src="/static/chatbot.js?v=13"></script>
 </body>
 </html>
 `;
