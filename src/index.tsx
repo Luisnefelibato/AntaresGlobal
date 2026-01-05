@@ -89,56 +89,147 @@ app.get('/', (c) => {
   </div>
 </section>
 
-<!-- Quick Services Preview -->
+<!-- Core Services - Design, Print, Installation -->
 <section class="py-16 lg:py-24 bg-antares-gray/50">
   <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="text-center mb-12">
-      <h2 class="text-3xl lg:text-4xl font-display font-bold mb-4">Our Core Services</h2>
-      <p class="text-white/60 text-lg max-w-2xl mx-auto">Comprehensive signage and LED solutions for modern businesses</p>
+    <div class="text-center mb-16">
+      <div class="inline-flex items-center space-x-2 bg-antares-blue/10 border border-antares-blue/20 rounded-full px-4 py-2 mb-4">
+        <span class="text-antares-blue text-sm font-medium">🎯 Core Services</span>
+      </div>
+      <h2 class="text-3xl lg:text-5xl font-display font-bold mb-4">
+        Design → Print → Install
+      </h2>
+      <p class="text-white/60 text-lg max-w-2xl mx-auto">
+        Complete signage solutions from concept to installation. We handle everything in-house.
+      </p>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-      <a href="/services#signage" class="group bg-antares-dark border border-white/5 hover:border-antares-blue/50 rounded-2xl p-8 transition-all duration-300 hover:transform hover:scale-105">
-        <div class="w-16 h-16 bg-antares-blue/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-antares-blue/20 transition-colors">
-          <svg class="w-8 h-8 text-antares-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
-          </svg>
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      <!-- DESIGN Service -->
+      <div class="group relative bg-antares-dark rounded-2xl overflow-hidden border border-white/5 hover:border-antares-blue/50 transition-all duration-500 hover:transform hover:scale-105">
+        <!-- Image -->
+        <div class="relative h-64 overflow-hidden">
+          <img 
+            src="/static/images/services/design-service.jpg" 
+            alt="Design Service - Creative Design Studio"
+            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-antares-dark via-antares-dark/50 to-transparent"></div>
         </div>
-        <h3 class="text-xl font-display font-bold mb-3">Signage Installation</h3>
-        <p class="text-white/60 mb-4">Professional commercial signage solutions</p>
-        <span class="text-antares-blue text-sm font-medium group-hover:underline">Learn More →</span>
-      </a>
+        
+        <!-- Content -->
+        <div class="p-8">
+          <!-- Icon -->
+          <div class="w-16 h-16 bg-gradient-to-br from-antares-blue to-blue-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-lg shadow-antares-blue/20">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"/>
+            </svg>
+          </div>
+          
+          <h3 class="text-2xl font-display font-bold mb-4">DESIGN</h3>
+          <h4 class="text-lg text-antares-blue font-semibold mb-3">What We Do for You</h4>
+          <p class="text-white/70 leading-relaxed mb-6">
+            Whether you're starting from scratch or your brand needs evolution, we specialize in visual solutions that communicate your values instantly.
+          </p>
+          
+          <a href="/services#design" class="inline-flex items-center text-antares-blue font-medium group-hover:underline">
+            Explore Design Services
+            <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+            </svg>
+          </a>
+        </div>
+      </div>
 
-      <a href="/services#led" class="group bg-antares-dark border border-white/5 hover:border-antares-blue/50 rounded-2xl p-8 transition-all duration-300 hover:transform hover:scale-105">
-        <div class="w-16 h-16 bg-antares-blue/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-antares-blue/20 transition-colors">
-          <svg class="w-8 h-8 text-antares-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
-          </svg>
+      <!-- PRINT Service -->
+      <div class="group relative bg-antares-dark rounded-2xl overflow-hidden border border-white/5 hover:border-antares-blue/50 transition-all duration-500 hover:transform hover:scale-105">
+        <!-- Image -->
+        <div class="relative h-64 overflow-hidden">
+          <img 
+            src="/static/images/services/print-service.jpg" 
+            alt="Print Service - Large Format Printing"
+            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-antares-dark via-antares-dark/50 to-transparent"></div>
         </div>
-        <h3 class="text-xl font-display font-bold mb-3">LED Retrofit</h3>
-        <p class="text-white/60 mb-4">Energy-efficient lighting solutions</p>
-        <span class="text-antares-blue text-sm font-medium group-hover:underline">Learn More →</span>
-      </a>
+        
+        <!-- Content -->
+        <div class="p-8">
+          <!-- Icon -->
+          <div class="w-16 h-16 bg-gradient-to-br from-antares-blue to-blue-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-lg shadow-antares-blue/20">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/>
+            </svg>
+          </div>
+          
+          <h3 class="text-2xl font-display font-bold mb-4">PRINT</h3>
+          <h4 class="text-lg text-antares-blue font-semibold mb-3">Prints That Bring Your Projects to Life</h4>
+          <p class="text-white/70 leading-relaxed mb-6">
+            In a digital world, physical has special weight. Texture, color precision, and finish quality say more about you than a thousand emails. We don't just print; we ensure the first impression is flawless.
+          </p>
+          
+          <a href="/services#print" class="inline-flex items-center text-antares-blue font-medium group-hover:underline">
+            Explore Print Services
+            <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+            </svg>
+          </a>
+        </div>
+      </div>
 
-      <a href="/services#compliance" class="group bg-antares-dark border border-white/5 hover:border-antares-blue/50 rounded-2xl p-8 transition-all duration-300 hover:transform hover:scale-105">
-        <div class="w-16 h-16 bg-antares-blue/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-antares-blue/20 transition-colors">
-          <svg class="w-8 h-8 text-antares-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
-          </svg>
+      <!-- INSTALLATION Service -->
+      <div class="group relative bg-antares-dark rounded-2xl overflow-hidden border border-white/5 hover:border-antares-blue/50 transition-all duration-500 hover:transform hover:scale-105">
+        <!-- Image -->
+        <div class="relative h-64 overflow-hidden">
+          <img 
+            src="/static/images/services/installation-service.jpg" 
+            alt="Installation Service - Professional Signage Installation"
+            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-antares-dark via-antares-dark/50 to-transparent"></div>
         </div>
-        <h3 class="text-xl font-display font-bold mb-3">Compliance</h3>
-        <p class="text-white/60 mb-4">Full regulatory & Title 24 expertise</p>
-        <span class="text-antares-blue text-sm font-medium group-hover:underline">Learn More →</span>
-      </a>
+        
+        <!-- Content -->
+        <div class="p-8">
+          <!-- Icon -->
+          <div class="w-16 h-16 bg-gradient-to-br from-antares-blue to-blue-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-lg shadow-antares-blue/20">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+            </svg>
+          </div>
+          
+          <h3 class="text-2xl font-display font-bold mb-4">INSTALLATION</h3>
+          <h4 class="text-lg text-antares-blue font-semibold mb-3">High-Impact Installation Specialists</h4>
+          <p class="text-white/70 leading-relaxed mb-6">
+            No matter the height, surface, or complexity. We have the equipment and experience to install your visual communication in any environment.
+          </p>
+          
+          <a href="/services#installation" class="inline-flex items-center text-antares-blue font-medium group-hover:underline">
+            Explore Installation Services
+            <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+            </svg>
+          </a>
+        </div>
+      </div>
     </div>
 
-    <div class="text-center mt-12">
-      <a href="/services" class="inline-flex items-center px-8 py-4 bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl font-medium transition-all duration-300 hover:scale-105">
-        View All Services
-        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-        </svg>
-      </a>
+    <!-- CTA -->
+    <div class="text-center mt-16">
+      <div class="inline-flex flex-col sm:flex-row items-center gap-4">
+        <a href="/services" class="inline-flex items-center px-8 py-4 bg-antares-blue hover:bg-blue-600 rounded-xl font-semibold transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-antares-blue/20">
+          View All Services
+          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+          </svg>
+        </a>
+        <button onclick="openRequestCallModal()" class="inline-flex items-center px-8 py-4 bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl font-medium transition-all duration-300 hover:scale-105">
+          Request Free Consultation
+          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+          </svg>
+        </button>
+      </div>
     </div>
   </div>
 </section>
