@@ -1567,34 +1567,34 @@ app.get('/services/design', (c) => {
             <h3 class="text-2xl font-bold mb-4">BRANDING</h3>
             <p class="text-white/70 mb-4">Complete brand identity development that communicates your values and differentiates you from the competition.</p>
             <ul class="text-sm text-white/60 space-y-2">
-              <li>• Logo design and brand guidelines</li>
-              <li>• Color palette and typography</li>
-              <li>• Brand positioning strategy</li>
-              <li>• Visual identity systems</li>
+              <li>• <strong>Logo design and brand guidelines</strong></li>
+              <li>• <strong>Color palette and typography</strong></li>
+              <li>• <strong>Brand positioning strategy</strong></li>
+              <li>• <strong>Visual identity systems</strong></li>
             </ul>
           </div>
 
           <div class="bg-antares-gray p-8 rounded-xl border border-white/10 hover:border-antares-blue transition-all">
             <div class="text-4xl mb-4">📐</div>
-            <h3 class="text-2xl font-bold mb-4">DISEÑO DE PIEZAS GRÁFICAS</h3>
+            <h3 class="text-2xl font-bold mb-4">GRAPHIC DESIGN</h3>
             <p class="text-white/70 mb-4">Professional graphic design for all your signage and advertising materials with visual impact.</p>
             <ul class="text-sm text-white/60 space-y-2">
-              <li>• Business cards and stationery</li>
-              <li>• Brochures and catalogs</li>
-              <li>• Posters and banners</li>
-              <li>• Packaging and labels</li>
+              <li>• <strong>Business cards and stationery</strong></li>
+              <li>• <strong>Brochures and catalogs</strong></li>
+              <li>• <strong>Posters and banners</strong></li>
+              <li>• <strong>Packaging and labels</strong></li>
             </ul>
           </div>
 
           <div class="bg-antares-gray p-8 rounded-xl border border-white/10 hover:border-antares-blue transition-all">
             <div class="text-4xl mb-4">💻</div>
-            <h3 class="text-2xl font-bold mb-4">DISEÑO DIGITAL</h3>
+            <h3 class="text-2xl font-bold mb-4">DIGITAL DESIGN</h3>
             <p class="text-white/70 mb-4">Modern digital design for social media, websites, and all your online presence needs.</p>
             <ul class="text-sm text-white/60 space-y-2">
-              <li>• Social media graphics and ads</li>
-              <li>• Web banners and email templates</li>
-              <li>• Digital signage and displays</li>
-              <li>• Interactive presentations</li>
+              <li>• <strong>Social media graphics and ads</strong></li>
+              <li>• <strong>Web banners and email templates</strong></li>
+              <li>• <strong>Digital signage and displays</strong></li>
+              <li>• <strong>Interactive presentations</strong></li>
             </ul>
           </div>
         </div>
@@ -1664,7 +1664,7 @@ app.get('/services/print', (c) => {
         <div class="grid md:grid-cols-3 gap-8 mb-12">
           <div class="bg-antares-gray p-8 rounded-xl border border-white/10 hover:border-antares-blue transition-all">
             <div class="text-4xl mb-4">🖨️</div>
-            <h3 class="text-2xl font-bold mb-4">GIGANTOGRAFÍAS</h3>
+            <h3 class="text-2xl font-bold mb-4">LARGE FORMAT PRINTING</h3>
             <p class="text-white/70 mb-4">Large-format printing for high-impact visual advertising. Perfect for building facades, events, and outdoor advertising.</p>
             <ul class="text-sm text-white/60 space-y-2">
               <li>• <strong>Materials:</strong> Vinyl banner, mesh, canvas</li>
@@ -1676,7 +1676,7 @@ app.get('/services/print', (c) => {
 
           <div class="bg-antares-gray p-8 rounded-xl border border-white/10 hover:border-antares-blue transition-all">
             <div class="text-4xl mb-4">🛍️</div>
-            <h3 class="text-2xl font-bold mb-4">MATERIAL POP</h3>
+            <h3 class="text-2xl font-bold mb-4">POP MATERIALS</h3>
             <p class="text-white/70 mb-4">Point of purchase materials that drive sales and enhance customer experience at retail locations.</p>
             <ul class="text-sm text-white/60 space-y-2">
               <li>• <strong>Products:</strong> Displays, standees, shelf talkers, danglers</li>
@@ -1688,7 +1688,7 @@ app.get('/services/print', (c) => {
 
           <div class="bg-antares-gray p-8 rounded-xl border border-white/10 hover:border-antares-blue transition-all">
             <div class="text-4xl mb-4">📄</div>
-            <h3 class="text-2xl font-bold mb-4">FOLLETERÍA</h3>
+            <h3 class="text-2xl font-bold mb-4">BROCHURES & CATALOGS</h3>
             <p class="text-white/70 mb-4">Professional brochures, catalogs, and printed materials for marketing and corporate communications.</p>
             <ul class="text-sm text-white/60 space-y-2">
               <li>• <strong>Types:</strong> Brochures, catalogs, flyers, folders</li>
@@ -1808,7 +1808,7 @@ app.get('/services/installation', (c) => {
         <div class="grid md:grid-cols-3 gap-8 mb-12">
           <div class="bg-antares-gray p-8 rounded-xl border border-white/10 hover:border-antares-blue transition-all">
             <div class="text-4xl mb-4">🏢</div>
-            <h3 class="text-2xl font-bold mb-4">SEÑALIZACIÓN COMERCIAL</h3>
+            <h3 class="text-2xl font-bold mb-4">COMMERCIAL SIGNAGE</h3>
             <p class="text-white/70 mb-4">Complete commercial signage installation for storefronts, buildings, and business locations. Professional mounting and electrical work.</p>
             <ul class="text-sm text-white/60 space-y-2">
               <li>• <strong>Facade Mounting:</strong> Building-mounted channel letters and signs</li>
@@ -1820,7 +1820,7 @@ app.get('/services/installation', (c) => {
 
           <div class="bg-antares-gray p-8 rounded-xl border border-white/10 hover:border-antares-blue transition-all">
             <div class="text-4xl mb-4">⚡</div>
-            <h3 class="text-2xl font-bold mb-4">INSTALACIÓN LED</h3>
+            <h3 class="text-2xl font-bold mb-4">LED INSTALLATION</h3>
             <p class="text-white/70 mb-4">Licensed electrical contractors for LED sign installation, retrofits, and energy-efficient lighting solutions.</p>
             <ul class="text-sm text-white/60 space-y-2">
               <li>• <strong>Licensed Electricians:</strong> C-10 electrical contractor license</li>
@@ -1832,7 +1832,7 @@ app.get('/services/installation', (c) => {
 
           <div class="bg-antares-gray p-8 rounded-xl border border-white/10 hover:border-antares-blue transition-all">
             <div class="text-4xl mb-4">🏗️</div>
-            <h3 class="text-2xl font-bold mb-4">MONTAJES DE ALTURA</h3>
+            <h3 class="text-2xl font-bold mb-4">HIGH-RISE INSTALLATION</h3>
             <p class="text-white/70 mb-4">Specialized high-rise installation with crane service, rope access certification, and OSHA-compliant safety protocols.</p>
             <ul class="text-sm text-white/60 space-y-2">
               <li>• <strong>Crane Service:</strong> Mobile cranes and boom lift equipment</li>
