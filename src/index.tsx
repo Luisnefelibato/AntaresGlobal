@@ -120,7 +120,7 @@ app.get('/', (c) => {
         <span class="text-orange-500 text-base font-medium">⭐ Strategic Services</span>
       </div>
       <h2 class="text-4xl lg:text-6xl font-display font-bold mb-6 bg-gradient-to-r from-white via-white to-white/80 bg-clip-text text-transparent">
-        One Provider For The Entire Process
+        Your Trusted Provider For The Entire Process
       </h2>
       <p class="text-white/70 text-xl max-w-4xl mx-auto leading-relaxed">
         From Concept → Design → Production → Installation. Efficiency, compliance, and quality at every stage.
