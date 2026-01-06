@@ -14,12 +14,12 @@ app.use('/static/*', serveStatic({ root: './public' }))
 // Homepage
 app.get('/', (c) => {
   const content = `
-<!-- Hero Section with Animated Video -->
+<!-- Hero Section with Cosmic Orb Background -->
 <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
-  <!-- Animated Background -->
+  <!-- Cosmic Orb Background -->
   <div class="absolute inset-0 bg-gradient-to-b from-antares-dark via-antares-gray to-antares-dark">
-    <div class="zoom-out-animation absolute inset-0"></div>
-    <div class="absolute inset-0 bg-black/40"></div>
+    <img src="/static/images/hero-unified-orb.jpg" alt="Antares Services" class="absolute inset-0 w-full h-full object-cover opacity-80" />
+    <div class="absolute inset-0 bg-gradient-to-b from-antares-dark/60 via-transparent to-antares-dark/80"></div>
   </div>
 
   <!-- Hero Content -->
@@ -1585,9 +1585,10 @@ app.get('/services/design', (c) => {
         </a>
       </div>
 
-      <!-- Image - Smaller -->
-      <div class="max-w-2xl mx-auto mb-16">
-        <img src="/static/images/services/design-service.jpg" alt="Custom Sign Design Studio" class="w-full rounded-2xl shadow-2xl opacity-90"/>
+      <!-- Cosmic Orb Image -->
+      <div class="max-w-3xl mx-auto mb-16 relative">
+        <div class="absolute inset-0 bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-3xl blur-3xl"></div>
+        <img src="/static/images/design-orb.jpg" alt="Design Service - Creative Universe" class="relative w-full rounded-2xl shadow-2xl"/>
       </div>
 
       <!-- What We Offer -->
@@ -1765,9 +1766,10 @@ app.get('/services/print', (c) => {
         </a>
       </div>
 
-      <!-- Image - Smaller -->
-      <div class="max-w-2xl mx-auto mb-16">
-        <img src="/static/images/services/print-service.jpg" alt="Professional Sign Printing Large Format" class="w-full rounded-2xl shadow-2xl opacity-90"/>
+      <!-- Cosmic Orb Image -->
+      <div class="max-w-3xl mx-auto mb-16 relative">
+        <div class="absolute inset-0 bg-gradient-to-br from-cyan-500/20 to-orange-500/20 rounded-3xl blur-3xl"></div>
+        <img src="/static/images/print-orb.jpg" alt="Print Service - CMYK Universe" class="relative w-full rounded-2xl shadow-2xl"/>
       </div>
 
       <!-- Printing Services Detailed -->
@@ -1989,9 +1991,10 @@ app.get('/services/installation', (c) => {
         </a>
       </div>
 
-      <!-- Image - Smaller -->
-      <div class="max-w-2xl mx-auto mb-16">
-        <img src="/static/images/services/installation-service.jpg" alt="Professional Sign Installation" class="w-full rounded-2xl shadow-2xl opacity-90"/>
+      <!-- Cosmic Orb Image -->
+      <div class="max-w-3xl mx-auto mb-16 relative">
+        <div class="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-yellow-500/20 rounded-3xl blur-3xl"></div>
+        <img src="/static/images/installation-orb.jpg" alt="Installation Service - Industrial Universe" class="relative w-full rounded-2xl shadow-2xl"/>
       </div>
 
       <!-- Installation Services Detailed -->
