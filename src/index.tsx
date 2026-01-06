@@ -1681,13 +1681,11 @@ app.get('/services/design', (c) => {
         <p class="text-lg text-white/60 text-center mb-12 max-w-3xl mx-auto">From concept to creation, we design signage that attracts customers and boosts your brand visibility</p>
         
         <div class="grid md:grid-cols-3 gap-8">
-          <div class="bg-antares-gray p-8 rounded-xl border border-white/10 hover:border-antares-blue transition-all">
-            <div class="w-16 h-16 mb-4 bg-gradient-to-br from-antares-blue to-blue-600 rounded-xl flex items-center justify-center">
-              <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"/>
-              </svg>
+          <div class="bg-gradient-to-br from-antares-blue/10 to-blue-600/10 p-8 rounded-xl border border-antares-blue/30 hover:border-antares-blue hover:shadow-lg hover:shadow-antares-blue/20 transition-all">
+            <div class="w-16 h-16 mb-4 bg-gradient-to-br from-antares-blue to-blue-600 rounded-xl flex items-center justify-center text-3xl">
+              🎨
             </div>
-            <h3 class="text-2xl font-bold mb-4">BRANDING</h3>
+            <h3 class="text-2xl font-bold mb-4 text-antares-blue">BRANDING</h3>
             <p class="text-white/70 mb-4">Complete brand identity development that communicates your values and differentiates you from the competition.</p>
             <ul class="text-sm text-white/60 space-y-2">
               <li>• <strong>Logo design and brand guidelines</strong></li>
@@ -1697,13 +1695,11 @@ app.get('/services/design', (c) => {
             </ul>
           </div>
 
-          <div class="bg-antares-gray p-8 rounded-xl border border-white/10 hover:border-antares-blue transition-all">
-            <div class="w-16 h-16 mb-4 bg-gradient-to-br from-antares-blue to-blue-600 rounded-xl flex items-center justify-center">
-              <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/>
-              </svg>
+          <div class="bg-gradient-to-br from-antares-blue/10 to-blue-600/10 p-8 rounded-xl border border-antares-blue/30 hover:border-antares-blue hover:shadow-lg hover:shadow-antares-blue/20 transition-all">
+            <div class="w-16 h-16 mb-4 bg-gradient-to-br from-antares-blue to-blue-600 rounded-xl flex items-center justify-center text-3xl">
+              ✏️
             </div>
-            <h3 class="text-2xl font-bold mb-4">GRAPHIC DESIGN</h3>
+            <h3 class="text-2xl font-bold mb-4 text-antares-blue">GRAPHIC DESIGN</h3>
             <p class="text-white/70 mb-4">Professional graphic design for all your signage and advertising materials with visual impact.</p>
             <ul class="text-sm text-white/60 space-y-2">
               <li>• <strong>Business cards and stationery</strong></li>
@@ -1713,13 +1709,11 @@ app.get('/services/design', (c) => {
             </ul>
           </div>
 
-          <div class="bg-antares-gray p-8 rounded-xl border border-white/10 hover:border-antares-blue transition-all">
-            <div class="w-16 h-16 mb-4 bg-gradient-to-br from-antares-blue to-blue-600 rounded-xl flex items-center justify-center">
-              <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-              </svg>
+          <div class="bg-gradient-to-br from-antares-blue/10 to-blue-600/10 p-8 rounded-xl border border-antares-blue/30 hover:border-antares-blue hover:shadow-lg hover:shadow-antares-blue/20 transition-all">
+            <div class="w-16 h-16 mb-4 bg-gradient-to-br from-antares-blue to-blue-600 rounded-xl flex items-center justify-center text-3xl">
+              💻
             </div>
-            <h3 class="text-2xl font-bold mb-4">DIGITAL DESIGN</h3>
+            <h3 class="text-2xl font-bold mb-4 text-antares-blue">DIGITAL DESIGN</h3>
             <p class="text-white/70 mb-4">Modern digital design for social media, websites, and all your online presence needs.</p>
             <ul class="text-sm text-white/60 space-y-2">
               <li>• <strong>Social media graphics and ads</strong></li>
@@ -1864,13 +1858,11 @@ app.get('/services/print', (c) => {
         <p class="text-lg text-white/60 text-center mb-12 max-w-3xl mx-auto">Professional large format printing with precision color matching and premium materials. Every print is inspected for quality before delivery.</p>
         
         <div class="grid md:grid-cols-3 gap-8 mb-12">
-          <div class="bg-antares-gray p-8 rounded-xl border border-white/10 hover:border-antares-blue transition-all">
-            <div class="w-16 h-16 mb-4 bg-gradient-to-br from-antares-blue to-blue-600 rounded-xl flex items-center justify-center">
-              <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/>
-              </svg>
+          <div class="bg-gradient-to-br from-orange-500/10 to-red-600/10 p-8 rounded-xl border border-orange-500/30 hover:border-orange-500 hover:shadow-lg hover:shadow-orange-500/20 transition-all">
+            <div class="w-16 h-16 mb-4 bg-gradient-to-br from-orange-500 to-red-600 rounded-xl flex items-center justify-center text-3xl">
+              🖨️
             </div>
-            <h3 class="text-2xl font-bold mb-4">LARGE FORMAT PRINTING</h3>
+            <h3 class="text-2xl font-bold mb-4 text-orange-500">LARGE FORMAT PRINTING</h3>
             <p class="text-white/70 mb-4">Large-format printing for high-impact visual advertising. Perfect for building facades, events, and outdoor advertising.</p>
             <ul class="text-sm text-white/60 space-y-2">
               <li>• <strong>Materials:</strong> Vinyl banner, mesh, canvas</li>
@@ -1880,13 +1872,11 @@ app.get('/services/print', (c) => {
             </ul>
           </div>
 
-          <div class="bg-antares-gray p-8 rounded-xl border border-white/10 hover:border-antares-blue transition-all">
-            <div class="w-16 h-16 mb-4 bg-gradient-to-br from-antares-blue to-blue-600 rounded-xl flex items-center justify-center">
-              <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/>
-              </svg>
+          <div class="bg-gradient-to-br from-orange-500/10 to-red-600/10 p-8 rounded-xl border border-orange-500/30 hover:border-orange-500 hover:shadow-lg hover:shadow-orange-500/20 transition-all">
+            <div class="w-16 h-16 mb-4 bg-gradient-to-br from-orange-500 to-red-600 rounded-xl flex items-center justify-center text-3xl">
+              🛍️
             </div>
-            <h3 class="text-2xl font-bold mb-4">POP MATERIALS</h3>
+            <h3 class="text-2xl font-bold mb-4 text-orange-500">POP MATERIALS</h3>
             <p class="text-white/70 mb-4">Point of purchase materials that drive sales and enhance customer experience at retail locations.</p>
             <ul class="text-sm text-white/60 space-y-2">
               <li>• <strong>Products:</strong> Displays, standees, shelf talkers, danglers</li>
@@ -1896,13 +1886,11 @@ app.get('/services/print', (c) => {
             </ul>
           </div>
 
-          <div class="bg-antares-gray p-8 rounded-xl border border-white/10 hover:border-antares-blue transition-all">
-            <div class="w-16 h-16 mb-4 bg-gradient-to-br from-antares-blue to-blue-600 rounded-xl flex items-center justify-center">
-              <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
-              </svg>
+          <div class="bg-gradient-to-br from-orange-500/10 to-red-600/10 p-8 rounded-xl border border-orange-500/30 hover:border-orange-500 hover:shadow-lg hover:shadow-orange-500/20 transition-all">
+            <div class="w-16 h-16 mb-4 bg-gradient-to-br from-orange-500 to-red-600 rounded-xl flex items-center justify-center text-3xl">
+              📑
             </div>
-            <h3 class="text-2xl font-bold mb-4">BROCHURES & CATALOGS</h3>
+            <h3 class="text-2xl font-bold mb-4 text-orange-500">BROCHURES & CATALOGS</h3>
             <p class="text-white/70 mb-4">Professional brochures, catalogs, and printed materials for marketing and corporate communications.</p>
             <ul class="text-sm text-white/60 space-y-2">
               <li>• <strong>Types:</strong> Brochures, catalogs, flyers, folders</li>
@@ -2091,9 +2079,11 @@ app.get('/services/installation', (c) => {
         <p class="text-lg text-white/60 text-center mb-12 max-w-3xl mx-auto">Professional signage installation with certified crews, advanced equipment, and comprehensive safety protocols. Licensed, insured, and Title 24 compliant.</p>
         
         <div class="grid md:grid-cols-3 gap-8 mb-12">
-          <div class="bg-antares-gray p-8 rounded-xl border border-white/10 hover:border-antares-blue transition-all">
-            <div class="text-4xl mb-4">🏢</div>
-            <h3 class="text-2xl font-bold mb-4">COMMERCIAL SIGNAGE</h3>
+          <div class="bg-gradient-to-br from-green-500/10 to-emerald-600/10 p-8 rounded-xl border border-green-500/30 hover:border-green-500 hover:shadow-lg hover:shadow-green-500/20 transition-all">
+            <div class="w-16 h-16 mb-4 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl flex items-center justify-center text-3xl">
+              🏢
+            </div>
+            <h3 class="text-2xl font-bold mb-4 text-green-500">COMMERCIAL SIGNAGE</h3>
             <p class="text-white/70 mb-4">Complete commercial signage installation for storefronts, buildings, and business locations. Professional mounting and electrical work.</p>
             <ul class="text-sm text-white/60 space-y-2">
               <li>• <strong>Facade Mounting:</strong> Building-mounted channel letters and signs</li>
@@ -2103,9 +2093,11 @@ app.get('/services/installation', (c) => {
             </ul>
           </div>
 
-          <div class="bg-antares-gray p-8 rounded-xl border border-white/10 hover:border-antares-blue transition-all">
-            <div class="text-4xl mb-4">⚡</div>
-            <h3 class="text-2xl font-bold mb-4">LED INSTALLATION</h3>
+          <div class="bg-gradient-to-br from-green-500/10 to-emerald-600/10 p-8 rounded-xl border border-green-500/30 hover:border-green-500 hover:shadow-lg hover:shadow-green-500/20 transition-all">
+            <div class="w-16 h-16 mb-4 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl flex items-center justify-center text-3xl">
+              💡
+            </div>
+            <h3 class="text-2xl font-bold mb-4 text-green-500">LED INSTALLATION</h3>
             <p class="text-white/70 mb-4">Licensed electrical contractors for LED sign installation, retrofits, and energy-efficient lighting solutions.</p>
             <ul class="text-sm text-white/60 space-y-2">
               <li>• <strong>Licensed Electricians:</strong> C-10 electrical contractor license</li>
@@ -2115,14 +2107,11 @@ app.get('/services/installation', (c) => {
             </ul>
           </div>
 
-          <div class="bg-antares-gray p-8 rounded-xl border border-white/10 hover:border-antares-blue transition-all">
-            <div class="w-16 h-16 mb-4 bg-gradient-to-br from-antares-blue to-blue-600 rounded-xl flex items-center justify-center">
-              <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M3 14h18"/>
-              </svg>
+          <div class="bg-gradient-to-br from-green-500/10 to-emerald-600/10 p-8 rounded-xl border border-green-500/30 hover:border-green-500 hover:shadow-lg hover:shadow-green-500/20 transition-all">
+            <div class="w-16 h-16 mb-4 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl flex items-center justify-center text-3xl">
+              🏗️
             </div>
-            <h3 class="text-2xl font-bold mb-4">HIGH-RISE INSTALLATION</h3>
+            <h3 class="text-2xl font-bold mb-4 text-green-500">HIGH-RISE INSTALLATION</h3>
             <p class="text-white/70 mb-4">Specialized high-rise installation with crane service, rope access certification, and OSHA-compliant safety protocols.</p>
             <ul class="text-sm text-white/60 space-y-2">
               <li>• <strong>Crane Service:</strong> Mobile cranes and boom lift equipment</li>
