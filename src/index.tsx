@@ -39,7 +39,7 @@ app.get('/', (c) => {
 
       <!-- Subtitle -->
       <p class="text-lg sm:text-xl lg:text-2xl text-white/70 max-w-3xl mx-auto font-light leading-relaxed">
-        Strategy + Design + Certified Installation
+        Creative Design, Full Production, Professional Installation
         <span class="block mt-2 text-white/50">From concept to installation. One provider for the entire process.</span>
       </p>
 
