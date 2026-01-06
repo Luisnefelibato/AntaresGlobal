@@ -319,7 +319,7 @@ export const PageLayout = (title: string, description: string, content: string) 
       }
     </script>
     
-    <link rel="stylesheet" href="/static/styles.css?v=6">
+    <link rel="stylesheet" href="/static/styles.css?v=7">
 </head>
 <body class="bg-antares-dark text-white antialiased">
     ${Header()}
