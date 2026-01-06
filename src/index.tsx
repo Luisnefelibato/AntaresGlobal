@@ -113,45 +113,45 @@ app.get('/', (c) => {
 </section>
 
 <!-- Strategic Services - 3 Columns -->
-<section class="py-16 lg:py-24 bg-antares-gray/50">
-  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="text-center mb-16">
-      <div class="inline-flex items-center space-x-2 bg-gradient-to-r from-orange-500/10 to-antares-blue/10 border border-orange-500/20 rounded-full px-4 py-2 mb-4">
-        <span class="text-orange-500 text-sm font-medium">⭐ Strategic Services</span>
+<section class="py-24 lg:py-32 bg-antares-gray/50">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+    <div class="text-center mb-20">
+      <div class="inline-flex items-center space-x-2 bg-gradient-to-r from-orange-500/10 to-antares-blue/10 border border-orange-500/20 rounded-full px-6 py-3 mb-6">
+        <span class="text-orange-500 text-base font-medium">⭐ Strategic Services</span>
       </div>
-      <h2 class="text-3xl lg:text-5xl font-display font-bold mb-4">
+      <h2 class="text-4xl lg:text-6xl font-display font-bold mb-6 bg-gradient-to-r from-white via-white to-white/80 bg-clip-text text-transparent">
         One Provider For The Entire Process
       </h2>
-      <p class="text-white/60 text-lg max-w-3xl mx-auto">
+      <p class="text-white/70 text-xl max-w-4xl mx-auto leading-relaxed">
         From Concept → Design → Production → Installation. Efficiency, compliance, and quality at every stage.
       </p>
     </div>
 
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 mb-16">
       <!-- COLUMN 1: DESIGN -->
-      <div class="group relative bg-antares-dark rounded-2xl overflow-hidden border border-white/5 hover:border-antares-blue/50 transition-all duration-500">
+      <div class="group relative bg-antares-dark rounded-2xl overflow-hidden border border-white/5 hover:border-antares-blue/50 transition-all duration-500 hover:shadow-2xl hover:shadow-antares-blue/20 hover:-translate-y-2">
         <!-- Image -->
-        <div class="relative h-64 overflow-hidden">
+        <div class="relative h-80 overflow-hidden">
           <img 
             src="/static/images/services/design-service.jpg" 
             alt="Design Services - Creative Solutions"
             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
           />
           <div class="absolute inset-0 bg-gradient-to-t from-antares-dark via-antares-dark/80 to-transparent"></div>
-          <div class="absolute top-4 right-4">
-            <span class="bg-antares-blue px-3 py-1 rounded-full text-sm font-medium">🎨 Design</span>
+          <div class="absolute top-6 right-6">
+            <span class="bg-antares-blue px-4 py-2 rounded-full text-sm font-semibold shadow-lg">🎨 Design</span>
           </div>
         </div>
 
         <!-- Content -->
-        <div class="p-8">
-          <h3 class="text-2xl font-bold mb-2">Creative Design</h3>
-          <p class="text-antares-blue font-semibold text-sm mb-4">VISUAL IDENTITY & BRANDING</p>
-          <p class="text-white/70 mb-6">
+        <div class="p-10">
+          <h3 class="text-3xl font-bold mb-3">Creative Design</h3>
+          <p class="text-antares-blue font-semibold text-base mb-6">VISUAL IDENTITY & BRANDING</p>
+          <p class="text-white/70 mb-8 text-base leading-relaxed">
             Complete design solutions from branding to final art. We create visual identities that communicate and convert.
           </p>
 
-          <ul class="space-y-3 mb-6">
+          <ul class="space-y-4 mb-8">
             <li class="flex items-start gap-3 text-sm">
               <span class="text-antares-blue mt-1">•</span>
               <div>
@@ -175,9 +175,9 @@ app.get('/', (c) => {
             </li>
           </ul>
 
-          <a href="/services/design" class="inline-flex items-center text-antares-blue hover:text-blue-400 font-medium transition-colors group">
+          <a href="/services/design" class="inline-flex items-center text-antares-blue hover:text-blue-400 font-semibold text-base transition-colors group">
             Explore Design
-            <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg class="w-6 h-6 ml-2 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
             </svg>
           </a>
@@ -185,29 +185,29 @@ app.get('/', (c) => {
       </div>
 
       <!-- COLUMN 2: PRODUCTION (PRINTING) -->
-      <div class="group relative bg-antares-dark rounded-2xl overflow-hidden border border-white/5 hover:border-orange-500/50 transition-all duration-500">
+      <div class="group relative bg-antares-dark rounded-2xl overflow-hidden border border-white/5 hover:border-orange-500/50 transition-all duration-500 hover:shadow-2xl hover:shadow-orange-500/20 hover:-translate-y-2">
         <!-- Image -->
-        <div class="relative h-64 overflow-hidden">
+        <div class="relative h-80 overflow-hidden">
           <img 
             src="/static/images/services/print-service.jpg" 
             alt="Production Services - Professional Printing"
             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
           />
           <div class="absolute inset-0 bg-gradient-to-t from-antares-dark via-antares-dark/80 to-transparent"></div>
-          <div class="absolute top-4 right-4">
-            <span class="bg-orange-500 px-3 py-1 rounded-full text-sm font-medium">🖨️ Production</span>
+          <div class="absolute top-6 right-6">
+            <span class="bg-orange-500 px-4 py-2 rounded-full text-sm font-semibold shadow-lg">🖨️ Production</span>
           </div>
         </div>
 
         <!-- Content -->
-        <div class="p-8">
-          <h3 class="text-2xl font-bold mb-2">Full Production</h3>
-          <p class="text-orange-500 font-semibold text-sm mb-4">PRINTING & MANUFACTURING</p>
-          <p class="text-white/70 mb-6">
+        <div class="p-10">
+          <h3 class="text-3xl font-bold mb-3">Full Production</h3>
+          <p class="text-orange-500 font-semibold text-base mb-6">PRINTING & MANUFACTURING</p>
+          <p class="text-white/70 mb-8 text-base leading-relaxed">
             From design to physical product. Complete production services including all types of printing and materials.
           </p>
 
-          <ul class="space-y-3 mb-6">
+          <ul class="space-y-4 mb-8">
             <li class="flex items-start gap-3 text-sm">
               <span class="text-orange-500 mt-1">•</span>
               <div>
@@ -231,9 +231,9 @@ app.get('/', (c) => {
             </li>
           </ul>
 
-          <a href="/services/print" class="inline-flex items-center text-orange-500 hover:text-orange-400 font-medium transition-colors group">
+          <a href="/services/print" class="inline-flex items-center text-orange-500 hover:text-orange-400 font-semibold text-base transition-colors group">
             Explore Production
-            <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg class="w-6 h-6 ml-2 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
             </svg>
           </a>
@@ -241,45 +241,45 @@ app.get('/', (c) => {
       </div>
 
       <!-- COLUMN 3: INSTALLATION -->
-      <div class="group relative bg-antares-dark rounded-2xl overflow-hidden border border-white/5 hover:border-green-500/50 transition-all duration-500">
+      <div class="group relative bg-antares-dark rounded-2xl overflow-hidden border border-white/5 hover:border-green-500/50 transition-all duration-500 hover:shadow-2xl hover:shadow-green-500/20 hover:-translate-y-2">
         <!-- Image -->
-        <div class="relative h-64 overflow-hidden">
+        <div class="relative h-80 overflow-hidden">
           <img 
             src="/static/images/services/installation-service.jpg" 
             alt="Installation Services - Professional Mounting"
             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
           />
           <div class="absolute inset-0 bg-gradient-to-t from-antares-dark via-antares-dark/80 to-transparent"></div>
-          <div class="absolute top-4 right-4">
-            <span class="bg-green-500 px-3 py-1 rounded-full text-sm font-medium">⚡ Installation</span>
+          <div class="absolute top-6 right-6">
+            <span class="bg-green-500 px-4 py-2 rounded-full text-sm font-semibold shadow-lg">⚡ Installation</span>
           </div>
         </div>
 
         <!-- Content -->
-        <div class="p-8">
-          <h3 class="text-2xl font-bold mb-2">Professional Installation</h3>
-          <p class="text-green-500 font-semibold text-sm mb-4">CERTIFIED MOUNTING & SETUP</p>
-          <p class="text-white/70 mb-6">
+        <div class="p-10">
+          <h3 class="text-3xl font-bold mb-3">Professional Installation</h3>
+          <p class="text-green-500 font-semibold text-base mb-6">CERTIFIED MOUNTING & SETUP</p>
+          <p class="text-white/70 mb-8 text-base leading-relaxed">
             Expert installation with certified technicians, specialized equipment, and guaranteed compliance.
           </p>
 
-          <ul class="space-y-3 mb-6">
-            <li class="flex items-start gap-3 text-sm">
-              <span class="text-green-500 mt-1">•</span>
+          <ul class="space-y-4 mb-8">
+            <li class="flex items-start gap-3">
+              <span class="text-green-500 mt-1 text-base">•</span>
               <div>
                 <strong class="text-white">Commercial Signage:</strong>
                 <span class="text-white/60"> Storefronts, facades, monument signs</span>
               </div>
             </li>
-            <li class="flex items-start gap-3 text-sm">
-              <span class="text-green-500 mt-1">•</span>
+            <li class="flex items-start gap-3">
+              <span class="text-green-500 mt-1 text-base">•</span>
               <div>
                 <strong class="text-white">LED Systems:</strong>
                 <span class="text-white/60"> Electrical installation, energy retrofits</span>
               </div>
             </li>
-            <li class="flex items-start gap-3 text-sm">
-              <span class="text-green-500 mt-1">•</span>
+            <li class="flex items-start gap-3">
+              <span class="text-green-500 mt-1 text-base">•</span>
               <div>
                 <strong class="text-white">High-Rise Work:</strong>
                 <span class="text-white/60"> SPRAT/OSHA certified technicians</span>
@@ -287,9 +287,9 @@ app.get('/', (c) => {
             </li>
           </ul>
 
-          <a href="/services/installation" class="inline-flex items-center text-green-500 hover:text-green-400 font-medium transition-colors group">
+          <a href="/services/installation" class="inline-flex items-center text-green-500 hover:text-green-400 font-semibold text-base transition-colors group">
             Explore Installation
-            <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg class="w-6 h-6 ml-2 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
             </svg>
           </a>
