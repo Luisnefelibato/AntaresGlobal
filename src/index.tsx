@@ -14,12 +14,12 @@ app.use('/static/*', serveStatic({ root: './public' }))
 // Homepage
 app.get('/', (c) => {
   const content = `
-<!-- Hero Section with Cosmic Orb Background -->
+<!-- Hero Section with Animated Background -->
 <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
-  <!-- Cosmic Orb Background -->
+  <!-- Animated Background -->
   <div class="absolute inset-0 bg-gradient-to-b from-antares-dark via-antares-gray to-antares-dark">
-    <img src="/static/images/hero-unified-orb.jpg" alt="Antares Services" class="absolute inset-0 w-full h-full object-cover opacity-80" />
-    <div class="absolute inset-0 bg-gradient-to-b from-antares-dark/60 via-transparent to-antares-dark/80"></div>
+    <div class="zoom-out-animation absolute inset-0"></div>
+    <div class="absolute inset-0 bg-black/40"></div>
   </div>
 
   <!-- Hero Content -->
