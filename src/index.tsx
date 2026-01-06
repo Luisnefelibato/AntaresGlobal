@@ -1664,7 +1664,11 @@ app.get('/services/design', (c) => {
         
         <div class="grid md:grid-cols-3 gap-8">
           <div class="bg-antares-gray p-8 rounded-xl border border-white/10 hover:border-antares-blue transition-all">
-            <div class="text-4xl mb-4">🎨</div>
+            <div class="w-16 h-16 mb-4 bg-gradient-to-br from-antares-blue to-blue-600 rounded-xl flex items-center justify-center">
+              <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"/>
+              </svg>
+            </div>
             <h3 class="text-2xl font-bold mb-4">BRANDING</h3>
             <p class="text-white/70 mb-4">Complete brand identity development that communicates your values and differentiates you from the competition.</p>
             <ul class="text-sm text-white/60 space-y-2">
@@ -1676,7 +1680,11 @@ app.get('/services/design', (c) => {
           </div>
 
           <div class="bg-antares-gray p-8 rounded-xl border border-white/10 hover:border-antares-blue transition-all">
-            <div class="text-4xl mb-4">📐</div>
+            <div class="w-16 h-16 mb-4 bg-gradient-to-br from-antares-blue to-blue-600 rounded-xl flex items-center justify-center">
+              <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+              </svg>
+            </div>
             <h3 class="text-2xl font-bold mb-4">GRAPHIC DESIGN</h3>
             <p class="text-white/70 mb-4">Professional graphic design for all your signage and advertising materials with visual impact.</p>
             <ul class="text-sm text-white/60 space-y-2">
@@ -1688,7 +1696,11 @@ app.get('/services/design', (c) => {
           </div>
 
           <div class="bg-antares-gray p-8 rounded-xl border border-white/10 hover:border-antares-blue transition-all">
-            <div class="text-4xl mb-4">💻</div>
+            <div class="w-16 h-16 mb-4 bg-gradient-to-br from-antares-blue to-blue-600 rounded-xl flex items-center justify-center">
+              <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+              </svg>
+            </div>
             <h3 class="text-2xl font-bold mb-4">DIGITAL DESIGN</h3>
             <p class="text-white/70 mb-4">Modern digital design for social media, websites, and all your online presence needs.</p>
             <ul class="text-sm text-white/60 space-y-2">
@@ -1832,7 +1844,11 @@ app.get('/services/print', (c) => {
         
         <div class="grid md:grid-cols-3 gap-8 mb-12">
           <div class="bg-antares-gray p-8 rounded-xl border border-white/10 hover:border-antares-blue transition-all">
-            <div class="text-4xl mb-4">🖨️</div>
+            <div class="w-16 h-16 mb-4 bg-gradient-to-br from-antares-blue to-blue-600 rounded-xl flex items-center justify-center">
+              <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/>
+              </svg>
+            </div>
             <h3 class="text-2xl font-bold mb-4">LARGE FORMAT PRINTING</h3>
             <p class="text-white/70 mb-4">Large-format printing for high-impact visual advertising. Perfect for building facades, events, and outdoor advertising.</p>
             <ul class="text-sm text-white/60 space-y-2">
@@ -1844,7 +1860,11 @@ app.get('/services/print', (c) => {
           </div>
 
           <div class="bg-antares-gray p-8 rounded-xl border border-white/10 hover:border-antares-blue transition-all">
-            <div class="text-4xl mb-4">🛍️</div>
+            <div class="w-16 h-16 mb-4 bg-gradient-to-br from-antares-blue to-blue-600 rounded-xl flex items-center justify-center">
+              <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/>
+              </svg>
+            </div>
             <h3 class="text-2xl font-bold mb-4">POP MATERIALS</h3>
             <p class="text-white/70 mb-4">Point of purchase materials that drive sales and enhance customer experience at retail locations.</p>
             <ul class="text-sm text-white/60 space-y-2">
@@ -1856,7 +1876,11 @@ app.get('/services/print', (c) => {
           </div>
 
           <div class="bg-antares-gray p-8 rounded-xl border border-white/10 hover:border-antares-blue transition-all">
-            <div class="text-4xl mb-4">📄</div>
+            <div class="w-16 h-16 mb-4 bg-gradient-to-br from-antares-blue to-blue-600 rounded-xl flex items-center justify-center">
+              <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+              </svg>
+            </div>
             <h3 class="text-2xl font-bold mb-4">BROCHURES & CATALOGS</h3>
             <p class="text-white/70 mb-4">Professional brochures, catalogs, and printed materials for marketing and corporate communications.</p>
             <ul class="text-sm text-white/60 space-y-2">
@@ -2068,7 +2092,12 @@ app.get('/services/installation', (c) => {
           </div>
 
           <div class="bg-antares-gray p-8 rounded-xl border border-white/10 hover:border-antares-blue transition-all">
-            <div class="text-4xl mb-4">🏗️</div>
+            <div class="w-16 h-16 mb-4 bg-gradient-to-br from-antares-blue to-blue-600 rounded-xl flex items-center justify-center">
+              <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M3 14h18"/>
+              </svg>
+            </div>
             <h3 class="text-2xl font-bold mb-4">HIGH-RISE INSTALLATION</h3>
             <p class="text-white/70 mb-4">Specialized high-rise installation with crane service, rope access certification, and OSHA-compliant safety protocols.</p>
             <ul class="text-sm text-white/60 space-y-2">
