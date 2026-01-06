@@ -298,17 +298,17 @@ app.get('/', (c) => {
     </div>
 
     <!-- Trust Framework - Comprehensive Guarantees -->
-    <div class="relative bg-gradient-to-br from-antares-blue/10 via-purple-500/5 to-orange-500/10 rounded-3xl p-8 lg:p-12 border border-white/10 overflow-hidden">
+    <div class="relative bg-gradient-to-br from-antares-blue/20 via-blue-900/30 to-antares-dark rounded-3xl p-8 lg:p-12 border border-antares-blue/20 overflow-hidden">
       <!-- Animated background elements -->
-      <div class="absolute inset-0 opacity-20">
+      <div class="absolute inset-0 opacity-10">
         <div class="absolute top-10 left-10 w-32 h-32 bg-antares-blue rounded-full blur-3xl animate-pulse"></div>
-        <div class="absolute bottom-10 right-10 w-40 h-40 bg-orange-500 rounded-full blur-3xl animate-pulse" style="animation-delay: 1s;"></div>
-        <div class="absolute top-1/2 left-1/2 w-36 h-36 bg-purple-500 rounded-full blur-3xl animate-pulse" style="animation-delay: 2s;"></div>
+        <div class="absolute bottom-10 right-10 w-40 h-40 bg-blue-600 rounded-full blur-3xl animate-pulse" style="animation-delay: 1s;"></div>
+        <div class="absolute top-1/2 left-1/2 w-36 h-36 bg-blue-800 rounded-full blur-3xl animate-pulse" style="animation-delay: 2s;"></div>
       </div>
 
       <div class="relative z-10">
         <h3 class="text-3xl lg:text-4xl font-display font-black text-center mb-4">
-          <span class="bg-gradient-to-r from-antares-blue via-purple-500 to-orange-500 bg-clip-text text-transparent">
+          <span class="bg-gradient-to-r from-antares-blue via-blue-400 to-blue-600 bg-clip-text text-transparent">
             Comprehensive Guarantees
           </span>
         </h3>
