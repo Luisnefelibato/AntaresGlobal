@@ -5,10 +5,8 @@ export const Header = () => `
   <div class="container mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex justify-between items-center h-16 lg:h-20">
       <!-- Logo -->
-      <a href="/" class="flex items-center space-x-2 group cursor-pointer" title="Go to Home">
-        <div class="w-8 h-8 lg:w-10 lg:h-10 rounded-lg bg-gradient-to-br from-antares-blue to-blue-600 flex items-center justify-center transform group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
-          <span class="text-white font-bold text-sm lg:text-lg">A</span>
-        </div>
+      <a href="/" class="flex items-center space-x-3 group cursor-pointer" title="Go to Home">
+        <img src="/static/images/antares-logo.png" alt="Antares Innovate" class="w-10 h-10 lg:w-12 lg:h-12 transform group-hover:scale-110 transition-all duration-300" />
         <div>
           <span class="font-display font-bold text-base lg:text-xl tracking-tight group-hover:text-antares-blue transition-colors">ANTARES<span class="text-antares-blue">.</span></span>
         </div>
@@ -289,6 +287,12 @@ export const PageLayout = (title: string, description: string, content: string) 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>${title} | Antares Innovate</title>
     <meta name="description" content="${description}">
+    
+    <!-- Favicon & Logo -->
+    <link rel="icon" type="image/png" href="/static/images/antares-logo.png">
+    <link rel="apple-touch-icon" href="/static/images/antares-logo.png">
+    <meta property="og:image" content="/static/images/antares-logo.png">
+    <meta name="twitter:image" content="/static/images/antares-logo.png">
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">

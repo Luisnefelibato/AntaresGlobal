@@ -1,0 +1,10 @@
+{
+  "error": true,
+  "url": "https://www.genspark.ai/chat/temp-uploads/c9e6b8c8-2f7b-4c75-be53-1cdb5e66ac9c/uploaded_file.png",
+  "statusCode": 404,
+  "statusMessage": "Page not found: /chat/temp-uploads/c9e6b8c8-2f7b-4c75-be53-1cdb5e66ac9c/uploaded_file.png",
+  "message": "Page not found: /chat/temp-uploads/c9e6b8c8-2f7b-4c75-be53-1cdb5e66ac9c/uploaded_file.png",
+  "data": {
+    "path": "/chat/temp-uploads/c9e6b8c8-2f7b-4c75-be53-1cdb5e66ac9c/uploaded_file.png"
+  }
+}
