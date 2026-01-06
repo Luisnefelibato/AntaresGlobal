@@ -33,30 +33,30 @@ app.get('/', (c) => {
 
       <!-- Main Heading -->
       <h1 class="font-display font-black text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl leading-tight">
-        <span class="block text-white">Transformamos Espacios</span>
-        <span class="block text-white">en Experiencias de <span class="text-antares-blue">Marca</span></span>
+        <span class="block text-white">We Transform Spaces</span>
+        <span class="block text-white">into <span class="text-antares-blue">Brand</span> Experiences</span>
       </h1>
 
       <!-- Subtitle -->
       <p class="text-lg sm:text-xl lg:text-2xl text-white/70 max-w-3xl mx-auto font-light leading-relaxed">
-        Estrategia + Diseño + Instalación Certificada
-        <span class="block mt-2 text-white/50">Del concepto a la instalación. Un solo proveedor para todo el proceso.</span>
+        Strategy + Design + Certified Installation
+        <span class="block mt-2 text-white/50">From concept to installation. One provider for the entire process.</span>
       </p>
 
       <!-- CTA Buttons -->
       <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
-        <a href="https://wa.me/16893312690?text=Hola,%20quiero%20solicitar%20una%20propuesta%20personalizada" target="_blank" class="group inline-flex items-center px-8 py-4 bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 rounded-xl font-semibold text-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-orange-500/20">
+        <a href="https://wa.me/16893312690?text=Hello,%20I%20want%20to%20request%20a%20personalized%20proposal" target="_blank" class="group inline-flex items-center px-8 py-4 bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 rounded-xl font-semibold text-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-orange-500/20">
           <svg class="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 24 24">
             <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
           </svg>
-          Solicitar Propuesta Personalizada
+          Request Personalized Proposal
         </a>
         <a href="/projects" class="group inline-flex items-center px-8 py-4 bg-antares-blue hover:bg-blue-600 rounded-xl font-semibold text-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/20">
           <svg class="w-6 h-6 mr-3 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
           </svg>
-          Ver Casos de Éxito
+          View Success Stories
         </a>
       </div>
 
@@ -123,7 +123,7 @@ app.get('/', (c) => {
         Un Solo Proveedor Para Todo el Proceso
       </h2>
       <p class="text-white/60 text-lg max-w-3xl mx-auto">
-        Del Concepto → Diseño → Producción → Instalación. Eficiencia, cumplimiento y calidad en cada etapa.
+        From Concept → Design → Production → Installation. Efficiency, compliance, and quality at every stage.
       </p>
     </div>
 
@@ -139,44 +139,44 @@ app.get('/', (c) => {
           />
           <div class="absolute inset-0 bg-gradient-to-t from-antares-dark via-antares-dark/80 to-transparent"></div>
           <div class="absolute top-4 right-4">
-            <span class="bg-antares-blue px-3 py-1 rounded-full text-sm font-medium">🎯 Estrategia</span>
+            <span class="bg-antares-blue px-3 py-1 rounded-full text-sm font-medium">🎯 Strategy</span>
           </div>
         </div>
 
         <!-- Content -->
         <div class="p-8">
-          <h3 class="text-2xl font-bold mb-2">Identidad que Vende</h3>
-          <p class="text-antares-blue font-semibold text-sm mb-4">ESTRATEGIA DE MARCA</p>
+          <h3 class="text-2xl font-bold mb-2">Identity That Sells</h3>
+          <p class="text-antares-blue font-semibold text-sm mb-4">BRAND STRATEGY</p>
           <p class="text-white/70 mb-6">
-            Arquitectura de marca completa que comunica valores y diferencia tu negocio de la competencia.
+            Complete brand architecture that communicates values and differentiates your business from the competition.
           </p>
 
           <ul class="space-y-3 mb-6">
             <li class="flex items-start gap-3 text-sm">
               <span class="text-antares-blue mt-1">•</span>
               <div>
-                <strong class="text-white">Arquitectura de Marca:</strong>
-                <span class="text-white/60"> Posicionamiento y sistemas visuales completos</span>
+                <strong class="text-white">Brand Architecture:</strong>
+                <span class="text-white/60"> Positioning and complete visual systems</span>
               </div>
             </li>
             <li class="flex items-start gap-3 text-sm">
               <span class="text-antares-blue mt-1">•</span>
               <div>
-                <strong class="text-white">Sistemas Visuales:</strong>
-                <span class="text-white/60"> Paletas de color, tipografía, guidelines</span>
+                <strong class="text-white">Visual Systems:</strong>
+                <span class="text-white/60"> Color palettes, typography, guidelines</span>
               </div>
             </li>
             <li class="flex items-start gap-3 text-sm">
               <span class="text-antares-blue mt-1">•</span>
               <div>
-                <strong class="text-white">Manuales Ejecutables:</strong>
-                <span class="text-white/60"> Documentación lista para implementar</span>
+                <strong class="text-white">Executable Manuals:</strong>
+                <span class="text-white/60"> Ready-to-implement documentation</span>
               </div>
             </li>
           </ul>
 
           <a href="/services/design" class="inline-flex items-center text-antares-blue hover:text-blue-400 font-medium transition-colors group">
-            Explorar Estrategia
+            Explore Strategy
             <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
             </svg>
@@ -195,44 +195,44 @@ app.get('/', (c) => {
           />
           <div class="absolute inset-0 bg-gradient-to-t from-antares-dark via-antares-dark/80 to-transparent"></div>
           <div class="absolute top-4 right-4">
-            <span class="bg-orange-500 px-3 py-1 rounded-full text-sm font-medium">✨ Diseño</span>
+            <span class="bg-orange-500 px-3 py-1 rounded-full text-sm font-medium">✨ Design</span>
           </div>
         </div>
 
         <!-- Content -->
         <div class="p-8">
-          <h3 class="text-2xl font-bold mb-2">Diseño que Convierte</h3>
-          <p class="text-orange-500 font-semibold text-sm mb-4">DISEÑO MULTICANAL</p>
+          <h3 class="text-2xl font-bold mb-2">Design That Converts</h3>
+          <p class="text-orange-500 font-semibold text-sm mb-4">MULTICHANNEL DESIGN</p>
           <p class="text-white/70 mb-6">
-            Soluciones de diseño para todos los puntos de contacto: físico, digital y packaging.
+            Design solutions for all touchpoints: physical, digital, and packaging.
           </p>
 
           <ul class="space-y-3 mb-6">
             <li class="flex items-start gap-3 text-sm">
               <span class="text-orange-500 mt-1">•</span>
               <div>
-                <strong class="text-white">Físico:</strong>
-                <span class="text-white/60"> Señalización, material POP, gran formato</span>
+                <strong class="text-white">Physical:</strong>
+                <span class="text-white/60"> Signage, POP materials, large format</span>
               </div>
             </li>
             <li class="flex items-start gap-3 text-sm">
               <span class="text-orange-500 mt-1">•</span>
               <div>
                 <strong class="text-white">Digital:</strong>
-                <span class="text-white/60"> Redes sociales, presentaciones, señalización dinámica</span>
+                <span class="text-white/60"> Social media, presentations, dynamic signage</span>
               </div>
             </li>
             <li class="flex items-start gap-3 text-sm">
               <span class="text-orange-500 mt-1">•</span>
               <div>
                 <strong class="text-white">Packaging:</strong>
-                <span class="text-white/60"> Empaques y materiales que destacan en retail</span>
+                <span class="text-white/60"> Packages and materials that stand out in retail</span>
               </div>
             </li>
           </ul>
 
           <a href="/services/print" class="inline-flex items-center text-orange-500 hover:text-orange-400 font-medium transition-colors group">
-            Explorar Diseño
+            Explore Design
             <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
             </svg>
@@ -251,44 +251,44 @@ app.get('/', (c) => {
           />
           <div class="absolute inset-0 bg-gradient-to-t from-antares-dark via-antares-dark/80 to-transparent"></div>
           <div class="absolute top-4 right-4">
-            <span class="bg-green-500 px-3 py-1 rounded-full text-sm font-medium">⚡ Instalación</span>
+            <span class="bg-green-500 px-3 py-1 rounded-full text-sm font-medium">⚡ Installation</span>
           </div>
         </div>
 
         <!-- Content -->
         <div class="p-8">
-          <h3 class="text-2xl font-bold mb-2">Ejecución Perfecta</h3>
-          <p class="text-green-500 font-semibold text-sm mb-4">INSTALACIÓN CERTIFICADA</p>
+          <h3 class="text-2xl font-bold mb-2">Perfect Execution</h3>
+          <p class="text-green-500 font-semibold text-sm mb-4">CERTIFIED INSTALLATION</p>
           <p class="text-white/70 mb-6">
-            Instalación profesional con técnicos certificados, equipos especializados y cumplimiento garantizado.
+            Professional installation with certified technicians, specialized equipment, and guaranteed compliance.
           </p>
 
           <ul class="space-y-3 mb-6">
             <li class="flex items-start gap-3 text-sm">
               <span class="text-green-500 mt-1">•</span>
               <div>
-                <strong class="text-white">Comercial:</strong>
-                <span class="text-white/60"> Letreros arquitectónicos y señalización</span>
+                <strong class="text-white">Commercial:</strong>
+                <span class="text-white/60"> Architectural signage and displays</span>
               </div>
             </li>
             <li class="flex items-start gap-3 text-sm">
               <span class="text-green-500 mt-1">•</span>
               <div>
                 <strong class="text-white">LED:</strong>
-                <span class="text-white/60"> Modernización energética y retrofits</span>
+                <span class="text-white/60"> Energy modernization and retrofits</span>
               </div>
             </li>
             <li class="flex items-start gap-3 text-sm">
               <span class="text-green-500 mt-1">•</span>
               <div>
-                <strong class="text-white">Altura:</strong>
-                <span class="text-white/60"> Técnicos SPRAT/OSHA para cualquier complejidad</span>
+                <strong class="text-white">High-Rise:</strong>
+                <span class="text-white/60"> SPRAT/OSHA technicians for any complexity</span>
               </div>
             </li>
           </ul>
 
           <a href="/services/installation" class="inline-flex items-center text-green-500 hover:text-green-400 font-medium transition-colors group">
-            Explorar Instalación
+            Explore Installation
             <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
             </svg>
@@ -299,35 +299,35 @@ app.get('/', (c) => {
 
     <!-- Trust Framework - Integral Guarantees -->
     <div class="bg-gradient-to-r from-antares-blue/10 to-green-500/10 rounded-2xl p-8 lg:p-12 border border-white/10">
-      <h3 class="text-2xl lg:text-3xl font-display font-bold text-center mb-8">Garantías Integrales</h3>
+      <h3 class="text-2xl lg:text-3xl font-display font-bold text-center mb-8">Comprehensive Guarantees</h3>
       <div class="grid md:grid-cols-4 gap-6">
         <div class="text-center">
           <div class="w-16 h-16 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
             <span class="text-3xl">✅</span>
           </div>
-          <h4 class="font-bold mb-2">Contratistas Certificados</h4>
-          <p class="text-sm text-white/60">C-10 & C-45 Licenciados en California</p>
+          <h4 class="font-bold mb-2">Certified Contractors</h4>
+          <p class="text-sm text-white/60">C-10 & C-45 Licensed in California</p>
         </div>
         <div class="text-center">
           <div class="w-16 h-16 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
             <span class="text-3xl">📋</span>
           </div>
-          <h4 class="font-bold mb-2">Permisos y Seguros</h4>
-          <p class="text-sm text-white/60">Gestionamos todo el proceso legal</p>
+          <h4 class="font-bold mb-2">Permits and Insurance</h4>
+          <p class="text-sm text-white/60">We manage the entire legal process</p>
         </div>
         <div class="text-center">
           <div class="w-16 h-16 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
             <span class="text-3xl">🔍</span>
           </div>
-          <h4 class="font-bold mb-2">Inspección 100%</h4>
-          <p class="text-sm text-white/60">Control de calidad pre-entrega</p>
+          <h4 class="font-bold mb-2">100% Inspection</h4>
+          <p class="text-sm text-white/60">Pre-delivery quality control</p>
         </div>
         <div class="text-center">
           <div class="w-16 h-16 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
             <span class="text-3xl">🛠️</span>
           </div>
-          <h4 class="font-bold mb-2">Soporte Técnico</h4>
-          <p class="text-sm text-white/60">Mantenimiento y modernización continua</p>
+          <h4 class="font-bold mb-2">Technical Support</h4>
+          <p class="text-sm text-white/60">Continuous maintenance and modernization</p>
         </div>
       </div>
     </div>
@@ -619,9 +619,9 @@ app.get('/services', (c) => {
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center mb-20 fade-in-up">
                 <div class="text-sm font-semibold text-antares-blue mb-4 tracking-wider uppercase">Core Services</div>
-                <h2 class="text-4xl md:text-5xl font-display font-bold mb-6">Nuestros Servicios</h2>
+                <h2 class="text-4xl md:text-5xl font-display font-bold mb-6">Our Services</h2>
                 <p class="text-xl text-gray-300 max-w-3xl mx-auto">
-                    De la estrategia al diseño y la instalación certificada. Un solo proveedor para todo el proceso.
+                    From strategy to design and certified installation. One provider for the entire process.
                 </p>
             </div>
             
@@ -635,10 +635,10 @@ app.get('/services', (c) => {
                     </div>
                     <h3 class="text-2xl font-display font-bold mb-4 group-hover:text-antares-blue transition-colors">DESIGN SERVICE</h3>
                     <p class="text-gray-300 leading-relaxed mb-6">
-                        Estrategia de marca, diseño gráfico y diseño digital. Identidad visual que vende.
+                        Brand strategy, graphic design, and digital design. Visual identity that sells.
                     </p>
                     <div class="flex items-center text-antares-blue font-medium group-hover:gap-3 transition-all">
-                        Ver más <i class="fas fa-arrow-right ml-2"></i>
+                        Learn More <i class="fas fa-arrow-right ml-2"></i>
                     </div>
                 </a>
                 
@@ -651,10 +651,10 @@ app.get('/services', (c) => {
                     </div>
                     <h3 class="text-2xl font-display font-bold mb-4 group-hover:text-antares-blue transition-colors">PRINT SERVICE</h3>
                     <p class="text-gray-300 leading-relaxed mb-6">
-                        Impresión de gran formato, material POP y folletería. Calidad premium que destaca.
+                        Large format printing, POP materials, and brochures. Premium quality that stands out.
                     </p>
                     <div class="flex items-center text-antares-blue font-medium group-hover:gap-3 transition-all">
-                        Ver más <i class="fas fa-arrow-right ml-2"></i>
+                        Learn More <i class="fas fa-arrow-right ml-2"></i>
                     </div>
                 </a>
                 
@@ -667,10 +667,10 @@ app.get('/services', (c) => {
                     </div>
                     <h3 class="text-2xl font-display font-bold mb-4 group-hover:text-antares-blue transition-colors">INSTALLATION SERVICE</h3>
                     <p class="text-gray-300 leading-relaxed mb-6">
-                        Instalación certificada de señalización comercial, LED y trabajos en altura.
+                        Certified installation of commercial signage, LED, and high-rise work.
                     </p>
                     <div class="flex items-center text-antares-blue font-medium group-hover:gap-3 transition-all">
-                        Ver más <i class="fas fa-arrow-right ml-2"></i>
+                        Learn More <i class="fas fa-arrow-right ml-2"></i>
                     </div>
                 </a>
             </div>
