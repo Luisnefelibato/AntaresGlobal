@@ -117,10 +117,10 @@ app.get('/', (c) => {
   <div class="container mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center mb-16">
       <div class="inline-flex items-center space-x-2 bg-gradient-to-r from-orange-500/10 to-antares-blue/10 border border-orange-500/20 rounded-full px-4 py-2 mb-4">
-        <span class="text-orange-500 text-sm font-medium">⭐ Servicios Estratégicos</span>
+        <span class="text-orange-500 text-sm font-medium">⭐ Strategic Services</span>
       </div>
       <h2 class="text-3xl lg:text-5xl font-display font-bold mb-4">
-        Un Solo Proveedor Para Todo el Proceso
+        One Provider For The Entire Process
       </h2>
       <p class="text-white/60 text-lg max-w-3xl mx-auto">
         From Concept → Design → Production → Installation. Efficiency, compliance, and quality at every stage.
@@ -128,110 +128,54 @@ app.get('/', (c) => {
     </div>
 
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
-      <!-- COLUMN 1: Brand Strategy -->
+      <!-- COLUMN 1: DESIGN -->
       <div class="group relative bg-antares-dark rounded-2xl overflow-hidden border border-white/5 hover:border-antares-blue/50 transition-all duration-500">
         <!-- Image -->
         <div class="relative h-64 overflow-hidden">
           <img 
             src="/static/images/services/design-service.jpg" 
-            alt="Brand Strategy - Visual Identity Systems"
+            alt="Design Services - Creative Solutions"
             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
           />
           <div class="absolute inset-0 bg-gradient-to-t from-antares-dark via-antares-dark/80 to-transparent"></div>
           <div class="absolute top-4 right-4">
-            <span class="bg-antares-blue px-3 py-1 rounded-full text-sm font-medium">🎯 Strategy</span>
+            <span class="bg-antares-blue px-3 py-1 rounded-full text-sm font-medium">🎨 Design</span>
           </div>
         </div>
 
         <!-- Content -->
         <div class="p-8">
-          <h3 class="text-2xl font-bold mb-2">Identity That Sells</h3>
-          <p class="text-antares-blue font-semibold text-sm mb-4">BRAND STRATEGY</p>
+          <h3 class="text-2xl font-bold mb-2">Creative Design</h3>
+          <p class="text-antares-blue font-semibold text-sm mb-4">VISUAL IDENTITY & BRANDING</p>
           <p class="text-white/70 mb-6">
-            Complete brand architecture that communicates values and differentiates your business from the competition.
+            Complete design solutions from branding to final art. We create visual identities that communicate and convert.
           </p>
 
           <ul class="space-y-3 mb-6">
             <li class="flex items-start gap-3 text-sm">
               <span class="text-antares-blue mt-1">•</span>
               <div>
-                <strong class="text-white">Brand Architecture:</strong>
-                <span class="text-white/60"> Positioning and complete visual systems</span>
+                <strong class="text-white">Branding:</strong>
+                <span class="text-white/60"> Logo, color palette, visual identity systems</span>
               </div>
             </li>
             <li class="flex items-start gap-3 text-sm">
               <span class="text-antares-blue mt-1">•</span>
               <div>
-                <strong class="text-white">Visual Systems:</strong>
-                <span class="text-white/60"> Color palettes, typography, guidelines</span>
+                <strong class="text-white">Graphic Design:</strong>
+                <span class="text-white/60"> Business cards, brochures, posters, packaging</span>
               </div>
             </li>
             <li class="flex items-start gap-3 text-sm">
               <span class="text-antares-blue mt-1">•</span>
               <div>
-                <strong class="text-white">Executable Manuals:</strong>
-                <span class="text-white/60"> Ready-to-implement documentation</span>
+                <strong class="text-white">Digital Design:</strong>
+                <span class="text-white/60"> Social media, web graphics, presentations</span>
               </div>
             </li>
           </ul>
 
           <a href="/services/design" class="inline-flex items-center text-antares-blue hover:text-blue-400 font-medium transition-colors group">
-            Explore Strategy
-            <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-            </svg>
-          </a>
-        </div>
-      </div>
-
-      <!-- COLUMN 2: Multichannel Design -->
-      <div class="group relative bg-antares-dark rounded-2xl overflow-hidden border border-white/5 hover:border-orange-500/50 transition-all duration-500">
-        <!-- Image -->
-        <div class="relative h-64 overflow-hidden">
-          <img 
-            src="/static/images/services/print-service.jpg" 
-            alt="Multichannel Design - Print & Digital"
-            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-          />
-          <div class="absolute inset-0 bg-gradient-to-t from-antares-dark via-antares-dark/80 to-transparent"></div>
-          <div class="absolute top-4 right-4">
-            <span class="bg-orange-500 px-3 py-1 rounded-full text-sm font-medium">✨ Design</span>
-          </div>
-        </div>
-
-        <!-- Content -->
-        <div class="p-8">
-          <h3 class="text-2xl font-bold mb-2">Design That Converts</h3>
-          <p class="text-orange-500 font-semibold text-sm mb-4">MULTICHANNEL DESIGN</p>
-          <p class="text-white/70 mb-6">
-            Design solutions for all touchpoints: physical, digital, and packaging.
-          </p>
-
-          <ul class="space-y-3 mb-6">
-            <li class="flex items-start gap-3 text-sm">
-              <span class="text-orange-500 mt-1">•</span>
-              <div>
-                <strong class="text-white">Physical:</strong>
-                <span class="text-white/60"> Signage, POP materials, large format</span>
-              </div>
-            </li>
-            <li class="flex items-start gap-3 text-sm">
-              <span class="text-orange-500 mt-1">•</span>
-              <div>
-                <strong class="text-white">Digital:</strong>
-                <span class="text-white/60"> Social media, presentations, dynamic signage</span>
-              </div>
-            </li>
-            <li class="flex items-start gap-3 text-sm">
-              <span class="text-orange-500 mt-1">•</span>
-              <div>
-                <strong class="text-white">Packaging:</strong>
-                <span class="text-white/60"> Packages and materials that stand out in retail</span>
-              </div>
-            </li>
-          </ul>
-
-          <a href="/services/print" class="inline-flex items-center text-orange-500 hover:text-orange-400 font-medium transition-colors group">
             Explore Design
             <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
@@ -240,13 +184,69 @@ app.get('/', (c) => {
         </div>
       </div>
 
-      <!-- COLUMN 3: Certified Installation -->
+      <!-- COLUMN 2: PRODUCTION (PRINTING) -->
+      <div class="group relative bg-antares-dark rounded-2xl overflow-hidden border border-white/5 hover:border-orange-500/50 transition-all duration-500">
+        <!-- Image -->
+        <div class="relative h-64 overflow-hidden">
+          <img 
+            src="/static/images/services/print-service.jpg" 
+            alt="Production Services - Professional Printing"
+            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-antares-dark via-antares-dark/80 to-transparent"></div>
+          <div class="absolute top-4 right-4">
+            <span class="bg-orange-500 px-3 py-1 rounded-full text-sm font-medium">🖨️ Production</span>
+          </div>
+        </div>
+
+        <!-- Content -->
+        <div class="p-8">
+          <h3 class="text-2xl font-bold mb-2">Full Production</h3>
+          <p class="text-orange-500 font-semibold text-sm mb-4">PRINTING & MANUFACTURING</p>
+          <p class="text-white/70 mb-6">
+            From design to physical product. Complete production services including all types of printing and materials.
+          </p>
+
+          <ul class="space-y-3 mb-6">
+            <li class="flex items-start gap-3 text-sm">
+              <span class="text-orange-500 mt-1">•</span>
+              <div>
+                <strong class="text-white">Large Format:</strong>
+                <span class="text-white/60"> Banners, vinyl, perforated film, window graphics</span>
+              </div>
+            </li>
+            <li class="flex items-start gap-3 text-sm">
+              <span class="text-orange-500 mt-1">•</span>
+              <div>
+                <strong class="text-white">Print Materials:</strong>
+                <span class="text-white/60"> Stickers, posters, flyers, brochures, catalogs</span>
+              </div>
+            </li>
+            <li class="flex items-start gap-3 text-sm">
+              <span class="text-orange-500 mt-1">•</span>
+              <div>
+                <strong class="text-white">POP & Retail:</strong>
+                <span class="text-white/60"> Displays, standees, floor graphics, promotional materials</span>
+              </div>
+            </li>
+          </ul>
+
+          <a href="/services/print" class="inline-flex items-center text-orange-500 hover:text-orange-400 font-medium transition-colors group">
+            Explore Production
+            <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- COLUMN 3: INSTALLATION -->
       <div class="group relative bg-antares-dark rounded-2xl overflow-hidden border border-white/5 hover:border-green-500/50 transition-all duration-500">
         <!-- Image -->
         <div class="relative h-64 overflow-hidden">
           <img 
             src="/static/images/services/installation-service.jpg" 
-            alt="Certified Installation - Professional Mounting"
+            alt="Installation Services - Professional Mounting"
             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
           />
           <div class="absolute inset-0 bg-gradient-to-t from-antares-dark via-antares-dark/80 to-transparent"></div>
@@ -257,32 +257,32 @@ app.get('/', (c) => {
 
         <!-- Content -->
         <div class="p-8">
-          <h3 class="text-2xl font-bold mb-2">Perfect Execution</h3>
-          <p class="text-green-500 font-semibold text-sm mb-4">CERTIFIED INSTALLATION</p>
+          <h3 class="text-2xl font-bold mb-2">Professional Installation</h3>
+          <p class="text-green-500 font-semibold text-sm mb-4">CERTIFIED MOUNTING & SETUP</p>
           <p class="text-white/70 mb-6">
-            Professional installation with certified technicians, specialized equipment, and guaranteed compliance.
+            Expert installation with certified technicians, specialized equipment, and guaranteed compliance.
           </p>
 
           <ul class="space-y-3 mb-6">
             <li class="flex items-start gap-3 text-sm">
               <span class="text-green-500 mt-1">•</span>
               <div>
-                <strong class="text-white">Commercial:</strong>
-                <span class="text-white/60"> Architectural signage and displays</span>
+                <strong class="text-white">Commercial Signage:</strong>
+                <span class="text-white/60"> Storefronts, facades, monument signs</span>
               </div>
             </li>
             <li class="flex items-start gap-3 text-sm">
               <span class="text-green-500 mt-1">•</span>
               <div>
-                <strong class="text-white">LED:</strong>
-                <span class="text-white/60"> Energy modernization and retrofits</span>
+                <strong class="text-white">LED Systems:</strong>
+                <span class="text-white/60"> Electrical installation, energy retrofits</span>
               </div>
             </li>
             <li class="flex items-start gap-3 text-sm">
               <span class="text-green-500 mt-1">•</span>
               <div>
-                <strong class="text-white">High-Rise:</strong>
-                <span class="text-white/60"> SPRAT/OSHA technicians for any complexity</span>
+                <strong class="text-white">High-Rise Work:</strong>
+                <span class="text-white/60"> SPRAT/OSHA certified technicians</span>
               </div>
             </li>
           </ul>
