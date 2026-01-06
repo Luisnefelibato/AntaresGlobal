@@ -33,49 +33,72 @@ app.get('/', (c) => {
 
       <!-- Main Heading -->
       <h1 class="font-display font-black text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl leading-tight">
-        <span class="block text-white">Engineering Excellence</span>
-        <span class="block text-white">Industrial <span class="text-antares-blue">Precision</span></span>
+        <span class="block text-white">Transformamos Espacios</span>
+        <span class="block text-white">en Experiencias de <span class="text-antares-blue">Marca</span></span>
       </h1>
 
       <!-- Subtitle -->
       <p class="text-lg sm:text-xl lg:text-2xl text-white/70 max-w-3xl mx-auto font-light leading-relaxed">
-        Global leader in commercial signage installation, LED retrofit solutions, and technical compliance.
-        <span class="block mt-2 text-white/50">Where regulatory expertise meets operational excellence.</span>
+        Estrategia + Diseño + Instalación Certificada
+        <span class="block mt-2 text-white/50">Del concepto a la instalación. Un solo proveedor para todo el proceso.</span>
       </p>
 
       <!-- CTA Buttons -->
       <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
-        <a href="https://wa.me/16893312690" target="_blank" class="group inline-flex items-center px-8 py-4 bg-green-600 hover:bg-green-700 rounded-xl font-semibold text-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-green-500/20">
+        <a href="https://wa.me/16893312690?text=Hola,%20quiero%20solicitar%20una%20propuesta%20personalizada" target="_blank" class="group inline-flex items-center px-8 py-4 bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 rounded-xl font-semibold text-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-orange-500/20">
           <svg class="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 24 24">
             <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
           </svg>
-          WhatsApp: +1 689-331-2690
+          Solicitar Propuesta Personalizada
         </a>
-        <button onclick="openRequestCallModal()" class="group inline-flex items-center px-8 py-4 bg-antares-blue hover:bg-blue-600 rounded-xl font-semibold text-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/20">
-          <svg class="w-6 h-6 mr-3 group-hover:rotate-12 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+        <a href="/projects" class="group inline-flex items-center px-8 py-4 bg-antares-blue hover:bg-blue-600 rounded-xl font-semibold text-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/20">
+          <svg class="w-6 h-6 mr-3 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
           </svg>
-          Request Consultation
-        </button>
+          Ver Casos de Éxito
+        </a>
       </div>
 
-      <!-- Trust Indicators -->
-      <div class="pt-8 lg:pt-12 grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 max-w-4xl mx-auto">
-        <div class="text-center">
-          <div class="text-3xl lg:text-4xl font-bold text-white mb-1">15+</div>
-          <div class="text-sm text-white/60">Years Experience</div>
+      <!-- Trust Indicators with Certifications -->
+      <div class="pt-8 lg:pt-12">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 max-w-4xl mx-auto mb-6">
+          <div class="text-center">
+            <div class="text-3xl lg:text-4xl font-bold text-white mb-1">15+</div>
+            <div class="text-sm text-white/60">Years Experience</div>
+          </div>
+          <div class="text-center">
+            <div class="text-3xl lg:text-4xl font-bold text-white mb-1">500+</div>
+            <div class="text-sm text-white/60">Projects Completed</div>
+          </div>
+          <div class="text-center">
+            <div class="text-3xl lg:text-4xl font-bold text-white mb-1">24/7</div>
+            <div class="text-sm text-white/60">Technical Support</div>
+          </div>
+          <div class="text-center">
+            <div class="text-3xl lg:text-4xl font-bold text-white mb-1">100%</div>
+            <div class="text-sm text-white/60">Compliance</div>
+          </div>
         </div>
-        <div class="text-center">
-          <div class="text-3xl lg:text-4xl font-bold text-white mb-1">500+</div>
-          <div class="text-sm text-white/60">Projects Completed</div>
-        </div>
-        <div class="text-center">
-          <div class="text-3xl lg:text-4xl font-bold text-white mb-1">24/7</div>
-          <div class="text-sm text-white/60">Technical Support</div>
-        </div>
-        <div class="text-center">
-          <div class="text-3xl lg:text-4xl font-bold text-white mb-1">100%</div>
-          <div class="text-sm text-white/60">Compliance</div>
+        
+        <!-- Certification Badges -->
+        <div class="flex flex-wrap items-center justify-center gap-4 pt-4">
+          <div class="flex items-center gap-2 bg-white/5 border border-white/10 rounded-lg px-4 py-2">
+            <span class="text-green-400">✅</span>
+            <span class="text-sm text-white/80">C-10 & C-45 Licensed</span>
+          </div>
+          <div class="flex items-center gap-2 bg-white/5 border border-white/10 rounded-lg px-4 py-2">
+            <span class="text-green-400">✅</span>
+            <span class="text-sm text-white/80">SPRAT/OSHA Certified</span>
+          </div>
+          <div class="flex items-center gap-2 bg-white/5 border border-white/10 rounded-lg px-4 py-2">
+            <span class="text-green-400">✅</span>
+            <span class="text-sm text-white/80">Title 24 Compliant</span>
+          </div>
+          <div class="flex items-center gap-2 bg-white/5 border border-white/10 rounded-lg px-4 py-2">
+            <span class="text-green-400">✅</span>
+            <span class="text-sm text-white/80">$2M Insured</span>
+          </div>
         </div>
       </div>
     </div>
@@ -89,149 +112,227 @@ app.get('/', (c) => {
   </div>
 </section>
 
-<!-- Core Services - Design, Print, Installation -->
+<!-- Strategic Services - 3 Columns -->
 <section class="py-16 lg:py-24 bg-antares-gray/50">
   <div class="container mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center mb-16">
-      <div class="inline-flex items-center space-x-2 bg-antares-blue/10 border border-antares-blue/20 rounded-full px-4 py-2 mb-4">
-        <span class="text-antares-blue text-sm font-medium">🎯 Core Services</span>
+      <div class="inline-flex items-center space-x-2 bg-gradient-to-r from-orange-500/10 to-antares-blue/10 border border-orange-500/20 rounded-full px-4 py-2 mb-4">
+        <span class="text-orange-500 text-sm font-medium">⭐ Servicios Estratégicos</span>
       </div>
       <h2 class="text-3xl lg:text-5xl font-display font-bold mb-4">
-        Design → Print → Install
+        Un Solo Proveedor Para Todo el Proceso
       </h2>
-      <p class="text-white/60 text-lg max-w-2xl mx-auto">
-        Complete signage solutions from concept to installation. We handle everything in-house.
+      <p class="text-white/60 text-lg max-w-3xl mx-auto">
+        Del Concepto → Diseño → Producción → Instalación. Eficiencia, cumplimiento y calidad en cada etapa.
       </p>
     </div>
 
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-      <!-- DESIGN Service -->
-      <div class="group relative bg-antares-dark rounded-2xl overflow-hidden border border-white/5 hover:border-antares-blue/50 transition-all duration-500 hover:transform hover:scale-105">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
+      <!-- COLUMN 1: Brand Strategy -->
+      <div class="group relative bg-antares-dark rounded-2xl overflow-hidden border border-white/5 hover:border-antares-blue/50 transition-all duration-500">
         <!-- Image -->
         <div class="relative h-64 overflow-hidden">
           <img 
             src="/static/images/services/design-service.jpg" 
-            alt="Design Service - Creative Design Studio"
+            alt="Brand Strategy - Visual Identity Systems"
             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
           />
-          <div class="absolute inset-0 bg-gradient-to-t from-antares-dark via-antares-dark/50 to-transparent"></div>
+          <div class="absolute inset-0 bg-gradient-to-t from-antares-dark via-antares-dark/80 to-transparent"></div>
+          <div class="absolute top-4 right-4">
+            <span class="bg-antares-blue px-3 py-1 rounded-full text-sm font-medium">🎯 Estrategia</span>
+          </div>
         </div>
-        
+
         <!-- Content -->
         <div class="p-8">
-          <!-- Icon -->
-          <div class="w-16 h-16 bg-gradient-to-br from-antares-blue to-blue-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-lg shadow-antares-blue/20">
-            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"/>
-            </svg>
-          </div>
-          
-          <h3 class="text-2xl font-display font-bold mb-4">DESIGN</h3>
-          <h4 class="text-lg text-antares-blue font-semibold mb-3">What We Do for You</h4>
-          <p class="text-white/70 leading-relaxed mb-6">
-            Whether you're starting from scratch or your brand needs evolution, we specialize in visual solutions that communicate your values instantly.
+          <h3 class="text-2xl font-bold mb-2">Identidad que Vende</h3>
+          <p class="text-antares-blue font-semibold text-sm mb-4">ESTRATEGIA DE MARCA</p>
+          <p class="text-white/70 mb-6">
+            Arquitectura de marca completa que comunica valores y diferencia tu negocio de la competencia.
           </p>
-          
-          <a href="/services/design" class="inline-flex items-center text-antares-blue font-medium group-hover:underline">
-            Explore Design Services
+
+          <ul class="space-y-3 mb-6">
+            <li class="flex items-start gap-3 text-sm">
+              <span class="text-antares-blue mt-1">•</span>
+              <div>
+                <strong class="text-white">Arquitectura de Marca:</strong>
+                <span class="text-white/60"> Posicionamiento y sistemas visuales completos</span>
+              </div>
+            </li>
+            <li class="flex items-start gap-3 text-sm">
+              <span class="text-antares-blue mt-1">•</span>
+              <div>
+                <strong class="text-white">Sistemas Visuales:</strong>
+                <span class="text-white/60"> Paletas de color, tipografía, guidelines</span>
+              </div>
+            </li>
+            <li class="flex items-start gap-3 text-sm">
+              <span class="text-antares-blue mt-1">•</span>
+              <div>
+                <strong class="text-white">Manuales Ejecutables:</strong>
+                <span class="text-white/60"> Documentación lista para implementar</span>
+              </div>
+            </li>
+          </ul>
+
+          <a href="/services/design" class="inline-flex items-center text-antares-blue hover:text-blue-400 font-medium transition-colors group">
+            Explorar Estrategia
             <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
             </svg>
           </a>
         </div>
       </div>
 
-      <!-- PRINT Service -->
-      <div class="group relative bg-antares-dark rounded-2xl overflow-hidden border border-white/5 hover:border-antares-blue/50 transition-all duration-500 hover:transform hover:scale-105">
+      <!-- COLUMN 2: Multichannel Design -->
+      <div class="group relative bg-antares-dark rounded-2xl overflow-hidden border border-white/5 hover:border-orange-500/50 transition-all duration-500">
         <!-- Image -->
         <div class="relative h-64 overflow-hidden">
           <img 
             src="/static/images/services/print-service.jpg" 
-            alt="Print Service - Large Format Printing"
+            alt="Multichannel Design - Print & Digital"
             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
           />
-          <div class="absolute inset-0 bg-gradient-to-t from-antares-dark via-antares-dark/50 to-transparent"></div>
+          <div class="absolute inset-0 bg-gradient-to-t from-antares-dark via-antares-dark/80 to-transparent"></div>
+          <div class="absolute top-4 right-4">
+            <span class="bg-orange-500 px-3 py-1 rounded-full text-sm font-medium">✨ Diseño</span>
+          </div>
         </div>
-        
+
         <!-- Content -->
         <div class="p-8">
-          <!-- Icon -->
-          <div class="w-16 h-16 bg-gradient-to-br from-antares-blue to-blue-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-lg shadow-antares-blue/20">
-            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/>
-            </svg>
-          </div>
-          
-          <h3 class="text-2xl font-display font-bold mb-4">PRINT</h3>
-          <h4 class="text-lg text-antares-blue font-semibold mb-3">Prints That Bring Your Projects to Life</h4>
-          <p class="text-white/70 leading-relaxed mb-6">
-            In a digital world, physical has special weight. Texture, color precision, and finish quality say more about you than a thousand emails. We don't just print; we ensure the first impression is flawless.
+          <h3 class="text-2xl font-bold mb-2">Diseño que Convierte</h3>
+          <p class="text-orange-500 font-semibold text-sm mb-4">DISEÑO MULTICANAL</p>
+          <p class="text-white/70 mb-6">
+            Soluciones de diseño para todos los puntos de contacto: físico, digital y packaging.
           </p>
-          
-          <a href="/services/print" class="inline-flex items-center text-antares-blue font-medium group-hover:underline">
-            Explore Print Services
+
+          <ul class="space-y-3 mb-6">
+            <li class="flex items-start gap-3 text-sm">
+              <span class="text-orange-500 mt-1">•</span>
+              <div>
+                <strong class="text-white">Físico:</strong>
+                <span class="text-white/60"> Señalización, material POP, gran formato</span>
+              </div>
+            </li>
+            <li class="flex items-start gap-3 text-sm">
+              <span class="text-orange-500 mt-1">•</span>
+              <div>
+                <strong class="text-white">Digital:</strong>
+                <span class="text-white/60"> Redes sociales, presentaciones, señalización dinámica</span>
+              </div>
+            </li>
+            <li class="flex items-start gap-3 text-sm">
+              <span class="text-orange-500 mt-1">•</span>
+              <div>
+                <strong class="text-white">Packaging:</strong>
+                <span class="text-white/60"> Empaques y materiales que destacan en retail</span>
+              </div>
+            </li>
+          </ul>
+
+          <a href="/services/print" class="inline-flex items-center text-orange-500 hover:text-orange-400 font-medium transition-colors group">
+            Explorar Diseño
             <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
             </svg>
           </a>
         </div>
       </div>
 
-      <!-- INSTALLATION Service -->
-      <div class="group relative bg-antares-dark rounded-2xl overflow-hidden border border-white/5 hover:border-antares-blue/50 transition-all duration-500 hover:transform hover:scale-105">
+      <!-- COLUMN 3: Certified Installation -->
+      <div class="group relative bg-antares-dark rounded-2xl overflow-hidden border border-white/5 hover:border-green-500/50 transition-all duration-500">
         <!-- Image -->
         <div class="relative h-64 overflow-hidden">
           <img 
             src="/static/images/services/installation-service.jpg" 
-            alt="Installation Service - Professional Signage Installation"
+            alt="Certified Installation - Professional Mounting"
             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
           />
-          <div class="absolute inset-0 bg-gradient-to-t from-antares-dark via-antares-dark/50 to-transparent"></div>
+          <div class="absolute inset-0 bg-gradient-to-t from-antares-dark via-antares-dark/80 to-transparent"></div>
+          <div class="absolute top-4 right-4">
+            <span class="bg-green-500 px-3 py-1 rounded-full text-sm font-medium">⚡ Instalación</span>
+          </div>
         </div>
-        
+
         <!-- Content -->
         <div class="p-8">
-          <!-- Icon -->
-          <div class="w-16 h-16 bg-gradient-to-br from-antares-blue to-blue-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-lg shadow-antares-blue/20">
-            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
-            </svg>
-          </div>
-          
-          <h3 class="text-2xl font-display font-bold mb-4">INSTALLATION</h3>
-          <h4 class="text-lg text-antares-blue font-semibold mb-3">High-Impact Installation Specialists</h4>
-          <p class="text-white/70 leading-relaxed mb-6">
-            No matter the height, surface, or complexity. We have the equipment and experience to install your visual communication in any environment.
+          <h3 class="text-2xl font-bold mb-2">Ejecución Perfecta</h3>
+          <p class="text-green-500 font-semibold text-sm mb-4">INSTALACIÓN CERTIFICADA</p>
+          <p class="text-white/70 mb-6">
+            Instalación profesional con técnicos certificados, equipos especializados y cumplimiento garantizado.
           </p>
-          
-          <a href="/services/installation" class="inline-flex items-center text-antares-blue font-medium group-hover:underline">
-            Explore Installation Services
+
+          <ul class="space-y-3 mb-6">
+            <li class="flex items-start gap-3 text-sm">
+              <span class="text-green-500 mt-1">•</span>
+              <div>
+                <strong class="text-white">Comercial:</strong>
+                <span class="text-white/60"> Letreros arquitectónicos y señalización</span>
+              </div>
+            </li>
+            <li class="flex items-start gap-3 text-sm">
+              <span class="text-green-500 mt-1">•</span>
+              <div>
+                <strong class="text-white">LED:</strong>
+                <span class="text-white/60"> Modernización energética y retrofits</span>
+              </div>
+            </li>
+            <li class="flex items-start gap-3 text-sm">
+              <span class="text-green-500 mt-1">•</span>
+              <div>
+                <strong class="text-white">Altura:</strong>
+                <span class="text-white/60"> Técnicos SPRAT/OSHA para cualquier complejidad</span>
+              </div>
+            </li>
+          </ul>
+
+          <a href="/services/installation" class="inline-flex items-center text-green-500 hover:text-green-400 font-medium transition-colors group">
+            Explorar Instalación
             <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
             </svg>
           </a>
         </div>
       </div>
     </div>
 
-    <!-- CTA -->
-    <div class="text-center mt-16">
-      <div class="inline-flex flex-col sm:flex-row items-center gap-4">
-        <a href="/services" class="inline-flex items-center px-8 py-4 bg-antares-blue hover:bg-blue-600 rounded-xl font-semibold transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-antares-blue/20">
-          View All Services
-          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
-          </svg>
-        </a>
-        <button onclick="openRequestCallModal()" class="inline-flex items-center px-8 py-4 bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl font-medium transition-all duration-300 hover:scale-105">
-          Request Free Consultation
-          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
-          </svg>
-        </button>
+    <!-- Trust Framework - Integral Guarantees -->
+    <div class="bg-gradient-to-r from-antares-blue/10 to-green-500/10 rounded-2xl p-8 lg:p-12 border border-white/10">
+      <h3 class="text-2xl lg:text-3xl font-display font-bold text-center mb-8">Garantías Integrales</h3>
+      <div class="grid md:grid-cols-4 gap-6">
+        <div class="text-center">
+          <div class="w-16 h-16 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
+            <span class="text-3xl">✅</span>
+          </div>
+          <h4 class="font-bold mb-2">Contratistas Certificados</h4>
+          <p class="text-sm text-white/60">C-10 & C-45 Licenciados en California</p>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
+            <span class="text-3xl">📋</span>
+          </div>
+          <h4 class="font-bold mb-2">Permisos y Seguros</h4>
+          <p class="text-sm text-white/60">Gestionamos todo el proceso legal</p>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
+            <span class="text-3xl">🔍</span>
+          </div>
+          <h4 class="font-bold mb-2">Inspección 100%</h4>
+          <p class="text-sm text-white/60">Control de calidad pre-entrega</p>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
+            <span class="text-3xl">🛠️</span>
+          </div>
+          <h4 class="font-bold mb-2">Soporte Técnico</h4>
+          <p class="text-sm text-white/60">Mantenimiento y modernización continua</p>
+        </div>
       </div>
     </div>
   </div>
+</section>
 </section>
 
 <!-- Featured Projects -->
