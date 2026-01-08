@@ -2718,13 +2718,13 @@ app.get('/about', (c) => {
   <div class="container mx-auto px-4 sm:px-6 lg:px-8">
     <div class="max-w-4xl mx-auto">
       <div class="text-center mb-16">
-        <h1 class="text-4xl lg:text-6xl font-display font-bold mb-6">About Antares Innovate</h1>
-        <p class="text-xl text-white/60">Strategic Vision. Technical Authority. Global Reach.</p>
+        <h1 class="text-4xl lg:text-6xl font-display font-bold mb-6" data-i18n="about.title">About Antares Innovate</h1>
+        <p class="text-xl text-white/60" data-i18n="about.subtitle">Strategic Vision. Technical Authority. Global Reach.</p>
       </div>
 
       <!-- Company Overview -->
       <div class="bg-antares-gray border border-white/10 rounded-2xl p-8 lg:p-12 mb-12">
-        <h2 class="text-3xl font-display font-bold mb-6">Who We Are</h2>
+        <h2 class="text-3xl font-display font-bold mb-6" data-i18n="about.whoWeAre">Who We Are</h2>
         <p class="text-lg text-white/70 leading-relaxed mb-6">
           Antares Innovate is not just another signage contractor. We are a <strong class="text-white">technology-driven industrial partner</strong> specialized in complex commercial installations, LED optimization, and regulatory compliance frameworks.
         </p>
@@ -2758,7 +2758,7 @@ app.get('/about', (c) => {
 
       <!-- Core Values -->
       <div class="mb-16">
-        <h2 class="text-3xl font-display font-bold mb-8 text-center">Our Core Values</h2>
+        <h2 class="text-3xl font-display font-bold mb-8 text-center" data-i18n="about.coreValues">Our Core Values</h2>
         <div class="grid md:grid-cols-2 gap-6">
           <div class="bg-antares-dark border border-white/10 rounded-xl p-6">
             <h3 class="text-xl font-bold mb-3 flex items-center">
@@ -2767,9 +2767,9 @@ app.get('/about', (c) => {
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                 </svg>
               </span>
-              Technical Excellence
+              <span data-i18n="about.value1.title">Technical Excellence</span>
             </h3>
-            <p class="text-white/60">Engineering-driven approach with precision execution and quality standards</p>
+            <p class="text-white/60" data-i18n="about.value1.desc">Engineering-driven approach with precision execution and quality standards</p>
           </div>
 
           <div class="bg-antares-dark border border-white/10 rounded-xl p-6">
@@ -2779,9 +2779,9 @@ app.get('/about', (c) => {
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
                 </svg>
               </span>
-              Compliance Focus
+              <span data-i18n="about.value2.title">Compliance Focus</span>
             </h3>
-            <p class="text-white/60">Regulatory expertise turning compliance into competitive advantage</p>
+            <p class="text-white/60" data-i18n="about.value2.desc">Regulatory expertise turning compliance into competitive advantage</p>
           </div>
 
           <div class="bg-antares-dark border border-white/10 rounded-xl p-6">
@@ -2791,9 +2791,9 @@ app.get('/about', (c) => {
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
                 </svg>
               </span>
-              Innovation
+              <span data-i18n="about.value3.title">Innovation</span>
             </h3>
-            <p class="text-white/60">LED optimization and energy-efficient solutions for modern businesses</p>
+            <p class="text-white/60" data-i18n="about.value3.desc">LED optimization and energy-efficient solutions for modern businesses</p>
           </div>
 
           <div class="bg-antares-dark border border-white/10 rounded-xl p-6">
@@ -2803,26 +2803,26 @@ app.get('/about', (c) => {
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
                 </svg>
               </span>
-              Global Reach
+              <span data-i18n="about.value4.title">Global Reach</span>
             </h3>
-            <p class="text-white/60">Scalable solutions designed for multi-location and international projects</p>
+            <p class="text-white/60" data-i18n="about.value4.desc">Scalable solutions designed for multi-location and international projects</p>
           </div>
         </div>
       </div>
 
       <!-- CTA -->
       <div class="bg-gradient-to-br from-antares-blue to-blue-600 rounded-2xl p-12 text-center">
-        <h2 class="text-3xl font-display font-bold mb-4">Ready to Work Together?</h2>
-        <p class="text-xl text-white/90 mb-8">Let's discuss your next signage or LED project</p>
+        <h2 class="text-3xl font-display font-bold mb-4" data-i18n="about.cta.title">Ready to Work Together?</h2>
+        <p class="text-xl text-white/90 mb-8" data-i18n="about.cta.subtitle">Let's discuss your next signage or LED project</p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
           <a href="tel:+16893312690" class="inline-flex items-center justify-center px-8 py-4 bg-white text-antares-blue hover:bg-gray-100 rounded-xl font-semibold transition-all hover:scale-105">
             <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
             </svg>
-            Call Now
+            <span data-i18n="about.cta.call">Call Now</span>
           </a>
           <a href="/contact" class="inline-flex items-center justify-center px-8 py-4 bg-antares-dark hover:bg-black rounded-xl font-semibold transition-all hover:scale-105">
-            Contact Us
+            <span data-i18n="about.cta.contact">Contact Us</span>
           </a>
         </div>
       </div>
@@ -2841,22 +2841,22 @@ app.get('/contact', (c) => {
   <div class="container mx-auto px-4 sm:px-6 lg:px-8">
     <div class="max-w-5xl mx-auto">
       <div class="text-center mb-16">
-        <h1 class="text-4xl lg:text-6xl font-display font-bold mb-6">Get In Touch</h1>
-        <p class="text-xl text-white/60">Ready to start your project? Contact our technical team for a consultation</p>
+        <h1 class="text-4xl lg:text-6xl font-display font-bold mb-6" data-i18n="contact.title">Get In Touch</h1>
+        <p class="text-xl text-white/60" data-i18n="contact.subtitle">Ready to start your project? Contact our technical team for a consultation</p>
       </div>
 
       <div class="grid lg:grid-cols-2 gap-12">
         <!-- Contact Form -->
         <div class="bg-antares-gray border border-white/10 rounded-2xl p-8 lg:p-10">
-          <h2 class="text-2xl font-display font-bold mb-6">Send Us a Message</h2>
+          <h2 class="text-2xl font-display font-bold mb-6" data-i18n="contact.formTitle">Send Us a Message</h2>
           <form onsubmit="handleContactForm(event)" class="space-y-6">
             <div class="grid sm:grid-cols-2 gap-6">
               <div>
-                <label class="block text-sm font-medium text-white/80 mb-2">First Name *</label>
+                <label class="block text-sm font-medium text-white/80 mb-2"><span data-i18n="contact.firstName">First Name</span> <span data-i18n="contact.required">*</span></label>
                 <input type="text" required class="w-full px-4 py-3 bg-antares-dark border border-white/10 rounded-lg text-white focus:border-antares-blue focus:ring-1 focus:ring-antares-blue outline-none transition-colors" placeholder="John">
               </div>
               <div>
-                <label class="block text-sm font-medium text-white/80 mb-2">Last Name *</label>
+                <label class="block text-sm font-medium text-white/80 mb-2"><span data-i18n="contact.lastName">Last Name</span> <span data-i18n="contact.required">*</span></label>
                 <input type="text" required class="w-full px-4 py-3 bg-antares-dark border border-white/10 rounded-lg text-white focus:border-antares-blue focus:ring-1 focus:ring-antares-blue outline-none transition-colors" placeholder="Doe">
               </div>
             </div>

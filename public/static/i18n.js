@@ -140,7 +140,45 @@ const translations = {
     'projects.tag.branding': 'Branding',
     'projects.tag.manufacturing': 'Manufacturing',
     'projects.tag.interior': 'Interior',
-    'projects.tag.medical': 'Medical'
+    'projects.tag.medical': 'Medical',
+    
+    // About Page
+    'about.title': 'About Antares Innovate',
+    'about.subtitle': 'Strategic Vision. Technical Authority. Global Reach.',
+    'about.whoWeAre': 'Who We Are',
+    'about.overview1': 'Antares Innovate is not just another signage contractor. We are a technology-driven industrial partner specialized in complex commercial installations, LED optimization, and regulatory compliance frameworks.',
+    'about.overview2': 'Operating under strict California Title 24 and electrical code requirements, we deliver engineered solutions that balance performance, efficiency, and legal certainty.',
+    'about.overview3': 'Our approach is built on precision, accountability, and long-term strategic thinking—designed for corporate clients, franchises, and large-scale projects that demand excellence.',
+    'about.coreValues': 'Our Core Values',
+    'about.value1.title': 'Technical Excellence',
+    'about.value1.desc': 'Engineering-driven approach with precision execution and quality standards',
+    'about.value2.title': 'Compliance Focus',
+    'about.value2.desc': 'Regulatory expertise turning compliance into competitive advantage',
+    'about.value3.title': 'Innovation',
+    'about.value3.desc': 'LED optimization and energy-efficient solutions for modern businesses',
+    'about.value4.title': 'Global Reach',
+    'about.value4.desc': 'Scalable solutions designed for multi-location and international projects',
+    'about.cta.title': 'Ready to Work Together?',
+    'about.cta.subtitle': 'Let\'s discuss your next signage or LED project',
+    'about.cta.call': 'Call Now',
+    'about.cta.contact': 'Contact Us',
+    
+    // Contact Page
+    'contact.title': 'Get In Touch',
+    'contact.subtitle': 'Ready to start your project? Contact our technical team for a consultation',
+    'contact.formTitle': 'Send Us a Message',
+    'contact.firstName': 'First Name',
+    'contact.lastName': 'Last Name',
+    'contact.email': 'Email Address',
+    'contact.phone': 'Phone Number',
+    'contact.company': 'Company Name',
+    'contact.service': 'Service Interest',
+    'contact.serviceSelect': 'Select a service...',
+    'contact.message': 'Project Details',
+    'contact.messagePlaceholder': 'Tell us about your project requirements...',
+    'contact.send': 'Send Message',
+    'contact.directContact': 'Direct Contact',
+    'contact.required': '*'
   },
   
   es: {
@@ -282,7 +320,45 @@ const translations = {
     'projects.tag.branding': 'Branding',
     'projects.tag.manufacturing': 'Manufactura',
     'projects.tag.interior': 'Interior',
-    'projects.tag.medical': 'Médico'
+    'projects.tag.medical': 'Médico',
+    
+    // About Page
+    'about.title': 'Acerca de Antares Innovate',
+    'about.subtitle': 'Visión Estratégica. Autoridad Técnica. Alcance Global.',
+    'about.whoWeAre': 'Quiénes Somos',
+    'about.overview1': 'Antares Innovate no es solo otro contratista de señalización. Somos un socio industrial impulsado por tecnología especializado en instalaciones comerciales complejas, optimización LED y marcos de cumplimiento regulatorio.',
+    'about.overview2': 'Operando bajo estrictos requisitos del Título 24 de California y códigos eléctricos, entregamos soluciones ingenieriles que equilibran rendimiento, eficiencia y certeza legal.',
+    'about.overview3': 'Nuestro enfoque se construye sobre precisión, responsabilidad y pensamiento estratégico a largo plazo—diseñado para clientes corporativos, franquicias y proyectos a gran escala que exigen excelencia.',
+    'about.coreValues': 'Nuestros Valores Fundamentales',
+    'about.value1.title': 'Excelencia Técnica',
+    'about.value1.desc': 'Enfoque impulsado por ingeniería con ejecución precisa y estándares de calidad',
+    'about.value2.title': 'Enfoque en Cumplimiento',
+    'about.value2.desc': 'Experiencia regulatoria convirtiendo el cumplimiento en ventaja competitiva',
+    'about.value3.title': 'Innovación',
+    'about.value3.desc': 'Optimización LED y soluciones energéticamente eficientes para negocios modernos',
+    'about.value4.title': 'Alcance Global',
+    'about.value4.desc': 'Soluciones escalables diseñadas para proyectos multi-ubicación e internacionales',
+    'about.cta.title': '¿Listo para Trabajar Juntos?',
+    'about.cta.subtitle': 'Hablemos sobre tu próximo proyecto de señalización o LED',
+    'about.cta.call': 'Llamar Ahora',
+    'about.cta.contact': 'Contáctanos',
+    
+    // Contact Page
+    'contact.title': 'Contáctanos',
+    'contact.subtitle': '¿Listo para comenzar tu proyecto? Contacta a nuestro equipo técnico para una consulta',
+    'contact.formTitle': 'Envíanos un Mensaje',
+    'contact.firstName': 'Nombre',
+    'contact.lastName': 'Apellido',
+    'contact.email': 'Correo Electrónico',
+    'contact.phone': 'Número de Teléfono',
+    'contact.company': 'Nombre de la Empresa',
+    'contact.service': 'Servicio de Interés',
+    'contact.serviceSelect': 'Selecciona un servicio...',
+    'contact.message': 'Detalles del Proyecto',
+    'contact.messagePlaceholder': 'Cuéntanos sobre los requisitos de tu proyecto...',
+    'contact.send': 'Enviar Mensaje',
+    'contact.directContact': 'Contacto Directo',
+    'contact.required': '*'
   }
 };
 
