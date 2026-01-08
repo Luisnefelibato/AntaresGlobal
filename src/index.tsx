@@ -2302,129 +2302,67 @@ app.get('/projects', (c) => {
   <div class="container mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center mb-16">
       <h1 class="text-4xl lg:text-6xl font-display font-bold mb-6">Our <span class="text-antares-blue">Projects</span></h1>
-      <p class="text-xl text-white/70 max-w-3xl mx-auto">From creative design to professional installation, see our work in action across all service areas</p>
+      <p class="text-xl text-white/70 max-w-3xl mx-auto">Explore our portfolio of design, production, and installation work</p>
     </div>
 
-    <!-- Projects Grid - 3 Categories -->
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+    <!-- Filter Buttons -->
+    <div class="flex flex-wrap justify-center gap-3 mb-12">
+      <button onclick="filterProjects('all')" class="portfolio-filter-btn active px-6 py-3 bg-antares-blue text-white rounded-lg font-semibold transition-all hover:bg-blue-600" data-filter="all">
+        All Projects
+      </button>
+      <button onclick="filterProjects('design')" class="portfolio-filter-btn px-6 py-3 bg-gradient-to-r from-antares-blue/20 to-blue-600/20 border border-antares-blue/30 text-white/80 rounded-lg font-semibold transition-all hover:bg-antares-blue hover:text-white" data-filter="design">
+        🎨 Design
+      </button>
+      <button onclick="filterProjects('production')" class="portfolio-filter-btn px-6 py-3 bg-gradient-to-r from-orange-500/20 to-red-600/20 border border-orange-500/30 text-white/80 rounded-lg font-semibold transition-all hover:bg-orange-500 hover:text-white" data-filter="production">
+        🖨️ Production
+      </button>
+      <button onclick="filterProjects('installation')" class="portfolio-filter-btn px-6 py-3 bg-gradient-to-r from-green-500/20 to-emerald-600/20 border border-green-500/30 text-white/80 rounded-lg font-semibold transition-all hover:bg-green-500 hover:text-white" data-filter="installation">
+        ⚡ Installation
+      </button>
+    </div>
+
+    <!-- Projects Grid -->
+    <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       
-      <!-- DESIGN PROJECTS -->
-      <div class="group relative rounded-2xl overflow-hidden bg-gradient-to-br from-antares-blue/10 to-blue-600/10 border border-antares-blue/30 hover:border-antares-blue hover:shadow-2xl hover:shadow-antares-blue/20 transition-all duration-500">
-        <div class="relative h-80 overflow-hidden">
-          <img src="/static/images/project-design.jpg" alt="Design Projects - Creative Branding" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-          <div class="absolute inset-0 bg-gradient-to-t from-antares-dark via-antares-dark/80 to-transparent"></div>
-          <div class="absolute top-6 right-6">
-            <span class="bg-antares-blue px-4 py-2 rounded-full text-sm font-semibold shadow-lg">🎨 Design</span>
+      <!-- Design Project 1 -->
+      <div class="project-card group relative h-96 rounded-2xl overflow-hidden" data-category="design">
+        <img src="/static/images/project-design.jpg" alt="Logo Design - The Ray Charles Foundation" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
+        <div class="absolute inset-0 p-6 flex flex-col justify-end">
+          <h3 class="text-2xl font-bold mb-2">Logo Design</h3>
+          <p class="text-white/80 mb-4">Professional brand identity design with custom typography and visual guidelines</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-antares-blue/30 border border-antares-blue rounded-full text-xs font-semibold">Design</span>
+            <span class="px-3 py-1 bg-antares-blue/20 rounded-full text-xs">Branding</span>
           </div>
-        </div>
-        
-        <div class="p-8">
-          <h2 class="text-3xl font-bold mb-4 text-antares-blue">Creative Design</h2>
-          <p class="text-white/70 mb-6 leading-relaxed">
-            From concept to visual identity. Logo design, brand guidelines, and complete visual systems that communicate your values and differentiate your brand.
-          </p>
-          
-          <ul class="space-y-3 mb-6">
-            <li class="flex items-start gap-3 text-sm">
-              <span class="text-antares-blue mt-1">✓</span>
-              <span class="text-white/60"><strong class="text-white">Brand Identity:</strong> Logo design, color palettes, typography systems</span>
-            </li>
-            <li class="flex items-start gap-3 text-sm">
-              <span class="text-antares-blue mt-1">✓</span>
-              <span class="text-white/60"><strong class="text-white">Marketing Materials:</strong> Brochures, business cards, catalogs</span>
-            </li>
-            <li class="flex items-start gap-3 text-sm">
-              <span class="text-antares-blue mt-1">✓</span>
-              <span class="text-white/60"><strong class="text-white">Digital Assets:</strong> Social media graphics, web design, presentations</span>
-            </li>
-          </ul>
-
-          <a href="/services/design" class="inline-flex items-center text-antares-blue hover:text-blue-400 font-semibold transition-colors group">
-            View Design Services
-            <svg class="w-5 h-5 ml-2 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-            </svg>
-          </a>
         </div>
       </div>
 
-      <!-- PRODUCTION PROJECTS -->
-      <div class="group relative rounded-2xl overflow-hidden bg-gradient-to-br from-orange-500/10 to-red-600/10 border border-orange-500/30 hover:border-orange-500 hover:shadow-2xl hover:shadow-orange-500/20 transition-all duration-500">
-        <div class="relative h-80 overflow-hidden">
-          <img src="/static/images/project-production.jpg" alt="Production Projects - Professional Printing" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-          <div class="absolute inset-0 bg-gradient-to-t from-antares-dark via-antares-dark/80 to-transparent"></div>
-          <div class="absolute top-6 right-6">
-            <span class="bg-orange-500 px-4 py-2 rounded-full text-sm font-semibold shadow-lg">🖨️ Production</span>
+      <!-- Production Project 1 -->
+      <div class="project-card group relative h-96 rounded-2xl overflow-hidden" data-category="production">
+        <img src="/static/images/project-production.jpg" alt="3D Letter Manufacturing - Production Workshop" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
+        <div class="absolute inset-0 p-6 flex flex-col justify-end">
+          <h3 class="text-2xl font-bold mb-2">3D Letter Manufacturing</h3>
+          <p class="text-white/80 mb-4">Precision fabrication of dimensional letters and signage components in our production facility</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-orange-500/30 border border-orange-500 rounded-full text-xs font-semibold">Production</span>
+            <span class="px-3 py-1 bg-orange-500/20 rounded-full text-xs">Manufacturing</span>
           </div>
-        </div>
-        
-        <div class="p-8">
-          <h2 class="text-3xl font-bold mb-4 text-orange-500">Full Production</h2>
-          <p class="text-white/70 mb-6 leading-relaxed">
-            Bringing designs to life with precision printing and manufacturing. Large format, POP materials, and promotional products with superior quality control.
-          </p>
-          
-          <ul class="space-y-3 mb-6">
-            <li class="flex items-start gap-3 text-sm">
-              <span class="text-orange-500 mt-1">✓</span>
-              <span class="text-white/60"><strong class="text-white">Large Format:</strong> Banners, vinyl, mesh, building wraps (3ft-100ft+)</span>
-            </li>
-            <li class="flex items-start gap-3 text-sm">
-              <span class="text-orange-500 mt-1">✓</span>
-              <span class="text-white/60"><strong class="text-white">Print Materials:</strong> Stickers, posters, flyers, brochures, catalogs</span>
-            </li>
-            <li class="flex items-start gap-3 text-sm">
-              <span class="text-orange-500 mt-1">✓</span>
-              <span class="text-white/60"><strong class="text-white">POP & Retail:</strong> Displays, standees, floor graphics, promotional items</span>
-            </li>
-          </ul>
-
-          <a href="/services/print" class="inline-flex items-center text-orange-500 hover:text-orange-400 font-semibold transition-colors group">
-            View Production Services
-            <svg class="w-5 h-5 ml-2 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-            </svg>
-          </a>
         </div>
       </div>
 
-      <!-- INSTALLATION PROJECTS -->
-      <div class="group relative rounded-2xl overflow-hidden bg-gradient-to-br from-green-500/10 to-emerald-600/10 border border-green-500/30 hover:border-green-500 hover:shadow-2xl hover:shadow-green-500/20 transition-all duration-500">
-        <div class="relative h-80 overflow-hidden">
-          <img src="/static/images/project-installation.jpg" alt="Installation Projects - Professional Mounting" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-          <div class="absolute inset-0 bg-gradient-to-t from-antares-dark via-antares-dark/80 to-transparent"></div>
-          <div class="absolute top-6 right-6">
-            <span class="bg-green-500 px-4 py-2 rounded-full text-sm font-semibold shadow-lg">⚡ Installation</span>
+      <!-- Installation Project 1 -->
+      <div class="project-card group relative h-96 rounded-2xl overflow-hidden" data-category="installation">
+        <img src="/static/images/project-installation.jpg" alt="Wall Logo Installation - The Ray Charles Foundation" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
+        <div class="absolute inset-0 p-6 flex flex-col justify-end">
+          <h3 class="text-2xl font-bold mb-2">Interior Logo Installation</h3>
+          <p class="text-white/80 mb-4">Professional mounting of dimensional logo on wood panel feature wall with precise alignment</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-green-500/30 border border-green-500 rounded-full text-xs font-semibold">Installation</span>
+            <span class="px-3 py-1 bg-green-500/20 rounded-full text-xs">Interior</span>
           </div>
-        </div>
-        
-        <div class="p-8">
-          <h2 class="text-3xl font-bold mb-4 text-green-500">Professional Installation</h2>
-          <p class="text-white/70 mb-6 leading-relaxed">
-            Expert installation with certified crews, specialized equipment, and comprehensive safety protocols. Licensed, insured, and Title 24 compliant.
-          </p>
-          
-          <ul class="space-y-3 mb-6">
-            <li class="flex items-start gap-3 text-sm">
-              <span class="text-green-500 mt-1">✓</span>
-              <span class="text-white/60"><strong class="text-white">Commercial Signage:</strong> Facade mounting, storefronts, monument signs</span>
-            </li>
-            <li class="flex items-start gap-3 text-sm">
-              <span class="text-green-500 mt-1">✓</span>
-              <span class="text-white/60"><strong class="text-white">LED Systems:</strong> C-10 licensed electricians, retrofits, smart controls</span>
-            </li>
-            <li class="flex items-start gap-3 text-sm">
-              <span class="text-green-500 mt-1">✓</span>
-              <span class="text-white/60"><strong class="text-white">High-Rise Work:</strong> SPRAT certified, crane service, OSHA compliance</span>
-            </li>
-          </ul>
-
-          <a href="/services/installation" class="inline-flex items-center text-green-500 hover:text-green-400 font-semibold transition-colors group">
-            View Installation Services
-            <svg class="w-5 h-5 ml-2 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-            </svg>
-          </a>
         </div>
       </div>
 
@@ -2451,9 +2389,62 @@ app.get('/projects', (c) => {
 
   </div>
 </section>
+
+<script>
+function filterProjects(category) {
+  const cards = document.querySelectorAll('.project-card');
+  const buttons = document.querySelectorAll('.portfolio-filter-btn');
+  
+  // Update button states
+  buttons.forEach(btn => {
+    btn.classList.remove('active', 'bg-antares-blue', 'bg-orange-500', 'bg-green-500');
+    btn.classList.add('bg-gradient-to-r');
+    const filter = btn.getAttribute('data-filter');
+    if (filter === 'design') {
+      btn.classList.add('from-antares-blue/20', 'to-blue-600/20', 'border', 'border-antares-blue/30');
+    } else if (filter === 'production') {
+      btn.classList.add('from-orange-500/20', 'to-red-600/20', 'border', 'border-orange-500/30');
+    } else if (filter === 'installation') {
+      btn.classList.add('from-green-500/20', 'to-emerald-600/20', 'border', 'border-green-500/30');
+    }
+  });
+  
+  const activeBtn = document.querySelector(\`[data-filter="\${category}"]\`);
+  if (activeBtn) {
+    activeBtn.classList.add('active');
+    activeBtn.classList.remove('bg-gradient-to-r', 'from-antares-blue/20', 'to-blue-600/20', 'from-orange-500/20', 'to-red-600/20', 'from-green-500/20', 'to-emerald-600/20', 'border', 'border-antares-blue/30', 'border-orange-500/30', 'border-green-500/30');
+    if (category === 'design') {
+      activeBtn.classList.add('bg-antares-blue');
+    } else if (category === 'production') {
+      activeBtn.classList.add('bg-orange-500');
+    } else if (category === 'installation') {
+      activeBtn.classList.add('bg-green-500');
+    } else {
+      activeBtn.classList.add('bg-antares-blue');
+    }
+  }
+  
+  // Filter cards
+  cards.forEach(card => {
+    if (category === 'all' || card.getAttribute('data-category') === category) {
+      card.style.display = 'block';
+      setTimeout(() => {
+        card.style.opacity = '1';
+        card.style.transform = 'scale(1)';
+      }, 10);
+    } else {
+      card.style.opacity = '0';
+      card.style.transform = 'scale(0.95)';
+      setTimeout(() => {
+        card.style.display = 'none';
+      }, 300);
+    }
+  });
+}
+</script>
   `;
   
-  return c.html(PageLayout('Our Projects | Design, Production & Installation | Antares Innovate', 'View our portfolio of design, production, and installation projects. Professional signage solutions from concept to completion.', content))
+  return c.html(PageLayout('Our Projects | Portfolio | Antares Innovate', 'Browse our portfolio of design, production, and installation projects. Professional signage solutions from concept to completion.', content))
 })
 // About Page
 app.get('/about', (c) => {
