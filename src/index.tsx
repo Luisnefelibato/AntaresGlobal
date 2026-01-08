@@ -519,7 +519,7 @@ app.get('/services', (c) => {
 <body class="font-sans antialiased bg-antares-dark text-white overflow-x-hidden">
 
     <!-- Fixed CTA Phone Button (Desktop) -->
-    <a href="tel:+18002682273" class="cta-phone-button hidden md:flex items-center gap-2 font-bold text-sm hover:scale-105">
+    <a href="tel:+16893312690" class="cta-phone-button hidden md:flex items-center gap-2 font-bold text-sm hover:scale-105">
         <i class="fas fa-phone-alt"></i>
         <span>CALL NOW</span>
     </a>
@@ -537,7 +537,7 @@ app.get('/services', (c) => {
                     <a href="#portfolio" class="nav-link hover:text-antares-blue transition-colors">Projects</a>
                     <a href="#compliance" class="nav-link hover:text-antares-blue transition-colors">Compliance</a>
                     <a href="#approach" class="nav-link hover:text-antares-blue transition-colors">Approach</a>
-                    <a href="tel:+18002682273" class="flex items-center gap-2 px-4 py-2 rounded-full border-2 border-antares-blue hover:bg-antares-blue transition-all duration-300 whitespace-nowrap">
+                    <a href="tel:+16893312690" class="flex items-center gap-2 px-4 py-2 rounded-full border-2 border-antares-blue hover:bg-antares-blue transition-all duration-300 whitespace-nowrap">
                         <i class="fas fa-phone"></i>
                         <span>1-800-ANTARES</span>
                     </a>
@@ -608,7 +608,7 @@ app.get('/services', (c) => {
                         <i class="fas fa-briefcase mr-2"></i>
                         Explore Our Services
                     </a>
-                    <a href="tel:+18002682273" class="w-full sm:w-auto btn-secondary px-6 sm:px-8 py-3 sm:py-4 rounded-full border-2 border-white hover:bg-white hover:text-antares-dark transition-all duration-300 text-base sm:text-lg font-medium">
+                    <a href="tel:+16893312690" class="w-full sm:w-auto btn-secondary px-6 sm:px-8 py-3 sm:py-4 rounded-full border-2 border-white hover:bg-white hover:text-antares-dark transition-all duration-300 text-base sm:text-lg font-medium">
                         <i class="fas fa-phone mr-2"></i>
                         1-800-ANTARES
                     </a>
@@ -1532,13 +1532,13 @@ app.get('/services', (c) => {
                 <div class="mt-12 pt-12 border-t border-white/10 text-center">
                     <p class="text-gray-400 mb-4">Prefer direct contact?</p>
                     <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
-                        <a href="mailto:info@antaresinnovate.com" class="flex items-center space-x-2 text-antares-blue hover:text-blue-400 transition-colors">
+                        <a href="mailto:contacto@antaresinnovate.com" class="flex items-center space-x-2 text-antares-blue hover:text-blue-400 transition-colors">
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                             </svg>
-                            <span>info@antaresinnovate.com</span>
+                            <span>contacto@antaresinnovate.com</span>
                         </a>
-                        <a href="tel:+1-800-ANTARES" class="flex items-center space-x-2 text-antares-blue hover:text-blue-400 transition-colors">
+                        <a href="tel:+16893312690" class="flex items-center space-x-2 text-antares-blue hover:text-blue-400 transition-colors">
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
                             </svg>
@@ -1582,12 +1582,25 @@ app.get('/services', (c) => {
                 </div>
                 
                 <div>
-                    <h4 class="font-bold mb-4">Location</h4>
-                    <p class="text-sm text-gray-400 leading-relaxed">
-                        Los Angeles, California<br/>
-                        Serving California & Beyond<br/>
-                        Licensed & Insured
-                    </p>
+                    <h4 class="font-bold mb-4">Contact</h4>
+                    <div class="space-y-2 text-sm text-gray-400">
+                        <a href="tel:+16893312690" class="flex items-center hover:text-antares-blue transition-colors">
+                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                            </svg>
+                            +1 (689) 331-2690
+                        </a>
+                        <a href="mailto:contacto@antaresinnovate.com" class="flex items-center hover:text-antares-blue transition-colors">
+                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            </svg>
+                            contacto@antaresinnovate.com
+                        </a>
+                        <p class="text-xs text-gray-500 mt-3">
+                            Los Angeles, California<br/>
+                            Licensed & Insured (C-10 & C-45)
+                        </p>
+                    </div>
                 </div>
             </div>
             
@@ -2906,7 +2919,7 @@ app.get('/contact', (c) => {
                 </div>
               </a>
 
-              <a href="mailto:info@antaresinnovate.com" class="flex items-start p-4 bg-antares-dark hover:bg-antares-blue/10 rounded-lg transition-colors group">
+              <a href="mailto:contacto@antaresinnovate.com" class="flex items-start p-4 bg-antares-dark hover:bg-antares-blue/10 rounded-lg transition-colors group">
                 <div class="w-12 h-12 bg-antares-blue/10 rounded-lg flex items-center justify-center mr-4 group-hover:bg-antares-blue/20 transition-colors">
                   <svg class="w-6 h-6 text-antares-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
@@ -2914,7 +2927,7 @@ app.get('/contact', (c) => {
                 </div>
                 <div>
                   <div class="text-sm text-white/60 mb-1">Email</div>
-                  <div class="font-semibold">info@antaresinnovate.com</div>
+                  <div class="font-semibold">contacto@antaresinnovate.com</div>
                   <div class="text-sm text-white/60 mt-1">Response within 24 hours</div>
                 </div>
               </a>
@@ -3069,7 +3082,7 @@ OUR COMPLETE SERVICES (Design → Print → Install):
 
 CONTACT INFORMATION:
 - Phone: (689) 331-2690 (24/7 available)
-- Email: info@antaresinnovate.com
+- Email: contacto@antaresinnovate.com
 - Location: Los Angeles, California
 - Service Area: California & Beyond
 
