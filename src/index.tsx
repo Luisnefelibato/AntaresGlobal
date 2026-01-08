@@ -1668,17 +1668,17 @@ app.get('/services/design', (c) => {
     <div class="max-w-6xl mx-auto">
       <!-- Hero -->
       <div class="text-center mb-12">
-        <h1 class="text-4xl lg:text-6xl font-display font-bold mb-6">
+        <h1 class="text-4xl lg:text-6xl font-display font-bold mb-6" data-i18n="design.hero.title">
           Design That <span class="text-antares-blue">Creates Impact</span>
         </h1>
-        <p class="text-xl text-white/70 leading-relaxed mb-8 max-w-3xl mx-auto">
+        <p class="text-xl text-white/70 leading-relaxed mb-8 max-w-3xl mx-auto" data-i18n="design.hero.subtitle">
           Whether you're starting from scratch or your brand needs evolution, we specialize in visual solutions that communicate your values instantly. Our design team creates signage that makes your business stand out.
         </p>
         <a href="tel:+16893312690" class="inline-flex items-center px-8 py-4 bg-green-600 hover:bg-green-700 rounded-xl font-semibold text-lg transition-all duration-300 hover:scale-105">
           <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
           </svg>
-          Call Now: (689) 331-2690
+          <span data-i18n="design.hero.callButton">Call Now: (689) 331-2690</span>
         </a>
       </div>
 
@@ -1690,21 +1690,21 @@ app.get('/services/design', (c) => {
 
       <!-- What We Offer -->
       <div class="mb-16">
-        <h2 class="text-3xl lg:text-4xl font-display font-bold text-center mb-4">What We Do for Your Business</h2>
-        <p class="text-lg text-white/60 text-center mb-12 max-w-3xl mx-auto">From concept to creation, we design signage that attracts customers and boosts your brand visibility</p>
+        <h2 class="text-3xl lg:text-4xl font-display font-bold text-center mb-4" data-i18n="design.whatWeDo.title">What We Do for Your Business</h2>
+        <p class="text-lg text-white/60 text-center mb-12 max-w-3xl mx-auto" data-i18n="design.whatWeDo.subtitle">From concept to creation, we design signage that attracts customers and boosts your brand visibility</p>
         
         <div class="grid md:grid-cols-3 gap-8">
           <div class="bg-gradient-to-br from-antares-blue/10 to-blue-600/10 p-8 rounded-xl border border-antares-blue/30 hover:border-antares-blue hover:shadow-lg hover:shadow-antares-blue/20 transition-all">
             <div class="w-16 h-16 mb-4 bg-gradient-to-br from-antares-blue to-blue-600 rounded-xl flex items-center justify-center text-3xl">
               🎨
             </div>
-            <h3 class="text-2xl font-bold mb-4 text-antares-blue">BRANDING</h3>
-            <p class="text-white/70 mb-4">Complete brand identity development that communicates your values and differentiates you from the competition.</p>
+            <h3 class="text-2xl font-bold mb-4 text-antares-blue" data-i18n="design.branding.title">BRANDING</h3>
+            <p class="text-white/70 mb-4" data-i18n="design.branding.desc">Complete brand identity development that communicates your values and differentiates you from the competition.</p>
             <ul class="text-sm text-white/60 space-y-2">
-              <li>• <strong>Logo design and brand guidelines</strong></li>
-              <li>• <strong>Color palette and typography</strong></li>
-              <li>• <strong>Brand positioning strategy</strong></li>
-              <li>• <strong>Visual identity systems</strong></li>
+              <li>• <strong data-i18n="design.branding.item1">Logo design and brand guidelines</strong></li>
+              <li>• <strong data-i18n="design.branding.item2">Color palette and typography</strong></li>
+              <li>• <strong data-i18n="design.branding.item3">Brand positioning strategy</strong></li>
+              <li>• <strong data-i18n="design.branding.item4">Visual identity systems</strong></li>
             </ul>
           </div>
 
@@ -1712,13 +1712,13 @@ app.get('/services/design', (c) => {
             <div class="w-16 h-16 mb-4 bg-gradient-to-br from-antares-blue to-blue-600 rounded-xl flex items-center justify-center text-3xl">
               ✏️
             </div>
-            <h3 class="text-2xl font-bold mb-4 text-antares-blue">GRAPHIC DESIGN</h3>
-            <p class="text-white/70 mb-4">Professional graphic design for all your signage and advertising materials with visual impact.</p>
+            <h3 class="text-2xl font-bold mb-4 text-antares-blue" data-i18n="design.graphic.title">GRAPHIC DESIGN</h3>
+            <p class="text-white/70 mb-4" data-i18n="design.graphic.desc">Professional graphic design for all your signage and advertising materials with visual impact.</p>
             <ul class="text-sm text-white/60 space-y-2">
-              <li>• <strong>Business cards and stationery</strong></li>
-              <li>• <strong>Brochures and catalogs</strong></li>
-              <li>• <strong>Posters and banners</strong></li>
-              <li>• <strong>Packaging and labels</strong></li>
+              <li>• <strong data-i18n="design.graphic.item1">Business cards and stationery</strong></li>
+              <li>• <strong data-i18n="design.graphic.item2">Brochures and catalogs</strong></li>
+              <li>• <strong data-i18n="design.graphic.item3">Posters and banners</strong></li>
+              <li>• <strong data-i18n="design.graphic.item4">Packaging and labels</strong></li>
             </ul>
           </div>
 
@@ -1726,13 +1726,13 @@ app.get('/services/design', (c) => {
             <div class="w-16 h-16 mb-4 bg-gradient-to-br from-antares-blue to-blue-600 rounded-xl flex items-center justify-center text-3xl">
               💻
             </div>
-            <h3 class="text-2xl font-bold mb-4 text-antares-blue">DIGITAL DESIGN</h3>
-            <p class="text-white/70 mb-4">Modern digital design for social media, websites, and all your online presence needs.</p>
+            <h3 class="text-2xl font-bold mb-4 text-antares-blue" data-i18n="design.digital.title">DIGITAL DESIGN</h3>
+            <p class="text-white/70 mb-4" data-i18n="design.digital.desc">Modern digital design for social media, websites, and all your online presence needs.</p>
             <ul class="text-sm text-white/60 space-y-2">
-              <li>• <strong>Social media graphics and ads</strong></li>
-              <li>• <strong>Web banners and email templates</strong></li>
-              <li>• <strong>Digital signage and displays</strong></li>
-              <li>• <strong>Interactive presentations</strong></li>
+              <li>• <strong data-i18n="design.digital.item1">Social media graphics and ads</strong></li>
+              <li>• <strong data-i18n="design.digital.item2">Web banners and email templates</strong></li>
+              <li>• <strong data-i18n="design.digital.item3">Digital signage and displays</strong></li>
+              <li>• <strong data-i18n="design.digital.item4">Interactive presentations</strong></li>
             </ul>
           </div>
         </div>
@@ -1740,7 +1740,7 @@ app.get('/services/design', (c) => {
 
       <!-- Compliance & Regulations -->
       <div class="bg-gradient-to-br from-antares-blue/10 to-blue-600/10 rounded-2xl p-8 lg:p-12 mb-16 border border-antares-blue/20">
-        <h2 class="text-3xl font-display font-bold text-center mb-8">Compliance & Regulations</h2>
+        <h2 class="text-3xl font-display font-bold text-center mb-8" data-i18n="design.compliance.title">Compliance & Regulations</h2>
         <div class="grid md:grid-cols-2 gap-8">
           <div>
             <h3 class="text-xl font-bold mb-4 text-antares-blue">Los Angeles Sign Code Compliance</h3>
@@ -1808,27 +1808,27 @@ app.get('/services/design', (c) => {
 
       <!-- Process -->
       <div class="bg-antares-gray/50 rounded-2xl p-8 lg:p-12">
-        <h2 class="text-3xl font-display font-bold text-center mb-8">Our Design Process</h2>
+        <h2 class="text-3xl font-display font-bold text-center mb-8" data-i18n="design.process.title">Our Design Process</h2>
         <div class="grid md:grid-cols-4 gap-6">
           <div class="text-center">
             <div class="w-16 h-16 bg-antares-blue rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">1</div>
-            <h3 class="font-bold mb-2">Consultation</h3>
-            <p class="text-sm text-white/60">We listen to your vision and business goals</p>
+            <h3 class="font-bold mb-2" data-i18n="design.process.step1.title">Consultation</h3>
+            <p class="text-sm text-white/60" data-i18n="design.process.step1.desc">We listen to your vision and business goals</p>
           </div>
           <div class="text-center">
             <div class="w-16 h-16 bg-antares-blue rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">2</div>
-            <h3 class="font-bold mb-2">Design Concepts</h3>
-            <p class="text-sm text-white/60">Multiple design options for your review</p>
+            <h3 class="font-bold mb-2" data-i18n="design.process.step2.title">Design Concepts</h3>
+            <p class="text-sm text-white/60" data-i18n="design.process.step2.desc">Multiple design options for your review</p>
           </div>
           <div class="text-center">
             <div class="w-16 h-16 bg-antares-blue rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">3</div>
-            <h3 class="font-bold mb-2">Refinement</h3>
-            <p class="text-sm text-white/60">Perfect every detail with your feedback</p>
+            <h3 class="font-bold mb-2" data-i18n="design.process.step3.title">Refinement</h3>
+            <p class="text-sm text-white/60" data-i18n="design.process.step3.desc">Perfect every detail with your feedback</p>
           </div>
           <div class="text-center">
             <div class="w-16 h-16 bg-antares-blue rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">4</div>
-            <h3 class="font-bold mb-2">Production Ready</h3>
-            <p class="text-sm text-white/60">Deliver files ready for fabrication</p>
+            <h3 class="font-bold mb-2" data-i18n="design.process.step4.title">Final Delivery</h3>
+            <p class="text-sm text-white/60" data-i18n="design.process.step4.desc">Production-ready files for perfect execution</p>
           </div>
         </div>
       </div>
@@ -1845,17 +1845,17 @@ app.get('/services/print', (c) => {
     <div class="max-w-6xl mx-auto">
       <!-- Hero -->
       <div class="text-center mb-12">
-        <h1 class="text-4xl lg:text-6xl font-display font-bold mb-6">
+        <h1 class="text-4xl lg:text-6xl font-display font-bold mb-6" data-i18n="production.hero.title">
           Prints That <span class="text-antares-blue">Leave a Mark</span>
         </h1>
-        <p class="text-xl text-white/70 leading-relaxed mb-8 max-w-3xl mx-auto">
+        <p class="text-xl text-white/70 leading-relaxed mb-8 max-w-3xl mx-auto" data-i18n="production.hero.subtitle">
           In a digital world, physical has special weight. Texture, color precision, and finish quality say more about you than a thousand emails. We don't just print; we ensure the first impression is flawless.
         </p>
         <a href="tel:+16893312690" class="inline-flex items-center px-8 py-4 bg-green-600 hover:bg-green-700 rounded-xl font-semibold text-lg transition-all duration-300 hover:scale-105">
           <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
           </svg>
-          Call Now: (689) 331-2690
+          <span data-i18n="production.hero.callButton">Call Now: (689) 331-2690</span>
         </a>
       </div>
 
@@ -1867,16 +1867,16 @@ app.get('/services/print', (c) => {
 
       <!-- Printing Services Detailed -->
       <div class="mb-16">
-        <h2 class="text-3xl lg:text-4xl font-display font-bold text-center mb-4">Prints That Bring Your Projects to Life</h2>
-        <p class="text-lg text-white/60 text-center mb-12 max-w-3xl mx-auto">Professional large format printing with precision color matching and premium materials. Every print is inspected for quality before delivery.</p>
+        <h2 class="text-3xl lg:text-4xl font-display font-bold text-center mb-4" data-i18n="production.whatWeDo.title">Prints That Bring Your Projects to Life</h2>
+        <p class="text-lg text-white/60 text-center mb-12 max-w-3xl mx-auto" data-i18n="production.whatWeDo.subtitle">Professional large format printing with precision color matching and premium materials. Every print is inspected for quality before delivery.</p>
         
         <div class="grid md:grid-cols-3 gap-8 mb-12">
           <div class="bg-gradient-to-br from-orange-500/10 to-red-600/10 p-8 rounded-xl border border-orange-500/30 hover:border-orange-500 hover:shadow-lg hover:shadow-orange-500/20 transition-all">
             <div class="w-16 h-16 mb-4 bg-gradient-to-br from-orange-500 to-red-600 rounded-xl flex items-center justify-center text-3xl">
               🖨️
             </div>
-            <h3 class="text-2xl font-bold mb-4 text-orange-500">LARGE FORMAT PRINTING</h3>
-            <p class="text-white/70 mb-4">Large-format printing for high-impact visual advertising. Perfect for building facades, events, and outdoor advertising.</p>
+            <h3 class="text-2xl font-bold mb-4 text-orange-500" data-i18n="production.largeFormat.title">LARGE FORMAT PRINTING</h3>
+            <p class="text-white/70 mb-4" data-i18n="production.largeFormat.desc">Large-format printing for high-impact visual advertising. Perfect for building facades, events, and outdoor advertising.</p>
             <ul class="text-sm text-white/60 space-y-2">
               <li>• <strong>Materials:</strong> Vinyl banner, mesh, canvas</li>
               <li>• <strong>Sizes:</strong> From 3ft to 100ft+ custom sizes</li>
@@ -1889,8 +1889,8 @@ app.get('/services/print', (c) => {
             <div class="w-16 h-16 mb-4 bg-gradient-to-br from-orange-500 to-red-600 rounded-xl flex items-center justify-center text-3xl">
               🛍️
             </div>
-            <h3 class="text-2xl font-bold mb-4 text-orange-500">POP MATERIALS</h3>
-            <p class="text-white/70 mb-4">Point of purchase materials that drive sales and enhance customer experience at retail locations.</p>
+            <h3 class="text-2xl font-bold mb-4 text-orange-500" data-i18n="production.pop.title">POP MATERIALS</h3>
+            <p class="text-white/70 mb-4" data-i18n="production.pop.desc">Point of purchase materials that drive sales and enhance customer experience at retail locations.</p>
             <ul class="text-sm text-white/60 space-y-2">
               <li>• <strong>Products:</strong> Displays, standees, shelf talkers, danglers</li>
               <li>• <strong>Materials:</strong> Cardboard, acrylic, foam board, PVC</li>
@@ -1903,8 +1903,8 @@ app.get('/services/print', (c) => {
             <div class="w-16 h-16 mb-4 bg-gradient-to-br from-orange-500 to-red-600 rounded-xl flex items-center justify-center text-3xl">
               📑
             </div>
-            <h3 class="text-2xl font-bold mb-4 text-orange-500">BROCHURES & CATALOGS</h3>
-            <p class="text-white/70 mb-4">Professional brochures, catalogs, and printed materials for marketing and corporate communications.</p>
+            <h3 class="text-2xl font-bold mb-4 text-orange-500" data-i18n="production.brochures.title">BROCHURES & CATALOGS</h3>
+            <p class="text-white/70 mb-4" data-i18n="production.brochures.desc">Professional brochures, catalogs, and printed materials for marketing and corporate communications.</p>
             <ul class="text-sm text-white/60 space-y-2">
               <li>• <strong>Types:</strong> Brochures, catalogs, flyers, folders</li>
               <li>• <strong>Finishing:</strong> Glossy, matte, embossing, foil stamping</li>
@@ -1916,10 +1916,10 @@ app.get('/services/print', (c) => {
 
         <!-- Our Printing Technology -->
         <div class="bg-gradient-to-r from-antares-blue/10 to-blue-600/10 rounded-2xl p-8 lg:p-12 mb-12 border border-antares-blue/20">
-          <h3 class="text-2xl lg:text-3xl font-display font-bold mb-6 text-center">Why Our Prints Stand Out</h3>
+          <h3 class="text-2xl lg:text-3xl font-display font-bold mb-6 text-center" data-i18n="production.whyStandOut.title">Why Our Prints Stand Out</h3>
           <div class="grid md:grid-cols-2 gap-8">
             <div>
-              <h4 class="text-xl font-bold mb-3 text-antares-blue">Advanced Equipment</h4>
+              <h4 class="text-xl font-bold mb-3 text-antares-blue" data-i18n="production.equipment.title">Advanced Equipment</h4>
               <ul class="space-y-2 text-white/70">
                 <li>✓ <strong>HP Latex</strong> wide-format printers for eco-friendly, odorless prints</li>
                 <li>✓ <strong>UV Flatbed</strong> printers for rigid substrates up to 2" thick</li>
@@ -1928,7 +1928,7 @@ app.get('/services/print', (c) => {
               </ul>
             </div>
             <div>
-              <h4 class="text-xl font-bold mb-3 text-antares-blue">Quality Assurance</h4>
+              <h4 class="text-xl font-bold mb-3 text-antares-blue" data-i18n="production.quality.title">Quality Assurance</h4>
               <ul class="space-y-2 text-white/70">
                 <li>✓ <strong>Color Calibration:</strong> Daily profiling for consistent color</li>
                 <li>✓ <strong>Pantone Matching:</strong> Accurate brand color reproduction</li>
@@ -1943,25 +1943,25 @@ app.get('/services/print', (c) => {
         <div class="grid md:grid-cols-3 gap-6 mb-12">
           <div class="bg-antares-gray p-6 rounded-xl border border-white/10 text-center">
             <div class="text-3xl mb-3">⚡</div>
-            <h4 class="font-bold mb-2">Fast Turnaround</h4>
-            <p class="text-white/60 text-sm">Standard: 3-5 business days<br/>Rush: 24-48 hours available</p>
+            <h4 class="font-bold mb-2" data-i18n="production.turnaround.title">Fast Turnaround</h4>
+            <p class="text-white/60 text-sm" data-i18n="production.turnaround.desc">Standard: 3-5 business days<br/>Rush: 24-48 hours available</p>
           </div>
           <div class="bg-antares-gray p-6 rounded-xl border border-white/10 text-center">
             <div class="text-3xl mb-3">💰</div>
-            <h4 class="font-bold mb-2">Competitive Pricing</h4>
-            <p class="text-white/60 text-sm">Volume discounts available<br/>Price match guarantee</p>
+            <h4 class="font-bold mb-2" data-i18n="production.pricing.title">Competitive Pricing</h4>
+            <p class="text-white/60 text-sm" data-i18n="production.pricing.desc">Volume discounts available<br/>Price match guarantee</p>
           </div>
           <div class="bg-antares-gray p-6 rounded-xl border border-white/10 text-center">
             <div class="text-3xl mb-3">🚚</div>
-            <h4 class="font-bold mb-2">Delivery Options</h4>
-            <p class="text-white/60 text-sm">Local pickup or shipping<br/>Installation services available</p>
+            <h4 class="font-bold mb-2" data-i18n="production.delivery.title">Delivery Options</h4>
+            <p class="text-white/60 text-sm" data-i18n="production.delivery.desc">Local pickup or shipping<br/>Installation services available</p>
           </div>
         </div>
       </div>
 
       <!-- Compliance & Regulations -->
       <div class="bg-gradient-to-br from-antares-blue/10 to-blue-600/10 rounded-2xl p-8 lg:p-12 mb-16 border border-antares-blue/20">
-        <h2 class="text-3xl font-display font-bold text-center mb-8">Compliance & Regulations</h2>
+        <h2 class="text-3xl font-display font-bold text-center mb-8" data-i18n="production.compliance.title">Compliance & Regulations</h2>
         <div class="grid md:grid-cols-2 gap-8">
           <div>
             <h3 class="text-xl font-bold mb-4 text-antares-blue">Material & Safety Standards</h3>
@@ -2066,17 +2066,17 @@ app.get('/services/installation', (c) => {
     <div class="max-w-6xl mx-auto">
       <!-- Hero -->
       <div class="text-center mb-12">
-        <h1 class="text-4xl lg:text-6xl font-display font-bold mb-6">
+        <h1 class="text-4xl lg:text-6xl font-display font-bold mb-6" data-i18n="installation.hero.title">
           Installation With <span class="text-antares-blue">Precision</span>
         </h1>
-        <p class="text-xl text-white/70 leading-relaxed mb-8 max-w-3xl mx-auto">
+        <p class="text-xl text-white/70 leading-relaxed mb-8 max-w-3xl mx-auto" data-i18n="installation.hero.subtitle">
           No matter the height, surface, or complexity. We have the equipment and experience to install your visual communication in any environment. Licensed, insured, and Title 24 compliant.
         </p>
         <a href="tel:+16893312690" class="inline-flex items-center px-8 py-4 bg-green-600 hover:bg-green-700 rounded-xl font-semibold text-lg transition-all duration-300 hover:scale-105">
           <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
           </svg>
-          Call Now: (689) 331-2690
+          <span data-i18n="installation.hero.callButton">Call Now: (689) 331-2690</span>
         </a>
       </div>
 
@@ -2088,16 +2088,16 @@ app.get('/services/installation', (c) => {
 
       <!-- Installation Services Detailed -->
       <div class="mb-16">
-        <h2 class="text-3xl lg:text-4xl font-display font-bold text-center mb-4">High-Impact Installation Specialists</h2>
-        <p class="text-lg text-white/60 text-center mb-12 max-w-3xl mx-auto">Professional signage installation with certified crews, advanced equipment, and comprehensive safety protocols. Licensed, insured, and Title 24 compliant.</p>
+        <h2 class="text-3xl lg:text-4xl font-display font-bold text-center mb-4" data-i18n="installation.whatWeDo.title">High-Impact Installation Specialists</h2>
+        <p class="text-lg text-white/60 text-center mb-12 max-w-3xl mx-auto" data-i18n="installation.whatWeDo.subtitle">Professional signage installation with certified crews, advanced equipment, and comprehensive safety protocols. Licensed, insured, and Title 24 compliant.</p>
         
         <div class="grid md:grid-cols-3 gap-8 mb-12">
           <div class="bg-gradient-to-br from-green-500/10 to-emerald-600/10 p-8 rounded-xl border border-green-500/30 hover:border-green-500 hover:shadow-lg hover:shadow-green-500/20 transition-all">
             <div class="w-16 h-16 mb-4 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl flex items-center justify-center text-3xl">
               🏢
             </div>
-            <h3 class="text-2xl font-bold mb-4 text-green-500">COMMERCIAL SIGNAGE</h3>
-            <p class="text-white/70 mb-4">Complete commercial signage installation for storefronts, buildings, and business locations. Professional mounting and electrical work.</p>
+            <h3 class="text-2xl font-bold mb-4 text-green-500" data-i18n="installation.commercial.title">COMMERCIAL SIGNAGE</h3>
+            <p class="text-white/70 mb-4" data-i18n="installation.commercial.desc">Complete commercial signage installation for storefronts, buildings, and business locations. Professional mounting and electrical work.</p>
             <ul class="text-sm text-white/60 space-y-2">
               <li>• <strong>Facade Mounting:</strong> Building-mounted channel letters and signs</li>
               <li>• <strong>Storefront Signs:</strong> Window displays and awning signage</li>
@@ -2110,8 +2110,8 @@ app.get('/services/installation', (c) => {
             <div class="w-16 h-16 mb-4 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl flex items-center justify-center text-3xl">
               💡
             </div>
-            <h3 class="text-2xl font-bold mb-4 text-green-500">LED INSTALLATION</h3>
-            <p class="text-white/70 mb-4">Licensed electrical contractors for LED sign installation, retrofits, and energy-efficient lighting solutions.</p>
+            <h3 class="text-2xl font-bold mb-4 text-green-500" data-i18n="installation.led.title">LED INSTALLATION</h3>
+            <p class="text-white/70 mb-4" data-i18n="installation.led.desc">Licensed electrical contractors for LED sign installation, retrofits, and energy-efficient lighting solutions.</p>
             <ul class="text-sm text-white/60 space-y-2">
               <li>• <strong>Licensed Electricians:</strong> C-10 electrical contractor license</li>
               <li>• <strong>LED Retrofit:</strong> Convert existing signs to energy-efficient LED</li>
@@ -2124,8 +2124,8 @@ app.get('/services/installation', (c) => {
             <div class="w-16 h-16 mb-4 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl flex items-center justify-center text-3xl">
               🏗️
             </div>
-            <h3 class="text-2xl font-bold mb-4 text-green-500">HIGH-RISE INSTALLATION</h3>
-            <p class="text-white/70 mb-4">Specialized high-rise installation with crane service, rope access certification, and OSHA-compliant safety protocols.</p>
+            <h3 class="text-2xl font-bold mb-4 text-green-500" data-i18n="installation.highrise.title">HIGH-RISE INSTALLATION</h3>
+            <p class="text-white/70 mb-4" data-i18n="installation.highrise.desc">Specialized high-rise installation with crane service, rope access certification, and OSHA-compliant safety protocols.</p>
             <ul class="text-sm text-white/60 space-y-2">
               <li>• <strong>Crane Service:</strong> Mobile cranes and boom lift equipment</li>
               <li>• <strong>Rope Access:</strong> SPRAT-certified technicians</li>
@@ -2137,7 +2137,7 @@ app.get('/services/installation', (c) => {
 
         <!-- Compliance & Regulations -->
         <div class="bg-gradient-to-br from-antares-blue/10 to-blue-600/10 rounded-2xl p-8 lg:p-12 mb-12 border border-antares-blue/20">
-          <h3 class="text-2xl lg:text-3xl font-display font-bold mb-6 text-center">Installation Permits & Compliance</h3>
+          <h3 class="text-2xl lg:text-3xl font-display font-bold mb-6 text-center" data-i18n="installation.permits.title">Installation Permits & Compliance</h3>
           <div class="grid md:grid-cols-2 gap-8">
             <div>
               <h4 class="text-xl font-bold mb-4 text-antares-blue">Los Angeles Permit Requirements</h4>
