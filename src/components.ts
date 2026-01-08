@@ -25,8 +25,8 @@ export const Header = () => `
       <div class="hidden lg:flex items-center space-x-3">
         <!-- Language Switcher -->
         <div class="flex items-center space-x-1 border border-white/10 rounded-lg p-1">
-          <button class="lang-btn px-3 py-1.5 text-xs font-medium rounded transition-colors" data-lang="en" data-i18n="nav.en">EN</button>
-          <button class="lang-btn px-3 py-1.5 text-xs font-medium rounded transition-colors" data-lang="es" data-i18n="nav.es">ES</button>
+          <button class="lang-btn px-3 py-1.5 text-xs font-medium rounded transition-colors" data-lang="en" data-i18n="nav.en">🇺🇸 EN</button>
+          <button class="lang-btn px-3 py-1.5 text-xs font-medium rounded transition-colors" data-lang="es" data-i18n="nav.es">🇪🇸 ES</button>
         </div>
         
         <a href="tel:+16893312690" class="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-green-600 hover:bg-green-700 rounded-lg transition-colors">
@@ -60,8 +60,8 @@ export const Header = () => `
       
       <!-- Mobile Language Switcher -->
       <div class="pt-3 pb-2 flex items-center justify-center space-x-2">
-        <button class="lang-btn px-4 py-2 text-sm font-medium rounded-lg border border-white/10 transition-colors" data-lang="en">EN</button>
-        <button class="lang-btn px-4 py-2 text-sm font-medium rounded-lg border border-white/10 transition-colors" data-lang="es">ES</button>
+        <button class="lang-btn px-4 py-2 text-sm font-medium rounded-lg border border-white/10 transition-colors" data-lang="en">🇺🇸 EN</button>
+        <button class="lang-btn px-4 py-2 text-sm font-medium rounded-lg border border-white/10 transition-colors" data-lang="es">🇪🇸 ES</button>
       </div>
       
       <div class="pt-4 space-y-2">
