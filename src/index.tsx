@@ -28,19 +28,19 @@ app.get('/', (c) => {
       <!-- Badge -->
       <div class="inline-flex items-center space-x-2 bg-antares-blue/10 border border-antares-blue/20 rounded-full px-4 py-2">
         <span class="w-2 h-2 bg-antares-blue rounded-full animate-pulse"></span>
-        <span class="text-antares-blue text-sm font-medium">Engineering Excellence Since 2010</span>
+        <span class="text-antares-blue text-sm font-medium" data-i18n="hero.badge">Engineering Excellence Since 2010</span>
       </div>
 
       <!-- Main Heading -->
       <h1 class="font-display font-black text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl leading-tight">
-        <span class="block text-white">We Transform Spaces</span>
-        <span class="block text-white">into <span class="text-antares-blue">Brand</span> Experiences</span>
+        <span class="block text-white" data-i18n="hero.title1">We Transform Spaces</span>
+        <span class="block text-white"><span data-i18n="hero.title2">into</span> <span class="text-antares-blue" data-i18n="hero.title3">Brand</span> <span data-i18n="hero.title4">Experiences</span></span>
       </h1>
 
       <!-- Subtitle -->
       <p class="text-lg sm:text-xl lg:text-2xl text-white/70 max-w-3xl mx-auto font-light leading-relaxed">
-        Creative Design, Full Production, Professional Installation
-        <span class="block mt-2 text-white/50">From concept to installation. One provider for the entire process.</span>
+        <span data-i18n="hero.subtitle1">Creative Design, Full Production, Professional Installation</span>
+        <span class="block mt-2 text-white/50" data-i18n="hero.subtitle2">From concept to installation. One provider for the entire process.</span>
       </p>
 
       <!-- CTA Buttons -->
@@ -49,7 +49,7 @@ app.get('/', (c) => {
           <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
           </svg>
-          Call Now: +1 (689) 331-2690
+          <span data-i18n="hero.callButton">Call Now: +1 (689) 331-2690</span>
         </a>
         <a href="/projects" class="group inline-flex items-center px-8 py-4 bg-antares-blue hover:bg-blue-600 rounded-xl font-semibold text-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/20">
           <svg class="w-6 h-6 mr-3 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">

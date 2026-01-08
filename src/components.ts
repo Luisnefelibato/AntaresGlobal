@@ -14,23 +14,29 @@ export const Header = () => `
 
       <!-- Desktop Navigation -->
       <div class="hidden lg:flex items-center space-x-1">
-        <a href="/" class="nav-link px-4 py-2 text-sm font-medium text-white/80 hover:text-white transition-colors rounded-lg hover:bg-white/5">Home</a>
-        <a href="/services" class="nav-link px-4 py-2 text-sm font-medium text-white/80 hover:text-white transition-colors rounded-lg hover:bg-white/5">Services</a>
-        <a href="/projects" class="nav-link px-4 py-2 text-sm font-medium text-white/80 hover:text-white transition-colors rounded-lg hover:bg-white/5">Projects</a>
-        <a href="/about" class="nav-link px-4 py-2 text-sm font-medium text-white/80 hover:text-white transition-colors rounded-lg hover:bg-white/5">About</a>
-        <a href="/contact" class="nav-link px-4 py-2 text-sm font-medium text-white/80 hover:text-white transition-colors rounded-lg hover:bg-white/5">Contact</a>
+        <a href="/" class="nav-link px-4 py-2 text-sm font-medium text-white/80 hover:text-white transition-colors rounded-lg hover:bg-white/5" data-i18n="nav.home">Home</a>
+        <a href="/services" class="nav-link px-4 py-2 text-sm font-medium text-white/80 hover:text-white transition-colors rounded-lg hover:bg-white/5" data-i18n="nav.services">Services</a>
+        <a href="/projects" class="nav-link px-4 py-2 text-sm font-medium text-white/80 hover:text-white transition-colors rounded-lg hover:bg-white/5" data-i18n="nav.projects">Projects</a>
+        <a href="/about" class="nav-link px-4 py-2 text-sm font-medium text-white/80 hover:text-white transition-colors rounded-lg hover:bg-white/5" data-i18n="nav.about">About</a>
+        <a href="/contact" class="nav-link px-4 py-2 text-sm font-medium text-white/80 hover:text-white transition-colors rounded-lg hover:bg-white/5" data-i18n="nav.contact">Contact</a>
       </div>
 
-      <!-- CTA Buttons -->
+      <!-- CTA Buttons & Language Switcher -->
       <div class="hidden lg:flex items-center space-x-3">
-        <a href="tel:+13234445555" class="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-green-600 hover:bg-green-700 rounded-lg transition-colors">
+        <!-- Language Switcher -->
+        <div class="flex items-center space-x-1 border border-white/10 rounded-lg p-1">
+          <button class="lang-btn px-3 py-1.5 text-xs font-medium rounded transition-colors" data-lang="en" data-i18n="nav.en">EN</button>
+          <button class="lang-btn px-3 py-1.5 text-xs font-medium rounded transition-colors" data-lang="es" data-i18n="nav.es">ES</button>
+        </div>
+        
+        <a href="tel:+16893312690" class="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-green-600 hover:bg-green-700 rounded-lg transition-colors">
           <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
           </svg>
-          Call Now
+          <span data-i18n="nav.callNow">Call Now</span>
         </a>
         <button onclick="openRequestCallModal()" class="inline-flex items-center px-5 py-2 text-sm font-medium text-white bg-antares-blue hover:bg-blue-600 rounded-lg transition-colors">
-          Request Call
+          <span data-i18n="nav.requestCall">Request Call</span>
         </button>
       </div>
 
@@ -46,17 +52,24 @@ export const Header = () => `
   <!-- Mobile Menu -->
   <div id="mobile-menu" class="hidden lg:hidden border-t border-white/5">
     <div class="px-4 pt-2 pb-4 space-y-1">
-      <a href="/" class="block px-3 py-2 text-base font-medium text-white/80 hover:text-white hover:bg-white/5 rounded-lg transition-colors">Home</a>
-      <a href="/services" class="block px-3 py-2 text-base font-medium text-white/80 hover:text-white hover:bg-white/5 rounded-lg transition-colors">Services</a>
-      <a href="/projects" class="block px-3 py-2 text-base font-medium text-white/80 hover:text-white hover:bg-white/5 rounded-lg transition-colors">Projects</a>
-      <a href="/about" class="block px-3 py-2 text-base font-medium text-white/80 hover:text-white hover:bg-white/5 rounded-lg transition-colors">About</a>
-      <a href="/contact" class="block px-3 py-2 text-base font-medium text-white/80 hover:text-white hover:bg-white/5 rounded-lg transition-colors">Contact</a>
+      <a href="/" class="block px-3 py-2 text-base font-medium text-white/80 hover:text-white hover:bg-white/5 rounded-lg transition-colors" data-i18n="nav.home">Home</a>
+      <a href="/services" class="block px-3 py-2 text-base font-medium text-white/80 hover:text-white hover:bg-white/5 rounded-lg transition-colors" data-i18n="nav.services">Services</a>
+      <a href="/projects" class="block px-3 py-2 text-base font-medium text-white/80 hover:text-white hover:bg-white/5 rounded-lg transition-colors" data-i18n="nav.projects">Projects</a>
+      <a href="/about" class="block px-3 py-2 text-base font-medium text-white/80 hover:text-white hover:bg-white/5 rounded-lg transition-colors" data-i18n="nav.about">About</a>
+      <a href="/contact" class="block px-3 py-2 text-base font-medium text-white/80 hover:text-white hover:bg-white/5 rounded-lg transition-colors" data-i18n="nav.contact">Contact</a>
+      
+      <!-- Mobile Language Switcher -->
+      <div class="pt-3 pb-2 flex items-center justify-center space-x-2">
+        <button class="lang-btn px-4 py-2 text-sm font-medium rounded-lg border border-white/10 transition-colors" data-lang="en">EN</button>
+        <button class="lang-btn px-4 py-2 text-sm font-medium rounded-lg border border-white/10 transition-colors" data-lang="es">ES</button>
+      </div>
+      
       <div class="pt-4 space-y-2">
-        <a href="tel:+13234445555" class="block w-full px-4 py-3 text-center text-sm font-medium text-white bg-green-600 hover:bg-green-700 rounded-lg transition-colors">
-          Call Now
+        <a href="tel:+16893312690" class="block w-full px-4 py-3 text-center text-sm font-medium text-white bg-green-600 hover:bg-green-700 rounded-lg transition-colors">
+          <span data-i18n="nav.callNow">Call Now</span>
         </a>
         <button onclick="openRequestCallModal()" class="block w-full px-4 py-3 text-center text-sm font-medium text-white bg-antares-blue hover:bg-blue-600 rounded-lg transition-colors">
-          Request Call
+          <span data-i18n="nav.requestCall">Request Call</span>
         </button>
       </div>
     </div>
@@ -76,7 +89,7 @@ export const Footer = () => `
           </div>
           <span class="font-display font-bold text-xl tracking-tight group-hover:text-antares-blue transition-colors">ANTARES<span class="text-antares-blue">.</span></span>
         </a>
-        <p class="text-white/60 text-sm leading-relaxed mb-4">
+        <p class="text-white/60 text-sm leading-relaxed mb-4" data-i18n="footer.tagline">
           Global leader in industrial signage, LED engineering, and technical compliance solutions.
         </p>
         <div class="flex items-center space-x-4">
@@ -96,19 +109,19 @@ export const Footer = () => `
 
       <!-- Quick Links -->
       <div>
-        <h3 class="font-display font-semibold text-white text-sm uppercase tracking-wider mb-4">Quick Links</h3>
+        <h3 class="font-display font-semibold text-white text-sm uppercase tracking-wider mb-4" data-i18n="footer.quickLinks">Quick Links</h3>
         <ul class="space-y-3">
-          <li><a href="/" class="text-white/60 hover:text-white text-sm transition-colors">Home</a></li>
-          <li><a href="/services" class="text-white/60 hover:text-white text-sm transition-colors">Services</a></li>
-          <li><a href="/projects" class="text-white/60 hover:text-white text-sm transition-colors">Projects</a></li>
-          <li><a href="/about" class="text-white/60 hover:text-white text-sm transition-colors">About Us</a></li>
-          <li><a href="/contact" class="text-white/60 hover:text-white text-sm transition-colors">Contact</a></li>
+          <li><a href="/" class="text-white/60 hover:text-white text-sm transition-colors" data-i18n="nav.home">Home</a></li>
+          <li><a href="/services" class="text-white/60 hover:text-white text-sm transition-colors" data-i18n="nav.services">Services</a></li>
+          <li><a href="/projects" class="text-white/60 hover:text-white text-sm transition-colors" data-i18n="nav.projects">Projects</a></li>
+          <li><a href="/about" class="text-white/60 hover:text-white text-sm transition-colors" data-i18n="nav.about">About Us</a></li>
+          <li><a href="/contact" class="text-white/60 hover:text-white text-sm transition-colors" data-i18n="nav.contact">Contact</a></li>
         </ul>
       </div>
 
       <!-- Services -->
       <div>
-        <h3 class="font-display font-semibold text-white text-sm uppercase tracking-wider mb-4">Services</h3>
+        <h3 class="font-display font-semibold text-white text-sm uppercase tracking-wider mb-4" data-i18n="footer.services">Services</h3>
         <ul class="space-y-3">
           <li><a href="/services#signage" class="text-white/60 hover:text-white text-sm transition-colors">Signage Installation</a></li>
           <li><a href="/services#led" class="text-white/60 hover:text-white text-sm transition-colors">LED Retrofit</a></li>
@@ -120,19 +133,19 @@ export const Footer = () => `
 
       <!-- Contact -->
       <div>
-        <h3 class="font-display font-semibold text-white text-sm uppercase tracking-wider mb-4">Contact</h3>
+        <h3 class="font-display font-semibold text-white text-sm uppercase tracking-wider mb-4" data-i18n="footer.contact">Contact</h3>
         <ul class="space-y-3 text-sm text-white/60">
           <li>
-            <span class="block text-white/40 text-xs mb-1">Phone</span>
+            <span class="block text-white/40 text-xs mb-1" data-i18n="footer.phone">Phone</span>
             <a href="tel:+16893312690" class="hover:text-white transition-colors">+1 (689) 331-2690</a>
           </li>
           <li>
-            <span class="block text-white/40 text-xs mb-1">Email</span>
+            <span class="block text-white/40 text-xs mb-1" data-i18n="footer.email">Email</span>
             <a href="mailto:contacto@antaresinnovate.com" class="hover:text-white transition-colors">contacto@antaresinnovate.com</a>
           </li>
           <li>
-            <span class="block text-white/40 text-xs mb-1">Hours</span>
-            <span>24/7 Technical Support</span>
+            <span class="block text-white/40 text-xs mb-1" data-i18n="footer.hours">Hours</span>
+            <span data-i18n="footer.support247">24/7 Technical Support</span>
           </li>
         </ul>
       </div>
@@ -141,11 +154,11 @@ export const Footer = () => `
     <!-- Bottom Bar -->
     <div class="border-t border-white/5 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
       <p class="text-white/40 text-sm text-center md:text-left">
-        © ${new Date().getFullYear()} Antares Innovate. All rights reserved.
+        © ${new Date().getFullYear()} Antares Innovate. <span data-i18n="footer.rights">All rights reserved.</span>
       </p>
       <div class="flex items-center space-x-6 text-sm">
-        <a href="/privacy" class="text-white/40 hover:text-white transition-colors">Privacy Policy</a>
-        <a href="/terms" class="text-white/40 hover:text-white transition-colors">Terms of Service</a>
+        <a href="/privacy" class="text-white/40 hover:text-white transition-colors" data-i18n="footer.privacy">Privacy Policy</a>
+        <a href="/terms" class="text-white/40 hover:text-white transition-colors" data-i18n="footer.terms">Terms of Service</a>
       </div>
     </div>
   </div>
@@ -332,6 +345,7 @@ export const PageLayout = (title: string, description: string, content: string) 
     ${RequestCallModal()}
     ${ChatbotWidget()}
     
+    <script src="/static/i18n.js?v=1"></script>
     <script src="/static/app.js?v=9"></script>
     <script src="/static/chatbot.js?v=28"></script>
 </body>
