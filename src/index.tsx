@@ -685,47 +685,47 @@ app.get('/services/design', (c) => {
         <h2 class="text-3xl font-display font-bold text-center mb-8" data-i18n="design.compliance.title">Compliance & Regulations</h2>
         <div class="grid md:grid-cols-2 gap-8">
           <div>
-            <h3 class="text-xl font-bold mb-4 text-antares-blue">Los Angeles Sign Code Compliance</h3>
+            <h3 class="text-xl font-bold mb-4 text-antares-blue" data-i18n="design.compliance.laCode">Los Angeles Sign Code Compliance</h3>
             <ul class="space-y-3 text-white/70">
               <li class="flex items-start gap-3">
                 <span class="text-antares-blue text-lg">•</span>
                 <div>
-                  <strong>Permitted Signs:</strong> Channel letters, cabinet signs, wall signs, blade signs, window graphics, monument signs, and A-frames (depending on zoning)
+                  <strong data-i18n="design.compliance.permitted">Permitted Signs:</strong> <span data-i18n="design.compliance.permittedDesc">Channel letters, cabinet signs, wall signs, blade signs, window graphics, monument signs, and A-frames (depending on zoning)</span>
                 </div>
               </li>
               <li class="flex items-start gap-3">
                 <span class="text-antares-blue text-lg">•</span>
                 <div>
-                  <strong>Materials & Fabrication:</strong> Aluminum, galvanized steel, acrylic, polycarbonate with UL-listed components
+                  <strong data-i18n="design.compliance.materials">Materials & Fabrication:</strong> <span data-i18n="design.compliance.materialsDesc">Aluminum, galvanized steel, acrylic, polycarbonate with UL-listed components</span>
                 </div>
               </li>
               <li class="flex items-start gap-3">
                 <span class="text-antares-blue text-lg">•</span>
                 <div>
-                  <strong>Size Restrictions:</strong> Varies by zone - typically 10-20% of facade area for commercial zones
+                  <strong data-i18n="design.compliance.size">Size Restrictions:</strong> <span data-i18n="design.compliance.sizeDesc">Varies by zone - typically 10-20% of facade area for commercial zones</span>
                 </div>
               </li>
             </ul>
           </div>
           <div>
-            <h3 class="text-xl font-bold mb-4 text-antares-blue">Digital LED Restrictions</h3>
+            <h3 class="text-xl font-bold mb-4 text-antares-blue" data-i18n="design.compliance.ledTitle">Digital LED Restrictions</h3>
             <ul class="space-y-3 text-white/70">
               <li class="flex items-start gap-3">
                 <span class="text-red-500 text-lg">⚠</span>
                 <div>
-                  <strong>Prohibited:</strong> Digital LED displays with video, animations, scrolling text, or changing messages are <strong>severely restricted or banned</strong> in most LA commercial zones
+                  <strong data-i18n="design.compliance.prohibited">Prohibited:</strong> <span data-i18n="design.compliance.prohibitedDesc">Digital LED displays with video, animations, scrolling text, or changing messages are severely restricted or banned in most LA commercial zones</span>
                 </div>
               </li>
               <li class="flex items-start gap-3">
                 <span class="text-antares-blue text-lg">•</span>
                 <div>
-                  <strong>Safety Concerns:</strong> Dynamic displays cause driver distraction and visual pollution
+                  <strong data-i18n="design.compliance.safety">Safety Concerns:</strong> <span data-i18n="design.compliance.safetyDesc">Dynamic displays cause driver distraction and visual pollution</span>
                 </div>
               </li>
               <li class="flex items-start gap-3">
                 <span class="text-antares-blue text-lg">•</span>
                 <div>
-                  <strong>Allowed:</strong> Static LED illuminated signs (channel letters, cabinet signs) are permitted with proper permits
+                  <strong data-i18n="design.compliance.allowed">Allowed:</strong> <span data-i18n="design.compliance.allowedDesc">Static LED illuminated signs (channel letters, cabinet signs) are permitted with proper permits</span>
                 </div>
               </li>
             </ul>
@@ -733,16 +733,16 @@ app.get('/services/design', (c) => {
         </div>
         
         <div class="mt-8 p-6 bg-antares-dark/50 rounded-xl border border-white/10">
-          <h4 class="font-bold mb-3 text-antares-blue">Title 24 & Energy Code</h4>
+          <h4 class="font-bold mb-3 text-antares-blue" data-i18n="design.compliance.title24">Title 24 & Energy Code</h4>
           <div class="grid md:grid-cols-3 gap-4 text-sm text-white/70">
             <div>
-              <strong>LED Efficiency:</strong> Minimum 50 lumens/watt required for all LED signs
+              <strong data-i18n="design.compliance.efficiency">LED Efficiency:</strong> <span data-i18n="design.compliance.efficiencyDesc">Minimum 50 lumens/watt required for all LED signs</span>
             </div>
             <div>
-              <strong>Automatic Controls:</strong> Timers or photo sensors required to turn off signs after business hours
+              <strong data-i18n="design.compliance.controls">Automatic Controls:</strong> <span data-i18n="design.compliance.controlsDesc">Timers or photo sensors required to turn off signs after business hours</span>
             </div>
             <div>
-              <strong>Electrical Code:</strong> All installations must comply with California Electrical Code (CEC) - licensed C-10 electrician required
+              <strong data-i18n="design.compliance.electrical">Electrical Code:</strong> <span data-i18n="design.compliance.electricalDesc">All installations must comply with California Electrical Code (CEC) - licensed C-10 electrician required</span>
             </div>
           </div>
         </div>
