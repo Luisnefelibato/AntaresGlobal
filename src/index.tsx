@@ -65,19 +65,19 @@ app.get('/', (c) => {
         <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 max-w-4xl mx-auto mb-6">
           <div class="text-center">
             <div class="text-3xl lg:text-4xl font-bold text-white mb-1">15+</div>
-            <div class="text-sm text-white/60">Years Experience</div>
+            <div class="text-sm text-white/60" data-i18n="stats.years">Years Experience</div>
           </div>
           <div class="text-center">
             <div class="text-3xl lg:text-4xl font-bold text-white mb-1">500+</div>
-            <div class="text-sm text-white/60">Projects Completed</div>
+            <div class="text-sm text-white/60" data-i18n="stats.projects">Projects Completed</div>
           </div>
           <div class="text-center">
             <div class="text-3xl lg:text-4xl font-bold text-white mb-1">24/7</div>
-            <div class="text-sm text-white/60">Technical Support</div>
+            <div class="text-sm text-white/60" data-i18n="stats.support">Technical Support</div>
           </div>
           <div class="text-center">
             <div class="text-3xl lg:text-4xl font-bold text-white mb-1">100%</div>
-            <div class="text-sm text-white/60">Compliance</div>
+            <div class="text-sm text-white/60" data-i18n="stats.compliance">Compliance</div>
           </div>
         </div>
         
@@ -85,19 +85,19 @@ app.get('/', (c) => {
         <div class="flex flex-wrap items-center justify-center gap-4 pt-4">
           <div class="flex items-center gap-2 bg-white/5 border border-white/10 rounded-lg px-4 py-2">
             <span class="text-green-400">✅</span>
-            <span class="text-sm text-white/80">C-10 & C-45 Licensed</span>
+            <span class="text-sm text-white/80" data-i18n="certs.licensed">C-10 & C-45 Licensed</span>
           </div>
           <div class="flex items-center gap-2 bg-white/5 border border-white/10 rounded-lg px-4 py-2">
             <span class="text-green-400">✅</span>
-            <span class="text-sm text-white/80">SPRAT/OSHA Certified</span>
+            <span class="text-sm text-white/80" data-i18n="certs.certified">SPRAT/OSHA Certified</span>
           </div>
           <div class="flex items-center gap-2 bg-white/5 border border-white/10 rounded-lg px-4 py-2">
             <span class="text-green-400">✅</span>
-            <span class="text-sm text-white/80">Title 24 Compliant</span>
+            <span class="text-sm text-white/80" data-i18n="certs.compliant">Title 24 Compliant</span>
           </div>
           <div class="flex items-center gap-2 bg-white/5 border border-white/10 rounded-lg px-4 py-2">
             <span class="text-green-400">✅</span>
-            <span class="text-sm text-white/80">$2M Insured</span>
+            <span class="text-sm text-white/80" data-i18n="certs.insured">$2M Insured</span>
           </div>
         </div>
       </div>

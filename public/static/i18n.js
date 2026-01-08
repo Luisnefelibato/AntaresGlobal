@@ -70,10 +70,16 @@ const translations = {
     'services.guarantees.title': 'Comprehensive Guarantees',
     
     // Stats
+    'stats.years': 'Years Experience',
     'stats.projects': 'Projects Completed',
-    'stats.clients': 'Satisfied Clients',
-    'stats.states': 'States Served',
-    'stats.rating': 'Client Rating',
+    'stats.support': 'Technical Support',
+    'stats.compliance': 'Compliance',
+    
+    // Certifications
+    'certs.licensed': 'C-10 & C-45 Licensed',
+    'certs.certified': 'SPRAT/OSHA Certified',
+    'certs.compliant': 'Title 24 Compliant',
+    'certs.insured': '$2M Insured',
     
     // Why Us
     'whyus.title': 'Why Choose Antares',
@@ -184,10 +190,16 @@ const translations = {
     'services.guarantees.title': 'Garantías Integrales',
     
     // Stats
+    'stats.years': 'Años de Experiencia',
     'stats.projects': 'Proyectos Completados',
-    'stats.clients': 'Clientes Satisfechos',
-    'stats.states': 'Estados Atendidos',
-    'stats.rating': 'Calificación de Clientes',
+    'stats.support': 'Soporte Técnico',
+    'stats.compliance': 'Cumplimiento',
+    
+    // Certifications
+    'certs.licensed': 'Licencia C-10 y C-45',
+    'certs.certified': 'Certificado SPRAT/OSHA',
+    'certs.compliant': 'Cumple con Título 24',
+    'certs.insured': '$2M Asegurado',
     
     // Why Us
     'whyus.title': 'Por Qué Elegir Antares',
