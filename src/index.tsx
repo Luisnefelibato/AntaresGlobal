@@ -1041,10 +1041,10 @@ app.get('/services/installation', (c) => {
             <h3 class="text-2xl font-bold mb-4 text-green-500" data-i18n="installation.commercial.title">COMMERCIAL SIGNAGE</h3>
             <p class="text-white/70 mb-4" data-i18n="installation.commercial.desc">Complete commercial signage installation for storefronts, buildings, and business locations. Professional mounting and electrical work.</p>
             <ul class="text-sm text-white/60 space-y-2">
-              <li>• <strong>Facade Mounting:</strong> Building-mounted channel letters and signs</li>
-              <li>• <strong>Storefront Signs:</strong> Window displays and awning signage</li>
-              <li>• <strong>Monument Signs:</strong> Ground-level permanent structures</li>
-              <li>• <strong>Compliance:</strong> Title 24 and building code compliance</li>
+              <li>• <strong data-i18n="installation.commercial.facadeMounting">Facade Mounting:</strong> <span data-i18n="installation.commercial.facadeMountingDesc">Building-mounted channel letters and signs</span></li>
+              <li>• <strong data-i18n="installation.commercial.storefrontSigns">Storefront Signs:</strong> <span data-i18n="installation.commercial.storefrontSignsDesc">Window displays and awning signage</span></li>
+              <li>• <strong data-i18n="installation.commercial.monumentSigns">Monument Signs:</strong> <span data-i18n="installation.commercial.monumentSignsDesc">Ground-level permanent structures</span></li>
+              <li>• <strong data-i18n="installation.commercial.compliance">Compliance:</strong> <span data-i18n="installation.commercial.complianceDesc">Title 24 and building code compliance</span></li>
             </ul>
           </div>
 
@@ -1055,10 +1055,10 @@ app.get('/services/installation', (c) => {
             <h3 class="text-2xl font-bold mb-4 text-green-500" data-i18n="installation.led.title">LED INSTALLATION</h3>
             <p class="text-white/70 mb-4" data-i18n="installation.led.desc">Licensed electrical contractors for LED sign installation, retrofits, and energy-efficient lighting solutions.</p>
             <ul class="text-sm text-white/60 space-y-2">
-              <li>• <strong>Licensed Electricians:</strong> C-10 electrical contractor license</li>
-              <li>• <strong>LED Retrofit:</strong> Convert existing signs to energy-efficient LED</li>
-              <li>• <strong>Power Systems:</strong> Transformers and power supply installation</li>
-              <li>• <strong>Smart Controls:</strong> Timers, dimmers, and automation systems</li>
+              <li>• <strong data-i18n="installation.led.electricians">Licensed Electricians:</strong> <span data-i18n="installation.led.electriciansDesc">C-10 electrical contractor license</span></li>
+              <li>• <strong data-i18n="installation.led.retrofit">LED Retrofit:</strong> <span data-i18n="installation.led.retrofitDesc">Convert existing signs to energy-efficient LED</span></li>
+              <li>• <strong data-i18n="installation.led.powerSystems">Power Systems:</strong> <span data-i18n="installation.led.powerSystemsDesc">Transformers and power supply installation</span></li>
+              <li>• <strong data-i18n="installation.led.smartControls">Smart Controls:</strong> <span data-i18n="installation.led.smartControlsDesc">Timers, dimmers, and automation systems</span></li>
             </ul>
           </div>
 
@@ -1069,10 +1069,10 @@ app.get('/services/installation', (c) => {
             <h3 class="text-2xl font-bold mb-4 text-green-500" data-i18n="installation.highrise.title">HIGH-RISE INSTALLATION</h3>
             <p class="text-white/70 mb-4" data-i18n="installation.highrise.desc">Specialized high-rise installation with crane service, rope access certification, and OSHA-compliant safety protocols.</p>
             <ul class="text-sm text-white/60 space-y-2">
-              <li>• <strong>Crane Service:</strong> Mobile cranes and boom lift equipment</li>
-              <li>• <strong>Rope Access:</strong> SPRAT-certified technicians</li>
-              <li>• <strong>Safety Systems:</strong> Fall protection and harness systems</li>
-              <li>• <strong>OSHA Certified:</strong> 30-hour safety training for all crews</li>
+              <li>• <strong data-i18n="installation.highrise.craneService">Crane Service:</strong> <span data-i18n="installation.highrise.craneServiceDesc">Mobile cranes and boom lift equipment</span></li>
+              <li>• <strong data-i18n="installation.highrise.ropeAccess">Rope Access:</strong> <span data-i18n="installation.highrise.ropeAccessDesc">SPRAT-certified technicians</span></li>
+              <li>• <strong data-i18n="installation.highrise.safetySystems">Safety Systems:</strong> <span data-i18n="installation.highrise.safetySystemsDesc">Fall protection and harness systems</span></li>
+              <li>• <strong data-i18n="installation.highrise.oshaCertified">OSHA Certified:</strong> <span data-i18n="installation.highrise.oshaCertifiedDesc">30-hour safety training for all crews</span></li>
             </ul>
           </div>
         </div>
@@ -1082,59 +1082,59 @@ app.get('/services/installation', (c) => {
           <h3 class="text-2xl lg:text-3xl font-display font-bold mb-6 text-center" data-i18n="installation.permits.title">Installation Permits & Compliance</h3>
           <div class="grid md:grid-cols-2 gap-8">
             <div>
-              <h4 class="text-xl font-bold mb-4 text-antares-blue">Los Angeles Permit Requirements</h4>
+              <h4 class="text-xl font-bold mb-4 text-antares-blue" data-i18n="installation.permits.laTitle">Los Angeles Permit Requirements</h4>
               <ul class="space-y-3 text-white/70 text-sm">
                 <li class="flex items-start gap-3">
                   <span class="text-antares-blue text-lg">•</span>
                   <div>
-                    <strong>Building Permits:</strong> Required for all permanent sign installations. LA Department of Building and Safety approval needed before installation
+                    <strong data-i18n="installation.permits.buildingPermits">Building Permits:</strong> <span data-i18n="installation.permits.buildingPermitsDesc">Required for all permanent sign installations. LA Department of Building and Safety approval needed before installation</span>
                   </div>
                 </li>
                 <li class="flex items-start gap-3">
                   <span class="text-antares-blue text-lg">•</span>
                   <div>
-                    <strong>Electrical Permits:</strong> C-10 licensed electrician required for all LED and illuminated sign installations. Electrical permit mandatory
+                    <strong data-i18n="installation.permits.electricalPermits">Electrical Permits:</strong> <span data-i18n="installation.permits.electricalPermitsDesc">C-10 licensed electrician required for all LED and illuminated sign installations. Electrical permit mandatory</span>
                   </div>
                 </li>
                 <li class="flex items-start gap-3">
                   <span class="text-antares-blue text-lg">•</span>
                   <div>
-                    <strong>Structural Engineering:</strong> PE-stamped drawings required for high-rise installations, rooftop signs, and monument signs exceeding certain heights
+                    <strong data-i18n="installation.permits.structural">Structural Engineering:</strong> <span data-i18n="installation.permits.structuralDesc">PE-stamped drawings required for high-rise installations, rooftop signs, and monument signs exceeding certain heights</span>
                   </div>
                 </li>
                 <li class="flex items-start gap-3">
                   <span class="text-antares-blue text-lg">•</span>
                   <div>
-                    <strong>Fire Department Approval:</strong> Required for signs near exits, fire lanes, or exceeding certain sizes
+                    <strong data-i18n="installation.permits.fireDept">Fire Department Approval:</strong> <span data-i18n="installation.permits.fireDeptDesc">Required for signs near exits, fire lanes, or exceeding certain sizes</span>
                   </div>
                 </li>
               </ul>
             </div>
             <div>
-              <h4 class="text-xl font-bold mb-4 text-antares-blue">Safety & Code Compliance</h4>
+              <h4 class="text-xl font-bold mb-4 text-antares-blue" data-i18n="installation.safety.title">Safety & Code Compliance</h4>
               <ul class="space-y-3 text-white/70 text-sm">
                 <li class="flex items-start gap-3">
                   <span class="text-antares-blue text-lg">•</span>
                   <div>
-                    <strong>OSHA Standards:</strong> All installations comply with OSHA 1926 (Construction) and 1910 (General Industry) safety regulations
+                    <strong data-i18n="installation.safety.osha">OSHA Standards:</strong> <span data-i18n="installation.safety.oshaDesc">All installations comply with OSHA 1926 (Construction) and 1910 (General Industry) safety regulations</span>
                   </div>
                 </li>
                 <li class="flex items-start gap-3">
                   <span class="text-antares-blue text-lg">•</span>
                   <div>
-                    <strong>Fall Protection:</strong> Full-body harness, guardrails, and safety nets required for work above 6 feet
+                    <strong data-i18n="installation.safety.fallProtection">Fall Protection:</strong> <span data-i18n="installation.safety.fallProtectionDesc">Full-body harness, guardrails, and safety nets required for work above 6 feet</span>
                   </div>
                 </li>
                 <li class="flex items-start gap-3">
                   <span class="text-antares-blue text-lg">•</span>
                   <div>
-                    <strong>Title 24 Compliance:</strong> All LED installations must meet California Energy Code requirements for efficiency and controls
+                    <strong data-i18n="installation.safety.title24">Title 24 Compliance:</strong> <span data-i18n="installation.safety.title24Desc">All LED installations must meet California Energy Code requirements for efficiency and controls</span>
                   </div>
                 </li>
                 <li class="flex items-start gap-3">
                   <span class="text-antares-blue text-lg">•</span>
                   <div>
-                    <strong>Insurance Requirements:</strong> $2M general liability, workers' compensation, and vehicle insurance on all projects
+                    <strong data-i18n="installation.safety.insurance">Insurance Requirements:</strong> <span data-i18n="installation.safety.insuranceDesc">$2M general liability, workers' compensation, and vehicle insurance on all projects</span>
                   </div>
                 </li>
               </ul>
@@ -1142,19 +1142,19 @@ app.get('/services/installation', (c) => {
           </div>
           
           <div class="mt-8 p-6 bg-antares-dark/50 rounded-xl border border-white/10">
-            <h4 class="font-bold mb-3 text-antares-blue">Our Licensing & Certifications</h4>
+            <h4 class="font-bold mb-3 text-antares-blue" data-i18n="installation.licensing.title">Our Licensing & Certifications</h4>
             <div class="grid md:grid-cols-4 gap-4 text-sm text-white/70">
               <div>
-                <strong>C-10 Electrical:</strong> Licensed electrical contractor for all LED and illuminated signs
+                <strong data-i18n="installation.licensing.c10">C-10 Electrical:</strong> <span data-i18n="installation.licensing.c10Desc">Licensed electrical contractor for all LED and illuminated signs</span>
               </div>
               <div>
-                <strong>C-45 Sign Contractor:</strong> California state sign contractor license
+                <strong data-i18n="installation.licensing.c45">C-45 Sign Contractor:</strong> <span data-i18n="installation.licensing.c45Desc">California state sign contractor license</span>
               </div>
               <div>
-                <strong>SPRAT Certified:</strong> Rope access technicians for high-rise work
+                <strong data-i18n="installation.licensing.sprat">SPRAT Certified:</strong> <span data-i18n="installation.licensing.spratDesc">Rope access technicians for high-rise work</span>
               </div>
               <div>
-                <strong>OSHA 30-Hour:</strong> All crew members certified in construction safety
+                <strong data-i18n="installation.licensing.osha30">OSHA 30-Hour:</strong> <span data-i18n="installation.licensing.osha30Desc">All crew members certified in construction safety</span>
               </div>
             </div>
           </div>
@@ -1162,24 +1162,24 @@ app.get('/services/installation', (c) => {
 
         <!-- Our Installation Process -->
         <div class="bg-gradient-to-r from-antares-blue/10 to-blue-600/10 rounded-2xl p-8 lg:p-12 mb-12 border border-antares-blue/20">
-          <h3 class="text-2xl lg:text-3xl font-display font-bold mb-6 text-center">Our Installation Process</h3>
+          <h3 class="text-2xl lg:text-3xl font-display font-bold mb-6 text-center" data-i18n="installation.process.title">Our Installation Process</h3>
           <div class="grid md:grid-cols-2 gap-8">
             <div>
-              <h4 class="text-xl font-bold mb-3 text-antares-blue">Pre-Installation</h4>
+              <h4 class="text-xl font-bold mb-3 text-antares-blue" data-i18n="installation.process.preTitle">Pre-Installation</h4>
               <ul class="space-y-2 text-white/70">
-                <li>✓ <strong>Site Survey:</strong> Assess installation location and requirements</li>
-                <li>✓ <strong>Permit Filing:</strong> Submit all necessary permits and documentation</li>
-                <li>✓ <strong>Material Delivery:</strong> Coordinate delivery of signs and equipment</li>
-                <li>✓ <strong>Crew Scheduling:</strong> Assign certified technicians and equipment</li>
+                <li>✓ <strong data-i18n="installation.process.siteSurvey">Site Survey:</strong> <span data-i18n="installation.process.siteSurveyDesc">Assess installation location and requirements</span></li>
+                <li>✓ <strong data-i18n="installation.process.permitFiling">Permit Filing:</strong> <span data-i18n="installation.process.permitFilingDesc">Submit all necessary permits and documentation</span></li>
+                <li>✓ <strong data-i18n="installation.process.materialDelivery">Material Delivery:</strong> <span data-i18n="installation.process.materialDeliveryDesc">Coordinate delivery of signs and equipment</span></li>
+                <li>✓ <strong data-i18n="installation.process.crewScheduling">Crew Scheduling:</strong> <span data-i18n="installation.process.crewSchedulingDesc">Assign certified technicians and equipment</span></li>
               </ul>
             </div>
             <div>
-              <h4 class="text-xl font-bold mb-3 text-antares-blue">During Installation</h4>
+              <h4 class="text-xl font-bold mb-3 text-antares-blue" data-i18n="installation.process.duringTitle">During Installation</h4>
               <ul class="space-y-2 text-white/70">
-                <li>✓ <strong>Safety Setup:</strong> Establish safety perimeter and equipment</li>
-                <li>✓ <strong>Professional Installation:</strong> Mount and wire signage per specifications</li>
-                <li>✓ <strong>Quality Check:</strong> Test all lights, connections, and alignment</li>
-                <li>✓ <strong>Site Cleanup:</strong> Remove all debris and leave site pristine</li>
+                <li>✓ <strong data-i18n="installation.process.safetySetup">Safety Setup:</strong> <span data-i18n="installation.process.safetySetupDesc">Establish safety perimeter and equipment</span></li>
+                <li>✓ <strong data-i18n="installation.process.professionalInstall">Professional Installation:</strong> <span data-i18n="installation.process.professionalInstallDesc">Mount and wire signage per specifications</span></li>
+                <li>✓ <strong data-i18n="installation.process.qualityCheck">Quality Check:</strong> <span data-i18n="installation.process.qualityCheckDesc">Test all lights, connections, and alignment</span></li>
+                <li>✓ <strong data-i18n="installation.process.siteCleanup">Site Cleanup:</strong> <span data-i18n="installation.process.siteCleanupDesc">Remove all debris and leave site pristine</span></li>
               </ul>
             </div>
           </div>
@@ -1189,23 +1189,23 @@ app.get('/services/installation', (c) => {
         <div class="grid md:grid-cols-4 gap-6">
           <div class="bg-antares-gray p-6 rounded-xl border border-white/10 text-center">
             <div class="text-3xl mb-3">🛡️</div>
-            <h4 class="font-bold mb-2">Fully Insured</h4>
-            <p class="text-white/60 text-sm">$2M general liability<br/>Workers' comp coverage</p>
+            <h4 class="font-bold mb-2" data-i18n="installation.whyUs.insured">Fully Insured</h4>
+            <p class="text-white/60 text-sm" data-i18n="installation.whyUs.insuredDesc">$2M general liability<br/>Workers' comp coverage</p>
           </div>
           <div class="bg-antares-gray p-6 rounded-xl border border-white/10 text-center">
             <div class="text-3xl mb-3">⚖️</div>
-            <h4 class="font-bold mb-2">Licensed Contractors</h4>
-            <p class="text-white/60 text-sm">C-10 Electrical<br/>C-45 Sign Contractor</p>
+            <h4 class="font-bold mb-2" data-i18n="installation.whyUs.licensed">Licensed Contractors</h4>
+            <p class="text-white/60 text-sm" data-i18n="installation.whyUs.licensedDesc">C-10 Electrical<br/>C-45 Sign Contractor</p>
           </div>
           <div class="bg-antares-gray p-6 rounded-xl border border-white/10 text-center">
             <div class="text-3xl mb-3">✅</div>
-            <h4 class="font-bold mb-2">Title 24 Experts</h4>
-            <p class="text-white/60 text-sm">Energy code compliance<br/>Permit specialists</p>
+            <h4 class="font-bold mb-2" data-i18n="installation.whyUs.title24">Title 24 Experts</h4>
+            <p class="text-white/60 text-sm" data-i18n="installation.whyUs.title24Desc">Energy code compliance<br/>Permit specialists</p>
           </div>
           <div class="bg-antares-gray p-6 rounded-xl border border-white/10 text-center">
             <div class="text-3xl mb-3">⏰</div>
-            <h4 class="font-bold mb-2">24/7 Support</h4>
-            <p class="text-white/60 text-sm">Emergency service<br/>Flexible scheduling</p>
+            <h4 class="font-bold mb-2" data-i18n="installation.whyUs.support247">24/7 Support</h4>
+            <p class="text-white/60 text-sm" data-i18n="installation.whyUs.support247Desc">Emergency service<br/>Flexible scheduling</p>
           </div>
         </div>
       </div>
@@ -1213,26 +1213,26 @@ app.get('/services/installation', (c) => {
       <!-- Safety & Compliance -->
       <div class="grid md:grid-cols-2 gap-6 mb-16">
         <div class="bg-antares-gray/50 rounded-2xl p-8 border border-white/10">
-          <h2 class="text-2xl font-display font-bold mb-6">Safety & Compliance</h2>
+          <h2 class="text-2xl font-display font-bold mb-6" data-i18n="installation.safetyCompliance.title">Safety & Compliance</h2>
           <div class="space-y-4">
             <div class="flex items-start gap-3">
               <svg class="w-6 h-6 text-antares-blue flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-              <div><h3 class="font-bold mb-1">Licensed & Insured</h3><p class="text-sm text-white/70">Fully licensed contractors with comprehensive insurance coverage</p></div>
+              <div><h3 class="font-bold mb-1" data-i18n="installation.safetyCompliance.licensedTitle">Licensed & Insured</h3><p class="text-sm text-white/70" data-i18n="installation.safetyCompliance.licensedDesc">Fully licensed contractors with comprehensive insurance coverage</p></div>
             </div>
             <div class="flex items-start gap-3">
               <svg class="w-6 h-6 text-antares-blue flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-              <div><h3 class="font-bold mb-1">OSHA Certified</h3><p class="text-sm text-white/70">All technicians are OSHA safety trained and certified</p></div>
+              <div><h3 class="font-bold mb-1" data-i18n="installation.safetyCompliance.oshaTitle">OSHA Certified</h3><p class="text-sm text-white/70" data-i18n="installation.safetyCompliance.oshaDesc">All technicians are OSHA safety trained and certified</p></div>
             </div>
             <div class="flex items-start gap-3">
               <svg class="w-6 h-6 text-antares-blue flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-              <div><h3 class="font-bold mb-1">Title 24 Compliant</h3><p class="text-sm text-white/70">Experts in California building code compliance</p></div>
+              <div><h3 class="font-bold mb-1" data-i18n="installation.safetyCompliance.title24Title">Title 24 Compliant</h3><p class="text-sm text-white/70" data-i18n="installation.safetyCompliance.title24Desc">Experts in California building code compliance</p></div>
             </div>
           </div>
         </div>
 
         <div class="bg-gradient-to-br from-antares-blue/20 to-blue-600/20 rounded-2xl p-8 border border-antares-blue/30">
-          <h2 class="text-2xl font-display font-bold mb-6">Service Areas</h2>
-          <p class="text-white/70 mb-4">We serve all of California including:</p>
+          <h2 class="text-2xl font-display font-bold mb-6" data-i18n="installation.serviceAreas.title">Service Areas</h2>
+          <p class="text-white/70 mb-4" data-i18n="installation.serviceAreas.subtitle">We serve all of California including:</p>
           <div class="grid grid-cols-2 gap-3">
             <div class="text-sm">• Los Angeles</div>
             <div class="text-sm">• San Diego</div>
