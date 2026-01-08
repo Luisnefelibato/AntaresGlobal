@@ -2492,6 +2492,48 @@ app.get('/projects', (c) => {
         </div>
       </div>
 
+      <!-- Design Project 5 - Family Dentistry -->
+      <div class="project-card group relative h-96 rounded-2xl overflow-hidden" data-category="design">
+        <img src="/static/images/project-design-5.jpg" alt="Family Dentistry Logo Design" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
+        <div class="absolute inset-0 p-6 flex flex-col justify-end">
+          <h3 class="text-2xl font-bold mb-2">Family Dentistry Brand Design</h3>
+          <p class="text-white/80 mb-4">Pediatric dental practice branding with friendly giraffe mascot and bilingual identity elements</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-antares-blue/30 border border-antares-blue rounded-full text-xs font-semibold">Design</span>
+            <span class="px-3 py-1 bg-antares-blue/20 rounded-full text-xs">Dental</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Production Project 5 - Family Dentistry -->
+      <div class="project-card group relative h-96 rounded-2xl overflow-hidden" data-category="production">
+        <img src="/static/images/project-production-5.jpg" alt="Family Dentistry Sign Production" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
+        <div class="absolute inset-0 p-6 flex flex-col justify-end">
+          <h3 class="text-2xl font-bold mb-2">Dental Sign Manufacturing</h3>
+          <p class="text-white/80 mb-4">Production of pediatric dental signage with vibrant colors and professional UV-resistant finish</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-orange-500/30 border border-orange-500 rounded-full text-xs font-semibold">Production</span>
+            <span class="px-3 py-1 bg-orange-500/20 rounded-full text-xs">UV Print</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Installation Project 5 - Family Dentistry -->
+      <div class="project-card group relative h-96 rounded-2xl overflow-hidden" data-category="installation">
+        <img src="/static/images/project-installation-5.jpg" alt="Family Dentistry Monument Sign Installation" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
+        <div class="absolute inset-0 p-6 flex flex-col justify-end">
+          <h3 class="text-2xl font-bold mb-2">Ground Monument Sign Installation</h3>
+          <p class="text-white/80 mb-4">Professional monument sign installation with landscaping integration and custom stone base</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-green-500/30 border border-green-500 rounded-full text-xs font-semibold">Installation</span>
+            <span class="px-3 py-1 bg-green-500/20 rounded-full text-xs">Landscaping</span>
+          </div>
+        </div>
+      </div>
+
     </div>
 
     <!-- CTA Section -->
