@@ -820,10 +820,10 @@ app.get('/services/print', (c) => {
             <h3 class="text-2xl font-bold mb-4 text-orange-500" data-i18n="production.largeFormat.title">LARGE FORMAT PRINTING</h3>
             <p class="text-white/70 mb-4" data-i18n="production.largeFormat.desc">Large-format printing for high-impact visual advertising. Perfect for building facades, events, and outdoor advertising.</p>
             <ul class="text-sm text-white/60 space-y-2">
-              <li>• <strong>Materials:</strong> Vinyl banner, mesh, canvas</li>
-              <li>• <strong>Sizes:</strong> From 3ft to 100ft+ custom sizes</li>
-              <li>• <strong>Applications:</strong> Building wraps, event banners, trade shows</li>
-              <li>• <strong>Durability:</strong> UV-resistant, weatherproof finishes</li>
+              <li>• <strong data-i18n="production.largeFormat.materials">Materials:</strong> <span data-i18n="production.largeFormat.materialsDesc">Vinyl banner, mesh, canvas</span></li>
+              <li>• <strong data-i18n="production.largeFormat.sizes">Sizes:</strong> <span data-i18n="production.largeFormat.sizesDesc">From 3ft to 100ft+ custom sizes</span></li>
+              <li>• <strong data-i18n="production.largeFormat.applications">Applications:</strong> <span data-i18n="production.largeFormat.applicationsDesc">Building wraps, event banners, trade shows</span></li>
+              <li>• <strong data-i18n="production.largeFormat.durability">Durability:</strong> <span data-i18n="production.largeFormat.durabilityDesc">UV-resistant, weatherproof finishes</span></li>
             </ul>
           </div>
 
@@ -834,10 +834,10 @@ app.get('/services/print', (c) => {
             <h3 class="text-2xl font-bold mb-4 text-orange-500" data-i18n="production.pop.title">POP MATERIALS</h3>
             <p class="text-white/70 mb-4" data-i18n="production.pop.desc">Point of purchase materials that drive sales and enhance customer experience at retail locations.</p>
             <ul class="text-sm text-white/60 space-y-2">
-              <li>• <strong>Products:</strong> Displays, standees, shelf talkers, danglers</li>
-              <li>• <strong>Materials:</strong> Cardboard, acrylic, foam board, PVC</li>
-              <li>• <strong>Applications:</strong> Retail stores, supermarkets, pharmacies</li>
-              <li>• <strong>Customization:</strong> Die-cut shapes, 3D structures</li>
+              <li>• <strong data-i18n="production.pop.products">Products:</strong> <span data-i18n="production.pop.productsDesc">Displays, standees, shelf talkers, danglers</span></li>
+              <li>• <strong data-i18n="production.pop.materials">Materials:</strong> <span data-i18n="production.pop.materialsDesc">Cardboard, acrylic, foam board, PVC</span></li>
+              <li>• <strong data-i18n="production.pop.applications">Applications:</strong> <span data-i18n="production.pop.applicationsDesc">Retail stores, supermarkets, pharmacies</span></li>
+              <li>• <strong data-i18n="production.pop.customization">Customization:</strong> <span data-i18n="production.pop.customizationDesc">Die-cut shapes, 3D structures</span></li>
             </ul>
           </div>
 
@@ -848,10 +848,10 @@ app.get('/services/print', (c) => {
             <h3 class="text-2xl font-bold mb-4 text-orange-500" data-i18n="production.brochures.title">BROCHURES & CATALOGS</h3>
             <p class="text-white/70 mb-4" data-i18n="production.brochures.desc">Professional brochures, catalogs, and printed materials for marketing and corporate communications.</p>
             <ul class="text-sm text-white/60 space-y-2">
-              <li>• <strong>Types:</strong> Brochures, catalogs, flyers, folders</li>
-              <li>• <strong>Finishing:</strong> Glossy, matte, embossing, foil stamping</li>
-              <li>• <strong>Binding:</strong> Saddle stitch, perfect bound, spiral</li>
-              <li>• <strong>Quantity:</strong> Small runs to large volumes</li>
+              <li>• <strong data-i18n="production.brochures.types">Types:</strong> <span data-i18n="production.brochures.typesDesc">Brochures, catalogs, flyers, folders</span></li>
+              <li>• <strong data-i18n="production.brochures.finishing">Finishing:</strong> <span data-i18n="production.brochures.finishingDesc">Glossy, matte, embossing, foil stamping</span></li>
+              <li>• <strong data-i18n="production.brochures.binding">Binding:</strong> <span data-i18n="production.brochures.bindingDesc">Saddle stitch, perfect bound, spiral</span></li>
+              <li>• <strong data-i18n="production.brochures.quantity">Quantity:</strong> <span data-i18n="production.brochures.quantityDesc">Small runs to large volumes</span></li>
             </ul>
           </div>
         </div>
@@ -863,19 +863,19 @@ app.get('/services/print', (c) => {
             <div>
               <h4 class="text-xl font-bold mb-3 text-antares-blue" data-i18n="production.equipment.title">Advanced Equipment</h4>
               <ul class="space-y-2 text-white/70">
-                <li>✓ <strong>HP Latex</strong> wide-format printers for eco-friendly, odorless prints</li>
-                <li>✓ <strong>UV Flatbed</strong> printers for rigid substrates up to 2" thick</li>
-                <li>✓ <strong>Eco-Solvent</strong> printers for outdoor durability</li>
-                <li>✓ <strong>Dye-Sublimation</strong> for fabric and textile applications</li>
+                <li data-i18n="production.equipment.latex">✓ <strong>HP Latex</strong> wide-format printers for eco-friendly, odorless prints</li>
+                <li data-i18n="production.equipment.uvFlatbed">✓ <strong>UV Flatbed</strong> printers for rigid substrates up to 2" thick</li>
+                <li data-i18n="production.equipment.ecoSolvent">✓ <strong>Eco-Solvent</strong> printers for outdoor durability</li>
+                <li data-i18n="production.equipment.dyeSub">✓ <strong>Dye-Sublimation</strong> for fabric and textile applications</li>
               </ul>
             </div>
             <div>
               <h4 class="text-xl font-bold mb-3 text-antares-blue" data-i18n="production.quality.title">Quality Assurance</h4>
               <ul class="space-y-2 text-white/70">
-                <li>✓ <strong>Color Calibration:</strong> Daily profiling for consistent color</li>
-                <li>✓ <strong>Pantone Matching:</strong> Accurate brand color reproduction</li>
-                <li>✓ <strong>Pre-Press Proofs:</strong> Digital proofs before production</li>
-                <li>✓ <strong>Inspection:</strong> Every print checked before shipping</li>
+                <li data-i18n="production.quality.calibration">✓ <strong>Color Calibration:</strong> Daily profiling for consistent color</li>
+                <li data-i18n="production.quality.pantone">✓ <strong>Pantone Matching:</strong> Accurate brand color reproduction</li>
+                <li data-i18n="production.quality.proofs">✓ <strong>Pre-Press Proofs:</strong> Digital proofs before production</li>
+                <li data-i18n="production.quality.inspection">✓ <strong>Inspection:</strong> Every print checked before shipping</li>
               </ul>
             </div>
           </div>
@@ -906,47 +906,47 @@ app.get('/services/print', (c) => {
         <h2 class="text-3xl font-display font-bold text-center mb-8" data-i18n="production.compliance.title">Compliance & Regulations</h2>
         <div class="grid md:grid-cols-2 gap-8">
           <div>
-            <h3 class="text-xl font-bold mb-4 text-antares-blue">Material & Safety Standards</h3>
+            <h3 class="text-xl font-bold mb-4 text-antares-blue" data-i18n="production.compliance.materialTitle">Material & Safety Standards</h3>
             <ul class="space-y-3 text-white/70">
               <li class="flex items-start gap-3">
                 <span class="text-antares-blue text-lg">•</span>
                 <div>
-                  <strong>Fire Safety:</strong> All printed materials must use fire-rated substrates for indoor applications. Class A or B fire rating required for commercial spaces
+                  <strong data-i18n="production.compliance.fireSafety">Fire Safety:</strong> <span data-i18n="production.compliance.fireSafetyDesc">All printed materials must use fire-rated substrates for indoor applications. Class A or B fire rating required for commercial spaces</span>
                 </div>
               </li>
               <li class="flex items-start gap-3">
                 <span class="text-antares-blue text-lg">•</span>
                 <div>
-                  <strong>Outdoor Durability:</strong> UV-resistant inks and weatherproof materials required for exterior signage. Minimum 5-year warranty on outdoor prints
+                  <strong data-i18n="production.compliance.outdoorDurability">Outdoor Durability:</strong> <span data-i18n="production.compliance.outdoorDurabilityDesc">UV-resistant inks and weatherproof materials required for exterior signage. Minimum 5-year warranty on outdoor prints</span>
                 </div>
               </li>
               <li class="flex items-start gap-3">
                 <span class="text-antares-blue text-lg">•</span>
                 <div>
-                  <strong>Environmental:</strong> Eco-solvent and latex inks comply with California VOC emission standards
+                  <strong data-i18n="production.compliance.environmental">Environmental:</strong> <span data-i18n="production.compliance.environmentalDesc">Eco-solvent and latex inks comply with California VOC emission standards</span>
                 </div>
               </li>
             </ul>
           </div>
           <div>
-            <h3 class="text-xl font-bold mb-4 text-antares-blue">Signage Permit Requirements</h3>
+            <h3 class="text-xl font-bold mb-4 text-antares-blue" data-i18n="production.compliance.permitTitle">Signage Permit Requirements</h3>
             <ul class="space-y-3 text-white/70">
               <li class="flex items-start gap-3">
                 <span class="text-antares-blue text-lg">•</span>
                 <div>
-                  <strong>Building Wraps:</strong> Require permit from LA Department of Building and Safety. Structural engineering approval needed for large installations
+                  <strong data-i18n="production.compliance.buildingWraps">Building Wraps:</strong> <span data-i18n="production.compliance.buildingWrapsDesc">Require permit from LA Department of Building and Safety. Structural engineering approval needed for large installations</span>
                 </div>
               </li>
               <li class="flex items-start gap-3">
                 <span class="text-antares-blue text-lg">•</span>
                 <div>
-                  <strong>Window Graphics:</strong> Must not exceed 33% window coverage per LA Fire Code for emergency egress visibility
+                  <strong data-i18n="production.compliance.windowGraphics">Window Graphics:</strong> <span data-i18n="production.compliance.windowGraphicsDesc">Must not exceed 33% window coverage per LA Fire Code for emergency egress visibility</span>
                 </div>
               </li>
               <li class="flex items-start gap-3">
                 <span class="text-antares-blue text-lg">•</span>
                 <div>
-                  <strong>Temporary Banners:</strong> Limited to 30-60 days display. Require temporary sign permit in most zones
+                  <strong data-i18n="production.compliance.temporaryBanners">Temporary Banners:</strong> <span data-i18n="production.compliance.temporaryBannersDesc">Limited to 30-60 days display. Require temporary sign permit in most zones</span>
                 </div>
               </li>
             </ul>
@@ -954,16 +954,16 @@ app.get('/services/print', (c) => {
         </div>
         
         <div class="mt-8 p-6 bg-antares-dark/50 rounded-xl border border-white/10">
-          <h4 class="font-bold mb-3 text-antares-blue">Quality & Manufacturing Standards</h4>
+          <h4 class="font-bold mb-3 text-antares-blue" data-i18n="production.compliance.qualityTitle">Quality & Manufacturing Standards</h4>
           <div class="grid md:grid-cols-3 gap-4 text-sm text-white/70">
             <div>
-              <strong>Color Accuracy:</strong> Pantone PMS matching with color calibration certification
+              <strong data-i18n="production.compliance.colorAccuracy">Color Accuracy:</strong> <span data-i18n="production.compliance.colorAccuracyDesc">Pantone PMS matching with color calibration certification</span>
             </div>
             <div>
-              <strong>Resolution:</strong> Minimum 720 DPI for indoor graphics, 360 DPI for outdoor large format
+              <strong data-i18n="production.compliance.resolution">Resolution:</strong> <span data-i18n="production.compliance.resolutionDesc">Minimum 720 DPI for indoor graphics, 360 DPI for outdoor large format</span>
             </div>
             <div>
-              <strong>Inspection:</strong> Every print inspected for defects before delivery. 100% quality guarantee
+              <strong data-i18n="production.compliance.inspection">Inspection:</strong> <span data-i18n="production.compliance.inspectionDesc">Every print inspected for defects before delivery. 100% quality guarantee</span>
             </div>
           </div>
         </div>
@@ -971,27 +971,27 @@ app.get('/services/print', (c) => {
 
       <!-- Process -->
       <div class="bg-antares-gray/50 rounded-2xl p-8 lg:p-12">
-        <h2 class="text-3xl font-display font-bold text-center mb-8">Our Printing Process</h2>
+        <h2 class="text-3xl font-display font-bold text-center mb-8" data-i18n="production.process.title">Our Printing Process</h2>
         <div class="grid md:grid-cols-4 gap-6">
           <div class="text-center">
             <div class="w-16 h-16 bg-antares-blue rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">1</div>
-            <h3 class="font-bold mb-2">File Review</h3>
-            <p class="text-sm text-white/60">We check your artwork for print readiness</p>
+            <h3 class="font-bold mb-2" data-i18n="production.process.step1.title">File Review</h3>
+            <p class="text-sm text-white/60" data-i18n="production.process.step1.desc">We check your artwork for print readiness</p>
           </div>
           <div class="text-center">
             <div class="w-16 h-16 bg-antares-blue rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">2</div>
-            <h3 class="font-bold mb-2">Material Selection</h3>
-            <p class="text-sm text-white/60">Choose the perfect substrate for your needs</p>
+            <h3 class="font-bold mb-2" data-i18n="production.process.step2.title">Material Selection</h3>
+            <p class="text-sm text-white/60" data-i18n="production.process.step2.desc">Choose the perfect substrate for your needs</p>
           </div>
           <div class="text-center">
             <div class="w-16 h-16 bg-antares-blue rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">3</div>
-            <h3 class="font-bold mb-2">Production</h3>
-            <p class="text-sm text-white/60">Print, laminate, and finish with precision</p>
+            <h3 class="font-bold mb-2" data-i18n="production.process.step3.title">Production</h3>
+            <p class="text-sm text-white/60" data-i18n="production.process.step3.desc">Print, laminate, and finish with precision</p>
           </div>
           <div class="text-center">
             <div class="w-16 h-16 bg-antares-blue rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">4</div>
-            <h3 class="font-bold mb-2">Quality Check</h3>
-            <p class="text-sm text-white/60">Inspect and package for safe delivery</p>
+            <h3 class="font-bold mb-2" data-i18n="production.process.step4.title">Quality Check</h3>
+            <p class="text-sm text-white/60" data-i18n="production.process.step4.desc">Inspect and package for safe delivery</p>
           </div>
         </div>
       </div>
