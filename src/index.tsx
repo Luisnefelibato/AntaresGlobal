@@ -1667,13 +1667,13 @@ app.get('/about', (c) => {
       <!-- Company Overview -->
       <div class="bg-antares-gray border border-white/10 rounded-2xl p-8 lg:p-12 mb-12">
         <h2 class="text-3xl font-display font-bold mb-6" data-i18n="about.whoWeAre">Who We Are</h2>
-        <p class="text-lg text-white/70 leading-relaxed mb-6">
+        <p class="text-lg text-white/70 leading-relaxed mb-6" data-i18n="about.overview1">
           Antares Innovate is not just another signage contractor. We are a <strong class="text-white">technology-driven industrial partner</strong> specialized in complex commercial installations, LED optimization, and regulatory compliance frameworks.
         </p>
-        <p class="text-lg text-white/70 leading-relaxed mb-6">
+        <p class="text-lg text-white/70 leading-relaxed mb-6" data-i18n="about.overview2">
           Operating under strict <strong class="text-antares-blue">California Title 24</strong> and electrical code requirements, we deliver engineered solutions that balance performance, efficiency, and legal certainty.
         </p>
-        <p class="text-lg text-white/70 leading-relaxed">
+        <p class="text-lg text-white/70 leading-relaxed" data-i18n="about.overview3">
           Our approach is built on <strong class="text-white">precision, accountability, and long-term strategic thinking</strong>—designed for corporate clients, franchises, and large-scale projects that demand excellence.
         </p>
       </div>
@@ -1682,19 +1682,19 @@ app.get('/about', (c) => {
       <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
         <div class="bg-antares-dark border border-white/10 rounded-xl p-6 text-center">
           <div class="text-4xl font-bold text-antares-blue mb-2">15+</div>
-          <div class="text-sm text-white/60">Years Experience</div>
+          <div class="text-sm text-white/60" data-i18n="about.metrics.yearsExp">Years Experience</div>
         </div>
         <div class="bg-antares-dark border border-white/10 rounded-xl p-6 text-center">
           <div class="text-4xl font-bold text-antares-blue mb-2">500+</div>
-          <div class="text-sm text-white/60">Projects Completed</div>
+          <div class="text-sm text-white/60" data-i18n="about.metrics.projectsCompleted">Projects Completed</div>
         </div>
         <div class="bg-antares-dark border border-white/10 rounded-xl p-6 text-center">
           <div class="text-4xl font-bold text-antares-blue mb-2">24/7</div>
-          <div class="text-sm text-white/60">Technical Support</div>
+          <div class="text-sm text-white/60" data-i18n="about.metrics.technicalSupport">Technical Support</div>
         </div>
         <div class="bg-antares-dark border border-white/10 rounded-xl p-6 text-center">
           <div class="text-4xl font-bold text-antares-blue mb-2">100%</div>
-          <div class="text-sm text-white/60">Compliance Focus</div>
+          <div class="text-sm text-white/60" data-i18n="about.metrics.complianceFocus">Compliance Focus</div>
         </div>
       </div>
 
