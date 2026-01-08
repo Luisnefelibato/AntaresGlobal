@@ -485,9 +485,9 @@ app.get('/services', (c) => {
       <!-- Header -->
       <div class="text-center mb-16">
         <h1 class="text-4xl lg:text-6xl font-display font-bold mb-6">
-          Our <span class="text-antares-blue">Services</span>
+          <span data-i18n="servicesPage.title">Our Services</span>
         </h1>
-        <p class="text-xl text-white/70 leading-relaxed max-w-3xl mx-auto">
+        <p class="text-xl text-white/70 leading-relaxed max-w-3xl mx-auto" data-i18n="servicesPage.subtitle">
           From concept to installation, we provide comprehensive solutions for your signage and branding needs.
         </p>
       </div>
@@ -500,12 +500,12 @@ app.get('/services', (c) => {
           <div class="w-16 h-16 mb-6 bg-gradient-to-br from-antares-blue to-blue-600 rounded-xl flex items-center justify-center text-3xl">
             🎨
           </div>
-          <h3 class="text-2xl font-bold mb-4 text-antares-blue group-hover:text-blue-400 transition-colors">Design</h3>
-          <p class="text-white/70 mb-6 leading-relaxed">
+          <h3 class="text-2xl font-bold mb-4 text-antares-blue group-hover:text-blue-400 transition-colors" data-i18n="servicesPage.design.title">Design</h3>
+          <p class="text-white/70 mb-6 leading-relaxed" data-i18n="servicesPage.design.desc">
             Creative design solutions that capture your brand essence. From logos to complete visual identity systems.
           </p>
           <div class="flex items-center text-antares-blue font-medium group-hover:translate-x-2 transition-transform">
-            Learn More
+            <span data-i18n="servicesPage.learnMore">Learn More</span>
             <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
             </svg>
@@ -517,12 +517,12 @@ app.get('/services', (c) => {
           <div class="w-16 h-16 mb-6 bg-gradient-to-br from-orange-500 to-red-600 rounded-xl flex items-center justify-center text-3xl">
             🖨️
           </div>
-          <h3 class="text-2xl font-bold mb-4 text-orange-500 group-hover:text-orange-400 transition-colors">Production</h3>
-          <p class="text-white/70 mb-6 leading-relaxed">
+          <h3 class="text-2xl font-bold mb-4 text-orange-500 group-hover:text-orange-400 transition-colors" data-i18n="servicesPage.production.title">Production</h3>
+          <p class="text-white/70 mb-6 leading-relaxed" data-i18n="servicesPage.production.desc">
             High-quality printing and fabrication with precision color matching and premium materials.
           </p>
           <div class="flex items-center text-orange-500 font-medium group-hover:translate-x-2 transition-transform">
-            Learn More
+            <span data-i18n="servicesPage.learnMore">Learn More</span>
             <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
             </svg>
@@ -534,12 +534,12 @@ app.get('/services', (c) => {
           <div class="w-16 h-16 mb-6 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl flex items-center justify-center text-3xl">
             ⚡
           </div>
-          <h3 class="text-2xl font-bold mb-4 text-green-500 group-hover:text-green-400 transition-colors">Installation</h3>
-          <p class="text-white/70 mb-6 leading-relaxed">
+          <h3 class="text-2xl font-bold mb-4 text-green-500 group-hover:text-green-400 transition-colors" data-i18n="servicesPage.installation.title">Installation</h3>
+          <p class="text-white/70 mb-6 leading-relaxed" data-i18n="servicesPage.installation.desc">
             Professional installation with certified crews, advanced equipment, and comprehensive safety protocols.
           </p>
           <div class="flex items-center text-green-500 font-medium group-hover:translate-x-2 transition-transform">
-            Learn More
+            <span data-i18n="servicesPage.learnMore">Learn More</span>
             <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
             </svg>
@@ -550,45 +550,45 @@ app.get('/services', (c) => {
 
       <!-- Why Choose Us Section -->
       <div class="bg-gradient-to-br from-antares-blue/10 to-blue-600/10 rounded-2xl p-8 lg:p-12 border border-antares-blue/20">
-        <h2 class="text-3xl font-display font-bold text-center mb-8">Why Choose Antares?</h2>
+        <h2 class="text-3xl font-display font-bold text-center mb-8" data-i18n="servicesPage.whyChoose.title">Why Choose Antares?</h2>
         <div class="grid md:grid-cols-3 gap-8">
           <div class="text-center">
             <div class="w-16 h-16 bg-antares-blue/20 rounded-full flex items-center justify-center mx-auto mb-4 text-3xl">
               ✓
             </div>
-            <h3 class="font-bold mb-2">Licensed & Insured</h3>
-            <p class="text-white/60 text-sm">C-10 & C-45 California licenses with $2M liability coverage</p>
+            <h3 class="font-bold mb-2" data-i18n="servicesPage.whyChoose.licensed.title">Licensed & Insured</h3>
+            <p class="text-white/60 text-sm" data-i18n="servicesPage.whyChoose.licensed.desc">C-10 & C-45 California licenses with $2M liability coverage</p>
           </div>
           <div class="text-center">
             <div class="w-16 h-16 bg-antares-blue/20 rounded-full flex items-center justify-center mx-auto mb-4 text-3xl">
               ⚡
             </div>
-            <h3 class="font-bold mb-2">Title 24 Compliant</h3>
-            <p class="text-white/60 text-sm">All installations meet California energy code requirements</p>
+            <h3 class="font-bold mb-2" data-i18n="servicesPage.whyChoose.compliant.title">Title 24 Compliant</h3>
+            <p class="text-white/60 text-sm" data-i18n="servicesPage.whyChoose.compliant.desc">All installations meet California energy code requirements</p>
           </div>
           <div class="text-center">
             <div class="w-16 h-16 bg-antares-blue/20 rounded-full flex items-center justify-center mx-auto mb-4 text-3xl">
               🕐
             </div>
-            <h3 class="font-bold mb-2">24/7 Support</h3>
-            <p class="text-white/60 text-sm">Round-the-clock technical assistance and emergency services</p>
+            <h3 class="font-bold mb-2" data-i18n="servicesPage.whyChoose.support.title">24/7 Support</h3>
+            <p class="text-white/60 text-sm" data-i18n="servicesPage.whyChoose.support.desc">Round-the-clock technical assistance and emergency services</p>
           </div>
         </div>
       </div>
 
       <!-- CTA Section -->
       <div class="text-center mt-16">
-        <h2 class="text-3xl font-display font-bold mb-4">Ready to Get Started?</h2>
-        <p class="text-white/60 mb-8">Contact us today for a free consultation</p>
+        <h2 class="text-3xl font-display font-bold mb-4" data-i18n="servicesPage.cta.title">Ready to Get Started?</h2>
+        <p class="text-white/60 mb-8" data-i18n="servicesPage.cta.subtitle">Contact us today for a free consultation</p>
         <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a href="tel:+16893312690" class="inline-flex items-center px-8 py-4 bg-antares-blue hover:bg-blue-600 rounded-xl font-semibold text-lg transition-all duration-300 hover:scale-105">
             <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
             </svg>
-            Call (689) 331-2690
+            <span data-i18n="servicesPage.cta.call">Call (689) 331-2690</span>
           </a>
           <a href="/contact" class="inline-flex items-center px-8 py-4 bg-antares-gray hover:bg-antares-dark border border-white/20 rounded-xl font-semibold text-lg transition-all duration-300 hover:scale-105">
-            Contact Us
+            <span data-i18n="servicesPage.cta.contact">Contact Us</span>
           </a>
         </div>
       </div>

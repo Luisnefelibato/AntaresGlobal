@@ -277,6 +277,28 @@ const translations = {
     // Chatbot
     'chatbot.title': 'Antares Support',
     'chatbot.welcome': 'Welcome to Antares Innovate! 👋',
+    
+    // Services Main Page
+    'servicesPage.title': 'Our Services',
+    'servicesPage.subtitle': 'From concept to installation, we provide comprehensive solutions for your signage and branding needs.',
+    'servicesPage.design.title': 'Design',
+    'servicesPage.design.desc': 'Creative design solutions that capture your brand essence. From logos to complete visual identity systems.',
+    'servicesPage.production.title': 'Production',
+    'servicesPage.production.desc': 'High-quality printing and fabrication with precision color matching and premium materials.',
+    'servicesPage.installation.title': 'Installation',
+    'servicesPage.installation.desc': 'Professional installation with certified crews, advanced equipment, and comprehensive safety protocols.',
+    'servicesPage.learnMore': 'Learn More',
+    'servicesPage.whyChoose.title': 'Why Choose Antares?',
+    'servicesPage.whyChoose.licensed.title': 'Licensed & Insured',
+    'servicesPage.whyChoose.licensed.desc': 'C-10 & C-45 California licenses with $2M liability coverage',
+    'servicesPage.whyChoose.compliant.title': 'Title 24 Compliant',
+    'servicesPage.whyChoose.compliant.desc': 'All installations meet California energy code requirements',
+    'servicesPage.whyChoose.support.title': '24/7 Support',
+    'servicesPage.whyChoose.support.desc': 'Round-the-clock technical assistance and emergency services',
+    'servicesPage.cta.title': 'Ready to Get Started?',
+    'servicesPage.cta.subtitle': 'Contact us today for a free consultation',
+    'servicesPage.cta.call': 'Call (689) 331-2690',
+    'servicesPage.cta.contact': 'Contact Us',
     'contact.directContact': 'Direct Contact',
     'contact.required': '*',
     
@@ -581,6 +603,28 @@ const translations = {
     // Chatbot
     'chatbot.title': 'Soporte Antares',
     'chatbot.welcome': '¡Bienvenido a Antares Innovate! 👋',
+    
+    // Services Main Page
+    'servicesPage.title': 'Nuestros Servicios',
+    'servicesPage.subtitle': 'Desde el concepto hasta la instalación, brindamos soluciones integrales para sus necesidades de señalización y branding.',
+    'servicesPage.design.title': 'Diseño',
+    'servicesPage.design.desc': 'Soluciones de diseño creativas que capturan la esencia de tu marca. Desde logos hasta sistemas completos de identidad visual.',
+    'servicesPage.production.title': 'Producción',
+    'servicesPage.production.desc': 'Impresión y fabricación de alta calidad con precisión de color y materiales premium.',
+    'servicesPage.installation.title': 'Instalación',
+    'servicesPage.installation.desc': 'Instalación profesional con equipos certificados, equipo avanzado y protocolos de seguridad integrales.',
+    'servicesPage.learnMore': 'Saber Más',
+    'servicesPage.whyChoose.title': '¿Por Qué Elegir Antares?',
+    'servicesPage.whyChoose.licensed.title': 'Licenciados y Asegurados',
+    'servicesPage.whyChoose.licensed.desc': 'Licencias C-10 y C-45 de California con cobertura de responsabilidad de $2M',
+    'servicesPage.whyChoose.compliant.title': 'Cumple con Title 24',
+    'servicesPage.whyChoose.compliant.desc': 'Todas las instalaciones cumplen con los requisitos del código energético de California',
+    'servicesPage.whyChoose.support.title': 'Soporte 24/7',
+    'servicesPage.whyChoose.support.desc': 'Asistencia técnica las 24 horas y servicios de emergencia',
+    'servicesPage.cta.title': '¿Listo para Comenzar?',
+    'servicesPage.cta.subtitle': 'Contáctenos hoy para una consulta gratuita',
+    'servicesPage.cta.call': 'Llamar (689) 331-2690',
+    'servicesPage.cta.contact': 'Contáctenos',
     
     // Services/Design Page
     'services.design.page.title': 'Diseño Que Crea Impacto',
