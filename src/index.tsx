@@ -312,7 +312,7 @@ app.get('/', (c) => {
             Comprehensive Guarantees
           </span>
         </h3>
-        <p class="text-center text-white/60 mb-12 max-w-2xl mx-auto">
+        <p class="text-center text-white/60 mb-12 max-w-2xl mx-auto" data-i18n="services.guarantees.subtitle">
           Your success is our mission. Every project backed by industry-leading certifications and guarantees.
         </p>
         
@@ -329,12 +329,12 @@ app.get('/', (c) => {
                 </div>
                 <div class="absolute top-0 right-0 w-3 h-3 bg-green-500 rounded-full animate-ping"></div>
               </div>
-              <h4 class="font-bold text-lg mb-2 text-center group-hover:text-antares-blue transition-colors">Certified Contractors</h4>
-              <p class="text-sm text-white/60 text-center leading-relaxed">C-10 & C-45 Licensed in California</p>
+              <h4 class="font-bold text-lg mb-2 text-center group-hover:text-antares-blue transition-colors" data-i18n="services.guarantees.certified.title">Certified Contractors</h4>
+              <p class="text-sm text-white/60 text-center leading-relaxed" data-i18n="services.guarantees.certified.desc">C-10 & C-45 Licensed in California</p>
               <div class="mt-4 pt-4 border-t border-white/5">
                 <div class="flex items-center justify-center gap-2 text-xs text-antares-blue">
                   <span class="w-2 h-2 bg-antares-blue rounded-full animate-pulse"></span>
-                  <span>Verified</span>
+                  <span data-i18n="services.guarantees.certified.badge">Verified</span>
                 </div>
               </div>
             </div>
@@ -352,12 +352,12 @@ app.get('/', (c) => {
                 </div>
                 <div class="absolute top-0 right-0 w-3 h-3 bg-purple-500 rounded-full animate-ping"></div>
               </div>
-              <h4 class="font-bold text-lg mb-2 text-center group-hover:text-purple-500 transition-colors">Permits & Insurance</h4>
-              <p class="text-sm text-white/60 text-center leading-relaxed">Full legal compliance and $2M coverage</p>
+              <h4 class="font-bold text-lg mb-2 text-center group-hover:text-purple-500 transition-colors" data-i18n="services.guarantees.permits.title">Permits & Insurance</h4>
+              <p class="text-sm text-white/60 text-center leading-relaxed" data-i18n="services.guarantees.permits.desc">Full legal compliance and $2M coverage</p>
               <div class="mt-4 pt-4 border-t border-white/5">
                 <div class="flex items-center justify-center gap-2 text-xs text-purple-500">
                   <span class="w-2 h-2 bg-purple-500 rounded-full animate-pulse"></span>
-                  <span>Protected</span>
+                  <span data-i18n="services.guarantees.permits.badge">Protected</span>
                 </div>
               </div>
             </div>
@@ -375,12 +375,12 @@ app.get('/', (c) => {
                 </div>
                 <div class="absolute top-0 right-0 w-3 h-3 bg-orange-500 rounded-full animate-ping"></div>
               </div>
-              <h4 class="font-bold text-lg mb-2 text-center group-hover:text-orange-500 transition-colors">100% Inspection</h4>
-              <p class="text-sm text-white/60 text-center leading-relaxed">Pre-delivery quality control process</p>
+              <h4 class="font-bold text-lg mb-2 text-center group-hover:text-orange-500 transition-colors" data-i18n="services.guarantees.inspection.title">100% Inspection</h4>
+              <p class="text-sm text-white/60 text-center leading-relaxed" data-i18n="services.guarantees.inspection.desc">Pre-delivery quality control process</p>
               <div class="mt-4 pt-4 border-t border-white/5">
                 <div class="flex items-center justify-center gap-2 text-xs text-orange-500">
                   <span class="w-2 h-2 bg-orange-500 rounded-full animate-pulse"></span>
-                  <span>Certified</span>
+                  <span data-i18n="services.guarantees.inspection.badge">Certified</span>
                 </div>
               </div>
             </div>
@@ -399,12 +399,12 @@ app.get('/', (c) => {
                 </div>
                 <div class="absolute top-0 right-0 w-3 h-3 bg-green-500 rounded-full animate-ping"></div>
               </div>
-              <h4 class="font-bold text-lg mb-2 text-center group-hover:text-green-500 transition-colors">24/7 Support</h4>
-              <p class="text-sm text-white/60 text-center leading-relaxed">Continuous maintenance and upgrades</p>
+              <h4 class="font-bold text-lg mb-2 text-center group-hover:text-green-500 transition-colors" data-i18n="services.guarantees.support.title">24/7 Support</h4>
+              <p class="text-sm text-white/60 text-center leading-relaxed" data-i18n="services.guarantees.support.desc">Continuous maintenance and upgrades</p>
               <div class="mt-4 pt-4 border-white/5">
                 <div class="flex items-center justify-center gap-2 text-xs text-green-500">
                   <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
-                  <span>Active</span>
+                  <span data-i18n="services.guarantees.support.badge">Active</span>
                 </div>
               </div>
             </div>

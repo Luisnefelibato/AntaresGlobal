@@ -66,8 +66,21 @@ const translations = {
     'services.installation.item3.desc': 'SPRAT/OSHA certified technicians',
     'services.installation.link': 'Explore Installation',
     
-    // Guarantees
+    // Guarantees/Why Choose Us
     'services.guarantees.title': 'Comprehensive Guarantees',
+    'services.guarantees.subtitle': 'Your success is our mission. Every project backed by industry-leading certifications and guarantees.',
+    'services.guarantees.certified.title': 'Certified Contractors',
+    'services.guarantees.certified.desc': 'C-10 & C-45 Licensed in California',
+    'services.guarantees.certified.badge': 'Verified',
+    'services.guarantees.permits.title': 'Permits & Insurance',
+    'services.guarantees.permits.desc': 'Full legal compliance and $2M coverage',
+    'services.guarantees.permits.badge': 'Protected',
+    'services.guarantees.inspection.title': '100% Inspection',
+    'services.guarantees.inspection.desc': 'Pre-delivery quality control process',
+    'services.guarantees.inspection.badge': 'Certified',
+    'services.guarantees.support.title': '24/7 Support',
+    'services.guarantees.support.desc': 'Continuous maintenance and upgrades',
+    'services.guarantees.support.badge': 'Active',
     
     // Stats
     'stats.years': 'Years Experience',
@@ -186,8 +199,21 @@ const translations = {
     'services.installation.item3.desc': 'Técnicos certificados SPRAT/OSHA',
     'services.installation.link': 'Explorar Instalación',
     
-    // Guarantees
+    // Guarantees/Why Choose Us
     'services.guarantees.title': 'Garantías Integrales',
+    'services.guarantees.subtitle': 'Tu éxito es nuestra misión. Cada proyecto respaldado por certificaciones y garantías líderes en la industria.',
+    'services.guarantees.certified.title': 'Contratistas Certificados',
+    'services.guarantees.certified.desc': 'Licencia C-10 y C-45 en California',
+    'services.guarantees.certified.badge': 'Verificado',
+    'services.guarantees.permits.title': 'Permisos y Seguros',
+    'services.guarantees.permits.desc': 'Cumplimiento legal completo y cobertura de $2M',
+    'services.guarantees.permits.badge': 'Protegido',
+    'services.guarantees.inspection.title': '100% Inspección',
+    'services.guarantees.inspection.desc': 'Proceso de control de calidad antes de la entrega',
+    'services.guarantees.inspection.badge': 'Certificado',
+    'services.guarantees.support.title': 'Soporte 24/7',
+    'services.guarantees.support.desc': 'Mantenimiento continuo y actualizaciones',
+    'services.guarantees.support.badge': 'Activo',
     
     // Stats
     'stats.years': 'Años de Experiencia',
