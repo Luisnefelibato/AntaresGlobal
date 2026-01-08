@@ -1795,39 +1795,39 @@ app.get('/contact', (c) => {
             <div class="grid sm:grid-cols-2 gap-6">
               <div>
                 <label class="block text-sm font-medium text-white/80 mb-2"><span data-i18n="contact.firstName">First Name</span> <span data-i18n="contact.required">*</span></label>
-                <input type="text" required class="w-full px-4 py-3 bg-antares-dark border border-white/10 rounded-lg text-white focus:border-antares-blue focus:ring-1 focus:ring-antares-blue outline-none transition-colors" placeholder="John">
+                <input type="text" required class="w-full px-4 py-3 bg-antares-dark border border-white/10 rounded-lg text-white focus:border-antares-blue focus:ring-1 focus:ring-antares-blue outline-none transition-colors" placeholder="John" data-i18n-placeholder="contact.placeholders.firstName">
               </div>
               <div>
                 <label class="block text-sm font-medium text-white/80 mb-2"><span data-i18n="contact.lastName">Last Name</span> <span data-i18n="contact.required">*</span></label>
-                <input type="text" required class="w-full px-4 py-3 bg-antares-dark border border-white/10 rounded-lg text-white focus:border-antares-blue focus:ring-1 focus:ring-antares-blue outline-none transition-colors" placeholder="Doe">
+                <input type="text" required class="w-full px-4 py-3 bg-antares-dark border border-white/10 rounded-lg text-white focus:border-antares-blue focus:ring-1 focus:ring-antares-blue outline-none transition-colors" placeholder="Doe" data-i18n-placeholder="contact.placeholders.lastName">
               </div>
             </div>
 
             <div>
               <label class="block text-sm font-medium text-white/80 mb-2">Email Address *</label>
-              <input type="email" required class="w-full px-4 py-3 bg-antares-dark border border-white/10 rounded-lg text-white focus:border-antares-blue focus:ring-1 focus:ring-antares-blue outline-none transition-colors" placeholder="john@company.com">
+              <input type="email" required class="w-full px-4 py-3 bg-antares-dark border border-white/10 rounded-lg text-white focus:border-antares-blue focus:ring-1 focus:ring-antares-blue outline-none transition-colors" placeholder="john@company.com" data-i18n-placeholder="contact.placeholders.email">
             </div>
 
             <div>
               <label class="block text-sm font-medium text-white/80 mb-2">Phone Number</label>
-              <input type="tel" class="w-full px-4 py-3 bg-antares-dark border border-white/10 rounded-lg text-white focus:border-antares-blue focus:ring-1 focus:ring-antares-blue outline-none transition-colors" placeholder="+1 (555) 123-4567">
+              <input type="tel" class="w-full px-4 py-3 bg-antares-dark border border-white/10 rounded-lg text-white focus:border-antares-blue focus:ring-1 focus:ring-antares-blue outline-none transition-colors" placeholder="+1 (555) 123-4567" data-i18n-placeholder="contact.placeholders.phone">
             </div>
 
             <div>
               <label class="block text-sm font-medium text-white/80 mb-2">Company Name</label>
-              <input type="text" class="w-full px-4 py-3 bg-antares-dark border border-white/10 rounded-lg text-white focus:border-antares-blue focus:ring-1 focus:ring-antares-blue outline-none transition-colors" placeholder="Your Company Inc.">
+              <input type="text" class="w-full px-4 py-3 bg-antares-dark border border-white/10 rounded-lg text-white focus:border-antares-blue focus:ring-1 focus:ring-antares-blue outline-none transition-colors" placeholder="Your Company Inc." data-i18n-placeholder="contact.placeholders.company">
             </div>
 
             <div>
               <label class="block text-sm font-medium text-white/80 mb-2">Service Interest</label>
               <select class="w-full px-4 py-3 bg-antares-dark border border-white/10 rounded-lg text-white focus:border-antares-blue focus:ring-1 focus:ring-antares-blue outline-none transition-colors">
-                <option>Select a service...</option>
-                <option>Signage Installation</option>
-                <option>LED Retrofit & Optimization</option>
-                <option>Technical Maintenance</option>
-                <option>Compliance Consultation</option>
-                <option>Custom Industrial Solutions</option>
-                <option>Multi-Location Program</option>
+                <option data-i18n="contact.serviceSelect">Select a service...</option>
+                <option data-i18n="contact.serviceSelect.signage">Signage Installation</option>
+                <option data-i18n="contact.serviceSelect.led">LED Retrofit & Optimization</option>
+                <option data-i18n="contact.serviceSelect.maintenance">Technical Maintenance</option>
+                <option data-i18n="contact.serviceSelect.compliance">Compliance Consultation</option>
+                <option data-i18n="contact.serviceSelect.custom">Custom Industrial Solutions</option>
+                <option data-i18n="contact.serviceSelect.multiLocation">Multi-Location Program</option>
               </select>
             </div>
 
@@ -1846,7 +1846,7 @@ app.get('/contact', (c) => {
         <div class="space-y-8">
           <!-- Direct Contact -->
           <div class="bg-antares-gray border border-white/10 rounded-2xl p-8">
-            <h3 class="text-xl font-bold mb-6">Direct Contact</h3>
+            <h3 class="text-xl font-bold mb-6" data-i18n="contact.directContact">Direct Contact</h3>
             <div class="space-y-4">
               <a href="tel:+16893312690" class="flex items-start p-4 bg-antares-dark hover:bg-antares-blue/10 rounded-lg transition-colors group">
                 <div class="w-12 h-12 bg-green-600/10 rounded-lg flex items-center justify-center mr-4 group-hover:bg-green-600/20 transition-colors">
@@ -1855,9 +1855,9 @@ app.get('/contact', (c) => {
                   </svg>
                 </div>
                 <div>
-                  <div class="text-sm text-white/60 mb-1">Phone</div>
+                  <div class="text-sm text-white/60 mb-1" data-i18n="contact.info.phone">Phone</div>
                   <div class="font-semibold">+1 (689) 331-2690</div>
-                  <div class="text-sm text-white/60 mt-1">24/7 Technical Support</div>
+                  <div class="text-sm text-white/60 mt-1" data-i18n="contact.info.phoneSupport">24/7 Technical Support</div>
                 </div>
               </a>
 
@@ -1868,9 +1868,9 @@ app.get('/contact', (c) => {
                   </svg>
                 </div>
                 <div>
-                  <div class="text-sm text-white/60 mb-1">Email</div>
+                  <div class="text-sm text-white/60 mb-1" data-i18n="contact.info.email">Email</div>
                   <div class="font-semibold">contacto@antaresinnovate.com</div>
-                  <div class="text-sm text-white/60 mt-1">Response within 24 hours</div>
+                  <div class="text-sm text-white/60 mt-1" data-i18n="contact.info.emailResponse">Response within 24 hours</div>
                 </div>
               </a>
             </div>
@@ -1878,30 +1878,30 @@ app.get('/contact', (c) => {
 
           <!-- Business Hours -->
           <div class="bg-antares-gray border border-white/10 rounded-2xl p-8">
-            <h3 class="text-xl font-bold mb-6">Business Hours</h3>
+            <h3 class="text-xl font-bold mb-6" data-i18n="contact.hours.title">Business Hours</h3>
             <div class="space-y-3 text-sm">
               <div class="flex justify-between">
-                <span class="text-white/60">Monday - Friday</span>
+                <span class="text-white/60" data-i18n="contact.hours.weekdays">Monday - Friday</span>
                 <span class="font-medium">8:00 AM - 6:00 PM</span>
               </div>
               <div class="flex justify-between">
-                <span class="text-white/60">Saturday</span>
+                <span class="text-white/60" data-i18n="contact.hours.saturday">Saturday</span>
                 <span class="font-medium">9:00 AM - 4:00 PM</span>
               </div>
               <div class="flex justify-between">
-                <span class="text-white/60">Sunday</span>
-                <span class="font-medium">Closed</span>
+                <span class="text-white/60" data-i18n="contact.hours.sunday">Sunday</span>
+                <span class="font-medium" data-i18n="contact.hours.closed">Closed</span>
               </div>
               <div class="flex justify-between pt-3 border-t border-white/10">
-                <span class="text-white/60">Emergency Support</span>
-                <span class="font-medium text-green-500">24/7 Available</span>
+                <span class="text-white/60" data-i18n="contact.hours.emergency">Emergency Support</span>
+                <span class="font-medium text-green-500" data-i18n="contact.hours.available">24/7 Available</span>
               </div>
             </div>
           </div>
 
           <!-- Location -->
           <div class="bg-antares-gray border border-white/10 rounded-2xl p-8">
-            <h3 class="text-xl font-bold mb-6">Service Area</h3>
+            <h3 class="text-xl font-bold mb-6" data-i18n="contact.location.title">Service Area</h3>
             <div class="space-y-4">
               <div class="flex items-start">
                 <svg class="w-6 h-6 text-antares-blue mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -1909,12 +1909,12 @@ app.get('/contact', (c) => {
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
                 </svg>
                 <div>
-                  <div class="font-medium mb-1">Primary Location</div>
-                  <div class="text-white/60 text-sm">Los Angeles, California</div>
-                  <div class="text-white/60 text-sm">Licensed & Insured</div>
+                  <div class="font-medium mb-1" data-i18n="contact.location.primary">Primary Location</div>
+                  <div class="text-white/60 text-sm" data-i18n="contact.location.city">Los Angeles, California</div>
+                  <div class="text-white/60 text-sm" data-i18n="contact.location.licensed">Licensed & Insured</div>
                 </div>
               </div>
-              <div class="pt-4 border-t border-white/10 text-sm text-white/60">
+              <div class="pt-4 border-t border-white/10 text-sm text-white/60" data-i18n="contact.location.service">
                 We serve California and beyond with scalable solutions for multi-location projects
               </div>
             </div>
