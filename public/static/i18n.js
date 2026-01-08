@@ -371,6 +371,7 @@ const translations = {
     'hero.title1': 'Transformamos Espacios',
     'hero.title2': 'en',
     'hero.title3': 'Experiencias de Marca',
+    'hero.title4': '',
     'hero.subtitle1': 'Diseño Creativo, Producción Completa, Instalación Profesional',
     'hero.subtitle2': 'Desde el concepto hasta la instalación. Un proveedor para todo el proceso.',
     'hero.callButton': 'Llamar Ahora: +1 (689) 331-2690',
