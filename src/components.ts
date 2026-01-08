@@ -123,11 +123,11 @@ export const Footer = () => `
       <div>
         <h3 class="font-display font-semibold text-white text-sm uppercase tracking-wider mb-4" data-i18n="footer.services">Services</h3>
         <ul class="space-y-3">
-          <li><a href="/services#signage" class="text-white/60 hover:text-white text-sm transition-colors">Signage Installation</a></li>
-          <li><a href="/services#led" class="text-white/60 hover:text-white text-sm transition-colors">LED Retrofit</a></li>
-          <li><a href="/services#maintenance" class="text-white/60 hover:text-white text-sm transition-colors">Maintenance</a></li>
-          <li><a href="/services#compliance" class="text-white/60 hover:text-white text-sm transition-colors">Compliance</a></li>
-          <li><a href="/services#custom" class="text-white/60 hover:text-white text-sm transition-colors">Custom Solutions</a></li>
+          <li><a href="/services#signage" class="text-white/60 hover:text-white text-sm transition-colors" data-i18n="footer.services.signage">Signage Installation</a></li>
+          <li><a href="/services#led" class="text-white/60 hover:text-white text-sm transition-colors" data-i18n="footer.services.led">LED Retrofit</a></li>
+          <li><a href="/services#maintenance" class="text-white/60 hover:text-white text-sm transition-colors" data-i18n="footer.services.maintenance">Maintenance</a></li>
+          <li><a href="/services#compliance" class="text-white/60 hover:text-white text-sm transition-colors" data-i18n="footer.services.compliance">Compliance</a></li>
+          <li><a href="/services#custom" class="text-white/60 hover:text-white text-sm transition-colors" data-i18n="footer.services.custom">Custom Solutions</a></li>
         </ul>
       </div>
 
@@ -171,8 +171,8 @@ export const RequestCallModal = () => `
   <div class="bg-antares-gray border border-white/10 rounded-2xl shadow-2xl w-full max-w-md mx-4 p-6 lg:p-8 animate-fade-in">
     <div class="flex justify-between items-start mb-6">
       <div>
-        <h3 class="text-2xl font-display font-bold text-white mb-2">Request a Call</h3>
-        <p class="text-white/60 text-sm">We'll contact you within 1 business hour</p>
+        <h3 class="text-2xl font-display font-bold text-white mb-2" data-i18n="modal.requestCall.title">Request a Call</h3>
+        <p class="text-white/60 text-sm" data-i18n="modal.requestCall.subtitle">We'll contact you within 1 business hour</p>
       </div>
       <button onclick="closeRequestCallModal()" class="text-white/60 hover:text-white transition-colors">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -241,7 +241,7 @@ export const ChatbotWidget = () => `
     <!-- Header -->
     <div class="bg-gradient-to-r from-antares-blue to-blue-600 p-4 rounded-t-2xl flex justify-between items-center">
       <div>
-        <h3 class="font-display font-bold text-white">Antares Support</h3>
+        <h3 class="font-display font-bold text-white" data-i18n="chatbot.title">Antares Support</h3>
         <p class="text-white/80 text-xs">We typically reply instantly</p>
       </div>
       <button id="chatbot-close" class="text-white/80 hover:text-white transition-colors">
@@ -258,7 +258,7 @@ export const ChatbotWidget = () => `
           <span class="text-white text-xs font-bold">A</span>
         </div>
         <div class="bg-antares-dark rounded-lg p-3 max-w-[80%]">
-          <p class="text-white/90 text-sm">Welcome to Antares Innovate! 👋</p>
+          <p class="text-white/90 text-sm" data-i18n="chatbot.welcome">Welcome to Antares Innovate! 👋</p>
           <p class="text-white/70 text-sm mt-1">How can I help you today?</p>
         </div>
       </div>

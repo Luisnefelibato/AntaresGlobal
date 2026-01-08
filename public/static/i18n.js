@@ -249,6 +249,34 @@ const translations = {
     'installation.highrise.title': 'HIGH-RISE INSTALLATION',
     'installation.highrise.desc': 'Specialized high-rise installation with crane service, rope access certification, and OSHA-compliant safety protocols.',
     'installation.permits.title': 'Installation Permits & Compliance',
+    
+    // Featured Projects Section (Homepage)
+    'featured.title': 'Featured Projects',
+    'featured.subtitle': 'Explore our latest high-profile installations',
+    'featured.videoPlaceholder': 'Project Showcase Video',
+    'featured.comingSoon': 'Coming Soon',
+    'featured.viewAll': 'View All Projects',
+    
+    // Final CTA Section (Homepage)
+    'finalCta.title': 'Ready to Start Your Project?',
+    'finalCta.subtitle': 'Get a free consultation with our technical team',
+    'finalCta.call': 'Call (689) 331-2690',
+    'finalCta.quote': 'Request Free Quote',
+    
+    // Footer Services Links
+    'footer.services.signage': 'Signage Installation',
+    'footer.services.led': 'LED Retrofit',
+    'footer.services.maintenance': 'Maintenance',
+    'footer.services.compliance': 'Compliance',
+    'footer.services.custom': 'Custom Solutions',
+    
+    // Request Call Modal
+    'modal.requestCall.title': 'Request a Call',
+    'modal.requestCall.subtitle': 'Fill out the form and we\'ll contact you soon',
+    
+    // Chatbot
+    'chatbot.title': 'Antares Support',
+    'chatbot.welcome': 'Welcome to Antares Innovate! 👋',
     'contact.directContact': 'Direct Contact',
     'contact.required': '*',
     
@@ -525,6 +553,34 @@ const translations = {
     'installation.highrise.title': 'INSTALACIÓN EN ALTURA',
     'installation.highrise.desc': 'Instalación especializada en grandes alturas con servicio de grúa, certificación de acceso por cuerda y protocolos de seguridad conformes con OSHA.',
     'installation.permits.title': 'Permisos y Cumplimiento de Instalación',
+    
+    // Featured Projects Section (Homepage)
+    'featured.title': 'Proyectos Destacados',
+    'featured.subtitle': 'Explora nuestras últimas instalaciones de alto perfil',
+    'featured.videoPlaceholder': 'Video de Exhibición de Proyectos',
+    'featured.comingSoon': 'Próximamente',
+    'featured.viewAll': 'Ver Todos los Proyectos',
+    
+    // Final CTA Section (Homepage)
+    'finalCta.title': '¿Listo para Comenzar Tu Proyecto?',
+    'finalCta.subtitle': 'Obtén una consulta gratuita con nuestro equipo técnico',
+    'finalCta.call': 'Llamar (689) 331-2690',
+    'finalCta.quote': 'Solicitar Presupuesto Gratuito',
+    
+    // Footer Services Links
+    'footer.services.signage': 'Instalación de Señalización',
+    'footer.services.led': 'Modernización LED',
+    'footer.services.maintenance': 'Mantenimiento',
+    'footer.services.compliance': 'Cumplimiento',
+    'footer.services.custom': 'Soluciones Personalizadas',
+    
+    // Request Call Modal
+    'modal.requestCall.title': 'Solicitar Llamada',
+    'modal.requestCall.subtitle': 'Completa el formulario y te contactaremos pronto',
+    
+    // Chatbot
+    'chatbot.title': 'Soporte Antares',
+    'chatbot.welcome': '¡Bienvenido a Antares Innovate! 👋',
     
     // Services/Design Page
     'services.design.page.title': 'Diseño Que Crea Impacto',

@@ -421,8 +421,8 @@ app.get('/', (c) => {
 <section class="py-16 lg:py-24">
   <div class="container mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center mb-12">
-      <h2 class="text-3xl lg:text-4xl font-display font-bold mb-4">Featured Projects</h2>
-      <p class="text-white/60 text-lg max-w-2xl mx-auto">Explore our latest high-profile installations</p>
+      <h2 class="text-3xl lg:text-4xl font-display font-bold mb-4" data-i18n="featured.title">Featured Projects</h2>
+      <p class="text-white/60 text-lg max-w-2xl mx-auto" data-i18n="featured.subtitle">Explore our latest high-profile installations</p>
     </div>
 
     <!-- Video Placeholder - Video will be added here -->
@@ -434,8 +434,8 @@ app.get('/', (c) => {
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/>
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
             </svg>
-            <p class="text-xl text-white/60">Project Showcase Video</p>
-            <p class="text-sm text-white/40 mt-2">Coming Soon</p>
+            <p class="text-xl text-white/60" data-i18n="featured.videoPlaceholder">Project Showcase Video</p>
+            <p class="text-sm text-white/40 mt-2" data-i18n="featured.comingSoon">Coming Soon</p>
           </div>
         </div>
       </div>
@@ -443,7 +443,7 @@ app.get('/', (c) => {
 
     <div class="text-center mt-12">
       <a href="/projects" class="inline-flex items-center px-8 py-4 bg-antares-blue hover:bg-blue-600 rounded-xl font-medium transition-all duration-300 hover:scale-105">
-        View All Projects
+        <span data-i18n="featured.viewAll">View All Projects</span>
         <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
         </svg>
@@ -455,17 +455,17 @@ app.get('/', (c) => {
 <!-- CTA Section -->
 <section class="py-16 lg:py-24 bg-gradient-to-br from-antares-blue to-blue-600">
   <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-    <h2 class="text-3xl lg:text-5xl font-display font-bold mb-6">Ready to Start Your Project?</h2>
-    <p class="text-xl text-white/90 mb-8 max-w-2xl mx-auto">Get a free consultation with our technical team</p>
+    <h2 class="text-3xl lg:text-5xl font-display font-bold mb-6" data-i18n="finalCta.title">Ready to Start Your Project?</h2>
+    <p class="text-xl text-white/90 mb-8 max-w-2xl mx-auto" data-i18n="finalCta.subtitle">Get a free consultation with our technical team</p>
     <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
       <a href="tel:+16893312690" class="inline-flex items-center px-8 py-4 bg-white text-antares-blue hover:bg-gray-100 rounded-xl font-semibold text-lg transition-all duration-300 hover:scale-105">
         <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
         </svg>
-        Call (689) 331-2690
+        <span data-i18n="finalCta.call">Call (689) 331-2690</span>
       </a>
       <button onclick="openRequestCallModal()" class="inline-flex items-center px-8 py-4 bg-antares-dark hover:bg-black rounded-xl font-semibold text-lg transition-all duration-300 hover:scale-105">
-        Request Free Quote
+        <span data-i18n="finalCta.quote">Request Free Quote</span>
       </button>
     </div>
   </div>
