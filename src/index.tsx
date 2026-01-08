@@ -117,12 +117,12 @@ app.get('/', (c) => {
   <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
     <div class="text-center mb-20">
       <div class="inline-flex items-center space-x-2 bg-gradient-to-r from-orange-500/10 to-antares-blue/10 border border-orange-500/20 rounded-full px-6 py-3 mb-6">
-        <span class="text-orange-500 text-base font-medium">⭐ Strategic Services</span>
+        <span class="text-orange-500 text-base font-medium" data-i18n="services.badge">⭐ Strategic Services</span>
       </div>
-      <h2 class="text-4xl lg:text-6xl font-display font-bold mb-6 bg-gradient-to-r from-white via-white to-white/80 bg-clip-text text-transparent">
+      <h2 class="text-4xl lg:text-6xl font-display font-bold mb-6 bg-gradient-to-r from-white via-white to-white/80 bg-clip-text text-transparent" data-i18n="services.mainTitle">
         Your Trusted Provider For The Entire Process
       </h2>
-      <p class="text-white/70 text-xl max-w-4xl mx-auto leading-relaxed">
+      <p class="text-white/70 text-xl max-w-4xl mx-auto leading-relaxed" data-i18n="services.mainSubtitle">
         From Concept → Design → Production → Installation. Efficiency, compliance, and quality at every stage.
       </p>
     </div>
@@ -139,15 +139,15 @@ app.get('/', (c) => {
           />
           <div class="absolute inset-0 bg-gradient-to-t from-antares-dark via-antares-dark/80 to-transparent"></div>
           <div class="absolute top-6 right-6">
-            <span class="bg-antares-blue px-4 py-2 rounded-full text-sm font-semibold shadow-lg">🎨 Design</span>
+            <span class="bg-antares-blue px-4 py-2 rounded-full text-sm font-semibold shadow-lg"><span data-i18n="services.design.badge">🎨 Design</span></span>
           </div>
         </div>
 
         <!-- Content -->
         <div class="p-10">
-          <h3 class="text-3xl font-bold mb-3">Creative Design</h3>
-          <p class="text-antares-blue font-semibold text-base mb-6">VISUAL IDENTITY & BRANDING</p>
-          <p class="text-white/70 mb-8 text-base leading-relaxed">
+          <h3 class="text-3xl font-bold mb-3" data-i18n="services.design.title">Creative Design</h3>
+          <p class="text-antares-blue font-semibold text-base mb-6" data-i18n="services.design.subtitle">VISUAL IDENTITY & BRANDING</p>
+          <p class="text-white/70 mb-8 text-base leading-relaxed" data-i18n="services.design.desc">
             Complete design solutions from branding to final art. We create visual identities that communicate and convert.
           </p>
 
@@ -155,28 +155,28 @@ app.get('/', (c) => {
             <li class="flex items-start gap-3 text-sm">
               <span class="text-antares-blue mt-1">•</span>
               <div>
-                <strong class="text-white">Branding:</strong>
-                <span class="text-white/60"> Logo, color palette, visual identity systems</span>
+                <strong class="text-white" data-i18n="services.design.item1.title">Branding:</strong>
+                <span class="text-white/60" data-i18n="services.design.item1.desc"> Logo, color palette, visual identity systems</span>
               </div>
             </li>
             <li class="flex items-start gap-3 text-sm">
               <span class="text-antares-blue mt-1">•</span>
               <div>
-                <strong class="text-white">Graphic Design:</strong>
-                <span class="text-white/60"> Business cards, brochures, posters, packaging</span>
+                <strong class="text-white" data-i18n="services.design.item2.title">Graphic Design:</strong>
+                <span class="text-white/60" data-i18n="services.design.item2.desc"> Business cards, brochures, posters, packaging</span>
               </div>
             </li>
             <li class="flex items-start gap-3 text-sm">
               <span class="text-antares-blue mt-1">•</span>
               <div>
-                <strong class="text-white">Digital Design:</strong>
-                <span class="text-white/60"> Social media, web graphics, presentations</span>
+                <strong class="text-white" data-i18n="services.design.item3.title">Digital Design:</strong>
+                <span class="text-white/60" data-i18n="services.design.item3.desc"> Social media, web graphics, presentations</span>
               </div>
             </li>
           </ul>
 
           <a href="/services/design" class="inline-flex items-center text-antares-blue hover:text-blue-400 font-semibold text-base transition-colors group">
-            Explore Design
+            <span data-i18n="services.design.link">Explore Design</span>
             <svg class="w-6 h-6 ml-2 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
             </svg>
@@ -195,15 +195,15 @@ app.get('/', (c) => {
           />
           <div class="absolute inset-0 bg-gradient-to-t from-antares-dark via-antares-dark/80 to-transparent"></div>
           <div class="absolute top-6 right-6">
-            <span class="bg-orange-500 px-4 py-2 rounded-full text-sm font-semibold shadow-lg">🖨️ Production</span>
+            <span class="bg-orange-500 px-4 py-2 rounded-full text-sm font-semibold shadow-lg"><span data-i18n="services.production.badge">🖨️ Production</span></span>
           </div>
         </div>
 
         <!-- Content -->
         <div class="p-10">
-          <h3 class="text-3xl font-bold mb-3">Full Production</h3>
-          <p class="text-orange-500 font-semibold text-base mb-6">PRINTING & MANUFACTURING</p>
-          <p class="text-white/70 mb-8 text-base leading-relaxed">
+          <h3 class="text-3xl font-bold mb-3" data-i18n="services.production.title">Full Production</h3>
+          <p class="text-orange-500 font-semibold text-base mb-6" data-i18n="services.production.subtitle">PRINTING & MANUFACTURING</p>
+          <p class="text-white/70 mb-8 text-base leading-relaxed" data-i18n="services.production.desc">
             From design to physical product. Complete production services including all types of printing and materials.
           </p>
 
@@ -211,28 +211,28 @@ app.get('/', (c) => {
             <li class="flex items-start gap-3 text-sm">
               <span class="text-orange-500 mt-1">•</span>
               <div>
-                <strong class="text-white">Large Format:</strong>
-                <span class="text-white/60"> Banners, vinyl, perforated film, window graphics</span>
+                <strong class="text-white" data-i18n="services.production.item1.title">Large Format:</strong>
+                <span class="text-white/60" data-i18n="services.production.item1.desc"> Banners, vinyl, perforated film, window graphics</span>
               </div>
             </li>
             <li class="flex items-start gap-3 text-sm">
               <span class="text-orange-500 mt-1">•</span>
               <div>
-                <strong class="text-white">Print Materials:</strong>
-                <span class="text-white/60"> Stickers, posters, flyers, brochures, catalogs</span>
+                <strong class="text-white" data-i18n="services.production.item2.title">Print Materials:</strong>
+                <span class="text-white/60" data-i18n="services.production.item2.desc"> Stickers, posters, flyers, brochures, catalogs</span>
               </div>
             </li>
             <li class="flex items-start gap-3 text-sm">
               <span class="text-orange-500 mt-1">•</span>
               <div>
-                <strong class="text-white">POP & Retail:</strong>
-                <span class="text-white/60"> Displays, standees, floor graphics, promotional materials</span>
+                <strong class="text-white" data-i18n="services.production.item3.title">POP & Retail:</strong>
+                <span class="text-white/60" data-i18n="services.production.item3.desc"> Displays, standees, floor graphics, promotional materials</span>
               </div>
             </li>
           </ul>
 
           <a href="/services/print" class="inline-flex items-center text-orange-500 hover:text-orange-400 font-semibold text-base transition-colors group">
-            Explore Production
+            <span data-i18n="services.production.link">Explore Production</span>
             <svg class="w-6 h-6 ml-2 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
             </svg>
@@ -251,15 +251,15 @@ app.get('/', (c) => {
           />
           <div class="absolute inset-0 bg-gradient-to-t from-antares-dark via-antares-dark/80 to-transparent"></div>
           <div class="absolute top-6 right-6">
-            <span class="bg-green-500 px-4 py-2 rounded-full text-sm font-semibold shadow-lg">⚡ Installation</span>
+            <span class="bg-green-500 px-4 py-2 rounded-full text-sm font-semibold shadow-lg"><span data-i18n="services.installation.badge">⚡ Installation</span></span>
           </div>
         </div>
 
         <!-- Content -->
         <div class="p-10">
-          <h3 class="text-3xl font-bold mb-3">Professional Installation</h3>
-          <p class="text-green-500 font-semibold text-base mb-6">CERTIFIED MOUNTING & SETUP</p>
-          <p class="text-white/70 mb-8 text-base leading-relaxed">
+          <h3 class="text-3xl font-bold mb-3" data-i18n="services.installation.title">Professional Installation</h3>
+          <p class="text-green-500 font-semibold text-base mb-6" data-i18n="services.installation.subtitle">CERTIFIED MOUNTING & SETUP</p>
+          <p class="text-white/70 mb-8 text-base leading-relaxed" data-i18n="services.installation.desc">
             Expert installation with certified technicians, specialized equipment, and guaranteed compliance.
           </p>
 
@@ -267,28 +267,28 @@ app.get('/', (c) => {
             <li class="flex items-start gap-3">
               <span class="text-green-500 mt-1 text-base">•</span>
               <div>
-                <strong class="text-white">Commercial Signage:</strong>
-                <span class="text-white/60"> Storefronts, facades, monument signs</span>
+                <strong class="text-white" data-i18n="services.installation.item1.title">Commercial Signage:</strong>
+                <span class="text-white/60" data-i18n="services.installation.item1.desc"> Storefronts, facades, monument signs</span>
               </div>
             </li>
             <li class="flex items-start gap-3">
               <span class="text-green-500 mt-1 text-base">•</span>
               <div>
-                <strong class="text-white">LED Systems:</strong>
-                <span class="text-white/60"> Electrical installation, energy retrofits</span>
+                <strong class="text-white" data-i18n="services.installation.item2.title">LED Systems:</strong>
+                <span class="text-white/60" data-i18n="services.installation.item2.desc"> Electrical installation, energy retrofits</span>
               </div>
             </li>
             <li class="flex items-start gap-3">
               <span class="text-green-500 mt-1 text-base">•</span>
               <div>
-                <strong class="text-white">High-Rise Work:</strong>
-                <span class="text-white/60"> SPRAT/OSHA certified technicians</span>
+                <strong class="text-white" data-i18n="services.installation.item3.title">High-Rise Work:</strong>
+                <span class="text-white/60" data-i18n="services.installation.item3.desc"> SPRAT/OSHA certified technicians</span>
               </div>
             </li>
           </ul>
 
           <a href="/services/installation" class="inline-flex items-center text-green-500 hover:text-green-400 font-semibold text-base transition-colors group">
-            Explore Installation
+            <span data-i18n="services.installation.link">Explore Installation</span>
             <svg class="w-6 h-6 ml-2 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
             </svg>
@@ -308,7 +308,7 @@ app.get('/', (c) => {
 
       <div class="relative z-10">
         <h3 class="text-3xl lg:text-4xl font-display font-black text-center mb-4">
-          <span class="bg-gradient-to-r from-antares-blue via-blue-400 to-blue-600 bg-clip-text text-transparent">
+          <span class="bg-gradient-to-r from-antares-blue via-blue-400 to-blue-600 bg-clip-text text-transparent" data-i18n="services.guarantees.title">
             Comprehensive Guarantees
           </span>
         </h3>

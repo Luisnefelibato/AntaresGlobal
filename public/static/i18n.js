@@ -23,17 +23,51 @@ const translations = {
     'hero.quoteButton': 'Request Free Quote',
     
     // Services
-    'services.title': 'Strategic Services',
-    'services.subtitle': 'End-to-end solutions for your brand',
-    'services.design.title': 'Design',
-    'services.design.subtitle': 'Creative Concepts',
-    'services.design.desc': 'Custom branding and signage design that captures your vision and attracts customers',
-    'services.production.title': 'Production',
-    'services.production.subtitle': 'Precision Manufacturing',
-    'services.production.desc': 'High-quality fabrication with cutting-edge technology and premium materials',
-    'services.installation.title': 'Installation',
-    'services.installation.subtitle': 'Professional Setup',
-    'services.installation.desc': 'Expert installation with certified crews, permits, and safety compliance',
+    'services.badge': 'Strategic Services',
+    'services.mainTitle': 'Your Trusted Provider For The Entire Process',
+    'services.mainSubtitle': 'From Concept → Design → Production → Installation. Efficiency, compliance, and quality at every stage.',
+    
+    // Design Column
+    'services.design.badge': 'Design',
+    'services.design.title': 'Creative Design',
+    'services.design.subtitle': 'VISUAL IDENTITY & BRANDING',
+    'services.design.desc': 'Complete design solutions from branding to final art. We create visual identities that communicate and convert.',
+    'services.design.item1.title': 'Branding:',
+    'services.design.item1.desc': 'Logo, color palette, visual identity systems',
+    'services.design.item2.title': 'Graphic Design:',
+    'services.design.item2.desc': 'Business cards, brochures, posters, packaging',
+    'services.design.item3.title': 'Digital Design:',
+    'services.design.item3.desc': 'Social media, web graphics, presentations',
+    'services.design.link': 'Explore Design',
+    
+    // Production Column
+    'services.production.badge': 'Production',
+    'services.production.title': 'Full Production',
+    'services.production.subtitle': 'PRINTING & MANUFACTURING',
+    'services.production.desc': 'From design to physical product. Complete production services including all types of printing and materials.',
+    'services.production.item1.title': 'Large Format:',
+    'services.production.item1.desc': 'Banners, vinyl, perforated film, window graphics',
+    'services.production.item2.title': 'Print Materials:',
+    'services.production.item2.desc': 'Stickers, posters, flyers, brochures, catalogs',
+    'services.production.item3.title': 'POP & Retail:',
+    'services.production.item3.desc': 'Displays, standees, floor graphics, promotional materials',
+    'services.production.link': 'Explore Production',
+    
+    // Installation Column
+    'services.installation.badge': 'Installation',
+    'services.installation.title': 'Professional Installation',
+    'services.installation.subtitle': 'CERTIFIED MOUNTING & SETUP',
+    'services.installation.desc': 'Expert installation with certified technicians, specialized equipment, and guaranteed compliance.',
+    'services.installation.item1.title': 'Commercial Signage:',
+    'services.installation.item1.desc': 'Storefronts, facades, monument signs',
+    'services.installation.item2.title': 'LED Systems:',
+    'services.installation.item2.desc': 'Electrical installation, energy retrofits',
+    'services.installation.item3.title': 'High-Rise Work:',
+    'services.installation.item3.desc': 'SPRAT/OSHA certified technicians',
+    'services.installation.link': 'Explore Installation',
+    
+    // Guarantees
+    'services.guarantees.title': 'Comprehensive Guarantees',
     
     // Stats
     'stats.projects': 'Projects Completed',
@@ -103,17 +137,51 @@ const translations = {
     'hero.quoteButton': 'Solicitar Cotización Gratis',
     
     // Services
-    'services.title': 'Servicios Estratégicos',
-    'services.subtitle': 'Soluciones completas para tu marca',
-    'services.design.title': 'Diseño',
-    'services.design.subtitle': 'Conceptos Creativos',
-    'services.design.desc': 'Diseño personalizado de marca y señalización que captura tu visión y atrae clientes',
-    'services.production.title': 'Producción',
-    'services.production.subtitle': 'Fabricación de Precisión',
-    'services.production.desc': 'Fabricación de alta calidad con tecnología de vanguardia y materiales premium',
-    'services.installation.title': 'Instalación',
-    'services.installation.subtitle': 'Configuración Profesional',
-    'services.installation.desc': 'Instalación experta con equipos certificados, permisos y cumplimiento de seguridad',
+    'services.badge': 'Servicios Estratégicos',
+    'services.mainTitle': 'Tu Proveedor de Confianza Para Todo el Proceso',
+    'services.mainSubtitle': 'Desde el Concepto → Diseño → Producción → Instalación. Eficiencia, cumplimiento y calidad en cada etapa.',
+    
+    // Design Column
+    'services.design.badge': 'Diseño',
+    'services.design.title': 'Diseño Creativo',
+    'services.design.subtitle': 'IDENTIDAD VISUAL Y BRANDING',
+    'services.design.desc': 'Soluciones de diseño completas desde el branding hasta el arte final. Creamos identidades visuales que comunican y convierten.',
+    'services.design.item1.title': 'Branding:',
+    'services.design.item1.desc': 'Logo, paleta de colores, sistemas de identidad visual',
+    'services.design.item2.title': 'Diseño Gráfico:',
+    'services.design.item2.desc': 'Tarjetas de presentación, folletos, carteles, empaques',
+    'services.design.item3.title': 'Diseño Digital:',
+    'services.design.item3.desc': 'Redes sociales, gráficos web, presentaciones',
+    'services.design.link': 'Explorar Diseño',
+    
+    // Production Column
+    'services.production.badge': 'Producción',
+    'services.production.title': 'Producción Completa',
+    'services.production.subtitle': 'IMPRESIÓN Y MANUFACTURA',
+    'services.production.desc': 'Del diseño al producto físico. Servicios de producción completos incluyendo todo tipo de impresión y materiales.',
+    'services.production.item1.title': 'Gran Formato:',
+    'services.production.item1.desc': 'Banners, vinil, película perforada, gráficos de ventana',
+    'services.production.item2.title': 'Materiales Impresos:',
+    'services.production.item2.desc': 'Calcomanías, carteles, volantes, folletos, catálogos',
+    'services.production.item3.title': 'POP y Retail:',
+    'services.production.item3.desc': 'Displays, exhibidores, gráficos de piso, materiales promocionales',
+    'services.production.link': 'Explorar Producción',
+    
+    // Installation Column
+    'services.installation.badge': 'Instalación',
+    'services.installation.title': 'Instalación Profesional',
+    'services.installation.subtitle': 'MONTAJE Y CONFIGURACIÓN CERTIFICADA',
+    'services.installation.desc': 'Instalación experta con técnicos certificados, equipo especializado y cumplimiento garantizado.',
+    'services.installation.item1.title': 'Señalización Comercial:',
+    'services.installation.item1.desc': 'Fachadas, escaparates, señales monumentales',
+    'services.installation.item2.title': 'Sistemas LED:',
+    'services.installation.item2.desc': 'Instalación eléctrica, modernización energética',
+    'services.installation.item3.title': 'Trabajo en Alturas:',
+    'services.installation.item3.desc': 'Técnicos certificados SPRAT/OSHA',
+    'services.installation.link': 'Explorar Instalación',
+    
+    // Guarantees
+    'services.guarantees.title': 'Garantías Integrales',
     
     // Stats
     'stats.projects': 'Proyectos Completados',
