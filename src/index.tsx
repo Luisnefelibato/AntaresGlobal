@@ -2314,23 +2314,23 @@ app.get('/projects', (c) => {
 <section class="py-24 lg:py-32 bg-antares-dark">
   <div class="container mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center mb-16">
-      <h1 class="text-4xl lg:text-6xl font-display font-bold mb-6">Our <span class="text-antares-blue">Projects</span></h1>
-      <p class="text-xl text-white/70 max-w-3xl mx-auto">Explore our portfolio of design, production, and installation work</p>
+      <h1 class="text-4xl lg:text-6xl font-display font-bold mb-6"><span data-i18n="projects.title">Our</span> <span class="text-antares-blue">Projects</span></h1>
+      <p class="text-xl text-white/70 max-w-3xl mx-auto" data-i18n="projects.subtitle">Explore our portfolio of design, production, and installation work</p>
     </div>
 
     <!-- Filter Buttons -->
     <div class="flex flex-wrap justify-center gap-3 mb-12">
       <button onclick="filterProjects('all')" class="portfolio-filter-btn active px-6 py-3 bg-antares-blue text-white rounded-lg font-semibold transition-all hover:bg-blue-600" data-filter="all">
-        All Projects
+        <span data-i18n="projects.filterAll">All Projects</span>
       </button>
       <button onclick="filterProjects('design')" class="portfolio-filter-btn px-6 py-3 bg-gradient-to-r from-antares-blue/20 to-blue-600/20 border border-antares-blue/30 text-white/80 rounded-lg font-semibold transition-all hover:bg-antares-blue hover:text-white" data-filter="design">
-        🎨 Design
+        <span data-i18n="projects.filterDesign">🎨 Design</span>
       </button>
       <button onclick="filterProjects('production')" class="portfolio-filter-btn px-6 py-3 bg-gradient-to-r from-orange-500/20 to-red-600/20 border border-orange-500/30 text-white/80 rounded-lg font-semibold transition-all hover:bg-orange-500 hover:text-white" data-filter="production">
-        🖨️ Production
+        <span data-i18n="projects.filterProduction">🖨️ Production</span>
       </button>
       <button onclick="filterProjects('installation')" class="portfolio-filter-btn px-6 py-3 bg-gradient-to-r from-green-500/20 to-emerald-600/20 border border-green-500/30 text-white/80 rounded-lg font-semibold transition-all hover:bg-green-500 hover:text-white" data-filter="installation">
-        ⚡ Installation
+        <span data-i18n="projects.filterInstallation">⚡ Installation</span>
       </button>
     </div>
 
@@ -2345,8 +2345,8 @@ app.get('/projects', (c) => {
           <h3 class="text-2xl font-bold mb-2">Logo Design</h3>
           <p class="text-white/80 mb-4">Professional brand identity design with custom typography and visual guidelines</p>
           <div class="flex flex-wrap gap-2">
-            <span class="px-3 py-1 bg-antares-blue/30 border border-antares-blue rounded-full text-xs font-semibold">Design</span>
-            <span class="px-3 py-1 bg-antares-blue/20 rounded-full text-xs">Branding</span>
+            <span class="px-3 py-1 bg-antares-blue/30 border border-antares-blue rounded-full text-xs font-semibold" data-i18n="projects.tag.design">Design</span>
+            <span class="px-3 py-1 bg-antares-blue/20 rounded-full text-xs" data-i18n="projects.tag.branding">Branding</span>
           </div>
         </div>
       </div>
@@ -2359,8 +2359,8 @@ app.get('/projects', (c) => {
           <h3 class="text-2xl font-bold mb-2">3D Letter Manufacturing</h3>
           <p class="text-white/80 mb-4">Precision fabrication of dimensional letters and signage components in our production facility</p>
           <div class="flex flex-wrap gap-2">
-            <span class="px-3 py-1 bg-orange-500/30 border border-orange-500 rounded-full text-xs font-semibold">Production</span>
-            <span class="px-3 py-1 bg-orange-500/20 rounded-full text-xs">Manufacturing</span>
+            <span class="px-3 py-1 bg-orange-500/30 border border-orange-500 rounded-full text-xs font-semibold" data-i18n="projects.tag.production">Production</span>
+            <span class="px-3 py-1 bg-orange-500/20 rounded-full text-xs" data-i18n="projects.tag.manufacturing">Manufacturing</span>
           </div>
         </div>
       </div>
@@ -2373,8 +2373,8 @@ app.get('/projects', (c) => {
           <h3 class="text-2xl font-bold mb-2">Interior Logo Installation</h3>
           <p class="text-white/80 mb-4">Professional mounting of dimensional logo on wood panel feature wall with precise alignment</p>
           <div class="flex flex-wrap gap-2">
-            <span class="px-3 py-1 bg-green-500/30 border border-green-500 rounded-full text-xs font-semibold">Installation</span>
-            <span class="px-3 py-1 bg-green-500/20 rounded-full text-xs">Interior</span>
+            <span class="px-3 py-1 bg-green-500/30 border border-green-500 rounded-full text-xs font-semibold" data-i18n="projects.tag.installation">Installation</span>
+            <span class="px-3 py-1 bg-green-500/20 rounded-full text-xs" data-i18n="projects.tag.interior">Interior</span>
           </div>
         </div>
       </div>
@@ -2388,7 +2388,7 @@ app.get('/projects', (c) => {
           <p class="text-white/80 mb-4">Professional logo design for plastic surgery practice with elegant typography and refined aesthetics</p>
           <div class="flex flex-wrap gap-2">
             <span class="px-3 py-1 bg-antares-blue/30 border border-antares-blue rounded-full text-xs font-semibold">Design</span>
-            <span class="px-3 py-1 bg-antares-blue/20 rounded-full text-xs">Medical</span>
+            <span class="px-3 py-1 bg-antares-blue/20 rounded-full text-xs" data-i18n="projects.tag.medical">Medical</span>
           </div>
         </div>
       </div>

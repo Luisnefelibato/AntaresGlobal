@@ -127,11 +127,20 @@ const translations = {
     
     // Projects
     'projects.title': 'Our Projects',
-    'projects.subtitle': 'Browse our portfolio of design, production, and installation projects',
+    'projects.subtitle': 'Explore our portfolio of design, production, and installation work',
     'projects.filterAll': 'All Projects',
-    'projects.filterDesign': 'Design',
-    'projects.filterProduction': 'Production',
-    'projects.filterInstallation': 'Installation'
+    'projects.filterDesign': '🎨 Design',
+    'projects.filterProduction': '🖨️ Production',
+    'projects.filterInstallation': '⚡ Installation',
+    
+    // Project Tags
+    'projects.tag.design': 'Design',
+    'projects.tag.production': 'Production',
+    'projects.tag.installation': 'Installation',
+    'projects.tag.branding': 'Branding',
+    'projects.tag.manufacturing': 'Manufacturing',
+    'projects.tag.interior': 'Interior',
+    'projects.tag.medical': 'Medical'
   },
   
   es: {
@@ -260,11 +269,20 @@ const translations = {
     
     // Projects
     'projects.title': 'Nuestros Proyectos',
-    'projects.subtitle': 'Explora nuestro portafolio de proyectos de diseño, producción e instalación',
+    'projects.subtitle': 'Explora nuestro portafolio de trabajos de diseño, producción e instalación',
     'projects.filterAll': 'Todos los Proyectos',
-    'projects.filterDesign': 'Diseño',
-    'projects.filterProduction': 'Producción',
-    'projects.filterInstallation': 'Instalación'
+    'projects.filterDesign': '🎨 Diseño',
+    'projects.filterProduction': '🖨️ Producción',
+    'projects.filterInstallation': '⚡ Instalación',
+    
+    // Project Tags
+    'projects.tag.design': 'Diseño',
+    'projects.tag.production': 'Producción',
+    'projects.tag.installation': 'Instalación',
+    'projects.tag.branding': 'Branding',
+    'projects.tag.manufacturing': 'Manufactura',
+    'projects.tag.interior': 'Interior',
+    'projects.tag.medical': 'Médico'
   }
 };
 
