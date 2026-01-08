@@ -2534,6 +2534,48 @@ app.get('/projects', (c) => {
         </div>
       </div>
 
+      <!-- Design Project 6 - Felix Chevrolet -->
+      <div class="project-card group relative h-96 rounded-2xl overflow-hidden" data-category="design">
+        <img src="/static/images/project-design-6.jpg" alt="Felix Chevrolet Logo Design" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
+        <div class="absolute inset-0 p-6 flex flex-col justify-end">
+          <h3 class="text-2xl font-bold mb-2">Felix Chevrolet Brand Identity</h3>
+          <p class="text-white/80 mb-4">Automotive dealership branding with iconic character mascot and bold typography design</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-antares-blue/30 border border-antares-blue rounded-full text-xs font-semibold">Design</span>
+            <span class="px-3 py-1 bg-antares-blue/20 rounded-full text-xs">Automotive</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Production Project 6 - Felix Chevrolet -->
+      <div class="project-card group relative h-96 rounded-2xl overflow-hidden" data-category="production">
+        <img src="/static/images/project-production-6.jpg" alt="Felix Chevrolet Sign Production" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
+        <div class="absolute inset-0 p-6 flex flex-col justify-end">
+          <h3 class="text-2xl font-bold mb-2">3D Dimensional Letters</h3>
+          <p class="text-white/80 mb-4">Custom fabrication of large-scale 3D letters with precision CNC routing and professional finishing</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-orange-500/30 border border-orange-500 rounded-full text-xs font-semibold">Production</span>
+            <span class="px-3 py-1 bg-orange-500/20 rounded-full text-xs">3D Letters</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Installation Project 6 - Felix Chevrolet -->
+      <div class="project-card group relative h-96 rounded-2xl overflow-hidden" data-category="installation">
+        <img src="/static/images/project-installation-6.jpg" alt="Felix Chevrolet Monument Sign Installation" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
+        <div class="absolute inset-0 p-6 flex flex-col justify-end">
+          <h3 class="text-2xl font-bold mb-2">Dealership Monument Sign</h3>
+          <p class="text-white/80 mb-4">Large-scale monument signage installation at automotive dealership with professional site preparation</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-green-500/30 border border-green-500 rounded-full text-xs font-semibold">Installation</span>
+            <span class="px-3 py-1 bg-green-500/20 rounded-full text-xs">Monument</span>
+          </div>
+        </div>
+      </div>
+
     </div>
 
     <!-- CTA Section -->
