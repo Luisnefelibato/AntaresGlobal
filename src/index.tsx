@@ -2576,6 +2576,48 @@ app.get('/projects', (c) => {
         </div>
       </div>
 
+      <!-- Design Project 7 - Clineva Urgent Care -->
+      <div class="project-card group relative h-96 rounded-2xl overflow-hidden" data-category="design">
+        <img src="/static/images/project-design-7.jpg" alt="Clineva Urgent Care Logo Design" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
+        <div class="absolute inset-0 p-6 flex flex-col justify-end">
+          <h3 class="text-2xl font-bold mb-2">Clineva Urgent Care Branding</h3>
+          <p class="text-white/80 mb-4">Healthcare brand identity with modern medical cross logo and professional color palette</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-antares-blue/30 border border-antares-blue rounded-full text-xs font-semibold">Design</span>
+            <span class="px-3 py-1 bg-antares-blue/20 rounded-full text-xs">Healthcare</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Production Project 7 - Clineva Urgent Care -->
+      <div class="project-card group relative h-96 rounded-2xl overflow-hidden" data-category="production">
+        <img src="/static/images/project-production-7.jpg" alt="Clineva Urgent Care Sign Production" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
+        <div class="absolute inset-0 p-6 flex flex-col justify-end">
+          <h3 class="text-2xl font-bold mb-2">Medical Facility Signage</h3>
+          <p class="text-white/80 mb-4">Professional production of healthcare signage with precision print quality and durable materials</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-orange-500/30 border border-orange-500 rounded-full text-xs font-semibold">Production</span>
+            <span class="px-3 py-1 bg-orange-500/20 rounded-full text-xs">Medical</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Installation Project 7 - Clineva Urgent Care -->
+      <div class="project-card group relative h-96 rounded-2xl overflow-hidden" data-category="installation">
+        <img src="/static/images/project-installation-7.jpg" alt="Clineva Urgent Care Channel Letters Installation" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
+        <div class="absolute inset-0 p-6 flex flex-col justify-end">
+          <h3 class="text-2xl font-bold mb-2">Medical Center Channel Letters</h3>
+          <p class="text-white/80 mb-4">Professional installation of exterior channel letter signage for healthcare facility</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-green-500/30 border border-green-500 rounded-full text-xs font-semibold">Installation</span>
+            <span class="px-3 py-1 bg-green-500/20 rounded-full text-xs">Exterior</span>
+          </div>
+        </div>
+      </div>
+
     </div>
 
     <!-- CTA Section -->
