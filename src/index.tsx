@@ -2298,148 +2298,163 @@ app.get('/services/installation', (c) => {
 
 app.get('/projects', (c) => {
   const content = `
-<section class="py-24 lg:py-32">
+<section class="py-24 lg:py-32 bg-antares-dark">
   <div class="container mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center mb-16">
-      <h1 class="text-4xl lg:text-6xl font-display font-bold mb-6">Featured Projects</h1>
-      <p class="text-xl text-white/60 max-w-3xl mx-auto">Explore our portfolio of high-profile installations across automotive, retail, corporate, and interior signage solutions</p>
+      <h1 class="text-4xl lg:text-6xl font-display font-bold mb-6">Our <span class="text-antares-blue">Projects</span></h1>
+      <p class="text-xl text-white/70 max-w-3xl mx-auto">From creative design to professional installation, see our work in action across all service areas</p>
     </div>
 
-    <!-- Filter Buttons -->
-    <div class="flex flex-wrap justify-center gap-3 mb-12">
-      <button onclick="filterProjects('all')" class="portfolio-filter-btn active px-6 py-3 bg-antares-blue text-white rounded-lg font-medium transition-all hover:bg-blue-600" data-filter="all">All Projects</button>
-      <button onclick="filterProjects('automotive')" class="portfolio-filter-btn px-6 py-3 bg-white/5 text-white/80 rounded-lg font-medium transition-all hover:bg-white/10" data-filter="automotive">Automotive</button>
-      <button onclick="filterProjects('retail')" class="portfolio-filter-btn px-6 py-3 bg-white/5 text-white/80 rounded-lg font-medium transition-all hover:bg-white/10" data-filter="retail">Retail</button>
-      <button onclick="filterProjects('corporate')" class="portfolio-filter-btn px-6 py-3 bg-white/5 text-white/80 rounded-lg font-medium transition-all hover:bg-white/10" data-filter="corporate">Corporate</button>
-      <button onclick="filterProjects('interior')" class="portfolio-filter-btn px-6 py-3 bg-white/5 text-white/80 rounded-lg font-medium transition-all hover:bg-white/10" data-filter="interior">Interior</button>
+    <!-- Projects Grid - 3 Categories -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+      
+      <!-- DESIGN PROJECTS -->
+      <div class="group relative rounded-2xl overflow-hidden bg-gradient-to-br from-antares-blue/10 to-blue-600/10 border border-antares-blue/30 hover:border-antares-blue hover:shadow-2xl hover:shadow-antares-blue/20 transition-all duration-500">
+        <div class="relative h-80 overflow-hidden">
+          <img src="/static/images/project-design.jpg" alt="Design Projects - Creative Branding" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+          <div class="absolute inset-0 bg-gradient-to-t from-antares-dark via-antares-dark/80 to-transparent"></div>
+          <div class="absolute top-6 right-6">
+            <span class="bg-antares-blue px-4 py-2 rounded-full text-sm font-semibold shadow-lg">🎨 Design</span>
+          </div>
+        </div>
+        
+        <div class="p-8">
+          <h2 class="text-3xl font-bold mb-4 text-antares-blue">Creative Design</h2>
+          <p class="text-white/70 mb-6 leading-relaxed">
+            From concept to visual identity. Logo design, brand guidelines, and complete visual systems that communicate your values and differentiate your brand.
+          </p>
+          
+          <ul class="space-y-3 mb-6">
+            <li class="flex items-start gap-3 text-sm">
+              <span class="text-antares-blue mt-1">✓</span>
+              <span class="text-white/60"><strong class="text-white">Brand Identity:</strong> Logo design, color palettes, typography systems</span>
+            </li>
+            <li class="flex items-start gap-3 text-sm">
+              <span class="text-antares-blue mt-1">✓</span>
+              <span class="text-white/60"><strong class="text-white">Marketing Materials:</strong> Brochures, business cards, catalogs</span>
+            </li>
+            <li class="flex items-start gap-3 text-sm">
+              <span class="text-antares-blue mt-1">✓</span>
+              <span class="text-white/60"><strong class="text-white">Digital Assets:</strong> Social media graphics, web design, presentations</span>
+            </li>
+          </ul>
+
+          <a href="/services/design" class="inline-flex items-center text-antares-blue hover:text-blue-400 font-semibold transition-colors group">
+            View Design Services
+            <svg class="w-5 h-5 ml-2 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- PRODUCTION PROJECTS -->
+      <div class="group relative rounded-2xl overflow-hidden bg-gradient-to-br from-orange-500/10 to-red-600/10 border border-orange-500/30 hover:border-orange-500 hover:shadow-2xl hover:shadow-orange-500/20 transition-all duration-500">
+        <div class="relative h-80 overflow-hidden">
+          <img src="/static/images/project-production.jpg" alt="Production Projects - Professional Printing" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+          <div class="absolute inset-0 bg-gradient-to-t from-antares-dark via-antares-dark/80 to-transparent"></div>
+          <div class="absolute top-6 right-6">
+            <span class="bg-orange-500 px-4 py-2 rounded-full text-sm font-semibold shadow-lg">🖨️ Production</span>
+          </div>
+        </div>
+        
+        <div class="p-8">
+          <h2 class="text-3xl font-bold mb-4 text-orange-500">Full Production</h2>
+          <p class="text-white/70 mb-6 leading-relaxed">
+            Bringing designs to life with precision printing and manufacturing. Large format, POP materials, and promotional products with superior quality control.
+          </p>
+          
+          <ul class="space-y-3 mb-6">
+            <li class="flex items-start gap-3 text-sm">
+              <span class="text-orange-500 mt-1">✓</span>
+              <span class="text-white/60"><strong class="text-white">Large Format:</strong> Banners, vinyl, mesh, building wraps (3ft-100ft+)</span>
+            </li>
+            <li class="flex items-start gap-3 text-sm">
+              <span class="text-orange-500 mt-1">✓</span>
+              <span class="text-white/60"><strong class="text-white">Print Materials:</strong> Stickers, posters, flyers, brochures, catalogs</span>
+            </li>
+            <li class="flex items-start gap-3 text-sm">
+              <span class="text-orange-500 mt-1">✓</span>
+              <span class="text-white/60"><strong class="text-white">POP & Retail:</strong> Displays, standees, floor graphics, promotional items</span>
+            </li>
+          </ul>
+
+          <a href="/services/print" class="inline-flex items-center text-orange-500 hover:text-orange-400 font-semibold transition-colors group">
+            View Production Services
+            <svg class="w-5 h-5 ml-2 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- INSTALLATION PROJECTS -->
+      <div class="group relative rounded-2xl overflow-hidden bg-gradient-to-br from-green-500/10 to-emerald-600/10 border border-green-500/30 hover:border-green-500 hover:shadow-2xl hover:shadow-green-500/20 transition-all duration-500">
+        <div class="relative h-80 overflow-hidden">
+          <img src="/static/images/project-installation.jpg" alt="Installation Projects - Professional Mounting" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+          <div class="absolute inset-0 bg-gradient-to-t from-antares-dark via-antares-dark/80 to-transparent"></div>
+          <div class="absolute top-6 right-6">
+            <span class="bg-green-500 px-4 py-2 rounded-full text-sm font-semibold shadow-lg">⚡ Installation</span>
+          </div>
+        </div>
+        
+        <div class="p-8">
+          <h2 class="text-3xl font-bold mb-4 text-green-500">Professional Installation</h2>
+          <p class="text-white/70 mb-6 leading-relaxed">
+            Expert installation with certified crews, specialized equipment, and comprehensive safety protocols. Licensed, insured, and Title 24 compliant.
+          </p>
+          
+          <ul class="space-y-3 mb-6">
+            <li class="flex items-start gap-3 text-sm">
+              <span class="text-green-500 mt-1">✓</span>
+              <span class="text-white/60"><strong class="text-white">Commercial Signage:</strong> Facade mounting, storefronts, monument signs</span>
+            </li>
+            <li class="flex items-start gap-3 text-sm">
+              <span class="text-green-500 mt-1">✓</span>
+              <span class="text-white/60"><strong class="text-white">LED Systems:</strong> C-10 licensed electricians, retrofits, smart controls</span>
+            </li>
+            <li class="flex items-start gap-3 text-sm">
+              <span class="text-green-500 mt-1">✓</span>
+              <span class="text-white/60"><strong class="text-white">High-Rise Work:</strong> SPRAT certified, crane service, OSHA compliance</span>
+            </li>
+          </ul>
+
+          <a href="/services/installation" class="inline-flex items-center text-green-500 hover:text-green-400 font-semibold transition-colors group">
+            View Installation Services
+            <svg class="w-5 h-5 ml-2 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
     </div>
 
-    <!-- Projects Grid -->
-    <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      <!-- Tesla -->
-      <div class="project-card group relative h-96 rounded-2xl overflow-hidden" data-category="automotive">
-        <img src="/static/images/projects/tesla-red-facade.jpg" alt="Tesla" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
-        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
-        <div class="absolute inset-0 p-6 flex flex-col justify-end">
-          <h3 class="text-2xl font-bold mb-2">Tesla Dealership</h3>
-          <p class="text-white/80 mb-4">Bold red facade signage for premium automotive dealership. High-impact branding installation.</p>
-          <div class="flex flex-wrap gap-2">
-            <span class="px-3 py-1 bg-antares-blue/20 rounded-full text-xs">Automotive</span>
-            <span class="px-3 py-1 bg-antares-blue/20 rounded-full text-xs">Facade</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Volvo & Mack -->
-      <div class="project-card group relative h-96 rounded-2xl overflow-hidden" data-category="automotive">
-        <img src="/static/images/projects/volvo-mack-sunset.jpg" alt="Volvo Mack" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
-        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
-        <div class="absolute inset-0 p-6 flex flex-col justify-end">
-          <h3 class="text-2xl font-bold mb-2">Volvo & Mack Trucks</h3>
-          <p class="text-white/80 mb-4">Large-scale pylon signage for commercial truck dealership captured at golden hour.</p>
-          <div class="flex flex-wrap gap-2">
-            <span class="px-3 py-1 bg-antares-blue/20 rounded-full text-xs">Automotive</span>
-            <span class="px-3 py-1 bg-antares-blue/20 rounded-full text-xs">Pylon</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Five Below -->
-      <div class="project-card group relative h-96 rounded-2xl overflow-hidden" data-category="retail">
-        <img src="/static/images/projects/five-below-retail.jpg" alt="Five Below" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
-        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
-        <div class="absolute inset-0 p-6 flex flex-col justify-end">
-          <h3 class="text-2xl font-bold mb-2">Five Below</h3>
-          <p class="text-white/80 mb-4">Retail storefront signage installation for national chain expansion.</p>
-          <div class="flex flex-wrap gap-2">
-            <span class="px-3 py-1 bg-antares-blue/20 rounded-full text-xs">Retail</span>
-            <span class="px-3 py-1 bg-antares-blue/20 rounded-full text-xs">Storefront</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Crate & Barrel -->
-      <div class="project-card group relative h-96 rounded-2xl overflow-hidden" data-category="retail">
-        <img src="/static/images/projects/crate-barrel-night.jpg" alt="Crate Barrel" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
-        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
-        <div class="absolute inset-0 p-6 flex flex-col justify-end">
-          <h3 class="text-2xl font-bold mb-2">Crate & Barrel</h3>
-          <p class="text-white/80 mb-4">Illuminated retail signage with premium finish for upscale home goods brand.</p>
-          <div class="flex flex-wrap gap-2">
-            <span class="px-3 py-1 bg-antares-blue/20 rounded-full text-xs">Retail</span>
-            <span class="px-3 py-1 bg-antares-blue/20 rounded-full text-xs">LED</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- More projects... -->
-      <div class="project-card group relative h-96 rounded-2xl overflow-hidden" data-category="automotive">
-        <img src="/static/images/projects/ford-dealership-pylon.jpg" alt="Ford" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
-        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
-        <div class="absolute inset-0 p-6 flex flex-col justify-end">
-          <h3 class="text-2xl font-bold mb-2">Ford Dealership</h3>
-          <p class="text-white/80 mb-4">Automotive dealership pylon signage with LED illumination.</p>
-          <div class="flex flex-wrap gap-2">
-            <span class="px-3 py-1 bg-antares-blue/20 rounded-full text-xs">Automotive</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="project-card group relative h-96 rounded-2xl overflow-hidden" data-category="automotive">
-        <img src="/static/images/projects/honda-pylon-blue.jpg" alt="Honda" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
-        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
-        <div class="absolute inset-0 p-6 flex flex-col justify-end">
-          <h3 class="text-2xl font-bold mb-2">Honda Dealership</h3>
-          <p class="text-white/80 mb-4">Premium pylon signage for Honda automotive brand.</p>
-          <div class="flex flex-wrap gap-2">
-            <span class="px-3 py-1 bg-antares-blue/20 rounded-full text-xs">Automotive</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="project-card group relative h-96 rounded-2xl overflow-hidden" data-category="corporate">
-        <img src="/static/images/projects/regus-corporate-facade.jpg" alt="Regus" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
-        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
-        <div class="absolute inset-0 p-6 flex flex-col justify-end">
-          <h3 class="text-2xl font-bold mb-2">Regus Corporate</h3>
-          <p class="text-white/80 mb-4">Corporate office building facade signage for global workspace provider.</p>
-          <div class="flex flex-wrap gap-2">
-            <span class="px-3 py-1 bg-antares-blue/20 rounded-full text-xs">Corporate</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="project-card group relative h-96 rounded-2xl overflow-hidden" data-category="corporate">
-        <img src="/static/images/projects/apm-terminals-corporate.jpg" alt="APM" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
-        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
-        <div class="absolute inset-0 p-6 flex flex-col justify-end">
-          <h3 class="text-2xl font-bold mb-2">APM Terminals</h3>
-          <p class="text-white/80 mb-4">Industrial-scale signage for global logistics corporation.</p>
-          <div class="flex flex-wrap gap-2">
-            <span class="px-3 py-1 bg-antares-blue/20 rounded-full text-xs">Corporate</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="project-card group relative h-96 rounded-2xl overflow-hidden" data-category="interior">
-        <img src="/static/images/projects/tiktok-neon-interior.jpg" alt="TikTok" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
-        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
-        <div class="absolute inset-0 p-6 flex flex-col justify-end">
-          <h3 class="text-2xl font-bold mb-2">TikTok Office</h3>
-          <p class="text-white/80 mb-4">Modern neon interior branding for tech company headquarters.</p>
-          <div class="flex flex-wrap gap-2">
-            <span class="px-3 py-1 bg-antares-blue/20 rounded-full text-xs">Interior</span>
-          </div>
+    <!-- CTA Section -->
+    <div class="mt-20 text-center">
+      <div class="bg-gradient-to-br from-antares-blue/10 to-blue-600/10 border border-antares-blue/30 rounded-2xl p-12 max-w-4xl mx-auto">
+        <h2 class="text-3xl lg:text-4xl font-display font-bold mb-4">Ready to Start Your Project?</h2>
+        <p class="text-xl text-white/70 mb-8">From concept to installation, we're your trusted provider for the entire process</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="tel:+16893312690" class="inline-flex items-center justify-center px-8 py-4 bg-antares-blue hover:bg-blue-600 rounded-xl font-semibold text-lg transition-all hover:scale-105">
+            <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+            </svg>
+            Call Now: (689) 331-2690
+          </a>
+          <button onclick="openRequestCallModal()" class="inline-flex items-center justify-center px-8 py-4 bg-white/10 hover:bg-white/20 rounded-xl font-semibold text-lg transition-all hover:scale-105">
+            Request Free Quote
+          </button>
         </div>
       </div>
     </div>
+
   </div>
 </section>
   `;
   
-  return c.html(PageLayout('Projects', 'Explore our portfolio of professional signage installations', content));
-});
-
+  return c.html(PageLayout('Our Projects | Design, Production & Installation | Antares Innovate', 'View our portfolio of design, production, and installation projects. Professional signage solutions from concept to completion.', content))
+})
 // About Page
 app.get('/about', (c) => {
   const content = `
