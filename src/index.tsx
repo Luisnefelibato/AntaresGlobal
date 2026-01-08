@@ -813,11 +813,11 @@ app.get('/services/print', (c) => {
         <p class="text-lg text-white/60 text-center mb-12 max-w-3xl mx-auto" data-i18n="production.whatWeDo.subtitle">Professional large format printing with precision color matching and premium materials. Every print is inspected for quality before delivery.</p>
         
         <div class="grid md:grid-cols-3 gap-8 mb-12">
-          <div class="bg-gradient-to-br from-orange-500/10 to-red-600/10 p-8 rounded-xl border border-orange-500/30 hover:border-orange-500 hover:shadow-lg hover:shadow-orange-500/20 transition-all">
-            <div class="w-16 h-16 mb-4 bg-gradient-to-br from-orange-500 to-red-600 rounded-xl flex items-center justify-center text-3xl">
+          <div class="bg-gradient-to-br from-antares-blue/10 to-blue-600/10 p-8 rounded-xl border border-antares-blue/30 hover:border-antares-blue hover:shadow-lg hover:shadow-antares-blue/20 transition-all">
+            <div class="w-16 h-16 mb-4 bg-gradient-to-br from-antares-blue to-blue-600 rounded-xl flex items-center justify-center text-3xl">
               🖨️
             </div>
-            <h3 class="text-2xl font-bold mb-4 text-orange-500" data-i18n="production.largeFormat.title">LARGE FORMAT PRINTING</h3>
+            <h3 class="text-2xl font-bold mb-4 text-antares-blue" data-i18n="production.largeFormat.title">LARGE FORMAT PRINTING</h3>
             <p class="text-white/70 mb-4" data-i18n="production.largeFormat.desc">Large-format printing for high-impact visual advertising. Perfect for building facades, events, and outdoor advertising.</p>
             <ul class="text-sm text-white/60 space-y-2">
               <li>• <strong data-i18n="production.largeFormat.materials">Materials:</strong> <span data-i18n="production.largeFormat.materialsDesc">Vinyl banner, mesh, canvas</span></li>
@@ -827,11 +827,11 @@ app.get('/services/print', (c) => {
             </ul>
           </div>
 
-          <div class="bg-gradient-to-br from-orange-500/10 to-red-600/10 p-8 rounded-xl border border-orange-500/30 hover:border-orange-500 hover:shadow-lg hover:shadow-orange-500/20 transition-all">
-            <div class="w-16 h-16 mb-4 bg-gradient-to-br from-orange-500 to-red-600 rounded-xl flex items-center justify-center text-3xl">
+          <div class="bg-gradient-to-br from-antares-blue/10 to-blue-600/10 p-8 rounded-xl border border-antares-blue/30 hover:border-antares-blue hover:shadow-lg hover:shadow-antares-blue/20 transition-all">
+            <div class="w-16 h-16 mb-4 bg-gradient-to-br from-antares-blue to-blue-600 rounded-xl flex items-center justify-center text-3xl">
               🛍️
             </div>
-            <h3 class="text-2xl font-bold mb-4 text-orange-500" data-i18n="production.pop.title">POP MATERIALS</h3>
+            <h3 class="text-2xl font-bold mb-4 text-antares-blue" data-i18n="production.pop.title">POP MATERIALS</h3>
             <p class="text-white/70 mb-4" data-i18n="production.pop.desc">Point of purchase materials that drive sales and enhance customer experience at retail locations.</p>
             <ul class="text-sm text-white/60 space-y-2">
               <li>• <strong data-i18n="production.pop.products">Products:</strong> <span data-i18n="production.pop.productsDesc">Displays, standees, shelf talkers, danglers</span></li>
@@ -841,11 +841,11 @@ app.get('/services/print', (c) => {
             </ul>
           </div>
 
-          <div class="bg-gradient-to-br from-orange-500/10 to-red-600/10 p-8 rounded-xl border border-orange-500/30 hover:border-orange-500 hover:shadow-lg hover:shadow-orange-500/20 transition-all">
-            <div class="w-16 h-16 mb-4 bg-gradient-to-br from-orange-500 to-red-600 rounded-xl flex items-center justify-center text-3xl">
+          <div class="bg-gradient-to-br from-antares-blue/10 to-blue-600/10 p-8 rounded-xl border border-antares-blue/30 hover:border-antares-blue hover:shadow-lg hover:shadow-antares-blue/20 transition-all">
+            <div class="w-16 h-16 mb-4 bg-gradient-to-br from-antares-blue to-blue-600 rounded-xl flex items-center justify-center text-3xl">
               📑
             </div>
-            <h3 class="text-2xl font-bold mb-4 text-orange-500" data-i18n="production.brochures.title">BROCHURES & CATALOGS</h3>
+            <h3 class="text-2xl font-bold mb-4 text-antares-blue" data-i18n="production.brochures.title">BROCHURES & CATALOGS</h3>
             <p class="text-white/70 mb-4" data-i18n="production.brochures.desc">Professional brochures, catalogs, and printed materials for marketing and corporate communications.</p>
             <ul class="text-sm text-white/60 space-y-2">
               <li>• <strong data-i18n="production.brochures.types">Types:</strong> <span data-i18n="production.brochures.typesDesc">Brochures, catalogs, flyers, folders</span></li>
@@ -1062,11 +1062,11 @@ app.get('/services/installation', (c) => {
             </ul>
           </div>
 
-          <div class="bg-gradient-to-br from-green-500/10 to-emerald-600/10 p-8 rounded-xl border border-green-500/30 hover:border-green-500 hover:shadow-lg hover:shadow-green-500/20 transition-all">
-            <div class="w-16 h-16 mb-4 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl flex items-center justify-center text-3xl">
+          <div class="bg-gradient-to-br from-antares-blue/10 to-blue-600/10 p-8 rounded-xl border border-antares-blue/30 hover:border-antares-blue hover:shadow-lg hover:shadow-antares-blue/20 transition-all">
+            <div class="w-16 h-16 mb-4 bg-gradient-to-br from-antares-blue to-blue-600 rounded-xl flex items-center justify-center text-3xl">
               🏗️
             </div>
-            <h3 class="text-2xl font-bold mb-4 text-green-500" data-i18n="installation.highrise.title">HIGH-RISE INSTALLATION</h3>
+            <h3 class="text-2xl font-bold mb-4 text-antares-blue" data-i18n="installation.highrise.title">HIGH-RISE INSTALLATION</h3>
             <p class="text-white/70 mb-4" data-i18n="installation.highrise.desc">Specialized high-rise installation with crane service, rope access certification, and OSHA-compliant safety protocols.</p>
             <ul class="text-sm text-white/60 space-y-2">
               <li>• <strong data-i18n="installation.highrise.craneService">Crane Service:</strong> <span data-i18n="installation.highrise.craneServiceDesc">Mobile cranes and boom lift equipment</span></li>
