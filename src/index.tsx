@@ -34,7 +34,7 @@ app.get('/', (c) => {
       <!-- Main Heading -->
       <h1 class="font-display font-black text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl leading-tight">
         <span class="block text-white" data-i18n="hero.title1">We Transform Spaces</span>
-        <span class="block text-white"><span data-i18n="hero.title2">into</span> <span class="text-antares-blue" data-i18n="hero.title3">Brand</span> <span data-i18n="hero.title4">Experiences</span></span>
+        <span class="block text-white"><span data-i18n="hero.title2">into</span> <span class="text-antares-blue" data-i18n="hero.title3">Brand Experiences</span></span>
       </h1>
 
       <!-- Subtitle -->
