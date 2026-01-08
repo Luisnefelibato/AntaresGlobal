@@ -2366,6 +2366,90 @@ app.get('/projects', (c) => {
         </div>
       </div>
 
+      <!-- Design Project 2 -->
+      <div class="project-card group relative h-96 rounded-2xl overflow-hidden" data-category="design">
+        <img src="/static/images/project-design-2.jpg" alt="Barrett Plastic Surgery Logo Design" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
+        <div class="absolute inset-0 p-6 flex flex-col justify-end">
+          <h3 class="text-2xl font-bold mb-2">Medical Brand Identity</h3>
+          <p class="text-white/80 mb-4">Professional logo design for plastic surgery practice with elegant typography and refined aesthetics</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-antares-blue/30 border border-antares-blue rounded-full text-xs font-semibold">Design</span>
+            <span class="px-3 py-1 bg-antares-blue/20 rounded-full text-xs">Medical</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Production Project 2 -->
+      <div class="project-card group relative h-96 rounded-2xl overflow-hidden" data-category="production">
+        <img src="/static/images/project-production-2.jpg" alt="Barrett Plastic Surgery Sign Production" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
+        <div class="absolute inset-0 p-6 flex flex-col justify-end">
+          <h3 class="text-2xl font-bold mb-2">Large Format Sign Production</h3>
+          <p class="text-white/80 mb-4">Manufacturing of dimensional signage with precision CNC routing and professional finishing</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-orange-500/30 border border-orange-500 rounded-full text-xs font-semibold">Production</span>
+            <span class="px-3 py-1 bg-orange-500/20 rounded-full text-xs">CNC</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Installation Project 2 -->
+      <div class="project-card group relative h-96 rounded-2xl overflow-hidden" data-category="installation">
+        <img src="/static/images/project-installation-2.jpg" alt="Barrett Plastic Surgery Monument Sign Installation" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
+        <div class="absolute inset-0 p-6 flex flex-col justify-end">
+          <h3 class="text-2xl font-bold mb-2">Monument Sign Installation</h3>
+          <p class="text-white/80 mb-4">Professional outdoor monument signage installation with landscaping integration</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-green-500/30 border border-green-500 rounded-full text-xs font-semibold">Installation</span>
+            <span class="px-3 py-1 bg-green-500/20 rounded-full text-xs">Monument</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Design Project 3 -->
+      <div class="project-card group relative h-96 rounded-2xl overflow-hidden" data-category="design">
+        <img src="/static/images/project-design-3.jpg" alt="Taqueria El Fogon Logo Design" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
+        <div class="absolute inset-0 p-6 flex flex-col justify-end">
+          <h3 class="text-2xl font-bold mb-2">Restaurant Brand Design</h3>
+          <p class="text-white/80 mb-4">Vibrant logo design for Mexican restaurant with bold colors and authentic cultural elements</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-antares-blue/30 border border-antares-blue rounded-full text-xs font-semibold">Design</span>
+            <span class="px-3 py-1 bg-antares-blue/20 rounded-full text-xs">Restaurant</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Production Project 3 -->
+      <div class="project-card group relative h-96 rounded-2xl overflow-hidden" data-category="production">
+        <img src="/static/images/project-production-3.jpg" alt="Taqueria El Fogon Sign Manufacturing" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
+        <div class="absolute inset-0 p-6 flex flex-col justify-end">
+          <h3 class="text-2xl font-bold mb-2">Channel Letter Production</h3>
+          <p class="text-white/80 mb-4">Custom illuminated channel letters with precision fabrication and LED integration in production workshop</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-orange-500/30 border border-orange-500 rounded-full text-xs font-semibold">Production</span>
+            <span class="px-3 py-1 bg-orange-500/20 rounded-full text-xs">LED</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Installation Project 3 -->
+      <div class="project-card group relative h-96 rounded-2xl overflow-hidden" data-category="installation">
+        <img src="/static/images/project-installation-3.jpg" alt="Taqueria El Fogon Sign Installation at Night" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
+        <div class="absolute inset-0 p-6 flex flex-col justify-end">
+          <h3 class="text-2xl font-bold mb-2">LED Sign Installation with Crane</h3>
+          <p class="text-white/80 mb-4">High-rise illuminated sign installation with crane service and professional night lighting setup</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-green-500/30 border border-green-500 rounded-full text-xs font-semibold">Installation</span>
+            <span class="px-3 py-1 bg-green-500/20 rounded-full text-xs">High-Rise</span>
+          </div>
+        </div>
+      </div>
+
     </div>
 
     <!-- CTA Section -->
