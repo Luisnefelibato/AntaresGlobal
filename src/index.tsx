@@ -2450,6 +2450,48 @@ app.get('/projects', (c) => {
         </div>
       </div>
 
+      <!-- Design Project 4 - Element Hotel -->
+      <div class="project-card group relative h-96 rounded-2xl overflow-hidden" data-category="design">
+        <img src="/static/images/project-design-4.jpg" alt="Element Hotel Logo Design" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
+        <div class="absolute inset-0 p-6 flex flex-col justify-end">
+          <h3 class="text-2xl font-bold mb-2">Element Hotel Brand Design</h3>
+          <p class="text-white/80 mb-4">Modern hotel branding with circular emblem and bold typography for urban hospitality venue</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-antares-blue/30 border border-antares-blue rounded-full text-xs font-semibold">Design</span>
+            <span class="px-3 py-1 bg-antares-blue/20 rounded-full text-xs">Hospitality</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Production Project 4 - Element Hotel -->
+      <div class="project-card group relative h-96 rounded-2xl overflow-hidden" data-category="production">
+        <img src="/static/images/project-production-4.jpg" alt="Element Hotel Sign Production" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
+        <div class="absolute inset-0 p-6 flex flex-col justify-end">
+          <h3 class="text-2xl font-bold mb-2">Large Format Sign Production</h3>
+          <p class="text-white/80 mb-4">Industrial-scale printing and production of hotel signage with automated manufacturing equipment</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-orange-500/30 border border-orange-500 rounded-full text-xs font-semibold">Production</span>
+            <span class="px-3 py-1 bg-orange-500/20 rounded-full text-xs">Automation</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Installation Project 4 - Element Hotel -->
+      <div class="project-card group relative h-96 rounded-2xl overflow-hidden" data-category="installation">
+        <img src="/static/images/project-installation-4.jpg" alt="Element Hotel Sign Installation" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
+        <div class="absolute inset-0 p-6 flex flex-col justify-end">
+          <h3 class="text-2xl font-bold mb-2">Urban Facade Installation</h3>
+          <p class="text-white/80 mb-4">High-visibility building facade installation with crane service in downtown urban setting</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-green-500/30 border border-green-500 rounded-full text-xs font-semibold">Installation</span>
+            <span class="px-3 py-1 bg-green-500/20 rounded-full text-xs">Facade</span>
+          </div>
+        </div>
+      </div>
+
     </div>
 
     <!-- CTA Section -->
