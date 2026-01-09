@@ -1,4 +1,50 @@
 /* ============================================
+   GLOBAL FONT SIZE SCALING
+   Increase all text sizes by 15-20%
+   ============================================ */
+
+body {
+  font-size: 18px !important; /* Base size increased from 16px */
+}
+
+/* Paragraph and general text */
+p, span, div, li, a {
+  font-size: 1.1em;
+}
+
+/* Headings */
+h1 {
+  font-size: 1.2em !important;
+}
+
+h2 {
+  font-size: 1.15em !important;
+}
+
+h3 {
+  font-size: 1.1em !important;
+}
+
+h4, h5, h6 {
+  font-size: 1.05em !important;
+}
+
+/* Button text */
+button, .btn-primary, .btn-secondary {
+  font-size: 1.1em !important;
+}
+
+/* Navigation links */
+nav a, .nav-link {
+  font-size: 1.1em !important;
+}
+
+/* Form inputs */
+input, textarea, select {
+  font-size: 1.05em !important;
+}
+
+/* ============================================
    ZOOM OUT ANIMATION - Installation to Universe
    Inspired by cosmic zoom effect
    ============================================ */
