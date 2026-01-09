@@ -20,6 +20,7 @@ const translations = {
     'hero.subtitle2': 'From concept to installation. One provider for the entire process.',
     'hero.callButton': 'Call Now: +1 (689) 331-2690',
     'hero.quoteButton': 'Request Free Quote',
+    'hero.viewProjects': 'View Success Stories',
     
     // Services
     'services.badge': 'Strategic Services',
@@ -374,6 +375,7 @@ const translations = {
     'hero.subtitle2': 'Desde el concepto hasta la instalación. Somos tu proveedor para todo el proceso.',
     'hero.callButton': 'Llamar Ahora: +1 (689) 331-2690',
     'hero.quoteButton': 'Solicitar Cotización Gratis',
+    'hero.viewProjects': 'Ver Historias de Éxito',
     
     // Services
     'services.badge': 'Servicios Estratégicos',
