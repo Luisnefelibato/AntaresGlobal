@@ -1,47 +1,52 @@
 /* ============================================
    GLOBAL FONT SIZE SCALING
-   Increase all text sizes by 15-20%
+   Increase body text and paragraphs only (not headings)
    ============================================ */
 
 body {
   font-size: 18px !important; /* Base size increased from 16px */
 }
 
-/* Paragraph and general text */
-p, span, div, li, a {
-  font-size: 1.1em;
+/* Paragraph and general text - INCREASED */
+p, span:not(h1 span):not(h2 span):not(h3 span):not(h4 span):not(h5 span):not(h6 span), li, div:not(.font-display) {
+  font-size: 1.15em;
 }
 
-/* Headings */
-h1 {
-  font-size: 1.2em !important;
+/* Keep headings at ORIGINAL size */
+h1, h1 span {
+  font-size: 1em !important;
 }
 
-h2 {
-  font-size: 1.15em !important;
+h2, h2 span {
+  font-size: 1em !important;
 }
 
-h3 {
-  font-size: 1.1em !important;
+h3, h3 span {
+  font-size: 1em !important;
 }
 
 h4, h5, h6 {
+  font-size: 1em !important;
+}
+
+/* Button text - slightly increased */
+button, .btn-primary, .btn-secondary {
   font-size: 1.05em !important;
 }
 
-/* Button text */
-button, .btn-primary, .btn-secondary {
-  font-size: 1.1em !important;
-}
-
-/* Navigation links */
+/* Navigation links - slightly increased */
 nav a, .nav-link {
-  font-size: 1.1em !important;
+  font-size: 1.05em !important;
 }
 
-/* Form inputs */
+/* Form inputs - slightly increased */
 input, textarea, select {
   font-size: 1.05em !important;
+}
+
+/* Links in paragraphs - increased */
+p a, li a {
+  font-size: inherit;
 }
 
 /* ============================================
@@ -816,4 +821,36 @@ select:focus {
 *:focus-visible {
   outline: 2px solid var(--antares-blue);
   outline-offset: 2px;
+}
+
+/* ===== FONT SIZE ADJUSTMENTS ===== */
+/* Base font size increase for better readability */
+body {
+  font-size: 18px !important;
+}
+
+/* Paragraphs and general text - increase by 10% */
+/* Exclude heading children to keep titles at original size */
+p {
+  font-size: 1.1em;
+}
+
+/* List items */
+li {
+  font-size: 1.1em;
+}
+
+/* Buttons */
+button, .btn {
+  font-size: 1.1em;
+}
+
+/* Form elements */
+input, textarea, select {
+  font-size: 1.05em;
+}
+
+/* Navigation links */
+nav a:not(.text-4xl):not(.text-5xl):not(.text-6xl) {
+  font-size: 1.1em;
 }
